@@ -33,10 +33,11 @@ limitations under the License.
         <odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/odf2html.xsl</odf12.html.stylesheet>
         <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/odf2html.xsl</odf13.html.stylesheet>
         <odf12.defaultvalue.stylesheet>src/test/resources/odf1.2/tools/getAttributeDefaults.xsl</odf12.defaultvalue.stylesheet>
-        <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os.odt+styleFixes</odf12fix.defaultvalue.input>
         <odf13.defaultvalue.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.defaultvalue.stylesheet>
         <odf12.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os.odt</odf12.defaultvalue.input>
+        <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os.odt+styleFixes</odf12fix.defaultvalue.input>
         <odf13.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3</odf13.defaultvalue.input>
+        <odf13fix.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3-default-value-style-added</odf13fix.defaultvalue.input>
         <jdk.version>11</jdk.version>
         <version.saxon-he>9.9.1-7</version.saxon-he>
     </properties>
@@ -127,7 +128,7 @@ limitations under the License.
                             <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>original-default-values.xml</targetExtension>
+                                    <targetExtension>odf12-default-values.xml</targetExtension>
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
@@ -137,7 +138,7 @@ limitations under the License.
                             <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>fixedStyles-default-values.xml</targetExtension>
+                                    <targetExtension>odf12fixed-default-values.xml</targetExtension>
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
@@ -148,6 +149,16 @@ limitations under the License.
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf13-default-values.xml</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <dir>${odf13fix.defaultvalue.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.defaultvalue.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13fix-default-values.xml</targetExtension>
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>

@@ -27,15 +27,18 @@ mvn clean install
 
 #### Default Value Extraction
 
-It's first automated test is the extraction of default values from ODF 1.2, an enhanced ODF 1.2 version and ODF 1.3.
-Three fixes on the public spec were made on the enhanced version. Adding a character style to the default values to make them extractable again on:
+It's first automated test is the extraction of default values from ODF 1.2, an enhanced ODF 1.2 version, ODF 1.3 and the most recent enhanced ODF 1.3 version with default values.
+
+There had been three fixes on the ODF 1.2 specification being made by adding a character style to the default values making them extractable again on:
 
 1. @form:echo-char for value "*"
 see "The default value for this attribute is "*" (U+002A, ASTERISK)." compare the definition beyond form:enctype.
 2. @smil:fadeColor for value value "#000000"
 3. @style:leader-text for value value " " (Space)
 
-**NOTE**: all default value files are extracted to: *target/generated-resources/xml/xslt*
+A complete list of ODF 1.2 default values can be found in the [ODF Toolkit](https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218).
+
+**NOTE**: The test writes all default value into files at: *target/generated-resources/xml/xslt*
 
 ## Background
 
