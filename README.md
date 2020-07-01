@@ -13,8 +13,8 @@ The project aligns to the [standard directory layout of a Maven build system](ht
 
 For the usage of the test environment have installed:
 
-1. [Java JDK][https://openjdk.java.net/install/] - tested with JDK 8 & JDK 11.
-2. [Apache Maven][https://maven.apache.org/]
+1. [Java JDK](https://openjdk.java.net/install/) - tested with JDK 8 & JDK 11.
+2. [Apache Maven](https://maven.apache.org/)
 
 #### Building & Running (Linux & Windows)
 
