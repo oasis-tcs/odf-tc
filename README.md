@@ -25,9 +25,9 @@ cd odf-tc
 mvn clean install
 ```
 
-#### Default Value Extraction
+#### Default Value Extraction (not yet a test)
 
-It's first automated test is the extraction of default values from ODF 1.2, an enhanced ODF 1.2 version, ODF 1.3 and the most recent enhanced ODF 1.3 version with default values.
+It's first automated test will be the extraction of default values from ODF 1.2, an enhanced ODF 1.2 version, ODF 1.3 and the most recent enhanced ODF 1.3 version with default values.
 
 There had been three fixes on the ODF 1.2 specification being made by adding a character style to the default values making them extractable again on:
 
@@ -38,7 +38,21 @@ see "The default value for this attribute is "*" (U+002A, ASTERISK)." compare th
 
 A complete list of ODF 1.2 default values can be found in the [ODF Toolkit](https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218).
 
-**NOTE**: The test writes all default value into files at: *target/generated-resources/xml/xslt*
+The most recent & stable SAXON XSLT processing engine will be used to extract the default values.
+
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+
+#### ODF2HTML transformation (not yet a test)
+
+The second automated test will be the transformation of the ODT specifications part 3 of ODF 1.2 and ODF 1.3 to HTML.
+The most recent & stable SAXON XSLT processing engine will be used to transform the documents into HTML.
+
+The ODF 1.3 HTML shows problems with:
+
+1. Upper border of paragraph boxes
+2. Line indent
+
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
 
 ## Background
 

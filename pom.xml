@@ -30,14 +30,15 @@ limitations under the License.
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <odf12.test.input>src/main/resources/odf1.2/</odf12.test.input>
         <odf13.test.input>src/main/resources/odf1.3/</odf13.test.input>
-        <odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/odf2html.xsl</odf12.html.stylesheet>
-        <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/odf2html.xsl</odf13.html.stylesheet>
+        <odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf12.html.stylesheet>
+        <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>
         <odf12.defaultvalue.stylesheet>src/test/resources/odf1.2/tools/getAttributeDefaults.xsl</odf12.defaultvalue.stylesheet>
         <odf13.defaultvalue.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.defaultvalue.stylesheet>
-        <odf12.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os.odt</odf12.defaultvalue.input>
-        <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os.odt+styleFixes</odf12fix.defaultvalue.input>
+        <odf12.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1_odt</odf12.defaultvalue.input>
+        <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1+styleFixes</odf12fix.defaultvalue.input>
         <odf13.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3</odf13.defaultvalue.input>
         <odf13fix.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3-default-value-style-added</odf13fix.defaultvalue.input>
+
         <jdk.version>11</jdk.version>
         <version.saxon-he>9.9.1-7</version.saxon-he>
     </properties>
@@ -162,55 +163,26 @@ limitations under the License.
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
-                        <!--
                         <transformationSet>
-                            <dir>${odf13.test.input}</dir>
-                            <stylesheet>${odf13.defaultvalue.stylesheet}</stylesheet>
+                            <dir>${odf12.defaultvalue.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf12.html.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>.xml</targetExtension>
+                                    <targetExtension>odf12.htm</targetExtension>
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
                         <transformationSet>
-                            <dir>${odf12.test.input}</dir>
-                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
-                            <outputProperties>
-                                <outputProperty>
-                                    <name>omit-xml-declaration</name>
-                                    <value>yes</value>
-                                </outputProperty>
-                                <outputProperty>
-                                    <name>version</name>
-                                    <value>5</value>
-                                </outputProperty>
-                            </outputProperties>
+                            <dir>${odf13fix.defaultvalue.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>.htm</targetExtension>
+                                    <targetExtension>odf13.html</targetExtension>
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
-                        <transformationSet>
-                            <dir>${odf13.test.input}</dir>
-                            <stylesheet>${odf13.defaultvalue.stylesheet}</stylesheet>
-                            <outputProperties>
-                                <outputProperty>
-                                    <name>omit-xml-declaration</name>
-                                    <value>yes</value>
-                                </outputProperty>
-                                <outputProperty>
-                                    <name>version</name>
-                                    <value>5</value>
-                                </outputProperty>
-                            </outputProperties>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                    -->
                     </transformationSets>
                 </configuration>
                 <dependencies>
