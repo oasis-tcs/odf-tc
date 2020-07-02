@@ -73,6 +73,14 @@
 			<xsl:call-template name='create-css-styleheader'>
 				<xsl:with-param name="globalData" select="$globalData"/>
 			</xsl:call-template>
+			
+			<!-- adding MathML handling JavaScript - 
+				<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"/> -->
+			<xsl:element name="script">
+				<xsl:attribute name="type">text/javascript</xsl:attribute>
+				<xsl:attribute name="src">http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML</xsl:attribute>
+			</xsl:element>
+			
 			<xsl:if test="$debugEnabled"><xsl:message>CSS header creation finished!</xsl:message></xsl:if>
 		</xsl:element>
 
