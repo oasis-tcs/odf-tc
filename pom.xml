@@ -31,9 +31,9 @@ limitations under the License.
         <odf12.test.input>src/main/resources/odf1.2/</odf12.test.input>
         <odf13.test.input>src/main/resources/odf1.3/</odf13.test.input>
         <odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf12.html.stylesheet>
-        <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>
+        <!--<odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>-->
         <odf12.defaultvalue.stylesheet>src/test/resources/odf1.2/tools/getAttributeDefaults.xsl</odf12.defaultvalue.stylesheet>
-        <odf13.defaultvalue.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.defaultvalue.stylesheet>
+        <!--<odf13.defaultvalue.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.defaultvalue.stylesheet>-->
         <odf12.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1_odt</odf12.defaultvalue.input>
         <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1+styleFixes</odf12fix.defaultvalue.input>
         <odf13.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3</odf13.defaultvalue.input>
@@ -156,7 +156,7 @@ limitations under the License.
                         <transformationSet>
                             <dir>${odf13fix.defaultvalue.input}</dir>
                             <includes>content.xml</includes>
-                            <stylesheet>${odf13.defaultvalue.stylesheet}</stylesheet>
+                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf13fix-default-values.xml</targetExtension>
@@ -176,7 +176,7 @@ limitations under the License.
                         <transformationSet>
                             <dir>${odf13fix.defaultvalue.input}</dir>
                             <includes>content.xml</includes>
-                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
+                            <stylesheet>${odf12.html.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf13.html</targetExtension>
