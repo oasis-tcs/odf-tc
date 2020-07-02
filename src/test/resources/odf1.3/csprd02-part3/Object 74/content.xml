@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mrow>
+   <msub>
+    <mi>D</mi>
+    <mi>j</mi>
+   </msub>
+   <mrow>
+    <mo fence="true" stretchy="true">(</mo>
+    <mrow>
+     <mrow>
+      <msub>
+       <mi>x</mi>
+       <mi>j</mi>
+      </msub>
+      <mo stretchy="false">|</mo>
+      <msub>
+       <mi>y</mi>
+       <mi>j</mi>
+      </msub>
+     </mrow>
+    </mrow>
+    <mo fence="true" stretchy="true">)</mo>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">D_j left(x_j mline y_j right)</annotation>
+ </semantics>
+</math>

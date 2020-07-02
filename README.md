@@ -1,6 +1,62 @@
-# README
+# ODF Specification Tooling
 
-Members of the [Open Document Format for Office Applications (OpenDocument) TC](https://www.oasis-open.org/committees/office/) create and manage technical content in this TC GitHub repository (https://github.com/oasis-tcs/odf-tc/) as part of the TC's chartered work (the program of work and deliverables described in its [charter](https://www.oasis-open.org/committees/odf-tc/charter.php).
+## Overview
+
+The purpose of this project is to provide:
+
+1. Automated tooling for the artifacts of the OASIS ODF TC foremost for its specification and grammar.
+2. Test documents according to the new features provided by the specification.
+
+The project aligns to the [standard directory layout of a Maven build system](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
+
+### Automated Tests
+
+For the usage of the test environment have installed:
+
+1. [Java JDK](https://openjdk.java.net/install/) - tested with JDK 8 & JDK 11.
+2. [Apache Maven](https://maven.apache.org/)
+
+#### Building & Running (Linux & Windows)
+
+All tests are triggered from command line:
+
+```shell
+cd odf-tc
+mvn clean install
+```
+
+#### Default Value Extraction (not yet a test)
+
+It's first automated test will be the extraction of default values from ODF 1.2, an enhanced ODF 1.2 version, ODF 1.3 and the most recent enhanced ODF 1.3 version with default values.
+
+There had been three fixes on the ODF 1.2 specification being made by adding a character style to the default values making them extractable again on:
+
+1. @form:echo-char for value "*"
+see "The default value for this attribute is "*" (U+002A, ASTERISK)." compare the definition beyond form:enctype.
+2. @smil:fadeColor for value value "#000000"
+3. @style:leader-text for value value " " (Space)
+
+A complete list of ODF 1.2 default values can be found in the [ODF Toolkit](https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218).
+
+The most recent & stable SAXON XSLT processing engine will be used to extract the default values.
+
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+
+#### ODF2HTML transformation (not yet a test)
+
+The second automated test will be the transformation of the ODT specifications part 3 of ODF 1.2 and ODF 1.3 to HTML.
+The most recent & stable SAXON XSLT processing engine will be used to transform the documents into HTML.
+
+The ODF 1.3 HTML shows problems with:
+
+1. Upper border of paragraph boxes
+2. Line indent
+
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+
+## Background
+
+Members of the [Open Document Format for Office Applications (OpenDocument) TC](https://www.oasis-open.org/committees/office/) create and manage technical content in this [TC GitHub repository](https://github.com/oasis-tcs/odf-tc/) as part of the TC's chartered work (the program of work and deliverables described in its [charter](https://www.oasis-open.org/committees/odf-tc/charter.php).
 
 OASIS TC GitHub repositories, as described in [GitHub Repositories for OASIS TC Members' Chartered Work](https://www.oasis-open.org/resources/tcadmin/github-repositories-for-oasis-tc-members-chartered-work), are governed by the OASIS [TC Process](https://www.oasis-open.org/policies-guidelines/tc-process), [IPR Policy](https://www.oasis-open.org/policies-guidelines/ipr), and other policies. While they make use of public GitHub repositories, these repositories are distinct from [OASIS Open Repositories](https://www.oasis-open.org/resources/open-repositories), which are used for development of open source [licensed](https://www.oasis-open.org/resources/open-repositories/licenses) content.
 
@@ -10,11 +66,11 @@ The purpose of this repository is to provide version control for developing the 
 
 ## Contributions
 
-As stated in this repository's [CONTRIBUTING](https://github.com/oasis-tcs/odf-tc/blob/master/CONTRIBUTING.md) file, contributors to this repository must be Members of the OASIS OpenDocument TC for any substantive contributions or change requests.  Anyone wishing to contribute to this GitHub project and [participate](https://www.oasis-open.org/join/participation-instructions) in the TC's technical activity is invited to join as an OASIS TC Member. Public feedback is also accepted, subject to the terms of the [OASIS Feedback License](https://www.oasis-open.org/policies-guidelines/ipr#appendixa). 
+As stated in this repository's [CONTRIBUTING](https://github.com/oasis-tcs/odf-tc/blob/master/CONTRIBUTING.md) file, contributors to this repository must be Members of the OASIS OpenDocument TC for any substantive contributions or change requests.  Anyone wishing to contribute to this GitHub project and [participate](https://www.oasis-open.org/join/participation-instructions) in the TC's technical activity is invited to join as an OASIS TC Member. Public feedback is also accepted, subject to the terms of the [OASIS Feedback License](https://www.oasis-open.org/policies-guidelines/ipr#appendixa).
 
 ## Licensing
 
-Please see the [LICENSE](https://github.com/oasis-tcs/odf-tc/blob/master/LICENSE.md) file for description of the license terms and OASIS policies applicable to the TC's work in this GitHub project. Content in this repository is intended to be part of the OpenDocument TC's permanent record of activity, visible and freely available for all to use, subject to applicable OASIS policies, as presented in the repository [LICENSE](https://github.com/oasis-tcs/odf-tc/blob/master/LICENSE.md). 
+Please see the [LICENSE](https://github.com/oasis-tcs/odf-tc/blob/master/LICENSE.md) file for description of the license terms and OASIS policies applicable to the TC's work in this GitHub project. Content in this repository is intended to be part of the OpenDocument TC's permanent record of activity, visible and freely available for all to use, subject to applicable OASIS policies, as presented in the repository [LICENSE](https://github.com/oasis-tcs/odf-tc/blob/master/LICENSE.md).
 
 ## Further Description of this Repository
 
