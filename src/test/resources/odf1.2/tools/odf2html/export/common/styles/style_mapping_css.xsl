@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -30,26 +30,26 @@
 	<!-- *** Properties with a 'fo:' prefix *** -->
 	<xsl:template match="@fo:background-color">
 		<xsl:text>background-color:</xsl:text>
-		<xsl:value-of select="." />
+		<xsl:value-of select="."/>
 		<xsl:text>; </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="@fo:border | @fo:border-top | @fo:border-bottom | @fo:border-left | @fo:border-right">
-		<xsl:variable name="borderType" select="substring-after(name(), ':')" />
+		<xsl:variable name="borderType" select="substring-after(name(), ':')"/>
 		<xsl:choose>
 			<xsl:when test=". = 'none'">
-				<xsl:value-of select="$borderType" />
+				<xsl:value-of select="$borderType"/>
 				<xsl:text>-style:none; </xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:variable name="borderWidth" select="substring-before(., ' ')" />
-				<xsl:variable name="borderStyle" select="substring-before(substring-after(., ' '), ' ')" />
-				<xsl:variable name="borderColor" select="substring-after(substring-after(., ' '), ' ')" />
+				<xsl:variable name="borderWidth" select="substring-before(., ' ')"/>
+				<xsl:variable name="borderStyle" select="substring-before(substring-after(., ' '), ' ')"/>
+				<xsl:variable name="borderColor" select="substring-after(substring-after(., ' '), ' ')"/>
 
-				<!-- More information at template 'round-up-border-width' -->
+			   <!-- More information at template 'round-up-border-width' -->
 				<xsl:variable name="borderWidthFixed">
 					<xsl:call-template name="round-up-border-width">
-						<xsl:with-param name="borderWidth" select="$borderWidth" />
+						<xsl:with-param name="borderWidth" select="$borderWidth"/>
 						<xsl:with-param name="multiplier">
 							<xsl:choose>
 								<xsl:when test="$borderStyle = 'double'">3</xsl:when>
@@ -59,47 +59,47 @@
 					</xsl:call-template>
 				</xsl:variable>
 
-				<xsl:value-of select="$borderType" />
+				<xsl:value-of select="$borderType"/>
 				<xsl:text>-width:</xsl:text>
-				<xsl:value-of select="$borderWidthFixed" />
+				<xsl:value-of select="$borderWidthFixed"/>
 				<xsl:text>; </xsl:text>
-				<xsl:value-of select="$borderType" />
+				<xsl:value-of select="$borderType"/>
 				<xsl:text>-style:</xsl:text>
-				<xsl:value-of select="$borderStyle" />
+				<xsl:value-of select="$borderStyle"/>
 				<xsl:text>; </xsl:text>
-				<xsl:value-of select="$borderType" />
+				<xsl:value-of select="$borderType"/>
 				<xsl:text>-color:</xsl:text>
-				<xsl:value-of select="$borderColor" />
+				<xsl:value-of select="$borderColor"/>
 				<xsl:text>; </xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- NOTE: Still there have to be placed a <br clear='all' /> to disable the flow!!!!-->
+	<!-- NOTE: Still there have to be placed a <br clear='all'/> to disable the flow!!!!-->
 	<xsl:template match="@fo:clear">
 		<xsl:text>clear:both; </xsl:text>
 	</xsl:template>
 
 	<!-- text-shadow is a CSS2 feature and yet not common used in user-agents -->
 	<xsl:template match="@fo:color |@svg:font-family |@fo:font-size |@fo:font-style |@fo:font-weight |@fo:text-indent |@fo:text-shadow">
-		<xsl:value-of select="substring-after(name(), ':')" />
+		<xsl:value-of select="substring-after(name(), ':')"/>
 		<xsl:text>:</xsl:text>
-		<xsl:value-of select="." />
+		<xsl:value-of select="."/>
 		<xsl:text>; </xsl:text>
 	</xsl:template>
 
 	<!-- Maps fo:margin as well fo:margin-top, fo:margin-bottom, fo:padding-left, fo:margin-right -->
 	<!-- Maps fo:padding as well fo:padding-top, fo:padding-bottom, fo:padding-left, fo:padding-right -->
 	<xsl:template match="@fo:letter-spacing | @fo:line-height | @fo:width |@fo:margin | @fo:margin-top | @fo:margin-bottom | @fo:margin-left | @fo:margin-right | @fo:padding | @fo:padding-top | @fo:padding-bottom | @fo:padding-left | @fo:padding-right">
-		<xsl:value-of select="substring-after(name(), ':')" />
+		<xsl:value-of select="substring-after(name(), ':')"/>
 		<xsl:text>:</xsl:text>
 		<!-- Map once erroneusly used inch shortage 'inch' to CSS shortage 'in' -->
 		<xsl:choose>
 			<xsl:when test="contains(., 'inch')">
-				<xsl:value-of select="substring-before(.,'ch')" />
+				<xsl:value-of select="substring-before(.,'ch')"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>; </xsl:text>
@@ -131,7 +131,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>text-align:</xsl:text>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 				<xsl:text> ! important; </xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
@@ -151,7 +151,7 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- *** Properties with a 'style:' prefix *** -->
+<!-- *** Properties with a 'style:' prefix *** -->
 	<!-- NOTE: Can 'inside' | 'from-inside' better be handled:
 	<!ATTLIST * style:horizontal-pos (from-left|left|center|right|from-inside|inside|outside)#IMPLIED>-->
 	<xsl:template match="@style:horizontal-pos">
@@ -179,10 +179,10 @@
 		<xsl:choose>
 			<!-- changing the distance measure: inch to in -->
 			<xsl:when test="contains(., 'inch')">
-				<xsl:value-of select="substring-before(.,'ch')" />
+				<xsl:value-of select="substring-before(.,'ch')"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>; </xsl:text>
@@ -203,13 +203,13 @@
 	</xsl:template>
 
 	<xsl:template match="@style:font-name">
-		<xsl:param name="globalData" />
+		<xsl:param name="globalData"/>
 
 		<xsl:text>font-family:</xsl:text>
-		<xsl:variable name="content" select="." />
+		<xsl:variable name="content" select="."/>
 		<xsl:variable name="quote">'</xsl:variable>
-		<xsl:variable name="fontName" select="$globalData/office:font-face-decls/style:font-face[@style:name=$content]/@svg:font-family" />
-		<xsl:value-of select="translate($fontName, $quote, '')" />
+		<xsl:variable name="fontName" select="$globalData/office:font-face-decls/style:font-face[@style:name=$content]/@svg:font-family"/>
+		<xsl:value-of select="translate($fontName, $quote, '')"/>
 		<xsl:text>; </xsl:text>
 	</xsl:template>
 
@@ -218,10 +218,10 @@
 		<xsl:choose>
 			<!-- changing the distance measure: inch to in -->
 			<xsl:when test="contains(., 'inch')">
-				<xsl:value-of select="substring-before(.,'ch')" />
+				<xsl:value-of select="substring-before(.,'ch')"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>; </xsl:text>
@@ -237,7 +237,7 @@
 			<xsl:text>vertical-align:sub; </xsl:text>
 			<xsl:if test="contains(., '%')">
 				<xsl:text>font-size:</xsl:text>
-				<xsl:value-of select="substring-after(., 'sub ')" />
+				<xsl:value-of select="substring-after(., 'sub ')"/>
 				<xsl:text>;</xsl:text>
 			</xsl:if>
 		</xsl:if>
@@ -245,7 +245,7 @@
 			<xsl:text>vertical-align:super; </xsl:text>
 			<xsl:if test="contains(., '%')">
 				<xsl:text>font-size:</xsl:text>
-				<xsl:value-of select="substring-after(., 'super ')" />
+				<xsl:value-of select="substring-after(., 'super ')"/>
 				<xsl:text>;</xsl:text>
 			</xsl:if>
 		</xsl:if>
@@ -258,7 +258,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>vertical-align:</xsl:text>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 				<xsl:text>; </xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
@@ -269,10 +269,10 @@
 		<xsl:choose>
 			<!-- changing the distance measure: inch to in -->
 			<xsl:when test="contains(., 'inch')">
-				<xsl:value-of select="substring-before(.,'ch')" />
+				<xsl:value-of select="substring-before(.,'ch')"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="." />
+				<xsl:value-of select="."/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>; </xsl:text>
@@ -289,20 +289,18 @@
 	</xsl:template>
 	<xsl:template match="@style:writing-mode">
 		<xsl:text>writing-mode:</xsl:text>
-		<xsl:value-of select="." />
+		<xsl:value-of select="."/>
 		<xsl:text>; </xsl:text>
 	</xsl:template>
 	<!-- *** Properties with a no 'fo:' or 'style:' prefix *** -->
 	<xsl:template match="@table:align">
 		<xsl:choose>
 			<xsl:when test=".='left'">
-				<!-- Note: problems with meeting minutes example
-				<xsl:text>float:right; </xsl:text> -->
-			</xsl:when>
+			<!-- Note: problems with meeting minutes example
+				<xsl:text>float:right; </xsl:text> --></xsl:when>
 			<xsl:when test=".='right'">
-				<!-- Note: problems with meeting minutes example
-				<xsl:text>float:left; </xsl:text> -->
-			</xsl:when>
+			<!-- Note: problems with meeting minutes example
+				<xsl:text>float:left; </xsl:text> --></xsl:when>
 			<xsl:otherwise>
 				<xsl:text>float:none; </xsl:text>
 			</xsl:otherwise>
@@ -311,7 +309,7 @@
 
 	<xsl:template match="style:background-image">
 		<xsl:text>background-image:url(</xsl:text>
-		<xsl:value-of select="@xlink:href" />
+		<xsl:value-of select="@xlink:href"/>
 		<xsl:text>); </xsl:text>
 		<xsl:choose>
 			<xsl:when test="@style:repeat = 'repeat'">
@@ -329,22 +327,22 @@
 			- 0.0399cm for double style
 		 as there are three border lines painted -->
 	<xsl:template name="round-up-border-width">
-		<xsl:param name="borderWidth" />
-		<xsl:param name="multiplier" />
+		<xsl:param name="borderWidth"/>
+		<xsl:param name="multiplier"/>
 
 		<xsl:variable name="borderWidthByCentimeter">
 			<xsl:call-template name="convert2cm">
-				<xsl:with-param name="value" select="$borderWidth" />
+				<xsl:with-param name="value" select="$borderWidth"/>
 			</xsl:call-template>
 		</xsl:variable>
-		<xsl:variable name="minimalBorderWidth" select="0.0133 * $multiplier" />
+		<xsl:variable name="minimalBorderWidth" select="0.0133 * $multiplier"/>
 		<xsl:choose>
 			<xsl:when test="number($borderWidthByCentimeter) &lt; $minimalBorderWidth">
-				<xsl:value-of select="$minimalBorderWidth" />
+				<xsl:value-of select="$minimalBorderWidth"/>
 				<xsl:text>cm</xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="$borderWidthByCentimeter" />
+				<xsl:value-of select="$borderWidthByCentimeter"/>
 				<xsl:text>cm</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
