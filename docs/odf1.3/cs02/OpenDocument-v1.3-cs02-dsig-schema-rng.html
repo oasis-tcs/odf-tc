@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>/** The URL might end with a frament identifier (starting with # sign),
-    referenzing to a line number or a span of line numbers! */
-    document.addEventListener("DOMContentLoaded", function() { // wait with JavaScript, unil DOM is available
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+/** The URL might end with a fragment identifier (starting with # sign),
+    referencing to a line number or a span of line numbers! */
+    document.addEventListener("DOMContentLoaded", function() { // wait with JavaScript, until DOM is available
         var fi = window.location.hash.substring(1); // fragment identifier behind the '#'
         if(fi != ''){ // if fragment identifier is not empty
             if(fi.includes('-')){ // if multiple lines are being selected
