@@ -28,16 +28,18 @@ limitations under the License.
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <odf12.test.input>src/main/resources/odf1.2/</odf12.test.input>
-        <odf13.test.input>src/main/resources/odf1.3/</odf13.test.input>
-        <odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf12.html.stylesheet>
-        <!--<odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>-->
-        <odf12.defaultvalue.stylesheet>src/test/resources/odf1.2/tools/getAttributeDefaults.xsl</odf12.defaultvalue.stylesheet>
-        <!--<odf13.defaultvalue.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.defaultvalue.stylesheet>-->
-        <odf12.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1_odt</odf12.defaultvalue.input>
-        <odf12fix.defaultvalue.input>src/test/resources/odf1.2/OpenDocument-v1.2-os-part1+styleFixes</odf12fix.defaultvalue.input>
-        <odf13.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3</odf13.defaultvalue.input>
-        <odf13fix.defaultvalue.input>src/test/resources/odf1.3/csprd02-part3-default-value-style-added</odf13fix.defaultvalue.input>
+        <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>
+        <odf13.default.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.default.stylesheet>
+        <odf13.part1.input>src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction_odt</odf13.part1.input>
+        <odf13.part2.input>src/main/resources/odf1.3/OpenDocument-v1.3-part2-packages_odt</odf13.part2.input>
+        <odf13.part3.input>src/main/resources/odf1.3/OpenDocument-v1.3-part3-schema_odt</odf13.part3.input>
+        <odf13.part4.input>src/main/resources/odf1.3/OpenDocument-v1.3-part4-formula_odt</odf13.part4.input>
+        <!-- *** DISABLING ODF 1.2 transformations for ODF 1.3 iterations *** -->
+        <!--<odf12.html.stylesheet>src/test/resources/odf1.2/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf12.html.stylesheet>-->
+        <!--<odf12.default.stylesheet>src/test/resources/odf1.2/tools/getAttributeDefaults.xsl</odf12.default.stylesheet>-->
+        <!--<odf12.default.input>src/main/resources/odf1.2/OpenDocument-v1.2-os-part1_odt</odf12.default.input>-->
+        <!--<odf12fix.default.input>src/main/resources/odf1.2/OpenDocument-v1.2-os-part1+styleFixes</odf12fix.default.input>-->
+
 
         <jdk.version>11</jdk.version>
         <version.saxon-he>9.9.1-7</version.saxon-he>
@@ -110,6 +112,7 @@ limitations under the License.
             </plugin>
 
             <!-- SAXON XSLT 2.0 processor -->
+            <!-- see https://www.mojohaus.org/xml-maven-plugin/examples/transform-saxon.html-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>xml-maven-plugin</artifactId>
@@ -123,10 +126,72 @@ limitations under the License.
                 </executions>
                 <configuration>
                     <transformationSets>
+                        <!-- extract default values from schema part -->
                         <transformationSet>
-                            <dir>${odf12.defaultvalue.input}</dir>
+                            <dir>${odf13.part3.input}</dir>
                             <includes>content.xml</includes>
-                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
+                            <stylesheet>${odf13.default.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13-default-values.xml</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+
+                        <!-- part 1 HTML transformation (introduction) -->
+                        <transformationSet>
+                            <dir>${odf13.part1.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13-part1.html</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+
+                        <!-- part 2 HTML transformation (package) -->
+                        <transformationSet>
+                            <dir>${odf13.part2.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13-part2.html</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+
+                        <!-- part 3 HTML transformation (schema) -->
+                        <transformationSet>
+                            <dir>${odf13.part3.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13-part3.html</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+
+                        <!-- part 4 HTML transformation (formula) -->
+                        <transformationSet>
+                            <dir>${odf13.part4.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>odf13-part4.html</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+
+
+                        <!-- Disabling ODF 1.2 transformations for ODF 1.3 editing iterations
+                        <transformationSet>
+                            <dir>${odf12.default.input}</dir>
+                            <includes>content.xml</includes>
+                            <stylesheet>${odf13.default.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf12-default-values.xml</targetExtension>
@@ -134,55 +199,26 @@ limitations under the License.
                             </fileMappers>
                         </transformationSet>
                         <transformationSet>
-                            <dir>${odf12fix.defaultvalue.input}</dir>
+                            <dir>${odf12fix.default.input}</dir>
                             <includes>content.xml</includes>
-                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
+                            <stylesheet>${odf13.default.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf12fixed-default-values.xml</targetExtension>
                                 </fileMapper>
                             </fileMappers>
-                        </transformationSet>
+                        </transformationSet> 
                         <transformationSet>
-                            <dir>${odf13.defaultvalue.input}</dir>
+                            <dir>${odf12.default.input}</dir>
                             <includes>content.xml</includes>
-                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf13-default-values.xml</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                        <transformationSet>
-                            <dir>${odf13fix.defaultvalue.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf12.defaultvalue.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf13fix-default-values.xml</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                        <transformationSet>
-                            <dir>${odf12.defaultvalue.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf12.html.stylesheet}</stylesheet>
+                            <stylesheet>${odf13.html.stylesheet}</stylesheet>
                             <fileMappers>
                                 <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>odf12.htm</targetExtension>
                                 </fileMapper>
                             </fileMappers>
-                        </transformationSet>
-                        <transformationSet>
-                            <dir>${odf13fix.defaultvalue.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf12.html.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf13.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
+                        </transformationSet>                                                
+                        -->
                     </transformationSets>
                 </configuration>
                 <dependencies>
