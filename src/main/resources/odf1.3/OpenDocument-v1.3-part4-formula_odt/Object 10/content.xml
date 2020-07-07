@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo fence="true" stretchy="true">(</mo><mrow><mtable><mtr><mtd><mrow><mi>N</mi><mo stretchy="false">+</mo><mi>M</mi><mo stretchy="false">−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd><mrow><mi>N</mi><mo stretchy="false">−</mo><mn>1</mn></mrow></mtd></mtr></mtable></mrow><mo fence="true" stretchy="true">)</mo></mrow><annotation encoding="StarMath 5.0">left ( binom{N+M-1}{N-1} right )</annotation></semantics></math>

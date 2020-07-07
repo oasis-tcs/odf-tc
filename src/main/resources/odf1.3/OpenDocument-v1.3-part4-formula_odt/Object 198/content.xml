@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mtext>if </mtext>
+      <mrow>
+       <mi>r</mi>
+       <mo stretchy="false">&gt;</mo>
+       <mn>1</mn>
+      </mrow>
+      <mtext> and </mtext>
+      <mrow>
+       <mi>c</mi>
+       <mo stretchy="false">&gt;</mo>
+       <mn>1</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">df</mi>
+       <mi mathvariant="normal">=</mi>
+       <mrow>
+        <mrow>
+         <mo stretchy="false">(</mo>
+         <mrow>
+          <mi>r</mi>
+          <mi mathvariant="normal">−</mi>
+          <mn>1</mn>
+         </mrow>
+         <mo stretchy="false">)</mo>
+        </mrow>
+        <mi mathvariant="normal">⋅</mi>
+        <mrow>
+         <mo stretchy="false">(</mo>
+         <mrow>
+          <mi>c</mi>
+          <mi mathvariant="normal">−</mi>
+          <mn>1</mn>
+         </mrow>
+         <mo stretchy="false">)</mo>
+        </mrow>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>else</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">df</mi>
+       <mi mathvariant="normal">=</mi>
+       <mrow>
+        <mrow>
+         <mi>r</mi>
+         <mi mathvariant="normal">⋅</mi>
+         <mi>c</mi>
+        </mrow>
+        <mi mathvariant="normal">−</mi>
+        <mn>1</mn>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd/>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mi mathvariant="italic">LEGACY.CHITEST</mi>
+       <mi mathvariant="normal">=</mi>
+       <mi mathvariant="italic">LEGACY.CHIDIST</mi>
+      </mrow>
+      <mrow>
+       <mo stretchy="false">(</mo>
+       <mrow>
+        <msup>
+         <mo stretchy="false">χ</mo>
+         <mn>2</mn>
+        </msup>
+        <mi>;</mi>
+        <mi mathvariant="italic">df</mi>
+       </mrow>
+       <mo stretchy="false">)</mo>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">alignl &quot;if &quot; r&gt;1 &quot; and &quot; c&gt;1 newline
+alignl ~~~~ df = (r-1) cdot (c-1) newline
+alignl &quot;else&quot; newline
+alignl ~~~~ df = r cdot c - 1 newline
+newline
+alignl LEGACY.CHITEST = LEGACY.CHIDIST( %chi^2 ; df )</annotation>
+ </semantics>
+</math>

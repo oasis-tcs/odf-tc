@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable><mtr><mtd columnalign="left"><mrow><mi mathvariant="italic">rate</mi><mo stretchy="false">=</mo><mfrac><mi mathvariant="italic">DeclinationFactor</mi><mi mathvariant="italic">LifeTime</mi></mfrac></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mtext>if</mtext><mrow><mi mathvariant="italic">rate</mi><mo stretchy="false">≥</mo><mn>1</mn></mrow><mtext>then</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>{</mtext></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mrow><mi mathvariant="italic">rate</mi><mo stretchy="false">=</mo><mn>1</mn></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mtext>if</mtext><mrow><mi mathvariant="italic">Period</mi><mo stretchy="false">=</mo><mn>1</mn></mrow><mtext>then</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="8em"/><mrow><mi mathvariant="italic">oldValue</mi><mo stretchy="false">=</mo><mi mathvariant="italic">Cost</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mtext>else</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="8em"/><mrow><mi mathvariant="italic">oldValue</mi><mo stretchy="false">=</mo><mn>0</mn></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mtext>endif</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>}</mtext></mtd></mtr><mtr><mtd columnalign="left"><mtext>else</mtext></mtd></mtr><mtr><mtd columnalign="left"><mtext>{</mtext></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mrow><mi mathvariant="italic">oldValue</mi><mo stretchy="false">=</mo><mrow><mi mathvariant="italic">Cost</mi><mo stretchy="false">⋅</mo><msup><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo stretchy="false">−</mo><mi mathvariant="italic">rate</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mrow><mi mathvariant="italic">Period</mi><mo stretchy="false">−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>}</mtext></mtd></mtr><mtr><mtd columnalign="left"><mtext>endif</mtext></mtd></mtr><mtr><mtd columnalign="left"><mrow><mi mathvariant="italic">newValue</mi><mo stretchy="false">=</mo><mrow><mi mathvariant="italic">Cost</mi><mo stretchy="false">⋅</mo><msup><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo stretchy="false">−</mo><mi mathvariant="italic">rate</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mi mathvariant="italic">Period</mi></msup></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mtext>if</mtext><mrow><mi mathvariant="italic">newValue</mi><mo stretchy="false">&lt;</mo><mi mathvariant="italic">Salvage</mi></mrow><mtext>then</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mrow><mi mathvariant="italic">DDB</mi><mo stretchy="false">=</mo><mrow><mi mathvariant="italic">oldValue</mi><mo stretchy="false">−</mo><mi mathvariant="italic">Salvage</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>else</mtext></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mrow><mi mathvariant="italic">DDB</mi><mo stretchy="false">=</mo><mrow><mi mathvariant="italic">oldValue</mi><mo stretchy="false">−</mo><mi mathvariant="italic">newValue</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>endif</mtext></mtd></mtr><mtr><mtd columnalign="left"><mrow><mtext>if</mtext><mrow><mi mathvariant="italic">DDB</mi><mo stretchy="false">&lt;</mo><mn>0</mn></mrow><mtext>then</mtext></mrow></mtd></mtr><mtr><mtd columnalign="left"><mrow><mspace width="4em"/><mrow><mi mathvariant="italic">DDB</mi><mo stretchy="false">=</mo><mn>0</mn></mrow></mrow></mtd></mtr><mtr><mtd columnalign="left"><mtext>endif</mtext></mtd></mtr></mtable><annotation encoding="StarMath 5.0">alignl rate = DeclinationFactor over LifeTime newline
+alignl &quot;if&quot; rate &gt;= 1 &quot;then&quot; newline
+alignl &quot;{&quot; newline
+alignl ~~ rate = 1 newline
+alignl ~~ &quot;if&quot; Period = 1 &quot;then&quot; newline
+alignl ~~~~ oldValue = Cost newline
+alignl ~~ &quot;else&quot; newline
+alignl ~~~~ oldValue = 0 newline
+alignl ~~ &quot;endif&quot; newline
+alignl &quot;}&quot; newline
+alignl &quot;else&quot; newline
+alignl &quot;{&quot; newline
+alignl ~~ oldValue = Cost cdot (1 - rate)^{Period - 1} newline
+alignl &quot;}&quot; newline
+alignl &quot;endif&quot; newline
+alignl newValue = Cost cdot (1 - rate)^Period newline
+alignl &quot;if&quot; newValue &lt; Salvage &quot;then&quot; newline
+alignl ~~ DDB = oldValue - Salvage newline
+alignl &quot;else&quot; newline
+alignl ~~ DDB = oldValue - newValue newline
+alignl &quot;endif&quot; newline
+alignl &quot;if&quot; DDB &lt; 0 &quot;then&quot; newline
+alignl ~~ DDB = 0 newline
+alignl &quot;endif&quot;
+</annotation></semantics></math>

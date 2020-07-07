@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi mathvariant="normal">e</mi><mi>a</mi></msup><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mi>cos</mi><mrow><mi>b</mi><mo stretchy="false">+</mo><mi>i</mi></mrow><mrow><mi>sin</mi><mi>b</mi></mrow></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow></mrow><annotation encoding="StarMath 5.0">func e^{a}(cos b+i{sin b})</annotation></semantics></math>

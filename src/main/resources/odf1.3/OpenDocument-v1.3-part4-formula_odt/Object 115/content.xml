@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mfrac><mrow><msup><mi mathvariant="normal">e</mi><mrow><mn>2</mn><mi>R</mi></mrow></msup><mo stretchy="false">−</mo><mn>1</mn></mrow><mrow><msup><mi mathvariant="normal">e</mi><mrow><mn>2</mn><mi>R</mi></mrow></msup><mo stretchy="false">+</mo><mn>1</mn></mrow></mfrac><annotation encoding="StarMath 5.0">{func e^{2R} - 1} over {func e^{2R}+1} </annotation></semantics></math>

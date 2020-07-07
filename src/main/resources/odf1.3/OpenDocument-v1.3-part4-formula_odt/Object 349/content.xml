@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo stretchy="false">=</mo><mfenced open="(" close=")"><mtable><mtr><mtd><msub><mi>x</mi><mrow><mn>1</mn><mn>1</mn></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>x</mi><mrow><mn>1</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>x</mi><mrow><mn>1</mn><mn>2</mn></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>x</mi><mrow><mn>2</mn><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd><mo stretchy="false">⋮</mo></mtd><mtd><mo stretchy="false">⋱</mo></mtd><mtd><mo stretchy="false">⋮</mo></mtd></mtr><mtr><mtd><msub><mi>x</mi><mrow><mi>k</mi><mn>1</mn></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>x</mi><mrow><mi>k</mi><mi>n</mi></mrow></msub></mtd></mtr></mtable></mfenced></mrow><annotation encoding="StarMath 5.0">X =left(matrix{x_{1 1}#dotslow#x_{1 n}##
+x_{1 2}#dotslow#x_{2 n}##
+dotsvert#dotsdown#dotsvert##
+x_{k 1}#dotslow#x_{k n}} right)</annotation></semantics></math>

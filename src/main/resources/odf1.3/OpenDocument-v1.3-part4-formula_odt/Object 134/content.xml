@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>STANDARDIZE</mtext><mo stretchy="false">=</mo><mfrac><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mi mathvariant="italic">Value</mi><mo stretchy="false">−</mo><mi mathvariant="italic">Mean</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mi mathvariant="italic">Sigma</mi></mfrac></mrow><annotation encoding="StarMath 5.0">&quot;STANDARDIZE&quot; = ( Value - Mean ) over Sigma</annotation></semantics></math>

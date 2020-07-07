@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="italic">Tails</mi><mo stretchy="false">⋅</mo><mrow><msubsup><mo stretchy="false">∫</mo><mi>x</mi><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mrow><mo fence="true" stretchy="false">(</mo><mrow><mi>t</mi></mrow><mo fence="true" stretchy="false">)</mo></mrow><mi mathvariant="italic">dt</mi></mrow></mrow></mrow><annotation encoding="StarMath 5.0">Tails cdot int_x^infinity {f(t) dt}</annotation></semantics></math>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mn>0</mn>
+   <mrow>
+    <mi/>
+    <mi mathvariant="normal">=</mi>
+    <mi/>
+   </mrow>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mi mathvariant="italic">Pv</mi>
+      <mi mathvariant="normal">⋅</mi>
+      <msup>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <mn>1</mn>
+         <mo stretchy="false">+</mo>
+         <mi mathvariant="italic">Rate</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mi mathvariant="italic">Nper</mi>
+      </msup>
+     </mrow>
+     <mo stretchy="false">+</mo>
+     <mfrac>
+      <mrow>
+       <mrow>
+        <mi mathvariant="italic">PMT</mi>
+        <mi mathvariant="normal">⋅</mi>
+        <mrow>
+         <mo stretchy="false">(</mo>
+         <mrow>
+          <mn>1</mn>
+          <mo stretchy="false">+</mo>
+          <mrow>
+           <mi mathvariant="italic">Rate</mi>
+           <mi mathvariant="normal">⋅</mi>
+           <mi mathvariant="italic">PayType</mi>
+          </mrow>
+         </mrow>
+         <mo stretchy="false">)</mo>
+        </mrow>
+       </mrow>
+       <mi mathvariant="normal">⋅</mi>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <msup>
+          <mrow>
+           <mo stretchy="false">(</mo>
+           <mrow>
+            <mn>1</mn>
+            <mo stretchy="false">+</mo>
+            <mi mathvariant="italic">Rate</mi>
+           </mrow>
+           <mo stretchy="false">)</mo>
+          </mrow>
+          <mi mathvariant="italic">Nper</mi>
+         </msup>
+         <mi mathvariant="normal">−</mi>
+         <mn>1</mn>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+      <mi mathvariant="italic">Rate</mi>
+     </mfrac>
+    </mrow>
+    <mo stretchy="false">+</mo>
+    <mi mathvariant="italic">Fv</mi>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">0 `=` Pv cdot (1+Rate)^Nper + PMT cdot (1 + Rate cdot PayType) cdot ( (1+Rate)^Nper -1) over Rate + Fv</annotation>
+ </semantics>
+</math>

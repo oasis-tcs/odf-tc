@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mtable>
+   <math:mtr>
+    <math:mrow>
+     <math:mi>r</math:mi>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mfrac>
+      <math:mrow>
+       <math:mrow>
+        <math:munderover>
+         <math:mo math:stretchy="false">∑</math:mo>
+         <math:mrow>
+          <math:mi>i</math:mi>
+          <math:mo math:stretchy="false">=</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mi>N</math:mi>
+        </math:munderover>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mrow>
+          <math:msub>
+           <math:mi>x</math:mi>
+           <math:mi>i</math:mi>
+          </math:msub>
+          <math:mo math:stretchy="false">−</math:mo>
+          <math:mover math:accent="true">
+           <math:mi>x</math:mi>
+           <math:mo>¯</math:mo>
+          </math:mover>
+         </math:mrow>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+       </math:mrow>
+       <math:mrow>
+        <math:mo math:stretchy="false">(</math:mo>
+        <math:mrow>
+         <math:msub>
+          <math:mi>y</math:mi>
+          <math:mi>i</math:mi>
+         </math:msub>
+         <math:mo math:stretchy="false">−</math:mo>
+         <math:mover math:accent="true">
+          <math:mi>y</math:mi>
+          <math:mo>¯</math:mo>
+         </math:mover>
+        </math:mrow>
+        <math:mo math:stretchy="false">)</math:mo>
+       </math:mrow>
+      </math:mrow>
+      <math:msqrt>
+       <math:mrow>
+        <math:mrow>
+         <math:munderover>
+          <math:mo math:stretchy="false">∑</math:mo>
+          <math:mrow>
+           <math:mi>i</math:mi>
+           <math:mo math:stretchy="false">=</math:mo>
+           <math:mn>1</math:mn>
+          </math:mrow>
+          <math:mi>N</math:mi>
+         </math:munderover>
+         <math:msup>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:mrow>
+            <math:msub>
+             <math:mi>x</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+            <math:mo math:stretchy="false">−</math:mo>
+            <math:mover math:accent="true">
+             <math:mi>x</math:mi>
+             <math:mo>¯</math:mo>
+            </math:mover>
+           </math:mrow>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+          <math:mn>2</math:mn>
+         </math:msup>
+        </math:mrow>
+        <math:mrow>
+         <math:munderover>
+          <math:mo math:stretchy="false">∑</math:mo>
+          <math:mrow>
+           <math:mi>i</math:mi>
+           <math:mo math:stretchy="false">=</math:mo>
+           <math:mn>1</math:mn>
+          </math:mrow>
+          <math:mi>N</math:mi>
+         </math:munderover>
+         <math:msup>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:mrow>
+            <math:msub>
+             <math:mi>y</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+            <math:mo math:stretchy="false">−</math:mo>
+            <math:mover math:accent="true">
+             <math:mi>y</math:mi>
+             <math:mo>¯</math:mo>
+            </math:mover>
+           </math:mrow>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+          <math:mn>2</math:mn>
+         </math:msup>
+        </math:mrow>
+       </math:mrow>
+      </math:msqrt>
+     </math:mfrac>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mover math:accent="true">
+      <math:mi>x</math:mi>
+      <math:mo>¯</math:mo>
+     </math:mover>
+     <math:mi>,</math:mi>
+     <math:mover math:accent="true">
+      <math:mi>y</math:mi>
+      <math:mo>¯</math:mo>
+     </math:mover>
+     <math:mi/>
+     <math:mi math:fontstyle="italic">are</math:mi>
+     <math:mi math:fontstyle="italic">the</math:mi>
+     <math:mi math:fontstyle="italic">averages</math:mi>
+     <math:mi math:fontstyle="italic">of</math:mi>
+     <math:mi math:fontstyle="italic">the</math:mi>
+     <math:mi math:fontstyle="italic">given</math:mi>
+     <math:mi>x</math:mi>
+     <math:mi>,</math:mi>
+     <math:mi>y</math:mi>
+     <math:mi math:fontstyle="italic">data</math:mi>
+    </math:mrow>
+   </math:mtr>
+  </math:mtable>
+  <math:annotation math:encoding="StarMath 5.0">r = {sum from i=1 to N(x_i - overline x)(y_i - overline y)} over sqrt{sum from i=1 to N (x_i - overline x)^2 sum from i=1 to N (y_i - overline y)^2 } newline newline
+
+overline x , overline y ~ are the averages of the given x, y data</math:annotation>
+ </math:semantics>
+</math:math>
