@@ -1,13 +1,18 @@
 # Created by https://www.gitignore.io/api/java,maven,eclipse,intellij+all
 # Edit at https://www.gitignore.io/?templates=java,maven,eclipse,intellij+all
 
+# EMACS
+*~
+
+# VIM
+*.sw?
+
 ### Eclipse ###
 .metadata
 bin/
 tmp/
 *.tmp
 *.bak
-*.swp
 *~.nib
 local.properties
 .settings/
