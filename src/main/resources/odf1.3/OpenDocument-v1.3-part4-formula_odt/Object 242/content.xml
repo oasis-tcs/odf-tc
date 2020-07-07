@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi mathvariant="italic">tails</mi>
+   <mi mathvariant="normal">⋅</mi>
+   <mrow>
+    <msubsup>
+     <mi mathvariant="normal">∫</mi>
+     <mi>t</mi>
+     <mi mathvariant="normal">∞</mi>
+    </msubsup>
+    <mrow>
+     <mi>f</mi>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+       <mi>x</mi>
+       <mi>,</mi>
+       <mrow>
+        <mrow>
+         <mi>n</mi>
+         <mo stretchy="false">+</mo>
+         <mi>m</mi>
+        </mrow>
+        <mi mathvariant="normal">−</mi>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <mi mathvariant="italic">dx</mi>
+    </mrow>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">tails cdot int_t^infinity {f(x, n+m-2) dx}</annotation>
+ </semantics>
+</math>

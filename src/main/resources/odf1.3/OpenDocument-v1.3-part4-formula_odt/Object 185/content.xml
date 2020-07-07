@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true" stretchy="true">(</mo><mrow><mtable><mtr><mtd><mi>N</mi></mtd></mtr><mtr><mtd><mi>R</mi></mtd></mtr></mtable></mrow><mo fence="true" stretchy="true">)</mo></mrow><mrow><mspace width="2em"/><mo stretchy="false">=</mo><mspace width="2em"/></mrow><mfrac><mi mathvariant="italic">PERMUT</mi><mrow><mi>R</mi><mi>!</mi></mrow></mfrac><mrow><mspace width="2em"/><mo stretchy="false">=</mo><mspace width="2em"/></mrow><mfrac><mrow><mi>N</mi><mi>!</mi></mrow><mrow><mi>R</mi><mi>!</mi><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo stretchy="false">−</mo><mi>R</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mi>!</mi></mrow></mfrac></mrow><annotation encoding="StarMath 5.0">left ( binom{N}{R} right )
+~=~ PERMUT over {R!}
+~=~ {N!} over {R! (N-R)!}
+</annotation></semantics></math>

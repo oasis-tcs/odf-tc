@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mo stretchy="false">=</mo><mrow><mfrac><mn>1</mn><mi>k</mi></mfrac><mo stretchy="false">⋅</mo><mrow><munderover><mo stretchy="false">∑</mo><mrow><mi>j</mi><mo stretchy="false">=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msub><mi>y</mi><mi>j</mi></msub></mrow></mrow></mrow><annotation encoding="StarMath 5.0">overline {y} = 1 over k cdot sum from j=1 to k y_{j}</annotation></semantics></math>

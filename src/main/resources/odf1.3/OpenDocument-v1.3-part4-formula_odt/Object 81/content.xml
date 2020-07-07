@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:msub>
+    <math:mi>A</math:mi>
+    <math:mrow>
+     <math:mi>N</math:mi>
+     <math:mo math:stretchy="false">×</math:mo>
+     <math:mi>N</math:mi>
+    </math:mrow>
+   </math:msub>
+   <math:mrow>
+    <math:msubsup>
+     <math:mi>A</math:mi>
+     <math:mrow>
+      <math:mi>N</math:mi>
+      <math:mo math:stretchy="false">×</math:mo>
+      <math:mi>N</math:mi>
+     </math:mrow>
+     <math:mrow>
+      <math:mo math:stretchy="false">−</math:mo>
+      <math:mn>1</math:mn>
+     </math:mrow>
+    </math:msubsup>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:msubsup>
+     <math:mi>A</math:mi>
+     <math:mrow>
+      <math:mi>N</math:mi>
+      <math:mo math:stretchy="false">×</math:mo>
+      <math:mi>N</math:mi>
+     </math:mrow>
+     <math:mrow>
+      <math:mo math:stretchy="false">−</math:mo>
+      <math:mn>1</math:mn>
+     </math:mrow>
+    </math:msubsup>
+   </math:mrow>
+   <math:mrow>
+    <math:msub>
+     <math:mi>A</math:mi>
+     <math:mrow>
+      <math:mi>N</math:mi>
+      <math:mo math:stretchy="false">×</math:mo>
+      <math:mi>N</math:mi>
+     </math:mrow>
+    </math:msub>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:mstyle math:fontweight="bold">
+     <math:mrow>
+      <math:msub>
+       <math:mn>1</math:mn>
+       <math:mrow>
+        <math:mi>N</math:mi>
+        <math:mo math:stretchy="false">×</math:mo>
+        <math:mi>N</math:mi>
+       </math:mrow>
+      </math:msub>
+     </math:mrow>
+    </math:mstyle>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">A_{N times N} A^{-1}_{N times N} = A^{-1}_{N times N} A_{N times N} = bold 1_{N times N}</math:annotation>
+ </math:semantics>
+</math:math>

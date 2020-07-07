@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi mathvariant="italic">Pv</mi>
+   <mrow>
+    <mi/>
+    <mi mathvariant="normal">=</mi>
+    <mrow>
+     <mrow>
+      <mi/>
+      <mi mathvariant="normal">−</mi>
+      <mi mathvariant="italic">Fv</mi>
+     </mrow>
+     <mi mathvariant="normal">−</mi>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+       <mi mathvariant="italic">PMT</mi>
+       <mi mathvariant="normal">∗</mi>
+       <mi mathvariant="italic">Nper</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">Pv `=` - Fv - (PMT * Nper)</annotation>
+ </semantics>
+</math>

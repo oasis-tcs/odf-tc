@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi>t</mi>
+   <mi mathvariant="normal">=</mi>
+   <mfenced open="∣" close="∣">
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mover accent="true">
+        <mi>X</mi>
+        <mo>¯
+        </mo>
+       </mover>
+       <mi mathvariant="normal">−</mi>
+       <mover accent="true">
+        <mi>Y</mi>
+        <mo>¯
+        </mo>
+       </mover>
+      </mrow>
+      <msqrt>
+       <msubsup>
+        <mi>s</mi>
+        <mrow>
+         <mi>X</mi>
+         <mi mathvariant="normal">−</mi>
+         <mi>Y</mi>
+        </mrow>
+        <mn>2</mn>
+       </msubsup>
+      </msqrt>
+     </mfrac>
+     <msqrt>
+      <mi>n</mi>
+     </msqrt>
+    </mrow>
+   </mfenced>
+  </mrow>
+  <annotation encoding="StarMath 5.0">t = ABS{{overline X - overline Y} over { sqrt{s^2_{X-Y}} } sqrt { n }}</annotation>
+ </semantics>
+</math>

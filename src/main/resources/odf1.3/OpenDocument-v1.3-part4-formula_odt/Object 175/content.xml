@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo stretchy="false">+</mo><mrow><mrow><munderover><mo stretchy="false">∑</mo><mrow><mi>j</mi><mo stretchy="false">=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>b</mi><mi>j</mi></msub></mrow><mo stretchy="false">⋅</mo><msub><mi>z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mrow><annotation encoding="StarMath 5.0">a + sum from j=1 to n b_j cdot z_{i j}</annotation></semantics></math>

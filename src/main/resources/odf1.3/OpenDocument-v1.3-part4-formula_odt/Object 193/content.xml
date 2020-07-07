@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mtable>
+   <math:mtr>
+    <math:mrow>
+     <math:msup>
+      <math:mi>r</math:mi>
+      <math:mn>2</math:mn>
+     </math:msup>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mfrac>
+      <math:mrow>
+       <math:mrow>
+        <math:munderover>
+         <math:mo math:stretchy="false">∑</math:mo>
+         <math:mrow>
+          <math:mi>i</math:mi>
+          <math:mo math:stretchy="false">=</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mi>N</math:mi>
+        </math:munderover>
+        <math:msup>
+         <math:mrow>
+          <math:mo math:stretchy="false">(</math:mo>
+          <math:mrow>
+           <math:msub>
+            <math:mi>y</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">−</math:mo>
+           <math:mover math:accent="true">
+            <math:mi>y</math:mi>
+            <math:mo>¯</math:mo>
+           </math:mover>
+          </math:mrow>
+          <math:mo math:stretchy="false">)</math:mo>
+         </math:mrow>
+         <math:mn>2</math:mn>
+        </math:msup>
+       </math:mrow>
+       <math:mo math:stretchy="false">−</math:mo>
+       <math:mrow>
+        <math:munderover>
+         <math:mo math:stretchy="false">∑</math:mo>
+         <math:mrow>
+          <math:mi>i</math:mi>
+          <math:mo math:stretchy="false">=</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mi>N</math:mi>
+        </math:munderover>
+        <math:msup>
+         <math:mrow>
+          <math:mo math:stretchy="false">(</math:mo>
+          <math:mrow>
+           <math:msub>
+            <math:mi>y</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">−</math:mo>
+           <math:msub>
+            <math:mi>y</math:mi>
+            <math:mi math:fontstyle="italic">calc</math:mi>
+           </math:msub>
+          </math:mrow>
+          <math:mo math:stretchy="false">)</math:mo>
+         </math:mrow>
+         <math:mn>2</math:mn>
+        </math:msup>
+       </math:mrow>
+      </math:mrow>
+      <math:mrow>
+       <math:munderover>
+        <math:mo math:stretchy="false">∑</math:mo>
+        <math:mrow>
+         <math:mi>i</math:mi>
+         <math:mo math:stretchy="false">=</math:mo>
+         <math:mn>1</math:mn>
+        </math:mrow>
+        <math:mi>N</math:mi>
+       </math:munderover>
+       <math:msup>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mrow>
+          <math:msub>
+           <math:mi>y</math:mi>
+           <math:mi>i</math:mi>
+          </math:msub>
+          <math:mo math:stretchy="false">−</math:mo>
+          <math:mover math:accent="true">
+           <math:mi>y</math:mi>
+           <math:mo>¯</math:mo>
+          </math:mover>
+         </math:mrow>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+        <math:mn>2</math:mn>
+       </math:msup>
+      </math:mrow>
+     </math:mfrac>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:msub>
+      <math:mi>y</math:mi>
+      <math:mi math:fontstyle="italic">calc</math:mi>
+     </math:msub>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mrow>
+      <math:mi>a</math:mi>
+      <math:mo math:stretchy="false">+</math:mo>
+      <math:mi math:fontstyle="italic">bx</math:mi>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mtext>and</math:mtext>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mi>a</math:mi>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mfrac>
+      <math:mrow>
+       <math:mfenced math:open="" math:close="">
+        <math:mrow>
+         <math:munderover>
+          <math:mo math:stretchy="false">∑</math:mo>
+          <math:mrow>
+           <math:mi>i</math:mi>
+           <math:mo math:stretchy="false">=</math:mo>
+           <math:mn>1</math:mn>
+          </math:mrow>
+          <math:mi>N</math:mi>
+         </math:munderover>
+         <math:mrow>
+          <math:mo math:stretchy="false">(</math:mo>
+          <math:msubsup>
+           <math:mi>x</math:mi>
+           <math:mi>i</math:mi>
+           <math:mn>2</math:mn>
+          </math:msubsup>
+          <math:mo math:stretchy="false">)</math:mo>
+         </math:mrow>
+        </math:mrow>
+       </math:mfenced>
+       <math:mrow>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:msub>
+            <math:mi>y</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+        <math:mo math:stretchy="false">−</math:mo>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:msub>
+            <math:mi>x</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+       </math:mrow>
+       <math:mfenced math:open="" math:close="">
+        <math:mrow>
+         <math:munderover>
+          <math:mo math:stretchy="false">∑</math:mo>
+          <math:mrow>
+           <math:mi>I</math:mi>
+           <math:mo math:stretchy="false">=</math:mo>
+           <math:mn>1</math:mn>
+          </math:mrow>
+          <math:mi>N</math:mi>
+         </math:munderover>
+         <math:mrow>
+          <math:mo math:stretchy="false">(</math:mo>
+          <math:mrow>
+           <math:msub>
+            <math:mi>x</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:msub>
+            <math:mi>y</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+          </math:mrow>
+          <math:mo math:stretchy="false">)</math:mo>
+         </math:mrow>
+        </math:mrow>
+       </math:mfenced>
+      </math:mrow>
+      <math:mrow>
+       <math:mi>N</math:mi>
+       <math:mrow>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:msubsup>
+            <math:mi>x</math:mi>
+            <math:mi>i</math:mi>
+            <math:mn>2</math:mn>
+           </math:msubsup>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+        <math:mo math:stretchy="false">−</math:mo>
+        <math:msup>
+         <math:mfenced math:open="" math:close="">
+          <math:mrow>
+           <math:munderover>
+            <math:mo math:stretchy="false">∑</math:mo>
+            <math:mrow>
+             <math:mi>i</math:mi>
+             <math:mo math:stretchy="false">=</math:mo>
+             <math:mn>1</math:mn>
+            </math:mrow>
+            <math:mi>N</math:mi>
+           </math:munderover>
+           <math:mrow>
+            <math:mo math:stretchy="false">(</math:mo>
+            <math:msub>
+             <math:mi>x</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+            <math:mo math:stretchy="false">)</math:mo>
+           </math:mrow>
+          </math:mrow>
+         </math:mfenced>
+         <math:mn>2</math:mn>
+        </math:msup>
+       </math:mrow>
+      </math:mrow>
+     </math:mfrac>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mi>b</math:mi>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mfrac>
+      <math:mrow>
+       <math:mi>N</math:mi>
+       <math:mrow>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:mrow>
+            <math:msub>
+             <math:mi>x</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+            <math:msub>
+             <math:mi>y</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+           </math:mrow>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+        <math:mo math:stretchy="false">−</math:mo>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:msub>
+            <math:mi>x</math:mi>
+            <math:mi>i</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+       </math:mrow>
+       <math:mfenced math:open="" math:close="">
+        <math:mrow>
+         <math:munderover>
+          <math:mo math:stretchy="false">∑</math:mo>
+          <math:mrow>
+           <math:mi>i</math:mi>
+           <math:mo math:stretchy="false">=</math:mo>
+           <math:mn>1</math:mn>
+          </math:mrow>
+          <math:mi>N</math:mi>
+         </math:munderover>
+         <math:mrow>
+          <math:mo math:stretchy="false">(</math:mo>
+          <math:msub>
+           <math:mi>y</math:mi>
+           <math:mi>i</math:mi>
+          </math:msub>
+          <math:mo math:stretchy="false">)</math:mo>
+         </math:mrow>
+        </math:mrow>
+       </math:mfenced>
+      </math:mrow>
+      <math:mrow>
+       <math:mi>N</math:mi>
+       <math:mrow>
+        <math:mfenced math:open="" math:close="">
+         <math:mrow>
+          <math:munderover>
+           <math:mo math:stretchy="false">∑</math:mo>
+           <math:mrow>
+            <math:mi>i</math:mi>
+            <math:mo math:stretchy="false">=</math:mo>
+            <math:mn>1</math:mn>
+           </math:mrow>
+           <math:mi>N</math:mi>
+          </math:munderover>
+          <math:mrow>
+           <math:mo math:stretchy="false">(</math:mo>
+           <math:msubsup>
+            <math:mi>x</math:mi>
+            <math:mi>i</math:mi>
+            <math:mn>2</math:mn>
+           </math:msubsup>
+           <math:mo math:stretchy="false">)</math:mo>
+          </math:mrow>
+         </math:mrow>
+        </math:mfenced>
+        <math:mo math:stretchy="false">−</math:mo>
+        <math:msup>
+         <math:mfenced math:open="" math:close="">
+          <math:mrow>
+           <math:munderover>
+            <math:mo math:stretchy="false">∑</math:mo>
+            <math:mrow>
+             <math:mi>i</math:mi>
+             <math:mo math:stretchy="false">=</math:mo>
+             <math:mn>1</math:mn>
+            </math:mrow>
+            <math:mi>N</math:mi>
+           </math:munderover>
+           <math:mrow>
+            <math:mo math:stretchy="false">(</math:mo>
+            <math:msub>
+             <math:mi>x</math:mi>
+             <math:mi>i</math:mi>
+            </math:msub>
+            <math:mo math:stretchy="false">)</math:mo>
+           </math:mrow>
+          </math:mrow>
+         </math:mfenced>
+         <math:mn>2</math:mn>
+        </math:msup>
+       </math:mrow>
+      </math:mrow>
+     </math:mfrac>
+    </math:mrow>
+   </math:mtr>
+  </math:mtable>
+  <math:annotation math:encoding="StarMath 5.0">r^2 = {sum from i=1 to N(y_i - overline y)^2- sum from i=1 to N(y_i - y_calc)^2} over {sum from i=1 to N (y_i - overline y)^2} newline newline y_calc = a + bx newline &quot;and&quot; newline newline
+a = {left ( sum from i=1 to N ( x_i ^2)right ) left ( sum from i=1 to N (y_i)right ) - left ( sum from i=1 to N ( x_i )right ) left ( sum from I=1 to N (x_i y_i)right )} over {N left ( sum from i=1 to N (x_i^2) right ) - left ( sum from i=1 to N (x_i) right )^2 } newline newline
+b = {N  left ( sum from i=1 to N(x_i y_i )right )- left (sum from i=1 to N (x_i)right )left ( sum from i=1 to N(y_i)right )} over {N left ( sum from i=1 to N (x_i^2)right )- left ( sum from i=1 to N(x_i)right )^2}
+</math:annotation>
+ </math:semantics>
+</math:math>

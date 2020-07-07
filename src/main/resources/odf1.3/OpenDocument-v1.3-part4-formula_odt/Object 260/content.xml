@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mrow><mrow><mo fence="true" stretchy="false">(</mo><mrow><mi>t</mi></mrow><mo fence="true" stretchy="false">)</mo></mrow><mo stretchy="false">=</mo><mfrac><mrow><mi mathvariant="normal">Γ</mi><mrow><mo fence="true" stretchy="true">(</mo><mrow><mfrac><mrow><mi mathvariant="italic">Df</mi><mo stretchy="false">+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow><mo fence="true" stretchy="true">)</mo></mrow></mrow><mrow><msqrt><mrow><mi>π</mi><mi mathvariant="italic">Df</mi></mrow></msqrt><mi mathvariant="normal">Γ</mi><mrow><mo fence="true" stretchy="true">(</mo><mrow><mfrac><mi mathvariant="italic">Df</mi><mn>2</mn></mfrac></mrow><mo fence="true" stretchy="true">)</mo></mrow></mrow></mfrac></mrow><msup><mrow><mo fence="true" stretchy="true">(</mo><mrow><mrow><mn>1</mn><mo stretchy="false">+</mo><mfrac><msup><mi>t</mi><mn>2</mn></msup><mi mathvariant="italic">Df</mi></mfrac></mrow></mrow><mo fence="true" stretchy="true">)</mo></mrow><mrow><mo stretchy="false">−</mo><mfrac><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mi mathvariant="italic">Df</mi><mo stretchy="false">+</mo><mn>1</mn></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow></msup></mrow><annotation encoding="StarMath 5.0">f(t) =
+{ %GAMMA left( {Df + 1} over 2 right) }
+over
+{ sqrt {%pi Df} %GAMMA left( Df over 2 right) }
+
+left( 1 + t^2 over Df right) ^ -{ {(Df + 1)} over 2 }</annotation></semantics></math>

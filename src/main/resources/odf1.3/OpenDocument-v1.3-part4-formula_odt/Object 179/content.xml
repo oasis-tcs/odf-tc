@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mtable>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:mi>n</math:mi>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mi math:fontstyle="italic">is</math:mi>
+     </math:mrow>
+     <math:mi math:fontstyle="italic">the</math:mi>
+     <math:mi math:fontstyle="italic">count</math:mi>
+     <math:mi math:fontstyle="italic">of</math:mi>
+     <math:mi math:fontstyle="italic">the</math:mi>
+     <math:mi math:fontstyle="italic">ranked</math:mi>
+     <math:mi math:fontstyle="italic">numbersequence</math:mi>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mover math:accent="true">
+      <math:mi>x</math:mi>
+      <math:mo math:stretchy="false">˜</math:mo>
+     </math:mover>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:msub>
+      <math:mi>x</math:mi>
+      <math:mfenced math:open="" math:close="">
+       <math:mfrac>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mrow>
+          <math:mi>n</math:mi>
+          <math:mo math:stretchy="false">+</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+        <math:mn>2</math:mn>
+       </math:mfrac>
+      </math:mfenced>
+     </math:msub>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mi math:fontstyle="italic">for</math:mi>
+     <math:mrow>
+      <math:mi>n</math:mi>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mi math:fontstyle="italic">odd</math:mi>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:mover math:accent="true">
+       <math:mi>x</math:mi>
+       <math:mo math:stretchy="false">˜</math:mo>
+      </math:mover>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mfrac>
+       <math:mn>1</math:mn>
+       <math:mn>2</math:mn>
+      </math:mfrac>
+     </math:mrow>
+     <math:mfenced math:open="" math:close="">
+      <math:mrow>
+       <math:msub>
+        <math:mi>x</math:mi>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mfrac>
+          <math:mi>n</math:mi>
+          <math:mn>2</math:mn>
+         </math:mfrac>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+       </math:msub>
+       <math:mo math:stretchy="false">+</math:mo>
+       <math:msub>
+        <math:mi>x</math:mi>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mrow>
+          <math:mfrac>
+           <math:mi>n</math:mi>
+           <math:mn>2</math:mn>
+          </math:mfrac>
+          <math:mo math:stretchy="false">+</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+       </math:msub>
+      </math:mrow>
+     </math:mfenced>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mi math:fontstyle="italic">for</math:mi>
+     <math:mrow>
+      <math:mi>n</math:mi>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mi math:fontstyle="italic">even</math:mi>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+  </math:mtable>
+  <math:annotation math:encoding="StarMath 5.0">n = is the count of the ranked numbersequence
+newline newline
+tilde x = x_ left ((n+1)over 2 right ) newline
+for n = odd newline newline
+tilde x = 1 over 2 left ( x_(n over 2)+ x_(n over 2 +1) right )
+newline
+for n = even
+newline newline
+</math:annotation>
+ </math:semantics>
+</math:math>

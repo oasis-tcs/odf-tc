@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo stretchy="false">×</mo><mrow><munderover><mo stretchy="false">∏</mo><mrow><mi>i</mi><mo stretchy="false">=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><msub><mi>b</mi><mi>i</mi></msub><msub><mi>z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></msup></mrow></mrow><annotation encoding="StarMath 5.0">a times prod from i=1 to n {b_i}^{z_{i j}}</annotation></semantics></math>
