@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo stretchy="false">=</mo><mfenced open="[" close="]"><mtable><mtr><mtd><msub><mi>x</mi><mn>0</mn></msub></mtd><mtd><msub><mi>y</mi><mn>0</mn></msub></mtd></mtr><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd><mtd><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mo stretchy="false">⋮</mo></mtd><mtd><mo stretchy="false">⋮</mo></mtd></mtr><mtr><mtd><msub><mi>x</mi><mi>n</mi></msub></mtd><mtd><msub><mi>y</mi><mi>n</mi></msub></mtd></mtr></mtable></mfenced></mrow><annotation encoding="StarMath 5.0">X=left[ matrix {
-x_0 # y_0 ##
-x_1 # y_1 ##
-dotsvert # dotsvert ##
-x_n # y_n
-} right]</annotation></semantics></math>

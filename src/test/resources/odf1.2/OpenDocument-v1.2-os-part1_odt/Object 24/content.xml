@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>u</mi><mi>s</mi></msub><mo stretchy="false">&lt;</mo><mi>u</mi></mrow><mo stretchy="false">&lt;</mo><msub><mi>u</mi><mrow><mi>s</mi><mo stretchy="false">+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="StarMath 5.0">u_s &lt; u &lt; u_{s+1}</annotation></semantics></math>
