@@ -67,6 +67,15 @@
             <xsl:call-template name='create-css-styleheader'>
                 <xsl:with-param name="globalData" select="$globalData" />
             </xsl:call-template>
+
+            <!-- adding MathML polyfill JavaScript for Chromium -
+                <script type="text/javascript" src="styles/mml-svg.js"/> -->
+            <xsl:element name="script">
+                <xsl:attribute name="type">text/javascript</xsl:attribute>
+                <xsl:attribute name="src">styles/mml-svg.js</xsl:attribute>
+                <xsl:comment>Because browsers are utterly terrible, here is a comment to force a script end tag to be generated from XSLT so you don't see a blank page</xsl:comment>
+            </xsl:element>
+
             <xsl:if test="$debugEnabled"><xsl:message>CSS header creation finished!</xsl:message></xsl:if>
         </xsl:element>
 
