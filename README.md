@@ -54,6 +54,41 @@ The ODF 1.3 HTML shows problems with:
 
 **NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
 
+## Editor Workflow & Tools
+
+Our Git repository is containing the ODF TC deliverables in the GitHub directories:
+
+1. src/main/resources/odf1.2
+2. src/main/resources/odf1.3
+
+Within the above folders the TC deliverables are saved under the following restrictions:
+
+1. Ordered in a flat directory hierarchy. They might be still delivered by OASIS in various directories later to the users.
+2. Their file names will not contain the usual OASIS versioning abbreviation as versions should be labeled with GIT tags instead.
+3. ODT specification documents are for ease of use duplicated as:
+    1. ODT files - being zipped XML files & pictures
+    2. Unpacked directory named as the document with the suffix '.' exchanged as '_'
+
+To unzipped and zip the ODT we are offering following tools:
+
+```shell
+java -cp target/test-classes org.oasis_open.odf_tc.Unzip src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction.odt
+java -cp target/test-classes org.oasis_open.odf_tc.Zip   src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction_odt
+```
+
+These tools are available after being build by:
+
+```shell
+mvn install
+```
+
+As mentioned before the directory is used aside the ODT file with ".odt" replaced by "_odt".
+In the future, providing a new ODT should trigger an automated process:
+
+1. Unzip the changed ODT & commit the unzipped ODT XML to GIT as well
+2. Transform the changed ODT to HTML & commit the results beyond reference /docs/odf&lt;VERSION&gt;
+3. In case of ODT schema - extract the default values & compare them with the reference beyond /docs/odf&lt;VERSION&gt;
+
 ## Background
 
 Members of the [Open Document Format for Office Applications (OpenDocument) TC](https://www.oasis-open.org/committees/office/) create and manage technical content in this [TC GitHub repository](https://github.com/oasis-tcs/odf-tc/) as part of the TC's chartered work (the program of work and deliverables described in its [charter](https://www.oasis-open.org/committees/odf-tc/charter.php).
