@@ -64,6 +64,13 @@ The ODF 1.3 HTML shows problems with:
 
 **NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
 
+**NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
+
+To use LibreOffice to generate XHTML:
+1. install Saxon extension: xslt2-transformer.oxt
+2. in LibreOffice menu, Tools/Macros/XML Filter settings..., click XHTML Writer file, Edit.../Transformation, check "The filter needs XSLT 2.0 processor", and edit "XSLT for export" to point to the file src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl in this repository
+3. File/Export..., select "XHTML (.html,.xhtml)", click Save
+
 ## Editor Workflow & Tools
 
 Our Git repository is containing the ODF TC deliverables in the GitHub directories:
