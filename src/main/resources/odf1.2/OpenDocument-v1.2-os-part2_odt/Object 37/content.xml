@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mrow>
+    <msubsup>
+     <mi mathvariant="normal">∫</mi>
+     <mn>0</mn>
+     <mi>x</mi>
+    </msubsup>
+    <mrow>
+     <mo stretchy="false">λ</mo>
+     <msup>
+      <mi>e</mi>
+      <mrow>
+       <mrow>
+        <mi mathvariant="normal">−</mi>
+        <mo stretchy="false">λ</mo>
+       </mrow>
+       <mi>t</mi>
+      </mrow>
+     </msup>
+    </mrow>
+   </mrow>
+   <mrow>
+    <mi mathvariant="italic">dt</mi>
+    <mi mathvariant="normal">=</mi>
+    <mrow>
+     <mn>1</mn>
+     <mi mathvariant="normal">−</mi>
+     <msup>
+      <mi>e</mi>
+      <mrow>
+       <mrow>
+        <mi mathvariant="normal">−</mi>
+        <mo stretchy="false">λ</mo>
+       </mrow>
+       <mi>x</mi>
+      </mrow>
+     </msup>
+    </mrow>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">int sup x sub 0 {%lambda e sup {- %lambda t}}dt = 1- e sup {- %lambda x }</annotation>
+ </semantics>
+</math>

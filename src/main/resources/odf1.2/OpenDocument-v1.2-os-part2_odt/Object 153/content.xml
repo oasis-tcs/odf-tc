@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi mathvariant="italic">rate</mi>
+   <mi mathvariant="normal">=</mi>
+   <mfrac>
+    <mi mathvariant="italic">declinationFactor</mi>
+    <mi mathvariant="italic">lifeTime</mi>
+   </mfrac>
+  </mrow>
+  <annotation encoding="StarMath 5.0">rate = declinationFactor over lifeTime
+</annotation>
+ </semantics>
+</math>

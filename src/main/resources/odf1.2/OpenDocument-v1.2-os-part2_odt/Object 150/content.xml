@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mi math:fontstyle="italic">PRICE</math:mi>
+   <math:mo math:stretchy="false">=</math:mo>
+   <math:mrow>
+    <math:mrow>
+     <math:mfrac>
+      <math:mi math:fontstyle="italic">Redemption</math:mi>
+      <math:msup>
+       <math:mrow>
+        <math:mo math:stretchy="false">(</math:mo>
+        <math:mrow>
+         <math:mn>1</math:mn>
+         <math:mo math:stretchy="false">+</math:mo>
+         <math:mfrac>
+          <math:mi math:fontstyle="italic">Yield</math:mi>
+          <math:mi math:fontstyle="italic">Frenquency</math:mi>
+         </math:mfrac>
+        </math:mrow>
+        <math:mo math:stretchy="false">)</math:mo>
+       </math:mrow>
+       <math:mrow>
+        <math:mrow>
+         <math:mi>C</math:mi>
+         <math:mo math:stretchy="false">−</math:mo>
+         <math:mn>1</math:mn>
+        </math:mrow>
+        <math:mo math:stretchy="false">+</math:mo>
+        <math:mfrac>
+         <math:mi>A</math:mi>
+         <math:mi>B</math:mi>
+        </math:mfrac>
+       </math:mrow>
+      </math:msup>
+     </math:mfrac>
+     <math:mo math:stretchy="false">+</math:mo>
+     <math:mrow>
+      <math:munderover>
+       <math:mo math:stretchy="false">∑</math:mo>
+       <math:mrow>
+        <math:mi>k</math:mi>
+        <math:mo math:stretchy="false">=</math:mo>
+        <math:mn>1</math:mn>
+       </math:mrow>
+       <math:mi>C</math:mi>
+      </math:munderover>
+      <math:mfrac>
+       <math:mfrac>
+        <math:mrow>
+         <math:mn>100</math:mn>
+         <math:mo math:stretchy="false">∗</math:mo>
+         <math:mi math:fontstyle="italic">Rate</math:mi>
+        </math:mrow>
+        <math:mi math:fontstyle="italic">Frequency</math:mi>
+       </math:mfrac>
+       <math:msup>
+        <math:mrow>
+         <math:mo math:stretchy="false">(</math:mo>
+         <math:mrow>
+          <math:mn>1</math:mn>
+          <math:mo math:stretchy="false">+</math:mo>
+          <math:mfrac>
+           <math:mi math:fontstyle="italic">Yield</math:mi>
+           <math:mi math:fontstyle="italic">Frequency</math:mi>
+          </math:mfrac>
+         </math:mrow>
+         <math:mo math:stretchy="false">)</math:mo>
+        </math:mrow>
+        <math:mrow>
+         <math:mrow>
+          <math:mi>k</math:mi>
+          <math:mo math:stretchy="false">−</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mo math:stretchy="false">+</math:mo>
+         <math:mfrac>
+          <math:mi>A</math:mi>
+          <math:mi>B</math:mi>
+         </math:mfrac>
+        </math:mrow>
+       </math:msup>
+      </math:mfrac>
+     </math:mrow>
+    </math:mrow>
+    <math:mo math:stretchy="false">−</math:mo>
+    <math:mrow>
+     <math:mrow>
+      <math:mn>100</math:mn>
+      <math:mo math:stretchy="false">∗</math:mo>
+      <math:mfrac>
+       <math:mi math:fontstyle="italic">Rate</math:mi>
+       <math:mi math:fontstyle="italic">Frequency</math:mi>
+      </math:mfrac>
+     </math:mrow>
+     <math:mo math:stretchy="false">∗</math:mo>
+     <math:mfrac>
+      <math:mi>D</math:mi>
+      <math:mi>B</math:mi>
+     </math:mfrac>
+    </math:mrow>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">PRICE = { Redemption over ( 1 + Yield over Frenquency )^{ C - 1 + A over B } }
++ sum from {k = 1} to { C } { { 100 * Rate over Frequency } over ( 1 + Yield over Frequency )^{ k - 1 + A over B } }
+- { 100 * {Rate over Frequency} * {D over B} }
+</math:annotation>
+ </math:semantics>
+</math:math>

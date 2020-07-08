@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <munderover>
+    <mi mathvariant="normal">∑</mi>
+    <mrow>
+     <mi>i</mi>
+     <mi mathvariant="normal">=</mi>
+     <mn>1</mn>
+    </mrow>
+    <mi>n</mi>
+   </munderover>
+   <mrow>
+    <mo stretchy="false">(</mo>
+    <mrow>
+     <mi>I</mi>
+     <mrow>
+      <mrow>
+       <mo stretchy="false">(</mo>
+       <mrow>
+        <msub>
+         <mi>d</mi>
+         <mi>i</mi>
+        </msub>
+        <mi>,</mi>
+        <mi mathvariant="italic">Start</mi>
+        <mi>,</mi>
+        <mi mathvariant="italic">End</mi>
+       </mrow>
+       <mo stretchy="false">)</mo>
+      </mrow>
+      <mi mathvariant="normal">×</mi>
+      <msub>
+       <mi>p</mi>
+       <mi>i</mi>
+      </msub>
+     </mrow>
+    </mrow>
+    <mo stretchy="false">)</mo>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">sum from{i=1} to{n} (I(d_i,Start, End) times p_i)</annotation>
+ </semantics>
+</math>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mi math:fontstyle="italic">rate</math:mi>
+   <math:mo math:stretchy="false">=</math:mo>
+   <math:mrow>
+    <math:mn>1</math:mn>
+    <math:mo math:stretchy="false">−</math:mo>
+    <math:msup>
+     <math:mfenced math:open="" math:close="">
+      <math:mfrac>
+       <math:mi math:fontstyle="italic">salvage</math:mi>
+       <math:mi math:fontstyle="italic">cost</math:mi>
+      </math:mfrac>
+     </math:mfenced>
+     <math:mfrac>
+      <math:mn>1</math:mn>
+      <math:mi math:fontstyle="italic">lifeTime</math:mi>
+     </math:mfrac>
+    </math:msup>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">rate = 1 - left ( salvage over cost right ) ^ { 1 over lifeTime }</math:annotation>
+ </math:semantics>
+</math:math>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mfenced math:open="" math:close="">
+    <math:mtable>
+     <math:mtr>
+      <math:mi>N</math:mi>
+     </math:mtr>
+     <math:mtr>
+      <math:mi>R</math:mi>
+     </math:mtr>
+    </math:mtable>
+   </math:mfenced>
+   <math:mrow>
+    <math:mi/>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:mi/>
+   </math:mrow>
+   <math:mfrac>
+    <math:mi math:fontstyle="italic">PERMUT</math:mi>
+    <math:mrow>
+     <math:mi>R</math:mi>
+     <math:mi>!</math:mi>
+    </math:mrow>
+   </math:mfrac>
+   <math:mrow>
+    <math:mi/>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:mi/>
+   </math:mrow>
+   <math:mfrac>
+    <math:mrow>
+     <math:mi>N</math:mi>
+     <math:mi>!</math:mi>
+    </math:mrow>
+    <math:mrow>
+     <math:mi>R</math:mi>
+     <math:mi>!</math:mi>
+     <math:mrow>
+      <math:mo math:stretchy="false">(</math:mo>
+      <math:mrow>
+       <math:mi>N</math:mi>
+       <math:mo math:stretchy="false">−</math:mo>
+       <math:mi>R</math:mi>
+      </math:mrow>
+      <math:mo math:stretchy="false">)</math:mo>
+     </math:mrow>
+     <math:mi>!</math:mi>
+    </math:mrow>
+   </math:mfrac>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">left ( binom{N}{R} right )
+~=~ PERMUT over {R!}
+~=~ {N!} over {R! (N-R)!}
+</math:annotation>
+ </math:semantics>
+</math:math>

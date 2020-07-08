@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>a</mi></msup><mi>,</mi><msup><mi>e</mi><msub><mi>b</mi><mn>1</mn></msub></msup><mi>,</mi><mo stretchy="false">…</mo><mi>,</mi><msup><mi>e</mi><msub><mi>b</mi><mi>n</mi></msub></msup></mrow><annotation encoding="StarMath 5.0">e^a , e^{b_1} ,dotslow, e^{b_n}</annotation></semantics></math>

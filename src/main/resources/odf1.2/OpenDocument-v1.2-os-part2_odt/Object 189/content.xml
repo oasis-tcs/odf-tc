@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:munderover>
+    <math:mo math:stretchy="false">∑</math:mo>
+    <math:mrow>
+     <math:mi>i</math:mi>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mn>0</math:mn>
+    </math:mrow>
+    <math:mi>x</math:mi>
+   </math:munderover>
+   <math:mfrac>
+    <math:mrow>
+     <math:mfenced math:open="" math:close="">
+      <math:mtable>
+       <math:mtr>
+        <math:mi>M</math:mi>
+       </math:mtr>
+       <math:mtr>
+        <math:mi>i</math:mi>
+       </math:mtr>
+      </math:mtable>
+     </math:mfenced>
+     <math:mfenced math:open="" math:close="">
+      <math:mtable>
+       <math:mtr>
+        <math:mrow>
+         <math:mi>N</math:mi>
+         <math:mo math:stretchy="false">−</math:mo>
+         <math:mi>M</math:mi>
+        </math:mrow>
+       </math:mtr>
+       <math:mtr>
+        <math:mrow>
+         <math:mi>n</math:mi>
+         <math:mo math:stretchy="false">−</math:mo>
+         <math:mi>i</math:mi>
+        </math:mrow>
+       </math:mtr>
+      </math:mtable>
+     </math:mfenced>
+    </math:mrow>
+    <math:mfenced math:open="" math:close="">
+     <math:mtable>
+      <math:mtr>
+       <math:mi>N</math:mi>
+      </math:mtr>
+      <math:mtr>
+       <math:mi>n</math:mi>
+      </math:mtr>
+     </math:mtable>
+    </math:mfenced>
+   </math:mfrac>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">sum from{i=0} to{x} {{left ( binom{M}{i} right ) left( binom{N-M}{n-i} right )} over {left ( binom{N}{n}  right ) }}</math:annotation>
+ </math:semantics>
+</math:math>

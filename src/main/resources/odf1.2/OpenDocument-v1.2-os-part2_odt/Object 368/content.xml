@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">=</mo><mfrac><mrow><msub><mi mathvariant="italic">SS</mi><mi mathvariant="italic">reg</mi></msub><mo stretchy="false">/</mo><mi>n</mi></mrow><mrow><msub><mi mathvariant="italic">SS</mi><mi mathvariant="italic">resid</mi></msub><mo stretchy="false">/</mo><mi mathvariant="italic">df</mi></mrow></mfrac></mrow><annotation encoding="StarMath 5.0">F = {SS_reg / n} over {SS_resid / df}</annotation></semantics></math>

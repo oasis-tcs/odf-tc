@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mi math:fontstyle="italic">SUMPRODUCT</math:mi>
+   <math:mrow>
+    <math:mrow>
+     <math:mo math:stretchy="false">(</math:mo>
+     <math:mrow>
+      <math:msub>
+       <math:mi>A</math:mi>
+       <math:mn>1</math:mn>
+      </math:msub>
+      <math:mi>,</math:mi>
+      <math:msub>
+       <math:mi>A</math:mi>
+       <math:mn>2</math:mn>
+      </math:msub>
+      <math:mi>,</math:mi>
+      <math:mn>...</math:mn>
+      <math:mi>,</math:mi>
+      <math:msub>
+       <math:mi>A</math:mi>
+       <math:mi>K</math:mi>
+      </math:msub>
+     </math:mrow>
+     <math:mo math:stretchy="false">)</math:mo>
+    </math:mrow>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:mrow>
+     <math:munderover>
+      <math:mo math:stretchy="false">∑</math:mo>
+      <math:mrow>
+       <math:mi>m</math:mi>
+       <math:mo math:stretchy="false">=</math:mo>
+       <math:mn>1</math:mn>
+      </math:mrow>
+      <math:mi>M</math:mi>
+     </math:munderover>
+     <math:mrow>
+      <math:munderover>
+       <math:mo math:stretchy="false">∑</math:mo>
+       <math:mrow>
+        <math:mi>n</math:mi>
+        <math:mo math:stretchy="false">=</math:mo>
+        <math:mn>1</math:mn>
+       </math:mrow>
+       <math:mi>N</math:mi>
+      </math:munderover>
+      <math:mfenced math:open="" math:close="">
+       <math:mrow>
+        <math:munderover>
+         <math:mo math:stretchy="false">∏</math:mo>
+         <math:mrow>
+          <math:mi>k</math:mi>
+          <math:mo math:stretchy="false">=</math:mo>
+          <math:mn>1</math:mn>
+         </math:mrow>
+         <math:mi>K</math:mi>
+        </math:munderover>
+        <math:msub>
+         <math:mi>a</math:mi>
+         <math:mrow>
+          <math:mi>k</math:mi>
+          <math:mi>,</math:mi>
+          <math:mi math:fontstyle="italic">mn</math:mi>
+         </math:mrow>
+        </math:msub>
+       </math:mrow>
+      </math:mfenced>
+     </math:mrow>
+    </math:mrow>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">SUMPRODUCT(A_1 , A_2 , ..., A_K)
+=
+sum from {m = 1} to { M }
+sum from {n = 1} to { N }
+left (
+prod from {k = 1} to {K} a_{k,mn}
+right )
+</math:annotation>
+ </math:semantics>
+</math:math>

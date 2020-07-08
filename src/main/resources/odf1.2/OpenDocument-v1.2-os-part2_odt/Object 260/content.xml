@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi>f</mi>
+   <mrow>
+    <mrow>
+     <mo stretchy="false">(</mo>
+     <mi>t</mi>
+     <mo stretchy="false">)</mo>
+    </mrow>
+    <mi mathvariant="normal">=</mi>
+    <mfrac>
+     <mrow>
+      <mo stretchy="false">Γ</mo>
+      <mfenced open="" close="">
+       <mfrac>
+        <mrow>
+         <mi mathvariant="italic">df</mi>
+         <mo stretchy="false">+</mo>
+         <mn>1</mn>
+        </mrow>
+        <mn>2</mn>
+       </mfrac>
+      </mfenced>
+     </mrow>
+     <mrow>
+      <msqrt>
+       <mrow>
+        <mo stretchy="false">π</mo>
+        <mi mathvariant="italic">df</mi>
+       </mrow>
+      </msqrt>
+      <mo stretchy="false">Γ</mo>
+      <mfenced open="" close="">
+       <mfrac>
+        <mi mathvariant="italic">df</mi>
+        <mn>2</mn>
+       </mfrac>
+      </mfenced>
+     </mrow>
+    </mfrac>
+   </mrow>
+   <msup>
+    <mfenced open="" close="">
+     <mrow>
+      <mn>1</mn>
+      <mo stretchy="false">+</mo>
+      <mfrac>
+       <msup>
+        <mi>t</mi>
+        <mn>2</mn>
+       </msup>
+       <mi mathvariant="italic">df</mi>
+      </mfrac>
+     </mrow>
+    </mfenced>
+    <mrow>
+     <mi mathvariant="normal">−</mi>
+     <mfrac>
+      <mrow>
+       <mo stretchy="false">(</mo>
+       <mrow>
+        <mi mathvariant="italic">df</mi>
+        <mo stretchy="false">+</mo>
+        <mn>1</mn>
+       </mrow>
+       <mo stretchy="false">)</mo>
+      </mrow>
+      <mn>2</mn>
+     </mfrac>
+    </mrow>
+   </msup>
+  </mrow>
+  <annotation encoding="StarMath 5.0">f(t) =
+{ %GAMMA left( {df + 1} over 2 right) }
+over
+{ sqrt {%pi df} %GAMMA left( df over 2 right) }
+
+left( 1 + t^2 over df right) ^ -{ {(df + 1)} over 2 }</annotation>
+ </semantics>
+</math>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mrow>
+    <msubsup>
+     <mi>s</mi>
+     <mi>Y</mi>
+     <mn>2</mn>
+    </msubsup>
+    <mi mathvariant="normal">=</mi>
+    <mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mi>m</mi>
+      <mi mathvariant="normal">−</mi>
+      <mn>1</mn>
+     </mrow>
+    </mfrac>
+   </mrow>
+   <mrow>
+    <msubsup>
+     <mi mathvariant="normal">∑</mi>
+     <mrow>
+      <mi>i</mi>
+      <mi mathvariant="normal">=</mi>
+      <mn>1</mn>
+     </mrow>
+     <mi>m</mi>
+    </msubsup>
+    <msup>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+       <msub>
+        <mi>Y</mi>
+        <mi>i</mi>
+       </msub>
+       <mi mathvariant="normal">−</mi>
+       <mover accent="true">
+        <mi>Y</mi>
+        <mo>¯
+        </mo>
+       </mover>
+      </mrow>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">s^2_{Y}=1 over {m-1} sum_{i=1}^m (Y_i-overline Y)^2 </annotation>
+ </semantics>
+</math>

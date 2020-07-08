@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mover math:accent="true">
+   <math:mi math:fontstyle="italic">n1</math:mi>
+   <math:mo>¯</math:mo>
+  </math:mover>
+  <math:annotation math:encoding="StarMath 5.0">overline n1</math:annotation>
+ </math:semantics>
+</math:math>

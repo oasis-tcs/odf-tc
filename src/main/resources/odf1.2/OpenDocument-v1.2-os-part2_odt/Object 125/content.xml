@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mtable>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:mi math:fontstyle="italic">duration</math:mi>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mi math:fontstyle="italic">DURATION</math:mi>
+     </math:mrow>
+     <math:mrow>
+      <math:mo math:stretchy="false">(</math:mo>
+      <math:mrow>
+       <math:mi math:fontstyle="italic">Settlement</math:mi>
+       <math:mi>,</math:mi>
+       <math:mi math:fontstyle="italic">Maturity</math:mi>
+       <math:mi>,</math:mi>
+       <math:mi math:fontstyle="italic">Coupon</math:mi>
+       <math:mi>,</math:mi>
+       <math:mi math:fontstyle="italic">Yield</math:mi>
+       <math:mi>,</math:mi>
+       <math:mi math:fontstyle="italic">Frequency</math:mi>
+       <math:mi>,</math:mi>
+       <math:mi math:fontstyle="italic">Basis</math:mi>
+      </math:mrow>
+      <math:mo math:stretchy="false">)</math:mo>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mi math:fontstyle="italic">MDURATION</math:mi>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mfrac>
+      <math:mi math:fontstyle="italic">duration</math:mi>
+      <math:mrow>
+       <math:mn>1</math:mn>
+       <math:mo math:stretchy="false">+</math:mo>
+       <math:mfenced math:open="" math:close="">
+        <math:mfrac>
+         <math:mi math:fontstyle="italic">Yield</math:mi>
+         <math:mi math:fontstyle="italic">Frequency</math:mi>
+        </math:mfrac>
+       </math:mfenced>
+      </math:mrow>
+     </math:mfrac>
+    </math:mrow>
+   </math:mtr>
+  </math:mtable>
+  <math:annotation math:encoding="StarMath 5.0">duration = DURATION( Settlement, Maturity, Coupon, Yield, Frequency, Basis) newline
+MDURATION = duration over { 1 + left( Yield over Frequency right) }</math:annotation>
+ </math:semantics>
+</math:math>

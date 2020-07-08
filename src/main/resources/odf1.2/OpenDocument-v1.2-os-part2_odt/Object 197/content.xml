@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mtable>
+   <math:mtr>
+    <math:mrow>
+     <math:msup>
+      <math:mo math:stretchy="false">χ</math:mo>
+      <math:mn>2</math:mn>
+     </math:msup>
+     <math:mo math:stretchy="false">=</math:mo>
+     <math:mrow>
+      <math:munderover>
+       <math:mo math:stretchy="false">∑</math:mo>
+       <math:mrow>
+        <math:mi>i</math:mi>
+        <math:mo math:stretchy="false">=</math:mo>
+        <math:mn>1</math:mn>
+       </math:mrow>
+       <math:mi>r</math:mi>
+      </math:munderover>
+      <math:mrow>
+       <math:munderover>
+        <math:mo math:stretchy="false">∑</math:mo>
+        <math:mrow>
+         <math:mi>j</math:mi>
+         <math:mo math:stretchy="false">=</math:mo>
+         <math:mn>1</math:mn>
+        </math:mrow>
+        <math:mi>c</math:mi>
+       </math:munderover>
+       <math:mfrac>
+        <math:msup>
+         <math:mfenced math:open="" math:close="">
+          <math:mrow>
+           <math:msub>
+            <math:mi>A</math:mi>
+            <math:mi math:fontstyle="italic">ij</math:mi>
+           </math:msub>
+           <math:mo math:stretchy="false">−</math:mo>
+           <math:msub>
+            <math:mi>E</math:mi>
+            <math:mi math:fontstyle="italic">ij</math:mi>
+           </math:msub>
+          </math:mrow>
+         </math:mfenced>
+         <math:mn>2</math:mn>
+        </math:msup>
+        <math:msub>
+         <math:mi>E</math:mi>
+         <math:mi math:fontstyle="italic">ij</math:mi>
+        </math:msub>
+       </math:mfrac>
+      </math:mrow>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mtext>with</math:mtext>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr/>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:mi>r</math:mi>
+      <math:mtext>= number of rows</math:mtext>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:mi>c</math:mi>
+      <math:mtext>= number of columns</math:mtext>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:msub>
+       <math:mi>A</math:mi>
+       <math:mi math:fontstyle="italic">ij</math:mi>
+      </math:msub>
+      <math:mtext>= element of actual data</math:mtext>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+   <math:mtr>
+    <math:mrow>
+     <math:mrow>
+      <math:msub>
+       <math:mi>E</math:mi>
+       <math:mi math:fontstyle="italic">ij</math:mi>
+      </math:msub>
+      <math:mtext>= element of expected values</math:mtext>
+     </math:mrow>
+    </math:mrow>
+   </math:mtr>
+  </math:mtable>
+  <math:annotation math:encoding="StarMath 5.0">%chi^2 = sum from{i=1} to{r} sum from{j=1} to{c} {{ left( A_ij - E_ij right) ^ 2 } over E_ij }
+newline newline
+alignl &quot;with&quot; newline newline
+alignl r		&quot;= number of rows&quot; newline
+alignl c		&quot;= number of columns&quot; newline
+alignl A_ij	&quot;= element of actual data&quot; newline
+alignl E_ij	&quot;= element of expected values&quot;
+</math:annotation>
+ </math:semantics>
+</math:math>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">rate</mi>
+      <mi mathvariant="normal">=</mi>
+      <mfrac>
+       <mi mathvariant="italic">declinationFactor</mi>
+       <mi mathvariant="italic">lifeTime</mi>
+      </mfrac>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mtext>if</mtext>
+      <mrow>
+       <mi mathvariant="italic">rate</mi>
+       <mi mathvariant="normal">≥</mi>
+       <mn>1</mn>
+      </mrow>
+      <mtext>then</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>{</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">rate</mi>
+       <mi mathvariant="normal">=</mi>
+       <mn>1</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mtext>if</mtext>
+      <mrow>
+       <mi mathvariant="italic">period</mi>
+       <mi mathvariant="normal">=</mi>
+       <mn>1</mn>
+      </mrow>
+      <mtext>then</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">oldValue</mi>
+       <mi mathvariant="normal">=</mi>
+       <mi mathvariant="italic">cost</mi>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mtext>else</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">oldValue</mi>
+       <mi mathvariant="normal">=</mi>
+       <mn>0</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mtext>endif</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>}</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>else</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>{</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">oldValue</mi>
+       <mi mathvariant="normal">=</mi>
+       <mrow>
+        <mi mathvariant="italic">cost</mi>
+        <mi mathvariant="normal">⋅</mi>
+        <msup>
+         <mrow>
+          <mo stretchy="false">(</mo>
+          <mrow>
+           <mn>1</mn>
+           <mi mathvariant="normal">−</mi>
+           <mi mathvariant="italic">rate</mi>
+          </mrow>
+          <mo stretchy="false">)</mo>
+         </mrow>
+         <mrow>
+          <mi mathvariant="italic">period</mi>
+          <mi mathvariant="normal">−</mi>
+          <mn>1</mn>
+         </mrow>
+        </msup>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>}</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>endif</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi mathvariant="italic">newValue</mi>
+      <mi mathvariant="normal">=</mi>
+      <mrow>
+       <mi mathvariant="italic">cost</mi>
+       <mi mathvariant="normal">⋅</mi>
+       <msup>
+        <mrow>
+         <mo stretchy="false">(</mo>
+         <mrow>
+          <mn>1</mn>
+          <mi mathvariant="normal">−</mi>
+          <mi mathvariant="italic">rate</mi>
+         </mrow>
+         <mo stretchy="false">)</mo>
+        </mrow>
+        <mi mathvariant="italic">period</mi>
+       </msup>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mtext>if</mtext>
+      <mrow>
+       <mi mathvariant="italic">newValue</mi>
+       <mo stretchy="false">&lt;</mo>
+       <mi mathvariant="italic">salvage</mi>
+      </mrow>
+      <mtext>then</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">DDB</mi>
+       <mi mathvariant="normal">=</mi>
+       <mrow>
+        <mi mathvariant="italic">oldValue</mi>
+        <mi mathvariant="normal">−</mi>
+        <mi mathvariant="italic">salvage</mi>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>else</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">DDB</mi>
+       <mi mathvariant="normal">=</mi>
+       <mrow>
+        <mi mathvariant="italic">oldValue</mi>
+        <mi mathvariant="normal">−</mi>
+        <mi mathvariant="italic">newValue</mi>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>endif</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mtext>if</mtext>
+      <mrow>
+       <mi mathvariant="italic">DDB</mi>
+       <mo stretchy="false">&lt;</mo>
+       <mn>0</mn>
+      </mrow>
+      <mtext>then</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mi mathvariant="italic">DDB</mi>
+       <mi mathvariant="normal">=</mi>
+       <mn>0</mn>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>endif</mtext>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">alignl rate = declinationFactor over lifeTime newline
+alignl &quot;if&quot; rate &gt;= 1 &quot;then&quot; newline
+alignl &quot;{&quot; newline
+alignl ~~ rate = 1 newline
+alignl ~~ &quot;if&quot; period = 1 &quot;then&quot; newline
+alignl ~~~~ oldValue = cost newline
+alignl ~~ &quot;else&quot; newline
+alignl ~~~~ oldValue = 0 newline
+alignl ~~ &quot;endif&quot; newline
+alignl &quot;}&quot; newline
+alignl &quot;else&quot; newline
+alignl &quot;{&quot; newline
+alignl ~~ oldValue = cost cdot (1 - rate)^{period - 1} newline
+alignl &quot;}&quot; newline
+alignl &quot;endif&quot; newline
+alignl newValue = cost cdot (1 - rate)^period newline
+alignl &quot;if&quot; newValue &lt; salvage &quot;then&quot; newline
+alignl ~~ DDB = oldValue - salvage newline
+alignl &quot;else&quot; newline
+alignl ~~ DDB = oldValue - newValue newline
+alignl &quot;endif&quot; newline
+alignl &quot;if&quot; DDB &lt; 0 &quot;then&quot; newline
+alignl ~~ DDB = 0 newline
+alignl &quot;endif&quot;
+</annotation>
+ </semantics>
+</math>

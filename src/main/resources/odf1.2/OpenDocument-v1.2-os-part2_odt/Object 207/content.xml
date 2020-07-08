@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mn>0</mn>
+      <mrow>
+       <mi/>
+       <mi mathvariant="normal">=</mi>
+       <mi/>
+      </mrow>
+      <mrow>
+       <mi mathvariant="italic">Fv</mi>
+       <mo stretchy="false">+</mo>
+       <mrow>
+        <mi mathvariant="italic">Pv</mi>
+        <mi mathvariant="normal">⋅</mi>
+        <msup>
+         <mfenced open="" close="">
+          <mrow>
+           <mn>1</mn>
+           <mo stretchy="false">+</mo>
+           <mi mathvariant="italic">Rate</mi>
+          </mrow>
+         </mfenced>
+         <mi mathvariant="italic">Nper</mi>
+        </msup>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mi/>
+       <mo stretchy="false">+</mo>
+       <mi/>
+      </mrow>
+      <mfrac>
+       <mrow>
+        <mrow>
+         <mi mathvariant="italic">Payment</mi>
+         <mi mathvariant="normal">⋅</mi>
+         <mfenced open="" close="">
+          <mrow>
+           <mn>1</mn>
+           <mo stretchy="false">+</mo>
+           <mrow>
+            <mi mathvariant="italic">Rate</mi>
+            <mi mathvariant="normal">⋅</mi>
+            <mi mathvariant="italic">PayType</mi>
+           </mrow>
+          </mrow>
+         </mfenced>
+        </mrow>
+        <mi mathvariant="normal">⋅</mi>
+        <mfenced open="" close="">
+         <mrow>
+          <msup>
+           <mfenced open="" close="">
+            <mrow>
+             <mn>1</mn>
+             <mo stretchy="false">+</mo>
+             <mi mathvariant="italic">Rate</mi>
+            </mrow>
+           </mfenced>
+           <mi mathvariant="italic">Nper</mi>
+          </msup>
+          <mi mathvariant="normal">−</mi>
+          <mn>1</mn>
+         </mrow>
+        </mfenced>
+       </mrow>
+       <mi mathvariant="italic">Rate</mi>
+      </mfrac>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">alignl
+0 ~ = ~ Fv + Pv cdot left( 1+Rate right) ^ Nper newline
+~~~ + ~ { Payment cdot left( 1 + Rate cdot PayType right) cdot left( left( 1+Rate right)^Nper -1 right) over Rate }
+</annotation>
+ </semantics>
+</math>

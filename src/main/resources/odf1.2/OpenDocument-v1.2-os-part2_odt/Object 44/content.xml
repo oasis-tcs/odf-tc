@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mfrac>
+    <math:mrow>
+     <math:mo math:stretchy="false">Γ</math:mo>
+     <math:mrow>
+      <math:mo math:stretchy="false">(</math:mo>
+      <math:mfrac>
+       <math:mrow>
+        <math:msub>
+         <math:mi>r</math:mi>
+         <math:mn>1</math:mn>
+        </math:msub>
+        <math:mo math:stretchy="false">+</math:mo>
+        <math:msub>
+         <math:mi>r</math:mi>
+         <math:mn>2</math:mn>
+        </math:msub>
+       </math:mrow>
+       <math:mn>2</math:mn>
+      </math:mfrac>
+      <math:mo math:stretchy="false">)</math:mo>
+     </math:mrow>
+     <math:msup>
+      <math:mfenced math:open="" math:close="">
+       <math:mfrac>
+        <math:msub>
+         <math:mi>r</math:mi>
+         <math:mn>1</math:mn>
+        </math:msub>
+        <math:msub>
+         <math:mi>r</math:mi>
+         <math:mn>2</math:mn>
+        </math:msub>
+       </math:mfrac>
+      </math:mfenced>
+      <math:mfrac>
+       <math:msub>
+        <math:mi>r</math:mi>
+        <math:mn>1</math:mn>
+       </math:msub>
+       <math:mn>2</math:mn>
+      </math:mfrac>
+     </math:msup>
+    </math:mrow>
+    <math:mrow>
+     <math:mo math:stretchy="false">Γ</math:mo>
+     <math:mrow>
+      <math:mo math:stretchy="false">(</math:mo>
+      <math:mfrac>
+       <math:msub>
+        <math:mi>r</math:mi>
+        <math:mn>1</math:mn>
+       </math:msub>
+       <math:mn>2</math:mn>
+      </math:mfrac>
+      <math:mo math:stretchy="false">)</math:mo>
+     </math:mrow>
+     <math:mo math:stretchy="false">Γ</math:mo>
+     <math:mrow>
+      <math:mo math:stretchy="false">(</math:mo>
+      <math:mfrac>
+       <math:msub>
+        <math:mi>r</math:mi>
+        <math:mn>2</math:mn>
+       </math:msub>
+       <math:mn>2</math:mn>
+      </math:mfrac>
+      <math:mo math:stretchy="false">)</math:mo>
+     </math:mrow>
+    </math:mrow>
+   </math:mfrac>
+   <math:mrow>
+    <math:mi/>
+    <math:mo math:stretchy="false">⋅</math:mo>
+    <math:mi/>
+   </math:mrow>
+   <math:mrow>
+    <math:mrow>
+     <math:msubsup>
+      <math:mo math:stretchy="false">∫</math:mo>
+      <math:mi>x</math:mi>
+      <math:mo math:stretchy="false">∞</math:mo>
+     </math:msubsup>
+     <math:mfrac>
+      <math:msup>
+       <math:mi>t</math:mi>
+       <math:mrow>
+        <math:mi/>
+        <math:mrow>
+         <math:mfrac>
+          <math:msub>
+           <math:mi>r</math:mi>
+           <math:mn>1</math:mn>
+          </math:msub>
+          <math:mn>2</math:mn>
+         </math:mfrac>
+         <math:mo math:stretchy="false">−</math:mo>
+         <math:mn>1</math:mn>
+        </math:mrow>
+       </math:mrow>
+      </math:msup>
+      <math:msup>
+       <math:mfenced math:open="" math:close="">
+        <math:mrow>
+         <math:mrow>
+          <math:mn>1</math:mn>
+          <math:mo math:stretchy="false">+</math:mo>
+          <math:mfrac>
+           <math:msub>
+            <math:mi>r</math:mi>
+            <math:mn>1</math:mn>
+           </math:msub>
+           <math:msub>
+            <math:mi>r</math:mi>
+            <math:mn>2</math:mn>
+           </math:msub>
+          </math:mfrac>
+         </math:mrow>
+         <math:mi>t</math:mi>
+        </math:mrow>
+       </math:mfenced>
+       <math:mfrac>
+        <math:mrow>
+         <math:msub>
+          <math:mi>r</math:mi>
+          <math:mn>1</math:mn>
+         </math:msub>
+         <math:mo math:stretchy="false">+</math:mo>
+         <math:msub>
+          <math:mi>r</math:mi>
+          <math:mn>2</math:mn>
+         </math:msub>
+        </math:mrow>
+        <math:mn>2</math:mn>
+       </math:mfrac>
+      </math:msup>
+     </math:mfrac>
+    </math:mrow>
+    <math:mi math:fontstyle="italic">dt</math:mi>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">{
+ {
+  %GAMMA ({r sub 1 + r sub 2} over {2} )
+  left( {r sub 1} over {r sub 2} right) sup {{r sub 1} over {2}}
+ }
+ over
+ {
+  %GAMMA({r sub 1} over {2}) %GAMMA({r sub 2} over {2})
+ }
+}
+`cdot`
+{
+ int sub x sup %infinite
+ {
+  {
+   t sup {`{r sub 1} over {2} - 1}
+  }
+  over
+  {
+   left( 1 + {r sub 1 over r sub 2} t right) sup {{r sub 1 + r sub 2} over {2}}
+  }
+ }
+ dt
+}
+</math:annotation>
+ </math:semantics>
+</math:math>

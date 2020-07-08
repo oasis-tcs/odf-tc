@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi mathvariant="italic">INTRATE</mi>
+   <mi mathvariant="normal">=</mi>
+   <mfrac>
+    <mfrac>
+     <mrow>
+      <mi mathvariant="italic">Redemption</mi>
+      <mi mathvariant="normal">−</mi>
+      <mi mathvariant="italic">Investment</mi>
+     </mrow>
+     <mi mathvariant="italic">Investment</mi>
+    </mfrac>
+    <mrow>
+     <mi mathvariant="italic">YEARFRAC</mi>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+       <mi mathvariant="italic">Settlement</mi>
+       <mi>;</mi>
+       <mi mathvariant="italic">Maturity</mi>
+       <mi>;</mi>
+       <mi mathvariant="italic">Basis</mi>
+      </mrow>
+      <mo stretchy="false">)</mo>
+     </mrow>
+    </mrow>
+   </mfrac>
+  </mrow>
+  <annotation encoding="StarMath 5.0">INTRATE = { { Redemption - Investment } over Investment } over { YEARFRAC( Settlement; Maturity; Basis) }</annotation>
+ </semantics>
+</math>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mi math:fontstyle="italic">NPV</math:mi>
+   <math:mo math:stretchy="false">=</math:mo>
+   <math:mrow>
+    <math:munderover>
+     <math:mo math:stretchy="false">∑</math:mo>
+     <math:mrow>
+      <math:mi>i</math:mi>
+      <math:mo math:stretchy="false">=</math:mo>
+      <math:mn>1</math:mn>
+     </math:mrow>
+     <math:mi>N</math:mi>
+    </math:munderover>
+    <math:mfrac>
+     <math:msub>
+      <math:mi math:fontstyle="italic">Values</math:mi>
+      <math:mi>i</math:mi>
+     </math:msub>
+     <math:msup>
+      <math:mfenced math:open="" math:close="">
+       <math:mrow>
+        <math:mn>1</math:mn>
+        <math:mo math:stretchy="false">+</math:mo>
+        <math:mi math:fontstyle="italic">Rate</math:mi>
+       </math:mrow>
+      </math:mfenced>
+      <math:mi>i</math:mi>
+     </math:msup>
+    </math:mfrac>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">NPV = sum from{i=1} to{N} {Values_i over left( 1 + Rate right) ^ i}</math:annotation>
+ </math:semantics>
+</math:math>

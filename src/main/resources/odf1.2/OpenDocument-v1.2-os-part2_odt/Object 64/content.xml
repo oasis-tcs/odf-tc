@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mrow>
+   <math:mi math:fontstyle="italic">acos</math:mi>
+   <math:mrow>
+    <math:mrow>
+     <math:mo math:stretchy="false">(</math:mo>
+     <math:mi>N</math:mi>
+     <math:mo math:stretchy="false">)</math:mo>
+    </math:mrow>
+    <math:mo math:stretchy="false">=</math:mo>
+    <math:mrow>
+     <math:mfrac>
+      <math:mi>π</math:mi>
+      <math:mn>2</math:mn>
+     </math:mfrac>
+     <math:mo math:stretchy="false">−</math:mo>
+     <math:mfenced math:open="[" math:close="]">
+      <math:mrow>
+       <math:mrow>
+        <math:mrow>
+         <math:mrow>
+          <math:mi>N</math:mi>
+          <math:mo math:stretchy="false">+</math:mo>
+          <math:mrow>
+           <math:mfrac>
+            <math:mn>1</math:mn>
+            <math:mrow>
+             <math:mn>2</math:mn>
+             <math:mo math:stretchy="false">⋅</math:mo>
+             <math:mn>3</math:mn>
+            </math:mrow>
+           </math:mfrac>
+           <math:msup>
+            <math:mi>N</math:mi>
+            <math:mn>3</math:mn>
+           </math:msup>
+          </math:mrow>
+         </math:mrow>
+         <math:mo math:stretchy="false">+</math:mo>
+         <math:mrow>
+          <math:mfrac>
+           <math:mrow>
+            <math:mn>1</math:mn>
+            <math:mo math:stretchy="false">⋅</math:mo>
+            <math:mn>3</math:mn>
+           </math:mrow>
+           <math:mrow>
+            <math:mrow>
+             <math:mn>2</math:mn>
+             <math:mo math:stretchy="false">⋅</math:mo>
+             <math:mn>4</math:mn>
+            </math:mrow>
+            <math:mo math:stretchy="false">⋅</math:mo>
+            <math:mn>5</math:mn>
+           </math:mrow>
+          </math:mfrac>
+          <math:msup>
+           <math:mi>N</math:mi>
+           <math:mn>5</math:mn>
+          </math:msup>
+         </math:mrow>
+        </math:mrow>
+        <math:mo math:stretchy="false">+</math:mo>
+        <math:mrow>
+         <math:mfrac>
+          <math:mrow>
+           <math:mrow>
+            <math:mn>1</math:mn>
+            <math:mo math:stretchy="false">⋅</math:mo>
+            <math:mn>3</math:mn>
+           </math:mrow>
+           <math:mo math:stretchy="false">⋅</math:mo>
+           <math:mn>5</math:mn>
+          </math:mrow>
+          <math:mrow>
+           <math:mrow>
+            <math:mrow>
+             <math:mn>2</math:mn>
+             <math:mo math:stretchy="false">⋅</math:mo>
+             <math:mn>4</math:mn>
+            </math:mrow>
+            <math:mo math:stretchy="false">⋅</math:mo>
+            <math:mn>6</math:mn>
+           </math:mrow>
+           <math:mo math:stretchy="false">⋅</math:mo>
+           <math:mn>7</math:mn>
+          </math:mrow>
+         </math:mfrac>
+         <math:msup>
+          <math:mi>N</math:mi>
+          <math:mn>7</math:mn>
+         </math:msup>
+        </math:mrow>
+       </math:mrow>
+       <math:mo math:stretchy="false">+</math:mo>
+       <math:mn>...</math:mn>
+      </math:mrow>
+     </math:mfenced>
+    </math:mrow>
+   </math:mrow>
+  </math:mrow>
+  <math:annotation math:encoding="StarMath 5.0">acos(N) = π over 2 - left [ N + {{1 over {2 cdot 3}} N^3} + {{1 cdot 3 over {2 cdot 4 cdot 5 }} N^5} + {{1 cdot 3 cdot 5 over {2 cdot 4 cdot 6 cdot 7 }} N^7} + ... right ]</math:annotation>
+ </math:semantics>
+</math:math>

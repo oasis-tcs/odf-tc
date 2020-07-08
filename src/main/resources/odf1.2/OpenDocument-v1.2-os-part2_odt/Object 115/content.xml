@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math:math PUBLIC "-//OpenOffice.org//DTD Modified W3C MathML 1.01//EN" "math.dtd">
+<math:math xmlns:math="http://www.w3.org/1998/Math/MathML">
+ <math:semantics>
+  <math:mfrac>
+   <math:mrow>
+    <math:msup>
+     <math:mi math:fontstyle="normal">e</math:mi>
+     <math:mn>2r</math:mn>
+    </math:msup>
+    <math:mo math:stretchy="false">−</math:mo>
+    <math:mn>1</math:mn>
+   </math:mrow>
+   <math:mrow>
+    <math:msup>
+     <math:mi math:fontstyle="normal">e</math:mi>
+     <math:mn>2r</math:mn>
+    </math:msup>
+    <math:mo math:stretchy="false">+</math:mo>
+    <math:mn>1</math:mn>
+   </math:mrow>
+  </math:mfrac>
+  <math:annotation math:encoding="StarMath 5.0">{func e^{2r} - 1} over {func e^{2r}+1} </math:annotation>
+ </math:semantics>
+</math:math>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <msub>
+       <mi>P</mi>
+       <mrow>
+        <mi>r</mi>
+        <mi>,</mi>
+        <mi>p</mi>
+       </mrow>
+      </msub>
+      <mrow>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mi mathvariant="normal">=</mi>
+       <mfenced open="" close="">
+        <mtable>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mrow>
+             <mi>x</mi>
+             <mo stretchy="false">+</mo>
+             <mi>r</mi>
+            </mrow>
+            <mi mathvariant="normal">−</mi>
+            <mn>1</mn>
+           </mrow>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mi>r</mi>
+            <mi mathvariant="normal">−</mi>
+            <mn>1</mn>
+           </mrow>
+          </mtd>
+         </mtr>
+        </mtable>
+       </mfenced>
+      </mrow>
+      <msup>
+       <mi>p</mi>
+       <mi>r</mi>
+      </msup>
+      <msup>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <mn>1</mn>
+         <mi mathvariant="normal">−</mi>
+         <mi>p</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mi>x</mi>
+      </msup>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd/>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mfenced open="" close="">
+       <mtable>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mrow>
+            <mi>x</mi>
+            <mo stretchy="false">+</mo>
+            <mi>r</mi>
+           </mrow>
+           <mi mathvariant="normal">−</mi>
+           <mn>1</mn>
+          </mrow>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mi>r</mi>
+           <mi mathvariant="normal">−</mi>
+           <mn>1</mn>
+          </mrow>
+         </mtd>
+        </mtr>
+       </mtable>
+      </mfenced>
+      <mi/>
+      <mtext>is a binomial coefficient</mtext>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">P_{r,p} (x) = left ( binom{x+r-1}{r-1}  right ) p^r (1-p)^x
+newline newline
+left ( binom{x+r-1}{r-1} right ) ~&quot;is a binomial coefficient&quot;</annotation>
+ </semantics>
+</math>

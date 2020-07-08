@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mrow>
+    <mover accent="true">
+     <mi>Y</mi>
+     <mo>¯
+     </mo>
+    </mover>
+    <mi mathvariant="normal">=</mi>
+    <mfrac>
+     <mn>1</mn>
+     <mi>m</mi>
+    </mfrac>
+   </mrow>
+   <mrow>
+    <msubsup>
+     <mi mathvariant="normal">∑</mi>
+     <mrow>
+      <mi>i</mi>
+      <mi mathvariant="normal">=</mi>
+      <mn>1</mn>
+     </mrow>
+     <mi>m</mi>
+    </msubsup>
+    <msub>
+     <mi>Y</mi>
+     <mi>i</mi>
+    </msub>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">overline Y = 1 over m sum _{i=1}^m Y_i</annotation>
+ </semantics>
+</math>

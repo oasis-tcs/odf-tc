@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi>n</mi><mo stretchy="false">=</mo><mi mathvariant="italic">ROWS</mi></mrow><mrow><mo stretchy="false">(</mo><mi mathvariant="italic">knownX</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="StarMath 5.0">n = ROWS(knownX)</annotation></semantics></math>

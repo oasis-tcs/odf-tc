@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>A</mi><mrow><mi>M</mi><mo stretchy="false">×</mo><mi>N</mi></mrow><mi>T</mi></msubsup><mo stretchy="false">=</mo><msub><mfenced open="(" close=")"><mtable><mtr><mtd><msub><mi>a</mi><mrow><mn>1</mn><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mn>2</mn><mn>1</mn></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>a</mi><mrow><mi>M</mi><mn>1</mn></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mn>1</mn><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mn>2</mn><mn>2</mn></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>a</mi><mrow><mi>M</mi><mn>2</mn></mrow></msub></mtd></mtr><mtr><mtd><mo stretchy="false">⋮</mo></mtd><mtd><mo stretchy="false">⋮</mo></mtd><mtd><mo stretchy="false">⋱</mo></mtd><mtd><mo stretchy="false">⋮</mo></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mn>1</mn><mi>N</mi></mrow></msub></mtd><mtd><msub><mi>a</mi><mrow><mn>2</mn><mi>N</mi></mrow></msub></mtd><mtd><mo stretchy="false">…</mo></mtd><mtd><msub><mi>a</mi><mrow><mi>M</mi><mi>N</mi></mrow></msub></mtd></mtr></mtable></mfenced><mrow><mi>N</mi><mo stretchy="false">×</mo><mi>M</mi></mrow></msub></mrow><annotation encoding="StarMath 5.0">A_{M times N} ^T
+=
+left (
+matrix{
+a_{1 1} # a_{2 1} # dotslow # a_{M 1} ##
+a_{1 2} # a_{2 2} # dotslow # a_{M 2} ##
+dotsvert # dotsvert # dotsdown # dotsvert ##
+a_{1 N} # a_{2 N} # dotslow # a_{M N}
+}
+right )_{N times M}</annotation></semantics></math>

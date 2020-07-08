@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo stretchy="false">Γ</mo>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mfrac>
+       <mrow>
+        <msub>
+         <mi>r</mi>
+         <mn>1</mn>
+        </msub>
+        <mo stretchy="false">+</mo>
+        <msub>
+         <mi>r</mi>
+         <mn>2</mn>
+        </msub>
+       </mrow>
+       <mn>2</mn>
+      </mfrac>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <msup>
+      <mfenced open="" close="">
+       <mfrac>
+        <msub>
+         <mi>r</mi>
+         <mn>1</mn>
+        </msub>
+        <msub>
+         <mi>r</mi>
+         <mn>2</mn>
+        </msub>
+       </mfrac>
+      </mfenced>
+      <mfrac>
+       <msub>
+        <mi>r</mi>
+        <mn>1</mn>
+       </msub>
+       <mn>2</mn>
+      </mfrac>
+     </msup>
+    </mrow>
+    <mrow>
+     <mo stretchy="false">Γ</mo>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mfrac>
+       <msub>
+        <mi>r</mi>
+        <mn>1</mn>
+       </msub>
+       <mn>2</mn>
+      </mfrac>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <mo stretchy="false">Γ</mo>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mfrac>
+       <msub>
+        <mi>r</mi>
+        <mn>2</mn>
+       </msub>
+       <mn>2</mn>
+      </mfrac>
+      <mo stretchy="false">)</mo>
+     </mrow>
+    </mrow>
+   </mfrac>
+   <mrow>
+    <mi/>
+    <mi mathvariant="normal">⋅</mi>
+    <mi/>
+   </mrow>
+   <mfrac>
+    <msup>
+     <mi>x</mi>
+     <mrow>
+      <mi/>
+      <mrow>
+       <mfrac>
+        <msub>
+         <mi>r</mi>
+         <mn>1</mn>
+        </msub>
+        <mn>2</mn>
+       </mfrac>
+       <mi mathvariant="normal">−</mi>
+       <mn>1</mn>
+      </mrow>
+     </mrow>
+    </msup>
+    <msup>
+     <mfenced open="" close="">
+      <mrow>
+       <mrow>
+        <mn>1</mn>
+        <mo stretchy="false">+</mo>
+        <mfrac>
+         <msub>
+          <mi>r</mi>
+          <mn>1</mn>
+         </msub>
+         <msub>
+          <mi>r</mi>
+          <mn>2</mn>
+         </msub>
+        </mfrac>
+       </mrow>
+       <mi>x</mi>
+      </mrow>
+     </mfenced>
+     <mfrac>
+      <mrow>
+       <msub>
+        <mi>r</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy="false">+</mo>
+       <msub>
+        <mi>r</mi>
+        <mn>2</mn>
+       </msub>
+      </mrow>
+      <mn>2</mn>
+     </mfrac>
+    </msup>
+   </mfrac>
+  </mrow>
+  <annotation encoding="StarMath 5.0">{
+ {
+  %GAMMA({r sub 1 + r sub 2} over {2})
+  left( {r sub 1} over {r sub 2} right) sup {{r sub 1} over {2}}
+ }
+ over
+ {
+  %GAMMA({r sub 1} over {2}) %GAMMA({r sub 2} over {2})
+ }
+}
+`cdot`
+{
+ {x sup {`{r sub 1} over {2} - 1}}
+ over
+ {
+  left( 1 + {{r sub 1} over {r sub 2}} x right) sup {{r sub 1 + r sub 2} over {2}}
+ }
+}
+</annotation>
+ </semantics>
+</math>

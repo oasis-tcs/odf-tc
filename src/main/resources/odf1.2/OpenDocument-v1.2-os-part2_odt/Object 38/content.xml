@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi>tanh</mi>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mi>N</mi>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <mi mathvariant="normal">=</mi>
+     <mfrac>
+      <mrow>
+       <mi>sinh</mi>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+      <mrow>
+       <mi>cosh</mi>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+     </mfrac>
+    </mrow>
+    <mi mathvariant="normal">=</mi>
+    <mfrac>
+     <mrow>
+      <msup>
+       <mi>e</mi>
+       <mi>N</mi>
+      </msup>
+      <mi mathvariant="normal">−</mi>
+      <msup>
+       <mi>e</mi>
+       <mrow>
+        <mi mathvariant="normal">−</mi>
+        <mi>N</mi>
+       </mrow>
+      </msup>
+     </mrow>
+     <mrow>
+      <msup>
+       <mi>e</mi>
+       <mi>N</mi>
+      </msup>
+      <mo stretchy="false">+</mo>
+      <msup>
+       <mi>e</mi>
+       <mrow>
+        <mi mathvariant="normal">−</mi>
+        <mi>N</mi>
+       </mrow>
+      </msup>
+     </mrow>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">tanh(N) = {sinh(N)} over {cosh(N)} = { e sup N - e sup {-N} } over { e sup N + e sup {-N} }</annotation>
+ </semantics>
+</math>

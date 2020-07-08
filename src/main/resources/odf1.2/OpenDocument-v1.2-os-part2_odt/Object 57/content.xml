@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <msub>
+    <mi mathvariant="italic">BookValueAtStartOfPeriod</mi>
+    <mi>p</mi>
+   </msub>
+   <mrow>
+    <mi/>
+    <mi mathvariant="normal">=</mi>
+    <mi/>
+   </mrow>
+   <mrow>
+    <mi mathvariant="italic">cost</mi>
+    <mi mathvariant="normal">−</mi>
+    <mrow>
+     <munderover>
+      <mi mathvariant="normal">∑</mi>
+      <mrow>
+       <mi>i</mi>
+       <mi mathvariant="normal">=</mi>
+       <mn>1</mn>
+      </mrow>
+      <mrow>
+       <mi>p</mi>
+       <mi mathvariant="normal">−</mi>
+       <mn>1</mn>
+      </mrow>
+     </munderover>
+     <msub>
+      <mi mathvariant="italic">DepreciationOfPeriod</mi>
+      <mi>i</mi>
+     </msub>
+    </mrow>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">BookValueAtStartOfPeriod_p `=` cost - sum from{i=1}to{p-1}DepreciationOfPeriod_i</annotation>
+ </semantics>
+</math>
