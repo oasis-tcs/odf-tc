@@ -126,10 +126,7 @@ limitations under the License.
                 </executions>
                 <configuration>
                     <transformationSets>
-                        <!-- extract default values from schema part 
-                        
-                        *** FIX ME - ERROR - JAVA HEAP OVERLOW *** 
-
+                        <!-- extract default values from schema part  -->
                         <transformationSet>
                             <dir>${odf13.part3.input}</dir>
                             <includes>content.xml</includes>
@@ -139,7 +136,7 @@ limitations under the License.
                                     <targetExtension>odf13-default-values.xml</targetExtension>
                                 </fileMapper>
                             </fileMappers>
-                        </transformationSet> -->
+                        </transformationSet>
 
                         <!-- part 1 HTML transformation (introduction) -->
                         <transformationSet>
