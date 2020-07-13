@@ -51,9 +51,11 @@
 
     <!-- starting from an attribute description where defaults exist..  -->
     <xsl:template match="text:h" mode="get-attribute-name">
-            <xsl:message>YEAH:'<xsl:copy-of select="."/>'
+<!--        
+            <xsl:message>TextHeader:'<xsl:copy-of select="."/>'
             
             </xsl:message>
+-->
         <!-- Within the header is a reference token, which gives clues about the default value's attribute for instance: 
             <text:reference-mark-start text:name="attribute-table:number-columns-repeated_element-table:table-cell"/>            
         -->
@@ -79,14 +81,15 @@
     <xsl:template name="get-default-value-declaration">
         <xsl:param name="attributeName" />
 
-        <xsl:message>YEAH2:'<xsl:copy-of select="."/>'
+<!--
+        <xsl:message>TextContainer:'<xsl:copy-of select="."/>'
         
         </xsl:message>
-
+-->
 
         <xsl:variable name="defaultValue">
             <!-- get the default Value (ie. the styleable text element with the style 'Attribute_20_Value')  -->
-            <xsl:variable name="defaultValueElement" select="*[@text:style-name='Attribute_20_Value' or @text:style-name='Attribute_20_Value_20_Instance']" />
+            <xsl:variable name="defaultValueElement" select="string-join(*[@text:style-name='Attribute_20_Value' or @text:style-name='Attribute_20_Value_20_Instance'])" />
             <xsl:choose>
                 <xsl:when test="normalize-space($defaultValueElement) != ''">
                     <xsl:value-of select="normalize-space($defaultValueElement)" />
@@ -103,16 +106,18 @@
         <xsl:choose>
             <xsl:when test="*[@text:style-name='Element']">
 
+<!--      
         <xsl:message>ELEMENT CHILD:'<xsl:copy-of select="."/>'
         </xsl:message>
-
+-->
 
                 <!-- sometimes a default values only occurs on a certain element or elements -->
                 <xsl:for-each select="*[@text:style-name='Element']">
-                  
+<!--                  
         <xsl:message>ELEMENT NEW CHILD:'<xsl:copy-of select="."/>'
         </xsl:message>
-  
+-->
+
                     <!-- use the element name without the brackets -->
                     <xsl:variable name="elementName">
                         <xsl:call-template name="get-element-name">
@@ -150,9 +155,10 @@
 
     <xsl:template name="get-element-name">
         <xsl:param name="nameString" />
-
+<!--
         <xsl:message>NAMESTRING: *<xsl:copy-of select="$nameString"/>*        
-        </xsl:message>>
+        </xsl:message>
+-->
         <xsl:choose>
             <xsl:when test="contains($nameString, '&lt;') and contains($nameString, '&gt;')">
                 <!-- the name of the element -->
