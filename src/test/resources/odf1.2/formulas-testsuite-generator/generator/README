@@ -1,0 +1,36 @@
+OpenFormula Test Suite
+----------------------
+Date: 25 Jul 1006
+
+Description:
+  This program takes the OpenFormula spec as an OpenDocument Text file
+  and produces a suitable test suite as an OpenDocument Spreadsheet.
+
+Copyright:
+  Daniel Carrera 2006. This program is released under the GNU 
+  General Public License. See the file COPYING for details.
+
+Pre-requisites:
+  * You must have xsltproc installed and it must be on your PATH.
+  * You must have make (e.g. GNU make).
+  * You must have a copy of the OpenFormula spec.
+  * You must have perl on your PATH
+
+Configuration:
+  Edit the Makefile and edit the SPEC variable to point to the
+  OpenFormula spec. You may optionally configure the path to the
+  template and the name of the output file.
+
+Usage:
+  * make       => produces the test file cleanly.
+  * make debug => produces the test file, keeping intermediate files.
+  * make clean => removes intermediate files.
+
+How it works:
+  * step1.xsl
+    1. Copy everything from the template.
+    2. On the spec, search for tables with tests.
+    3. Copy all of the test data. This does not include the last
+       two columns: Actual result, Correct?
+  * step2.xsl
+    On a second pass, compute the last two columns.
