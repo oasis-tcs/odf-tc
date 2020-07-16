@@ -2,30 +2,30 @@
 
 <office:document-styles xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2">
  <office:font-face-decls>
-  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
-  <style:font-face style:name="StarSymbol1" svg:font-family="StarSymbol" style:font-charset="x-symbol"/>
-  <style:font-face style:name="StarSymbol" svg:font-family="StarSymbol" style:font-adornments="Regular" style:font-charset="x-symbol"/>
+  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
+  <style:font-face style:name="StarSymbol" svg:font-family="StarSymbol" style:font-charset="x-symbol"/>
+  <style:font-face style:name="StarSymbol1" svg:font-family="StarSymbol" style:font-adornments="Regular" style:font-charset="x-symbol"/>
   <style:font-face style:name="Symbol" svg:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   <style:font-face style:name="Wingdings" svg:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
   <style:font-face style:name="Arial" svg:font-family="Arial"/>
-  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol"/>
-  <style:font-face style:name="Courier New1" svg:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
-  <style:font-face style:name="Courier New" svg:font-family="&apos;Courier New&apos;" style:font-adornments="Standard" style:font-family-generic="modern" style:font-pitch="fixed"/>
+  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol"/>
+  <style:font-face style:name="Courier New" svg:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+  <style:font-face style:name="Courier New1" svg:font-family="&apos;Courier New&apos;" style:font-adornments="Standard" style:font-family-generic="modern" style:font-pitch="fixed"/>
   <style:font-face style:name="Liberation Mono" svg:font-family="&apos;Liberation Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   <style:font-face style:name="Aharoni" svg:font-family="Aharoni" style:font-adornments="Bold" style:font-pitch="variable"/>
   <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Arial1" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Arial Unicode MS" svg:font-family="&apos;Arial Unicode MS&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Helvetica" svg:font-family="Helvetica" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="Liberation Sans1" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-adornments="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans1" svg:font-family="&apos;Liberation Sans&apos;" style:font-adornments="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="MS Mincho" svg:font-family="&apos;MS Mincho&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Tahoma" svg:font-family="Tahoma" style:font-family-generic="system" style:font-pitch="variable"/>
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0.071cm" svg:stroke-color="#385d8a" draw:fill-color="#4f81bd" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
-   <style:paragraph-properties fo:line-height="100%" fo:text-align="start" style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties fo:line-height="100%" fo:text-align="start" style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Arial" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="en" fo:country="US" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="false" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="en" style:country-asian="US" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none"/>
@@ -44,7 +44,7 @@
   </style:default-style>
   <style:style style:name="Standard" style:family="paragraph" style:class="text">
    <style:paragraph-properties fo:margin-top="0.102cm" fo:margin-bottom="0.102cm"/>
-   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
+   <style:text-properties style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
   </style:style>
   <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
    <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" fo:keep-with-next="always"/>
@@ -94,7 +94,7 @@
   </style:style>
   <style:style style:name="Normal" style:family="paragraph">
    <style:paragraph-properties fo:margin-top="0.141cm" fo:margin-bottom="0.141cm" fo:hyphenation-ladder-count="no-limit"/>
-   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" style:font-size-complex="12pt" fo:hyphenate="false"/>
+   <style:text-properties style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" style:font-size-complex="12pt" fo:hyphenate="false"/>
   </style:style>
   <style:style style:name="Title" style:family="paragraph" style:parent-style-name="Normal" style:class="chapter">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.423cm" fo:hyphenation-ladder-count="no-limit" fo:padding-left="0cm" fo:padding-right="0cm" fo:padding-top="0.035cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="0.51pt solid #808080" fo:border-bottom="none" style:shadow="none" text:number-lines="false" text:line-number="0"/>
@@ -144,7 +144,7 @@
    <style:paragraph-properties fo:margin-left="0.762cm" fo:margin-right="0.762cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:keep-together="always" fo:hyphenation-ladder-count="no-limit" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="#d9d9d9" fo:padding-left="0cm" fo:padding-right="0cm" fo:padding-top="0.106cm" fo:padding-bottom="0.106cm" fo:border-left="none" fo:border-right="none" fo:border-top="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:shadow="none">
     <style:tab-stops/>
    </style:paragraph-properties>
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="9pt" style:font-size-asian="9pt" fo:hyphenate="false"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="9pt" style:font-size-asian="9pt" fo:hyphenate="false"/>
   </style:style>
   <style:style style:name="AppendixHeading2" style:family="paragraph" style:parent-style-name="Heading_20_2" style:next-style-name="Normal" style:default-outline-level="2" style:list-style-name="AppendixNumbering">
    <style:paragraph-properties fo:hyphenation-ladder-count="no-limit"/>
@@ -306,7 +306,7 @@
   </style:style>
   <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
    <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
-   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="12pt"/>
+   <style:text-properties style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="12pt"/>
   </style:style>
   <style:style style:name="Table_20_Contents" style:display-name="Table Contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
    <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
@@ -401,7 +401,7 @@
   <style:style style:name="Child_20_Element_20_List2" style:display-name="Child Element List2" style:family="paragraph" style:parent-style-name="Child_20_Element_20_List"/>
   <style:style style:name="Figure" style:family="paragraph" style:parent-style-name="Caption" style:class="extra"/>
   <style:style style:name="Frame_20_contents" style:display-name="Frame contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
-   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
+   <style:text-properties style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
   </style:style>
   <style:style style:name="Preformatted_20_Text" style:display-name="Preformatted Text" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm"/>
@@ -413,22 +413,22 @@
   </style:style>
   <style:style style:name="Default_20_Paragraph_20_Font" style:display-name="Default Paragraph Font" style:family="text"/>
   <style:style style:name="Datatype" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="Hyperlink" style:family="text">
-   <style:text-properties fo:color="#0000ee" style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" style:text-underline-style="none"/>
+   <style:text-properties fo:color="#0000ee" style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" style:text-underline-style="none"/>
   </style:style>
   <style:style style:name="FollowedHyperlink" style:family="text">
    <style:text-properties fo:color="#800080" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous"/>
   </style:style>
   <style:style style:name="Element" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
   </style:style>
   <style:style style:name="Attribute" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
   </style:style>
   <style:style style:name="Keyword" style:family="text" style:parent-style-name="Element">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
   </style:style>
   <style:style style:name="Emphasis" style:family="text">
    <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
@@ -442,7 +442,7 @@
   </style:style>
   <style:style style:name="Line_20_Number" style:display-name="Line Number" style:family="text" style:parent-style-name="Default_20_Paragraph_20_Font"/>
   <style:style style:name="CODE_20_temp" style:display-name="CODE temp" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-size-asian="10pt"/>
   </style:style>
   <style:style style:name="Variable" style:family="text">
    <style:text-properties fo:font-style="italic" style:font-style-asian="italic"/>
@@ -463,7 +463,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL2" style:display-name="WW_CharLFO6LVL2" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL3" style:display-name="WW_CharLFO6LVL3" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -472,7 +472,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL5" style:display-name="WW_CharLFO6LVL5" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL6" style:display-name="WW_CharLFO6LVL6" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -481,7 +481,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL8" style:display-name="WW_CharLFO6LVL8" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO6LVL9" style:display-name="WW_CharLFO6LVL9" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -490,7 +490,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL2" style:display-name="WW_CharLFO7LVL2" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL3" style:display-name="WW_CharLFO7LVL3" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -499,7 +499,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL5" style:display-name="WW_CharLFO7LVL5" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL6" style:display-name="WW_CharLFO7LVL6" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -508,7 +508,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL8" style:display-name="WW_CharLFO7LVL8" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO7LVL9" style:display-name="WW_CharLFO7LVL9" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -529,7 +529,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL2" style:display-name="WW_CharLFO31LVL2" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New1" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL3" style:display-name="WW_CharLFO31LVL3" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -538,7 +538,7 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL5" style:display-name="WW_CharLFO31LVL5" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New1" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL6" style:display-name="WW_CharLFO31LVL6" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
@@ -547,16 +547,16 @@
    <style:text-properties style:font-name="Symbol" fo:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL8" style:display-name="WW_CharLFO31LVL8" style:family="text">
-   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New1" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
+   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed" style:font-name-complex="Courier New" style:font-family-complex="&apos;Courier New&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
   </style:style>
   <style:style style:name="WW_5f_CharLFO31LVL9" style:display-name="WW_CharLFO31LVL9" style:family="text">
    <style:text-properties style:font-name="Wingdings" fo:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
   </style:style>
   <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
-   <style:text-properties fo:color="#0000ff" style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" fo:language="zxx" fo:country="none" style:text-underline-style="none" fo:background-color="transparent" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:text-properties fo:color="#0000ff" style:font-name="Liberation Sans1" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" fo:language="zxx" fo:country="none" style:text-underline-style="none" fo:background-color="transparent" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="Bullet_20_Symbols" style:display-name="Bullet Symbols" style:family="text">
-   <style:text-properties style:font-name="OpenSymbol" fo:font-family="OpenSymbol" style:font-name-asian="OpenSymbol" style:font-family-asian="OpenSymbol" style:font-name-complex="OpenSymbol" style:font-family-complex="OpenSymbol"/>
+   <style:text-properties style:font-name="OpenSymbol1" fo:font-family="OpenSymbol" style:font-name-asian="OpenSymbol1" style:font-family-asian="OpenSymbol" style:font-name-complex="OpenSymbol1" style:font-family-complex="OpenSymbol"/>
   </style:style>
   <style:style style:name="Rubies" style:family="text">
    <style:text-properties fo:font-size="6pt" style:text-underline-style="none" style:font-size-asian="6pt" style:font-size-complex="6pt" style:text-emphasize="none"/>
@@ -700,7 +700,7 @@
   <style:style style:name="WW8Num99z1" style:family="text"/>
   <style:style style:name="WW8Num99z2" style:family="text"/>
   <style:style style:name="Source_20_Text" style:display-name="Source Text" style:family="text">
-   <style:text-properties style:font-name="Courier New" fo:font-family="&apos;Courier New&apos;" style:font-style-name="Standard" style:font-family-generic="modern" style:font-pitch="fixed" fo:language="en" fo:country="US" style:font-name-asian="Courier New" style:font-family-asian="&apos;Courier New&apos;" style:font-style-name-asian="Standard" style:font-family-generic-asian="modern" style:font-pitch-asian="fixed" style:font-name-complex="Courier New" style:font-family-complex="&apos;Courier New&apos;" style:font-style-name-complex="Standard" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
+   <style:text-properties style:font-name="Courier New1" fo:font-family="&apos;Courier New&apos;" style:font-style-name="Standard" style:font-family-generic="modern" style:font-pitch="fixed" fo:language="en" fo:country="US" style:font-name-asian="Courier New1" style:font-family-asian="&apos;Courier New&apos;" style:font-style-name-asian="Standard" style:font-family-generic-asian="modern" style:font-pitch-asian="fixed" style:font-name-complex="Courier New1" style:font-family-complex="&apos;Courier New&apos;" style:font-style-name-complex="Standard" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed"/>
   </style:style>
   <style:style style:name="Strong_20_Emphasis" style:display-name="Strong Emphasis" style:family="text">
    <style:text-properties fo:font-weight="bold" fo:background-color="transparent" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
@@ -777,43 +777,43 @@
   <text:list-style style:name="List_20_1" style:display-name="List 1">
    <text:list-level-style-bullet text:level="1" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="0.401cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="0.799cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="4" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="1.2cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="1.6cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="2.001cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="7" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="2.399cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="2.8cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="3.2cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="10" text:style-name="Numbering_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="3.601cm" text:min-label-width="0.4cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
   </text:list-style>
   <text:list-style style:name="Numbering_20_1" style:display-name="Numbering 1">
@@ -822,7 +822,7 @@
    </text:list-level-style-number>
    <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="0.499cm" text:min-label-width="0.499cm"/>
-    <style:text-properties style:font-name="StarSymbol"/>
+    <style:text-properties style:font-name="StarSymbol1"/>
    </text:list-level-style-bullet>
    <text:list-level-style-number text:level="3" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
     <style:list-level-properties text:space-before="0.999cm" text:min-label-width="0.499cm"/>
@@ -1006,45 +1006,45 @@
   <text:list-style style:name="BulletRelatedWork">
    <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="1.27cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="OpenSymbol1"/>
+    <style:text-properties style:font-name="OpenSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="4.445cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="8.255cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:space-before="12.065cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
     </style:list-level-properties>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
   </text:list-style>
   <text:list-style style:name="LFO33">
@@ -1573,7 +1573,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num16z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num16z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -1585,7 +1585,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num16z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num16z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -1597,7 +1597,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num16z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num16z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -1614,7 +1614,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num17z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num17z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -1626,7 +1626,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num17z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num17z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -1638,7 +1638,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num17z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num17z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -1783,7 +1783,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num22z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num22z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -1795,7 +1795,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num22z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num22z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -1807,7 +1807,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num22z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num22z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -1824,7 +1824,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num23z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num23z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -1836,7 +1836,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num23z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num23z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -1848,7 +1848,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num23z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num23z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -1865,7 +1865,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num24z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num24z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -1877,7 +1877,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num24z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num24z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -1889,7 +1889,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num24z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num24z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -1938,7 +1938,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num26z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.81cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num26z2" text:bullet-char="">
     <style:list-level-properties text:space-before="5.08cm" text:min-label-width="0.635cm"/>
@@ -1950,7 +1950,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num26z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="7.62cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num26z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.89cm" text:min-label-width="0.635cm"/>
@@ -1962,7 +1962,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num26z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="11.43cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num26z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.7cm" text:min-label-width="0.635cm"/>
@@ -1979,7 +1979,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num27z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num27z2" text:bullet-char="">
     <style:list-level-properties text:space-before="4.445cm" text:min-label-width="0.635cm"/>
@@ -1991,7 +1991,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num27z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num27z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.255cm" text:min-label-width="0.635cm"/>
@@ -2003,7 +2003,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num27z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num27z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.065cm" text:min-label-width="0.635cm"/>
@@ -2020,7 +2020,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num28z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num28z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2032,7 +2032,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num28z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num28z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2044,7 +2044,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num28z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num28z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2061,7 +2061,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num29z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num29z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2073,7 +2073,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num29z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num29z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2085,7 +2085,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num29z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num29z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2102,7 +2102,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num30z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num30z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2114,7 +2114,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num30z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num30z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2126,7 +2126,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num30z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num30z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2235,7 +2235,7 @@
   <text:list-style style:name="WW8Num34">
    <text:list-level-style-bullet text:level="1" text:bullet-char="-">
     <style:list-level-properties text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-number text:level="2" style:num-suffix="." style:num-format="1">
     <style:list-level-properties text:space-before="0.501cm" text:min-label-width="0.499cm"/>
@@ -2304,7 +2304,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num36z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num36z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2316,7 +2316,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num36z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num36z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2328,7 +2328,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num36z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num36z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2441,7 +2441,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num40z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num40z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2453,7 +2453,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num40z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num40z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2465,7 +2465,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num40z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num40z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2513,7 +2513,7 @@
    </text:list-level-style-number>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num42z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num42z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2525,7 +2525,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num42z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num42z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2537,7 +2537,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num42z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num42z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -2651,7 +2651,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num46z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.81cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num46z2" text:bullet-char="">
     <style:list-level-properties text:space-before="5.08cm" text:min-label-width="0.635cm"/>
@@ -2663,7 +2663,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num46z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="7.62cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num46z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.89cm" text:min-label-width="0.635cm"/>
@@ -2675,7 +2675,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num46z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="11.43cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num46z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.7cm" text:min-label-width="0.635cm"/>
@@ -2820,7 +2820,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num51z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num51z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -2832,7 +2832,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num51z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num51z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -2844,7 +2844,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num51z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num51z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3149,7 +3149,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num61z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num61z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3161,7 +3161,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num61z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num61z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3173,7 +3173,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num61z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num61z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3222,7 +3222,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num63z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num63z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3234,7 +3234,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num63z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num63z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3246,7 +3246,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num63z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num63z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3327,7 +3327,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num66z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num66z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3339,7 +3339,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num66z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num66z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3351,7 +3351,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num66z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num66z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3368,7 +3368,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num67z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num67z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3380,7 +3380,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num67z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num67z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3392,7 +3392,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num67z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num67z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3409,7 +3409,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num68z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num68z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3421,7 +3421,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num68z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num68z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3433,7 +3433,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num68z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num68z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3579,7 +3579,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num73z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.81cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num73z2" text:bullet-char="">
     <style:list-level-properties text:space-before="5.08cm" text:min-label-width="0.635cm"/>
@@ -3591,7 +3591,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num73z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="7.62cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num73z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.89cm" text:min-label-width="0.635cm"/>
@@ -3603,7 +3603,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num73z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="11.43cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num73z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.7cm" text:min-label-width="0.635cm"/>
@@ -3620,7 +3620,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num74z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num74z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3632,7 +3632,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num74z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num74z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3644,7 +3644,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num74z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num74z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3661,7 +3661,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num75z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num75z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3673,7 +3673,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num75z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num75z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3685,7 +3685,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num75z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num75z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3734,7 +3734,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num77z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num77z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3746,7 +3746,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num77z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num77z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3758,7 +3758,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num77z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num77z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3775,7 +3775,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num78z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num78z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3787,7 +3787,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num78z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num78z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3799,7 +3799,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num78z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num78z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3816,7 +3816,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num79z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.81cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num79z2" text:bullet-char="">
     <style:list-level-properties text:space-before="5.08cm" text:min-label-width="0.635cm"/>
@@ -3828,7 +3828,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num79z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="7.62cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num79z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.89cm" text:min-label-width="0.635cm"/>
@@ -3840,7 +3840,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num79z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="11.43cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num79z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.7cm" text:min-label-width="0.635cm"/>
@@ -3857,7 +3857,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num80z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num80z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3869,7 +3869,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num80z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num80z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3881,7 +3881,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num80z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num80z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -3930,7 +3930,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num82z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num82z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -3942,7 +3942,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num82z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num82z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -3954,7 +3954,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num82z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num82z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4003,7 +4003,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num84z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num84z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4015,7 +4015,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num84z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num84z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4027,7 +4027,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num84z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num84z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4072,7 +4072,7 @@
   <text:list-style style:name="WW8Num86">
    <text:list-level-style-bullet text:level="1" text:bullet-char="-">
     <style:list-level-properties text:space-before="1.27cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="StarSymbol1"/>
+    <style:text-properties style:font-name="StarSymbol"/>
    </text:list-level-style-bullet>
    <text:list-level-style-number text:level="2" style:num-suffix="." style:num-format="1">
     <style:list-level-properties text:space-before="0.501cm" text:min-label-width="0.499cm"/>
@@ -4206,7 +4206,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num90z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num90z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4218,7 +4218,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num90z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num90z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4230,7 +4230,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num90z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num90z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4311,7 +4311,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num93z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num93z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4323,7 +4323,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num93z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num93z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4335,7 +4335,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num93z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num93z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4352,7 +4352,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num94z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num94z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4364,7 +4364,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num94z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num94z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4376,7 +4376,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num94z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num94z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4393,7 +4393,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num95z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num95z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4405,7 +4405,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num95z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num95z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4417,7 +4417,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num95z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num95z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4466,7 +4466,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num97z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="3.81cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num97z2" text:bullet-char="">
     <style:list-level-properties text:space-before="5.08cm" text:min-label-width="0.635cm"/>
@@ -4478,7 +4478,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num97z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="7.62cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num97z2" text:bullet-char="">
     <style:list-level-properties text:space-before="8.89cm" text:min-label-width="0.635cm"/>
@@ -4490,7 +4490,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num97z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="11.43cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num97z2" text:bullet-char="">
     <style:list-level-properties text:space-before="12.7cm" text:min-label-width="0.635cm"/>
@@ -4507,7 +4507,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num98z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num98z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4519,7 +4519,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num98z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num98z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4531,7 +4531,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num98z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num98z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4548,7 +4548,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="WW8Num99z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="1.905cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="3" text:style-name="WW8Num99z2" text:bullet-char="">
     <style:list-level-properties text:space-before="3.175cm" text:min-label-width="0.635cm"/>
@@ -4560,7 +4560,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="5" text:style-name="WW8Num99z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="5.715cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="6" text:style-name="WW8Num99z2" text:bullet-char="">
     <style:list-level-properties text:space-before="6.985cm" text:min-label-width="0.635cm"/>
@@ -4572,7 +4572,7 @@
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="8" text:style-name="WW8Num99z1" text:bullet-char="o">
     <style:list-level-properties text:space-before="9.525cm" text:min-label-width="0.635cm"/>
-    <style:text-properties style:font-name="Courier New1"/>
+    <style:text-properties style:font-name="Courier New"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="9" text:style-name="WW8Num99z2" text:bullet-char="">
     <style:list-level-properties text:space-before="10.795cm" text:min-label-width="0.635cm"/>
@@ -4703,7 +4703,7 @@
   <text:list-style style:name="BulletedList">
    <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" text:bullet-char="•">
     <style:list-level-properties text:min-label-width="0.64cm"/>
-    <style:text-properties style:font-name="StarSymbol"/>
+    <style:text-properties style:font-name="StarSymbol1"/>
    </text:list-level-style-bullet>
    <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" text:bullet-char="–">
     <style:list-level-properties text:space-before="0.641cm" text:min-label-width="0.64cm"/>
@@ -4872,7 +4872,7 @@
    <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
   </style:style>
   <style:style style:name="MT2" style:family="text">
-   <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+   <style:text-properties style:font-name="Liberation Sans1" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
   </style:style>
   <style:style style:name="MT3" style:family="text">
    <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-name-complex="Arial1" style:font-size-complex="8pt"/>
@@ -4887,14 +4887,12 @@
    <style:footer-style/>
   </style:page-layout>
   <style:page-layout style:name="Mpm2">
-   <style:page-layout-properties fo:page-width="21.59cm" fo:page-height="27.94cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="1.27cm" fo:margin-bottom="1.27cm" fo:margin-left="2.54cm" fo:margin-right="2.54cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
+   <style:page-layout-properties fo:page-width="21.59cm" fo:page-height="27.94cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2.54cm" fo:margin-bottom="1.27cm" fo:margin-left="3.17cm" fo:margin-right="3.17cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="20" style:layout-grid-base-height="0.706cm" style:layout-grid-ruby-height="0.353cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:footnote-max-height="0cm">
     <style:footnote-sep style:width="0.018cm" style:line-style="solid" style:adjustment="left" style:rel-width="33%" style:color="#000000"/>
    </style:page-layout-properties>
-   <style:header-style>
-    <style:header-footer-properties fo:min-height="0.61cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.508cm" style:dynamic-spacing="false"/>
-   </style:header-style>
+   <style:header-style/>
    <style:footer-style>
-    <style:header-footer-properties fo:min-height="0cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" style:dynamic-spacing="true"/>
+    <style:header-footer-properties fo:min-height="0.891cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.79cm" fo:background-color="transparent" style:dynamic-spacing="true" draw:fill="none"/>
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="Mpm3">
@@ -4934,12 +4932,9 @@
    </style:header>
   </style:master-page>
   <style:master-page style:name="MP0" style:page-layout-name="Mpm2">
-   <style:header>
-    <text:p text:style-name="Header"/>
-   </style:header>
    <style:footer>
-    <text:p text:style-name="MP1"><text:span text:style-name="MT1">OpenDocument-v1.3-csprd0</text:span><text:span text:style-name="MT2">2</text:span><text:span text:style-name="MT1">-part1-introduction<text:tab/><text:tab/></text:span><text:span text:style-name="MT1">6 July</text:span><text:span text:style-name="MT2"> 2020</text:span></text:p>
-    <text:p text:style-name="MP2"><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1">Standards Track Work Product<text:tab/>Copyright </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT3">©</text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"> OASIS Open 20</text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1">20</text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1">. All Rights Reserved.<text:tab/>Page </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:page-number text:select-page="current">9</text:page-number></text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:s/>of </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:page-count style:num-format="1">9</text:page-count></text:span></text:span></text:p>
+    <text:p text:style-name="MP1"><text:span text:style-name="MT1">OpenDocument-v1.3-csprd0</text:span><text:span text:style-name="MT2">2</text:span><text:span text:style-name="MT1">-part1-introduction<text:tab/><text:tab/>6 July</text:span><text:span text:style-name="MT2"> 2020</text:span></text:p>
+    <text:p text:style-name="MP2"><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1">Standards Track Work Product<text:tab/>Copyright </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT3">©</text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"> OASIS Open 2020. All Rights Reserved.<text:tab/>Page </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:page-number text:select-page="current">9</text:page-number></text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:s/>of </text:span></text:span><text:span text:style-name="Page_20_Number"><text:span text:style-name="MT1"><text:page-count style:num-format="1">9</text:page-count></text:span></text:span></text:p>
    </style:footer>
   </style:master-page>
   <style:master-page style:name="MP1" style:page-layout-name="Mpm3">

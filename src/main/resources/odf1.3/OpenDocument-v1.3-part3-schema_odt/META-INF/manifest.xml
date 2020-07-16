@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0">
  <manifest:file-entry manifest:full-path="/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.text"/>
+ <manifest:file-entry manifest:full-path="Object 9/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 9/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 9/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 9/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 9/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 9/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="ObjectReplacements/Object 71" manifest:media-type=""/>
@@ -121,16 +121,16 @@
  <manifest:file-entry manifest:full-path="Object 88/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 88/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 88/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 1/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 1/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 1/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 1/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 71/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 71/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 71/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 30/content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 30/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 30/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 30/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 30/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 30/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 87/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 87/settings.xml" manifest:media-type="text/xml"/>
@@ -143,10 +143,10 @@
  <manifest:file-entry manifest:full-path="Object 32/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 32/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 32/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 2/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 2/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 2/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 2/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 2/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 2/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 23/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 23/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -163,10 +163,10 @@
  <manifest:file-entry manifest:full-path="Object 33/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 33/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 33/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 3/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 3/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 3/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 3/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 3/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 3/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 34/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 34/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -178,10 +178,10 @@
  <manifest:file-entry manifest:full-path="Object 4/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 4/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 4/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 35/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 35/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 35/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 35/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 35/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 35/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 5/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 5/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -196,29 +196,29 @@
  <manifest:file-entry manifest:full-path="Object 6/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 6/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 6/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 37/Configurations2/accelerator/current.xml" manifest:media-type=""/>
- <manifest:file-entry manifest:full-path="Object 37/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 37/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 37/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 37/Configurations2/accelerator/current.xml" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Object 37/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 37/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 7/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 7/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 7/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
+ <manifest:file-entry manifest:full-path="Object 7/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 7/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 7/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 8/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 8/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 8/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 8/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 8/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 8/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 10/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 10/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 10/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 10/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 10/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 11/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 11/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 11/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 11/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 11/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 11/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 12/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -236,10 +236,10 @@
  <manifest:file-entry manifest:full-path="Object 14/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 14/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 14/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 15/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 15/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 15/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 15/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 15/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 15/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 16/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 16/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -276,17 +276,17 @@
  <manifest:file-entry manifest:full-path="Object 22/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 22/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 22/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 24/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 24/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 24/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 24/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 24/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 24/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 25/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 25/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 25/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 26/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 26/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 26/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
+ <manifest:file-entry manifest:full-path="Object 26/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 26/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 26/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 27/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -294,18 +294,18 @@
  <manifest:file-entry manifest:full-path="Object 27/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 27/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 27/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 28/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 28/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 28/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 28/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 29/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 29/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 29/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 29/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 29/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 41/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 41/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 41/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 41/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 41/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 41/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 42/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 42/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -321,9 +321,9 @@
  <manifest:file-entry manifest:full-path="Object 44/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 44/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 45/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 45/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 45/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 45/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 45/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 45/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 46/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -346,30 +346,30 @@
  <manifest:file-entry manifest:full-path="Object 49/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 49/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 49/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 50/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 50/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 50/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
+ <manifest:file-entry manifest:full-path="Object 50/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 50/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 50/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 51/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 51/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 51/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 51/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 51/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 51/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 52/content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 52/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 52/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 52/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 52/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 52/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 52/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 53/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 53/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 53/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 53/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 53/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 54/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 54/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 54/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 54/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 54/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 54/" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 55/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 55/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -383,8 +383,8 @@
  <manifest:file-entry manifest:full-path="Object 56/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 57/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 57/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 57/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 57/content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 57/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 57/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 58/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 58/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -401,9 +401,9 @@
  <manifest:file-entry manifest:full-path="Object 60/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 60/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 60/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 61/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 61/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 61/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 61/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 61/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 61/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 62/Configurations2/accelerator/current.xml" manifest:media-type=""/>
@@ -416,25 +416,25 @@
  <manifest:file-entry manifest:full-path="Object 63/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 63/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 63/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 64/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 64/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 64/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 64/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 64/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 64/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 65/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 65/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 65/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 65/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 65/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 65/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 66/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 66/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 66/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 66/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 66/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 67/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 67/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 67/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 67/content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 67/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 67/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 68/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 68/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -446,9 +446,9 @@
  <manifest:file-entry manifest:full-path="Object 69/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 69/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 69/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 70/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 70/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 70/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
+ <manifest:file-entry manifest:full-path="Object 70/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 70/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 70/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 38/content.xml" manifest:media-type="text/xml"/>
@@ -466,18 +466,18 @@
  <manifest:file-entry manifest:full-path="Object 94/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 95/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 95/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 95/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 95/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 95/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 95/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 96/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 96/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 96/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 96/settings.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Object 96/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 96/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 97/Configurations2/accelerator/current.xml" manifest:media-type=""/>
- <manifest:file-entry manifest:full-path="Object 97/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 97/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 97/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 97/Configurations2/accelerator/current.xml" manifest:media-type=""/>
+ <manifest:file-entry manifest:full-path="Object 97/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 97/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 98/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 98/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -486,8 +486,8 @@
  <manifest:file-entry manifest:full-path="Object 98/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 99/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 99/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 99/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 99/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 99/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 99/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 100/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 100/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -496,8 +496,8 @@
  <manifest:file-entry manifest:full-path="Object 100/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 101/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 101/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 101/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 101/content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 101/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 101/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 102/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 102/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -509,14 +509,14 @@
  <manifest:file-entry manifest:full-path="Object 91/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 91/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 91/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 92/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 92/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 92/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 92/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 92/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 92/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
+ <manifest:file-entry manifest:full-path="Object 93/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 93/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 93/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 93/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 93/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 93/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 74/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
@@ -534,21 +534,21 @@
  <manifest:file-entry manifest:full-path="Object 77/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 78/Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Object 78/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
- <manifest:file-entry manifest:full-path="Object 78/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 78/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 78/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 78/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 79/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 79/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 79/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 80/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 80/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 80/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 80/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 81/Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
  <manifest:file-entry manifest:full-path="Object 81/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 81/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 81/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 82/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 82/settings.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 82/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 82/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Object 83/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 83/content.xml" manifest:media-type="text/xml"/>
@@ -566,8 +566,8 @@
  <manifest:file-entry manifest:full-path="Object 72/content.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 72/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 72/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
- <manifest:file-entry manifest:full-path="Object 73/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 73/content.xml" manifest:media-type="text/xml"/>
+ <manifest:file-entry manifest:full-path="Object 73/settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="Object 73/" manifest:version="1.2" manifest:media-type="application/vnd.oasis.opendocument.formula"/>
  <manifest:file-entry manifest:full-path="Configurations2/accelerator/current.xml" manifest:media-type=""/>
  <manifest:file-entry manifest:full-path="Configurations2/" manifest:media-type="application/vnd.sun.xml.ui.configuration"/>
