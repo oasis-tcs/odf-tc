@@ -9,9 +9,7 @@
       <attribute name="anim:color-interpolation" defaultValue="rgb"/>
       <attribute name="anim:color-interpolation-direction" defaultValue="clockwise"/>
       <attribute name="chart:automatic-content" defaultValue="true"/>
-      <attribute name="chart:class"
-                 defaultValue="major"
-                 element="&gt;&#xA;        chart:grid"/>
+      <attribute name="chart:class" defaultValue="major" element="chart:grid"/>
       <attribute name="chart:data-source-has-labels" defaultValue="none"/>
       <attribute name="chart:display-equation" defaultValue="true"/>
       <attribute name="chart:display-r-square" defaultValue="false"/>
@@ -42,10 +40,10 @@
       <attribute name="db:visible" defaultValue="true"/>
       <attribute name="dr3d:projection"
                  defaultValue="parallel"
-                 element="&gt;&#xA;        draw:enhanced-geometry"/>
+                 element="draw:enhanced-geometry"/>
       <attribute name="dr3d:shade-mode"
                  defaultValue="flat"
-                 element="&gt;&#xA;        draw:enhanced-geometry"/>
+                 element="draw:enhanced-geometry"/>
       <attribute name="draw:concentric-gradient-fill-allowed" defaultValue="false"/>
       <attribute name="draw:display" defaultValue="always"/>
       <attribute name="draw:extrusion" defaultValue="false"/>
@@ -99,12 +97,10 @@
       <attribute name="draw:text-path-scale" defaultValue="path"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="draw:text-rotate-angle" defaultValue="0"/>
-      <attribute name="draw:type"
-                 defaultValue="standard"
-                 element="&gt;&#xA;        draw:connector"/>
+      <attribute name="draw:type" defaultValue="standard" element="draw:connector"/>
       <attribute name="draw:type"
                  defaultValue="non-primitive"
-                 element="&gt;&#xA;        draw:enhanced-geometry"/>
+                 element="draw:enhanced-geometry"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="fo:end-indent" defaultValue="0cm"/>
       <!--The following attribute default value is listed in the ODF schema-->
@@ -153,7 +149,7 @@
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="number:decimal-places"
                  defaultValue="0"
-                 element="&gt;&#xA;        number:seconds"/>
+                 element="number:seconds"/>
       <attribute name="number:exponent-interval" defaultValue="1"/>
       <attribute name="number:format-source" defaultValue="fixed"/>
       <attribute name="number:forced-exponent-sign" defaultValue="true"/>
@@ -188,20 +184,18 @@
       <attribute name="presentation:transition-on-click" defaultValue="enabled"/>
       <attribute name="smil:accelerate" defaultValue=""/>
       <attribute name="smil:autoReverse" defaultValue="false"/>
+      <attribute name="smil:calcMode" defaultValue="discrete" element="anim:animate"/>
       <attribute name="smil:calcMode"
                  defaultValue="discrete"
-                 element="&gt;&#xA;        anim:animate"/>
-      <attribute name="smil:calcMode"
-                 defaultValue="discrete"
-                 element="&gt;&#xA;        anim:animateColor"/>
+                 element="anim:animateColor"/>
       <attribute name="smil:calcMode"
                  defaultValue="paced"
-                 element="&gt;&#xA;        anim:animateMotion"/>
+                 element="anim:animateMotion"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="smil:decelerate" defaultValue="0."/>
       <attribute name="smil:direction"
                  defaultValue="forward"
-                 element="&gt;&#xA;        anim:transitionFilter"/>
+                 element="anim:transitionFilter"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="smil:fadeColor" defaultValue="#000000"/>
       <attribute name="smil:mode" defaultValue="in"/>
@@ -212,7 +206,7 @@
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="style:color"
                  defaultValue="#000000"
-                 element="&gt;&#xA;        style:column-sep"/>
+                 element="style:column-sep"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="style:distance" defaultValue="0cm"/>
       <!--The following attribute default value is listed in the ODF schema-->
@@ -226,63 +220,47 @@
       <attribute name="style:page-usage" defaultValue="all"/>
       <attribute name="style:position"
                  defaultValue="center"
-                 element="&gt;&#xA;        style:background-image"/>
+                 element="style:background-image"/>
       <attribute name="style:repeat"
                  defaultValue="repeat"
-                 element="&gt;&#xA;        style:background-image"/>
+                 element="style:background-image"/>
       <attribute name="style:style" defaultValue="solid"/>
-      <attribute name="style:type"
-                 defaultValue="left"
-                 element="&gt;&#xA;        style:tab-stop"/>
+      <attribute name="style:type" defaultValue="left" element="style:tab-stop"/>
       <attribute name="style:vertical-align"
                  defaultValue="top"
-                 element="&gt;&#xA;        style:column-sep"/>
+                 element="style:column-sep"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:cx"
-                 defaultValue="50%"
-                 element="&gt;&#xA;        svg:radialGradient"/>
+      <attribute name="svg:cx" defaultValue="50%" element="svg:radialGradient"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:cy"
-                 defaultValue="50%"
-                 element="&gt;&#xA;        svg:radialGradient"/>
+      <attribute name="svg:cy" defaultValue="50%" element="svg:radialGradient"/>
       <attribute name="svg:gradientUnits" defaultValue="objectBoundingBox"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:r"
-                 defaultValue="50%"
-                 element="&gt;&#xA;        svg:radialGradient"/>
+      <attribute name="svg:r" defaultValue="50%" element="svg:radialGradient"/>
       <attribute name="svg:spreadMethod" defaultValue="pad"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:x1"
-                 defaultValue="0%"
-                 element="&gt;&#xA;        svg:linearGradient"/>
+      <attribute name="svg:x1" defaultValue="0%" element="svg:linearGradient"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:x2"
-                 defaultValue="100%"
-                 element="&gt;&#xA;        svg:linearGradient"/>
+      <attribute name="svg:x2" defaultValue="100%" element="svg:linearGradient"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:y1"
-                 defaultValue="0%"
-                 element="&gt;&#xA;        svg:linearGradient"/>
+      <attribute name="svg:y1" defaultValue="0%" element="svg:linearGradient"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="svg:y2"
-                 defaultValue="100%"
-                 element="&gt;&#xA;        svg:linearGradient"/>
+      <attribute name="svg:y2" defaultValue="100%" element="svg:linearGradient"/>
       <attribute name="table:acceptance-state" defaultValue="pending"/>
       <attribute name="table:allow-empty-cell" defaultValue="true"/>
       <attribute name="table:automatic-find-labels" defaultValue="true"/>
       <attribute name="table:bind-styles-to-content" defaultValue="true"/>
       <attribute name="table:case-sensitive"
                  defaultValue="true"
-                 element="&gt;&#xA;        table:calculation-settings"/>
+                 element="table:calculation-settings"/>
       <attribute name="table:case-sensitive"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:filter-condition"/>
+                 element="table:filter-condition"/>
       <attribute name="table:case-sensitive"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:sort"/>
+                 element="table:sort"/>
       <attribute name="table:case-sensitive"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:subtotal-rules"/>
+                 element="table:subtotal-rules"/>
       <attribute name="table:condition-source" defaultValue="self"/>
       <attribute name="table:contains-error" defaultValue="false"/>
       <attribute name="table:contains-header" defaultValue="true"/>
@@ -293,30 +271,30 @@
       <attribute name="table:count" defaultValue="1"/>
       <attribute name="table:data-type"
                  defaultValue="text"
-                 element="&gt;&#xA;        table:filter-condition"/>
+                 element="table:filter-condition"/>
       <attribute name="table:data-type"
                  defaultValue="automatic"
-                 element="&gt;&#xA;        table:sort-by"/>
+                 element="table:sort-by"/>
       <attribute name="table:data-type"
                  defaultValue="automatic"
-                 element="&gt;&#xA;        table:sort-groups"/>
+                 element="table:sort-groups"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:date-value" defaultValue="1899-12-30"/>
       <attribute name="table:display"
                  defaultValue="true"
-                 element="&gt;&#xA;        table:table-column-group"/>
+                 element="table:table-column-group"/>
       <attribute name="table:display"
                  defaultValue="true"
-                 element="&gt;&#xA;        table:table-row-group"/>
+                 element="table:table-row-group"/>
       <attribute name="table:display"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:error-message"/>
+                 element="table:error-message"/>
       <attribute name="table:display"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:help-message"/>
+                 element="table:help-message"/>
       <attribute name="table:display"
                  defaultValue="true"
-                 element="&gt;&#xA;        table:data-pilot-member"/>
+                 element="table:data-pilot-member"/>
       <attribute name="table:display-border" defaultValue="true"/>
       <attribute name="table:display-duplicates" defaultValue="true"/>
       <attribute name="table:display-filter-buttons" defaultValue="false"/>
@@ -342,15 +320,15 @@
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:number-columns-repeated"
                  defaultValue="1"
-                 element="&gt;&#xA;        table:covered-table-cell"/>
+                 element="table:covered-table-cell"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:number-columns-repeated"
                  defaultValue="1"
-                 element="&gt;&#xA;        table:table-cell"/>
+                 element="table:table-cell"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:number-columns-repeated"
                  defaultValue="1"
-                 element="&gt;&#xA;        table:table-column"/>
+                 element="table:table-column"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:number-columns-spanned" defaultValue="1"/>
       <!--The following attribute default value is listed in the ODF schema-->
@@ -359,15 +337,13 @@
       <attribute name="table:number-rows-spanned" defaultValue="1"/>
       <attribute name="table:on-update-keep-size" defaultValue="true"/>
       <attribute name="table:on-update-keep-styles" defaultValue="false"/>
+      <attribute name="table:order" defaultValue="ascending" element="table:sort-by"/>
       <attribute name="table:order"
                  defaultValue="ascending"
-                 element="&gt;&#xA;        table:sort-by"/>
-      <attribute name="table:order"
-                 defaultValue="ascending"
-                 element="&gt;&#xA;        table:sort-groups"/>
+                 element="table:sort-groups"/>
       <attribute name="table:orientation"
                  defaultValue="row"
-                 element="&gt;&#xA;        table:database-range"/>
+                 element="table:database-range"/>
       <attribute name="table:page-breaks-on-group-change" defaultValue="false"/>
       <attribute name="table:parse-sql-statement" defaultValue="false"/>
       <attribute name="table:precision-as-shown" defaultValue="false"/>
@@ -375,13 +351,11 @@
       <attribute name="table:protect" defaultValue="false"/>
       <attribute name="table:protected"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:covered-table-cell"/>
+                 element="table:covered-table-cell"/>
+      <attribute name="table:protected" defaultValue="false" element="table:table"/>
       <attribute name="table:protected"
                  defaultValue="false"
-                 element="&gt;&#xA;        table:table"/>
-      <attribute name="table:protected"
-                 defaultValue="false"
-                 element="&gt;&#xA;        table:table-cell"/>
+                 element="table:table-cell"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="table:protection-key-digest-algorithm"
                  defaultValue="http://www.w3.org/2000/09/xmldsig#sha1"/>
@@ -419,36 +393,36 @@
       <attribute name="text:current-selected" defaultValue="false"/>
       <attribute name="text:display"
                  defaultValue="number"
-                 element="&gt;&#xA;        text:index-entry-chapter"/>
+                 element="text:index-entry-chapter"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="text:display-levels" defaultValue="1"/>
       <attribute name="text:global" defaultValue="false"/>
       <attribute name="text:index-scope" defaultValue="document"/>
       <attribute name="text:index-scope"
                  defaultValue="document"
-                 element="&gt;&#xA;        text:alphabetical-index-source"/>
+                 element="text:alphabetical-index-source"/>
       <attribute name="text:index-scope"
                  defaultValue="document"
-                 element="&gt;&#xA;        text:illustration-index-source"/>
+                 element="text:illustration-index-source"/>
       <attribute name="text:index-scope"
                  defaultValue="document"
-                 element="&gt;&#xA;        text:object-index-source"/>
+                 element="text:object-index-source"/>
       <attribute name="text:index-scope"
                  defaultValue="document"
-                 element="&gt;&#xA;        text:table-index-source"/>
+                 element="text:table-index-source"/>
       <attribute name="text:index-scope"
                  defaultValue="document"
-                 element="&gt;&#xA;        text:user-index-source"/>
+                 element="text:user-index-source"/>
       <attribute name="text:ignore-case" defaultValue="false"/>
       <attribute name="text:is-list-header" defaultValue="false"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="text:level"
                  defaultValue="1"
-                 element="&gt;&#xA;        text:numbered-paragraph"/>
+                 element="text:numbered-paragraph"/>
       <attribute name="text:main-entry" defaultValue="false"/>
       <attribute name="text:number-lines"
                  defaultValue="true"
-                 element="&gt;&#xA;        text:linenumbering-configuration"/>
+                 element="text:linenumbering-configuration"/>
       <attribute name="text:number-position" defaultValue="left"/>
       <attribute name="text:numbered-entries" defaultValue="false"/>
       <attribute name="text:relative-tab-stop-position" defaultValue="true"/>
@@ -459,15 +433,15 @@
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="text:start-value"
                  defaultValue="1"
-                 element="&gt;&#xA;        text:list-level-style-number"/>
+                 element="text:list-level-style-number"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="text:start-value"
                  defaultValue="1"
-                 element="&gt;&#xA;        text:notes-configuration"/>
+                 element="text:notes-configuration"/>
       <!--The following attribute default value is listed in the ODF schema-->
       <attribute name="text:start-value"
                  defaultValue="1"
-                 element="&gt;&#xA;        text:outline-level-style"/>
+                 element="text:outline-level-style"/>
       <attribute name="text:track-changes" defaultValue="true"/>
       <attribute name="text:use-caption" defaultValue="true"/>
       <attribute name="text:use-chart-objects" defaultValue="false"/>
@@ -476,10 +450,10 @@
       <attribute name="text:use-graphics" defaultValue="false"/>
       <attribute name="text:use-index-marks"
                  defaultValue="false"
-                 element="&gt;&#xA;        text:user-index-source"/>
+                 element="text:user-index-source"/>
       <attribute name="text:use-index-source-styles"
                  defaultValue="false"
-                 element="&gt;&#xA;        text:user-index-source"/>
+                 element="text:user-index-source"/>
       <attribute name="text:use-keys-as-entries" defaultValue="false"/>
       <attribute name="text:use-math-objects" defaultValue="false"/>
       <attribute name="text:use-objects" defaultValue="false"/>
@@ -490,195 +464,141 @@
       <attribute name="text:use-tables" defaultValue="false"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        db:connection-resource"/>
+                 element="db:connection-resource"/>
+      <attribute name="xlink:actuate" defaultValue="onRequest" element="draw:a"/>
+      <attribute name="xlink:actuate" defaultValue="onRequest" element="form:form"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        draw:a"/>
+                 element="meta:template"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        form:form"/>
+                 element="presentation:event-listener"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        meta:template"/>
+                 element="presentation:sound"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        presentation:event-listener"/>
+                 element="script:event-listener"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        presentation:sound"/>
+                 element="svg:definition-src"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        script:event-listener"/>
+                 element="svg:font-face-uri"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        svg:definition-src"/>
+                 element="table:cell-range-source"/>
       <attribute name="xlink:actuate"
                  defaultValue="onRequest"
-                 element="&gt;&#xA;        svg:font-face-uri"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onRequest"
-                 element="&gt;&#xA;        table:cell-range-source"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onRequest"
-                 element="&gt;&#xA;        table:table-source"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onRequest"
-                 element="&gt;&#xA;        text:a"/>
+                 element="table:table-source"/>
+      <attribute name="xlink:actuate" defaultValue="onRequest" element="text:a"/>
+      <attribute name="xlink:actuate" defaultValue="onLoad" element="draw:applet"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:applet"/>
+                 element="draw:fill-image"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:fill-image"/>
+                 element="draw:floating-frame"/>
+      <attribute name="xlink:actuate" defaultValue="onLoad" element="draw:image"/>
+      <attribute name="xlink:actuate" defaultValue="onLoad" element="draw:object"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:floating-frame"/>
+                 element="draw:object-ole"/>
+      <attribute name="xlink:actuate" defaultValue="onLoad" element="draw:plugin"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:image"/>
+                 element="meta:auto-reload"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:object"/>
+                 element="style:background-image"/>
       <attribute name="xlink:actuate"
                  defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:object-ole"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onLoad"
-                 element="&gt;&#xA;        draw:plugin"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onLoad"
-                 element="&gt;&#xA;        meta:auto-reload"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onLoad"
-                 element="&gt;&#xA;        style:background-image"/>
-      <attribute name="xlink:actuate"
-                 defaultValue="onLoad"
-                 element="&gt;&#xA;        text:list-level-style-image"/>
+                 element="text:list-level-style-image"/>
       <!--The following attribute default value is listed in the ODF schema-->
-      <attribute name="xlink:href" defaultValue=".." element="&gt;&#xA;        chart:chart"/>
-      <attribute name="xlink:href" defaultValue="" element="&gt;&#xA;        draw:applet"/>
-      <attribute name="xlink:show"
-                 defaultValue="replace"
-                 element="&gt;&#xA;        meta:auto-reload"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        draw:applet"/>
+      <attribute name="xlink:href" defaultValue=".." element="chart:chart"/>
+      <attribute name="xlink:href" defaultValue="" element="draw:applet"/>
+      <attribute name="xlink:show" defaultValue="replace" element="meta:auto-reload"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:applet"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:fill-image"/>
       <attribute name="xlink:show"
                  defaultValue="embed"
-                 element="&gt;&#xA;        draw:fill-image"/>
+                 element="draw:floating-frame"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:image"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:object"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:object-ole"/>
+      <attribute name="xlink:show" defaultValue="embed" element="draw:plugin"/>
       <attribute name="xlink:show"
                  defaultValue="embed"
-                 element="&gt;&#xA;        draw:floating-frame"/>
+                 element="presentation:event-listener"/>
       <attribute name="xlink:show"
                  defaultValue="embed"
-                 element="&gt;&#xA;        draw:image"/>
+                 element="style:background-image"/>
       <attribute name="xlink:show"
                  defaultValue="embed"
-                 element="&gt;&#xA;        draw:object"/>
+                 element="text:list-level-style-image"/>
       <attribute name="xlink:show"
                  defaultValue="embed"
-                 element="&gt;&#xA;        draw:object-ole"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        draw:plugin"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        presentation:event-listener"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        style:background-image"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        text:list-level-style-image"/>
-      <attribute name="xlink:show"
-                 defaultValue="embed"
-                 element="&gt;&#xA;        text:section-source"/>
+                 element="text:section-source"/>
       <attribute name="xlink:show"
                  defaultValue="none"
-                 element="&gt;&#xA;        db:connection-resource"/>
+                 element="db:connection-resource"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        db:connection-resource"/>
+                 element="db:connection-resource"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        db:file-based-database"/>
-      <attribute name="xlink:type" defaultValue="simple" element="&gt;&#xA;        draw:a"/>
+                 element="db:file-based-database"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:a"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:applet"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:area-circle"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:area-polygon"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:applet"/>
+                 element="draw:area-rectangle"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:fill-image"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:area-circle"/>
+                 element="draw:floating-frame"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:image"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:object"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:object-ole"/>
+      <attribute name="xlink:type" defaultValue="simple" element="draw:plugin"/>
+      <attribute name="xlink:type" defaultValue="simple" element="form:form"/>
+      <attribute name="xlink:type" defaultValue="simple" element="meta:auto-reload"/>
+      <attribute name="xlink:type" defaultValue="simple" element="meta:template"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:area-polygon"/>
+                 element="presentation:event-listener"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:area-rectangle"/>
+                 element="presentation:sound"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:fill-image"/>
+                 element="script:event-listener"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:floating-frame"/>
+                 element="style:background-image"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:image"/>
+                 element="svg:definition-src"/>
+      <attribute name="xlink:type" defaultValue="simple" element="svg:font-face-uri"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:object"/>
+                 element="table:cell-range-source"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:object-ole"/>
+                 element="table:table-source"/>
+      <attribute name="xlink:type" defaultValue="simple" element="text:a"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        draw:plugin"/>
+                 element="text:alphabetical-index-auto-mark-file"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        form:form"/>
+                 element="text:list-level-style-image"/>
+      <attribute name="xlink:type" defaultValue="simple" element="text:script"/>
       <attribute name="xlink:type"
                  defaultValue="simple"
-                 element="&gt;&#xA;        meta:auto-reload"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        meta:template"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        presentation:event-listener"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        presentation:sound"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        script:event-listener"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        style:background-image"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        svg:definition-src"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        svg:font-face-uri"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        table:cell-range-source"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        table:table-source"/>
-      <attribute name="xlink:type" defaultValue="simple" element="&gt;&#xA;        text:a"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        text:alphabetical-index-auto-mark-file"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        text:list-level-style-image"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        text:script"/>
-      <attribute name="xlink:type"
-                 defaultValue="simple"
-                 element="&gt;&#xA;        text:section-source"/>
+                 element="text:section-source"/>
       <attribute name="" defaultValue="false"/>
       <attribute name="" defaultValue="linearpolynomialexponential"/>
       <attribute name="" defaultValue="2"/>
