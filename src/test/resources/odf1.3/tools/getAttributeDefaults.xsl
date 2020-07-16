@@ -164,15 +164,12 @@
                 <!-- the name of the element -->
                 <xsl:value-of select='substring-after(substring-before($nameString, "&gt;"), "&lt;")' />
             </xsl:when>
-            <xsl:when test="not(contains($nameString, '&lt;'))">
-                <!-- Ignore as it is just an ending part already addressed -->
-            </xsl:when>
-            <xsl:otherwise>
+            <xsl:when test="not(contains($nameString, '&gt;'))">
                 <!-- the name of the element was separated into several text:span -->
                 <xsl:call-template name="get-element-name">
-                    <xsl:with-param name="nameString" select="concat($nameString, normalize-space(following-sibling::text:span))" />
+                    <xsl:with-param name="nameString" select="concat($nameString, normalize-space(string-join(following-sibling::text:span)))" />
                 </xsl:call-template>
-            </xsl:otherwise>
+            </xsl:when>
         </xsl:choose>
 
     </xsl:template>
