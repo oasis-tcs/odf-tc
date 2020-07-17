@@ -2,9 +2,11 @@
 
 <!-- <<TableOfContents>> -->
 
-Parts of the ODF specification text are generated from the schema. For this reason, the ODF TC maintains so called [*editor drafts*](#EditorDraftConventions). The editor drafts do not contain the generated text (or at least not up-to date versions of it), but only [*anchors*](#Anchors) where text shall be inserted. Before an ODF specification is submitted for a CSD vote, the anchors need to be replaced with the generated text. Further, The editor drafts of the formula specification part contain some annotations sections that have to be removed before submitting a draft for a CSD vote, and cross references have to be updated. All this is done by a set of XSLT style sheets, which are referred as [*text update style sheets*](#TextUpdateProcess) in the following..
+Parts of the ODF specification text are generated from the schema. For this reason, the ODF TC maintains so called [*editor drafts*](#EditorDraftConventions). The editor drafts do not contain the generated text (or at least not up-to date versions of it), but only [*anchors*](#Anchors) where text shall be inserted. Before an ODF specification is submitted for a CSD vote, the anchors need to be replaced with the generated text. Further, the editor drafts of the formula specification part contain some annotations sections that have to be removed before submitting a draft for a CSD vote, and cross references have to be updated. All this is done by a set of XSLT style sheets, which are referred as [*text update style sheets*](#TextUpdateProcess) in the following..
 
 The anchors and style information is also used to run [*consistency checks*](#ConsistencyChecks) between the specification documents and the schema, and to insert and check cross references.
+
+**NOTE**: The previous version of this document for ODF 1.2 is in the [ODF TC's Wiki](https://wiki.oasis-open.org/office/How_to_prepare_ODF_specification_documents).
 
 ## Editor Draft Conventions
 
@@ -93,13 +95,12 @@ The text update style sheets update the normative an non normative reference sec
 
 ### Introduction
 
-The text update process is based on XSLT style sheets. The style sheets are currently included in the [http://odftoolkit.org/sources/odf-xslt-Runner-src/show](hg repository) of the [http://odftoolkit.org/projects/odftoolkit/pages/ODFXSLTRunner](ODF Toolkit's ODFXSLTRunner) tool as [http://odftoolkit.org/projects/odftoolkit/sources/odf-xslt-Runner-src/show/sample_xslt](sample XSLT style sheets).
+The text update process is based on XSLT style sheets. The style sheets are currently included in the [ODF Toolkit repository](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunner.html) of the [ODF Toolkit's ODF XSLTRunner](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunnerExamples.html) tool as [sample XSLT style sheets](https://github.com/tdf/odftoolkit/tree/master/xslt-runner/src/test/resources/xslt).
 
 Some of them have to be applied to the content.xml of the ODF specification document. There are several ways to apply these style sheets:
 
  1. The ODF specification may be unzipped, the style sheet applied, and the ODF specification zipped again.
- 1. The [http://odftoolkit.org/projects/odftoolkit/pages/ODFXSLTRunner](ODF Toolkit's ODFXSLTRunner) tool may be used. It allows to apply an XSLT style sheet to an ODF package without having to unzip the document.
- 1. The [http://odftoolkit.org/projects/odftoolkit/pages/ODFXSLTRunnerTask](ODF Toolkit's ODFXSLTRunnerTask) Netbeans project includes an [http://odftoolkit.org/projects/odftoolkit/sources/odf-xslt-runner-task-src/content/build-xref.xml](build-xref.xml) file which defines several ant targets to apply the style sheets.
+ 1. The [ODF Toolkit's ODF XSLTRunner](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunner.html) tool may be used. It allows to apply an XSLT style sheet to an ODF package without having to unzip the document.
 
 ### Preparations
 
@@ -119,7 +120,7 @@ java -jar saxon9.jar -s:OpenDocument-v1.2-cd05-rev02-schema.rng -o:OpenDocument-
 
 Next, the text update style sheet itself can be applied. It is called **add-embedded-xref.xsl** and has to be applied to the context.xml file of an ODF part 1 editor revision. The flat schema has to be passed as parameter **xref-schema-file**.
 
-**Example using ODFXSLTRunner**
+#### Example using ODF XSLTRunner
 
 ```shell
 java -jar odfxsltrunner.jar create-embedded-xref.xsl OpenDocument-v1.2-cd05-part1-editor-revision-10.odt OpenDocument-v1.2-cd05-rev02-part1.odt
@@ -138,7 +139,7 @@ In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project, the ant tar
 
 For part 2, no flat schema file is required. In all other aspects, the application of the text update style sheet equals that of part 1.
 
-**Example using ODFXSLTRunner:**
+**Example using ODF XSLTRunner:**
 
 ```shell
 java -jar odfxsltrunner.jar create-embedded-xref.xsl OpenDocument-v1.2-cd05-part2-editor-revision-5.odt OpenDocument-v1.2-cd05-rev02-part2.odt
@@ -150,7 +151,7 @@ In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project, the ant tar
 
 The application of the text update style sheets for part 3 equals that of part 1, except that a flat schema has to be created for the ODF manifest schema.
 
-**Example using ODFXSLTRunner:**
+**Example using ODF XSLTRunner:**
 
 ```shell
 java -jar saxon9.jar -s:OpenDocument-v1.2-cd05-rev02-manifest-schema.rng -o:OpenDocument-v1.2-cd05-rev02-manifest-schema.rng create-flat-schema.xsl
@@ -168,7 +169,7 @@ For the overview document, the text update style sheet does not require a flat s
 
 When copying the table of content, the hyperlinks in the table of content are adapted to link to the three parts. It is therefore required to also pass the relative paths of the three parts as they shall appear in the hyperlinks as parameters. The names of these parameters are: **part1-toc-rel-path**, **part2-toc-rel-path** and **part3-toc-rel-path**.
 
-**Example using ODFXSLTRunner:**
+**Example using ODF XSLTRunner:**
 
 ```shell
 java -jar odfxsltrunner.jar create-embedded-xref.xsl OpenDocument-v1.2-cd05-editor-revision-02.odt OpenDocument-v1.2-cd05-rev02.odt
@@ -234,7 +235,7 @@ The text update style sheet **create-embedded-xref.xsl** includes a couple of co
 
 The style sheet **check-xrefs.xsl** checks whether all document internal cross references (ODF **text:reference-ref** elements) can be resolved. It is applied to the content.xml of ODF specification documents on which the text update style sheets have been applied already. The target of the style sheet is a text file that list unresolvable references.
 
-**Example using ODFXSLTRunner:**
+**Example using ODF XSLTRunner:**
 
 ```shell
 java -jar odfxsltrunner.jar check-xrefs.xsl OpenDocument-v1.2-cd05-rev02-part1.odt -o OpenDocument-v1.2-cd05-rev02-part1.log
@@ -246,7 +247,7 @@ In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project, the ant tar
 
 The style sheet **check-completeness.xsl** checks whether an ODF specification document contains  references and headings for all element and attributes defined in the ODF schema. It is applied to the content.xml of part1 and and part 3 of the ODF specification. The flat RNG schema (or flat RNG manifest schema) has to be passed as parameter **xref-schema-file**. The target is a text file listing all errors that have been found.
 
-**Example using ODFXSLTRunner:**
+**Example using ODF XSLTRunner:**
 
 ```shell
 java -jar odfxsltrunner.jar check-completeness.xsl OpenDocument-v1.2-cd05-part1-editor-revision-10.odt -o OpenDocument-v1.2-cd05-rev02-part1.log
@@ -267,9 +268,9 @@ In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project, the ant tar
 
 ## XHTML Specifications
 
-XHTML versions of the ODF specification may be created as described [http://odftoolkit.org/projects/conformancetools/pages/ODFXSLTRunnerExamples#XHTML](here).
+XHTML versions of the ODF specification may be created as described [here](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunnerExamples.html).
 
-For part 1 and 2, the embedded formula objects have to be replaced with images before the XHTML transformation can be applied to the specification documents. The process to replace the embedded formula objects is described [http://odftoolkit.org/projects/conformancetools/pages/ODFXSLTRunnerExamples#Replace_embedded_objects_with_bitmap_images](here).
+For part 1 and 2, the embedded formula objects have to be replaced with images before the XHTML transformation can be applied to the specification documents. The process to replace the embedded formula objects is described [here](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunnerExamples.html#replace-embedded-objects-with-bitmap-images).
 
 For the ODF overview document, the hyperlinks in the table of content for part 1, 2 and 3 don't work in the resulting HTML document, since they refer to the ODF rather than to the HTML versions of part 1, 2 and 3. This is corrected by XSLT style sheet **adapt-html-hrefs.xsl**, which is applied to the XHTML version of the overview document.
 
@@ -279,4 +280,4 @@ For the ODF overview document, the hyperlinks in the table of content for part 1
 java -jar saxon9.jar -s:OpenDocument-v1.2-cd05-rev02.html -o:OpenDocument-v1.2-cd05-rev02-new.html adapt-html-hrefs.xsl
 ```
 
-In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project has the targets **create-v12-part0-html**, **create-v12-part1-html**, **create-v12-part2-html** and **create-v12-part3-html** for preparing XHTML versions of the HTML specification. These targets also replace MathML objects with bitmap images as described [http://odftoolkit.org/projects/odftoolkit/pages/ODFXSLTRunnerExamples#Replace_embedded_objects_with_bitmap_images](here).
+In the **build-xref.xml** file of the **ODFXSLTRunnerTask** project has the targets **create-v12-part0-html**, **create-v12-part1-html**, **create-v12-part2-html** and **create-v12-part3-html** for preparing XHTML versions of the HTML specification. These targets also replace MathML objects with bitmap images as described [here](https://tdf.github.io/odftoolkit/xsltrunner/ODFXSLTRunnerExamples.html#replace-embedded-objects-with-bitmap-images).
