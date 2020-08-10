@@ -61,7 +61,7 @@
         -->
         <xsl:variable name="referenceToken" select="text:reference-mark-start/@text:name[contains(.,'attribute-') or contains(.,'property-')]" />
         <xsl:choose>
-            <xsl:when test="contains($referenceToken, '_element') and contains($referenceToken,'attibute-')">
+            <xsl:when test="contains($referenceToken, '_element') and contains($referenceToken,'attribute-')">
                 <!-- the name of the attribute 
                 attribute-draw:may-script
                 attribute-draw:type_element-draw:connector
