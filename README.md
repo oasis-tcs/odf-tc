@@ -86,7 +86,7 @@ Within the above folders the TC deliverables are saved under the following restr
     1. ODT files - being zipped XML files & pictures
     2. Unpacked directory named as the document with the suffix '.' exchanged as '_'
 
-To unzipped and zip the ODT we are offering following tools:
+To unzip and zip the ODT we are offering following tools:
 
 ```shell
 java -cp target/test-classes org.oasis_open.odf_tc.Unzip src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction.odt
@@ -105,6 +105,8 @@ In the future, providing a new ODT should trigger an automated process:
 1. Unzip the changed ODT & commit the unzipped ODT XML to GIT as well
 2. Transform the changed ODT to HTML & commit the results beyond reference /docs/odf&lt;VERSION&gt;
 3. In case of ODT schema - extract the default values & compare them with the reference beyond /docs/odf&lt;VERSION&gt;
+
+Currently, LibreOffice 6.4 is being used to edit the ODT files.
 
 ## Background
 
