@@ -59,9 +59,9 @@
         <!-- Within the header is a reference token, which gives clues about the default value's attribute for instance: 
             <text:reference-mark-start text:name="attribute-table:number-columns-repeated_element-table:table-cell"/>            
         -->
-        <xsl:variable name="referenceToken" select="text:reference-mark-start/@text:name[contains(.,'attribute-')]" />
+        <xsl:variable name="referenceToken" select="text:reference-mark-start/@text:name[contains(.,'attribute-') or contains(.,'property-')]" />
         <xsl:choose>
-            <xsl:when test="contains($referenceToken, '_element')">
+            <xsl:when test="contains($referenceToken, '_element') and contains($referenceToken,'attibute-')">
                 <!-- the name of the attribute 
                 attribute-draw:may-script
                 attribute-draw:type_element-draw:connector
@@ -70,9 +70,15 @@
                 -->
                 <xsl:value-of select="substring-after(substring-before($referenceToken, '_element'), 'attribute-')" />
             </xsl:when>
+        	<xsl:when test="contains($referenceToken, '_element')">
+        		<xsl:value-of select="substring-after(substring-before($referenceToken, '_element'), 'property-')" />
+        	</xsl:when>
+        	<xsl:when test="contains($referenceToken,'attribute-')">
+        		<!-- the name of the attribute -->
+        		<xsl:value-of select="substring-after($referenceToken, 'attribute-')" />
+        	</xsl:when>
             <xsl:otherwise>
-                <!-- the name of the attribute -->
-                <xsl:value-of select="substring-after($referenceToken, 'attribute-')" />
+            	<xsl:value-of select="substring-after($referenceToken, 'property-')" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
