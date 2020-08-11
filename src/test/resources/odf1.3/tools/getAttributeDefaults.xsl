@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright 2020 Svante Schubert
-  Copyright 2000, 2010 Oracle and/or its affiliates.
-  Copyright 2009 IBM. All rights reserved.
-
   Use is subject to license terms.
 
   Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -20,14 +16,14 @@
 
 -->
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xt="http://www.jclark.com/xt" xmlns:common="http://exslt.org/common" xmlns:xalan="http://xml.apache.org/xalan" exclude-result-prefixes="chart config dc dom dr3d draw fo form math meta number office ooo oooc ooow script style svg table text xforms xlink xsd xsi xt common xalan" xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Extracting default values from the ODF 1.2 part1 specification
-		Version 1.2.1 by Svante.Schubert@ gmail.com  -->
+    <!-- Extracting default values from the ODF schema specification
+        Idea by Daniel Carrera - https://danielcarrera.space/
+		Since ODF 1.2 maintained by Svante Schubert -->
     <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no" />
-
-    <xsl:mode streamable="yes" />
+    <xsl:param name="debug" select="false()" /> <!-- HERE! ENABLE DEBUG OUTPUT! -->
 
     <!-- ********************************************************** -->
-    <!-- *** Get the default attribute values for ODF elements  *** -->
+    <!-- *** Get the default attribute values for ODF attributes ** -->
     <!-- ********************************************************** -->
     <xsl:template match="/">
         <config xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:rdfa="http://docs.oasis-open.org/opendocument/meta/rdfa#" office:version="1.2">
@@ -37,92 +33,110 @@
         </config>
     </xsl:template>
 
-    <!-- for every stylable text element with the indicator of a default value (ie. the style 'Default_20_Value')...  -->
-    <xsl:template match="*[@text:style-name='Default_20_Value']">
+    <!-- match every paragraph within the ODF specification declaring a default value (ie. has a 'Default_20_Value' style)  -->
+    <xsl:template match="text:p[@text:style-name='Default_20_Value']">
         <xsl:call-template name="get-default-value-declaration">
             <xsl:with-param name="attributeName">
-                <!-- the attribute name is being gathered, by traversing backwards in the document to the previous attribute declaration (found in a heading) -->
+                <!-- get the attribute name of the default value by traversing backwards in the document to the previous attribute name (found in a heading) -->
                 <xsl:apply-templates select="preceding::text:h[1]" mode="get-attribute-name" />
             </xsl:with-param>
         </xsl:call-template>
-
     </xsl:template>
 
 
-    <!-- starting from an attribute description where defaults exist..  -->
+    <!-- find the attribute name of the defaults value  -->
     <xsl:template match="text:h" mode="get-attribute-name">
-<!--        
-            <xsl:message>TextHeader:'<xsl:copy-of select="."/>'
-            
-            </xsl:message>
--->
-        <!-- Within the header is a reference token, which gives clues about the default value's attribute for instance: 
-            <text:reference-mark-start text:name="attribute-table:number-columns-repeated_element-table:table-cell"/>            
-        -->
-        <xsl:variable name="referenceToken" select="text:reference-mark-start/@text:name[contains(.,'attribute-') or contains(.,'property-')]" />
-        <xsl:choose>
-            <xsl:when test="contains($referenceToken, '_element') and contains($referenceToken,'attribute-')">
-                <!-- the name of the attribute 
-                attribute-draw:may-script
-                attribute-draw:type_element-draw:connector
-                attribute-draw:type_element-draw:enhanced-geometry
 
-                -->
-                <xsl:value-of select="substring-after(substring-before($referenceToken, '_element'), 'attribute-')" />
+        <xsl:if test="$debug=true()">
+            <xsl:message></xsl:message>
+            <xsl:message></xsl:message>
+            <xsl:message></xsl:message>
+            <xsl:message>Preceding Header containing the ODF attribute name:</xsl:message>
+            <xsl:message><xsl:copy-of select="."/></xsl:message>
+        </xsl:if>
+
+        <!-- Within the header is a reference mark, which gives clues about the default value's attribute for instance:
+            <text:reference-mark-start text:name="attribute-table:number-columns-repeated_element-table:table-cell"/>
+                possible names of the reference-mark:
+                    attribute-draw:may-script
+                    attribute-draw:type_element-draw:connector
+                    attribute-draw:type_element-draw:enhanced-geometry
+                    property-style:run-through
+        -->
+        <xsl:variable name="referenceMark" select="text:reference-mark-start/@text:name[contains(.,'attribute-') or contains(.,'property-')]" />
+        <xsl:choose>
+            <xsl:when test="contains($referenceMark, '_element') and contains($referenceMark,'attribute-')">
+                <!-- example names of matched reference-mark:
+                        attribute-draw:may-script
+                        attribute-draw:type_element-draw:connector
+                        attribute-draw:type_element-draw:enhanced-geometry
+                        property-style:run-through
+                  -->
+                <xsl:value-of select="substring-after(substring-before($referenceMark, '_element'), 'attribute-')" />
             </xsl:when>
-        	<xsl:when test="contains($referenceToken, '_element')">
-        		<xsl:value-of select="substring-after(substring-before($referenceToken, '_element'), 'property-')" />
-        	</xsl:when>
-        	<xsl:when test="contains($referenceToken,'attribute-')">
-        		<!-- the name of the attribute -->
-        		<xsl:value-of select="substring-after($referenceToken, 'attribute-')" />
+        	<xsl:when test="contains($referenceMark,'attribute-')">
+                <!-- example names of matched reference-mark:
+                        attribute-draw:may-script
+                  -->
+        		<xsl:value-of select="substring-after($referenceMark, 'attribute-')" />
         	</xsl:when>
             <xsl:otherwise>
-            	<xsl:value-of select="substring-after($referenceToken, 'property-')" />
+            	<xsl:value-of select="substring-after($referenceMark, 'property-')" />
+                <!-- example name of matched reference-mark:
+                        property-style:run-through
+                  -->
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
-    <!-- Context is the preceding heading of a "Default_20_Value" styled text container (paragraph or span)-->
+    <!-- Context is the paragraph with "Default_20_Value" styled -->
     <xsl:template name="get-default-value-declaration">
-        <xsl:param name="attributeName" />
+        <xsl:param name="attributeName" /><!-- extraced from text reference from preceding header -->
 
-<!--
-        <xsl:message>TextContainer:'<xsl:copy-of select="."/>'
-        
-        </xsl:message>
--->
+        <xsl:if test="$debug=true()">
+            <xsl:message>.</xsl:message>
+            <xsl:message>From header extracted ODF attribute:</xsl:message>
+            <xsl:message>@<xsl:value-of select="$attributeName"/></xsl:message>
+            <xsl:message>.</xsl:message>
+            <xsl:message>The paragraph with default value within:</xsl:message>
+            <xsl:message><xsl:copy-of select="."/></xsl:message>
+        </xsl:if>
 
         <xsl:variable name="defaultValue">
-            <!-- get the default Value (ie. the styleable text element with the style 'Attribute_20_Value')  -->
-            <xsl:variable name="defaultValueElement" select="string-join(*[@text:style-name='Attribute_20_Value' or @text:style-name='Attribute_20_Value_20_Instance'])" />
+            <!-- get the default Value (ie. the sum of all spans with 'Attribute_20_Value' style)  -->
+            <xsl:variable name="defaultValueString" select="string-join(text:span[@text:style-name='Attribute_20_Value' or @text:style-name='Attribute_20_Value_20_Instance'])" />
             <xsl:choose>
-                <xsl:when test="normalize-space($defaultValueElement) != ''">
-                    <xsl:value-of select="normalize-space($defaultValueElement)" />
+                <xsl:when test="normalize-space($defaultValueString) != ''">
+                    <xsl:value-of select="normalize-space($defaultValueString)" />
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="$defaultValueElement" />
+                    <xsl:value-of select="$defaultValueString" />
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        <!-- With ODF 1.2 this no longer occurs as all default values were removed from the schema,
+            due to the problem default value insertion into the XML by parsers
+            see https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.3/tools/How_to_prepare_ODF_specification_documents.md
+             -->
         <xsl:if test="*[@text:style-name='Attribute_20_Value_20_Instance']">
-            <xsl:comment>The following attribute default value is listed in the ODF schema</xsl:comment>
-            <xsl:text></xsl:text>
+            <xsl:if test="$debug=true()">
+                <xsl:message>WARNING:</xsl:message>
+                <xsl:message>   Style 'Attribute_20_Value_20_Instance' should be deprecated in favor to 'Attribute_20_Value'.</xsl:message>
+                <xsl:message>   The attribute '<xsl:value-of select="$attributeName"/>' does not have a default value in the ODF schema since ODF 1.2.</xsl:message>
+                <xsl:message>   Default avlues were removed due to the problem of (re)insertion during loading by XML by parsers!</xsl:message>
+            </xsl:if>
         </xsl:if>
         <xsl:choose>
-            <xsl:when test="*[@text:style-name='Element']">
-
-<!--      
-        <xsl:message>ELEMENT CHILD:'<xsl:copy-of select="."/>'
-        </xsl:message>
--->
+            <xsl:when test="text:span[@text:style-name='Element']">
 
                 <!-- sometimes a default values only occurs on a certain element or elements -->
-                <xsl:for-each select="*[@text:style-name='Element']">
-<!--                  
-        <xsl:message>ELEMENT NEW CHILD:'<xsl:copy-of select="."/>'
-        </xsl:message>
--->
+                <xsl:for-each select="text:span[@text:style-name='Element']">
+
+                    <xsl:if test="$debug=true()">
+                        <xsl:message>.</xsl:message>
+                        <xsl:message>Span with 'Element' style:</xsl:message>
+                        <xsl:message><xsl:copy-of select="."/></xsl:message>
+                    </xsl:if>
 
                     <!-- use the element name without the brackets -->
                     <xsl:variable name="elementName">
@@ -131,6 +145,11 @@
                         </xsl:call-template>
                     </xsl:variable>
                     <xsl:if test="$elementName != ''">
+                        <xsl:if test="$debug=true()">
+                            <xsl:message>.</xsl:message>
+                            <xsl:message>Default applies only for ODF element:</xsl:message>
+                            <xsl:message>* <xsl:value-of select="$elementName" /></xsl:message>
+                        </xsl:if>
                         <xsl:element name="attribute">
                             <xsl:attribute name="name">
                                 <xsl:value-of select="$attributeName" />
@@ -159,12 +178,15 @@
         </xsl:choose>
     </xsl:template>
 
+    <!-- recursivly the element name is being gathered (span by span), as sometimes the element name was split by multiple spans
+        these span contents are being concatenated until both element delimeter ('<' and '>') are found within the string -->
     <xsl:template name="get-element-name">
         <xsl:param name="nameString" />
-<!--
-        <xsl:message>NAMESTRING: *<xsl:copy-of select="$nameString"/>*        
-        </xsl:message>
--->
+
+        <xsl:if test="$debug=true()">
+            <xsl:message>Evaluating parent element name: '<xsl:copy-of select="$nameString"/>'</xsl:message>
+        </xsl:if>
+
         <xsl:choose>
             <xsl:when test="contains($nameString, '&lt;') and contains($nameString, '&gt;')">
                 <!-- the name of the element -->
