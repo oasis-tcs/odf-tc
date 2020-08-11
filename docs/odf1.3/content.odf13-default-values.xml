@@ -599,12 +599,13 @@
       <attribute name="xlink:type"
                  defaultValue="simple"
                  element="text:section-source"/>
-      <attribute name="" defaultValue="false"/>
-      <attribute name="" defaultValue="linearpolynomialexponential"/>
-      <attribute name="" defaultValue="2"/>
-      <attribute name="" defaultValue=""/>
-      <attribute name="" defaultValue="false"/>
-      <attribute name="" defaultValue="true"/>
-      <attribute name="" defaultValue="foreground"/>
+      <attribute name="chart:regression-force-intercept" defaultValue="false"/>
+      <attribute name="chart:regression-intercept-value"
+                 defaultValue="linearpolynomialexponential"/>
+      <attribute name="chart:regression-max-degree" defaultValue="2"/>
+      <attribute name="chart:regression-name" defaultValue=""/>
+      <attribute name="style:contextual-spacing" defaultValue="false"/>
+      <attribute name="style:join-border" defaultValue="true"/>
+      <attribute name="style:run-through" defaultValue="foreground"/>
    </attributes>
 </config>
