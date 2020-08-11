@@ -108,6 +108,12 @@ In the future, providing a new ODT should trigger an automated process:
 
 Currently, LibreOffice 6.4 is being used to edit the ODT files.
 
+It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools->Options...->Advanced->Expert Configuration", search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
+
+```xml
+<item oor:path="/org.openoffice.Office.Common/Save/Document"><prop oor:name="PrettyPrinting" oor:op="fuse"><value>true</value></prop></item>
+```
+
 ## Background
 
 Members of the [Open Document Format for Office Applications (OpenDocument) TC](https://www.oasis-open.org/committees/office/) create and manage technical content in this [TC GitHub repository](https://github.com/oasis-tcs/odf-tc/) as part of the TC's chartered work (the program of work and deliverables described in its [charter](https://www.oasis-open.org/committees/odf-tc/charter.php).
