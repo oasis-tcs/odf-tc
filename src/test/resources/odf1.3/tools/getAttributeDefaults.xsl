@@ -37,7 +37,7 @@
     <xsl:template match="text:p[@text:style-name='Default_20_Value']">
         <xsl:call-template name="get-default-value-declaration">
             <xsl:with-param name="attributeName">
-                <!-- get the attribute name of the default value by traversing backwards in the document to the previous attribute declaration (found in a heading) -->
+                <!-- get the attribute name of the default value by traversing backwards in the document to the previous attribute name (found in a heading) -->
                 <xsl:apply-templates select="preceding::text:h[1]" mode="get-attribute-name" />
             </xsl:with-param>
         </xsl:call-template>
@@ -48,7 +48,7 @@
     <xsl:template match="text:h" mode="get-attribute-name">
 
         <xsl:if test="$debug=true()">
-            <xsl:message></xsl:message>            
+            <xsl:message></xsl:message>
             <xsl:message></xsl:message>
             <xsl:message></xsl:message>
             <xsl:message>Preceding Header containing the ODF attribute name:</xsl:message>
@@ -95,7 +95,7 @@
 
         <xsl:if test="$debug=true()">
             <xsl:message>.</xsl:message>
-            <xsl:message>From header extracted ODF attribute:</xsl:message> 
+            <xsl:message>From header extracted ODF attribute:</xsl:message>
             <xsl:message>@<xsl:value-of select="$attributeName"/></xsl:message>
             <xsl:message>.</xsl:message>
             <xsl:message>The paragraph with default value within:</xsl:message>
@@ -114,17 +114,17 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <!-- With ODF 1.2 this no longer occurs as all default values were removed from the schema, 
+        <!-- With ODF 1.2 this no longer occurs as all default values were removed from the schema,
             due to the problem default value insertion into the XML by parsers
             see https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.3/tools/How_to_prepare_ODF_specification_documents.md
-             -->                
+             -->
         <xsl:if test="*[@text:style-name='Attribute_20_Value_20_Instance']">
             <xsl:if test="$debug=true()">
                 <xsl:message>WARNING:</xsl:message>
                 <xsl:message>   Style 'Attribute_20_Value_20_Instance' should be deprecated in favor to 'Attribute_20_Value'.</xsl:message>
                 <xsl:message>   The attribute '<xsl:value-of select="$attributeName"/>' does not have a default value in the ODF schema since ODF 1.2.</xsl:message>
                 <xsl:message>   Default avlues were removed due to the problem of (re)insertion during loading by XML by parsers!</xsl:message>
-            </xsl:if>    
+            </xsl:if>
         </xsl:if>
         <xsl:choose>
             <xsl:when test="text:span[@text:style-name='Element']">
@@ -178,7 +178,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <!-- recursivly the element name is being gathered (span by span), as sometimes the element name was split by multiple spans 
+    <!-- recursivly the element name is being gathered (span by span), as sometimes the element name was split by multiple spans
         these span contents are being concatenated until both element delimeter ('<' and '>') are found within the string -->
     <xsl:template name="get-element-name">
         <xsl:param name="nameString" />
