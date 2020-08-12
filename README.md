@@ -90,7 +90,7 @@ To unzip and zip the ODT we are offering following tools:
 
 ```shell
 java -cp target/test-classes org.oasis_open.odf_tc.Unzip src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction.odt
-java -cp target/test-classes org.oasis_open.odf_tc.Zip   src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction_odt
+java -cp target/test-classes org.oasis_open.odf_tc.Zip   src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction.odt
 ```
 
 These tools are available after being build by:
