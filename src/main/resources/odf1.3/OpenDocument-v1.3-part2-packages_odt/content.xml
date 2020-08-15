@@ -755,13 +755,13 @@
    <text:p text:style-name="Text_20_body">The OpenDocument specification defines conformance for packages, package consumers, and package producers, with two conformance classes called conforming and extended conforming. This chapter defines the basic requirements for the individual conformance targets.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading__752789_826425813"/>Package Conformance<text:bookmark-end text:name="__RefHeading__752789_826425813"/></text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="__RefHeading__752791_826425813"/><text:reference-mark-start text:name="OpenDocument Package"/>OpenDocument Package<text:bookmark-end text:name="__RefHeading__752791_826425813"/><text:reference-mark-end text:name="OpenDocument Package"/></text:h>
-   <text:p text:style-name="Text_20_body">An <text:span text:style-name="Def">OpenDocument Package</text:span> shall meet the following requirements:</text:p>
+   <text:p text:style-name="Text_20_body">An <text:span text:style-name="Def">OpenDocument Package</text:span> <text:span text:style-name="ISO_20_Keyword">shall</text:span> meet the following requirements:</text:p>
    <text:list xml:id="list294792977" text:style-name="Document_20_Conformance">
     <text:list-item>
      <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">shall</text:span> be a Zip file, as defined by <text:reference-ref text:reference-format="text" text:ref-name="nref-zip">[ZIP]</text:reference-ref>. All files contained in the Zip file <text:span text:style-name="ISO_20_Keyword">shall</text:span> be non compressed (STORED) or compressed using the “deflate” (DEFLATED) algorithm.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">shall</text:span> contain a file “META-INF/manifest.xml”. This file shall meet the following requirements:</text:p>
+     <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">shall</text:span> contain a file “META-INF/manifest.xml”. This file <text:span text:style-name="ISO_20_Keyword">shall</text:span> meet the following requirements:</text:p>
      <text:list>
       <text:list-item>
        <text:p text:style-name="P25">The file <text:span text:style-name="ISO_20_Keyword">shall</text:span> be a well formed XML document in accordance with the<text:span text:style-name="T4"> </text:span><text:span text:style-name="T4"><text:reference-ref text:reference-format="text" text:ref-name="nref-XML1.0">[XML1.0]</text:reference-ref></text:span><text:s/>specification.</text:p>
@@ -778,7 +778,7 @@
      <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">should</text:span> contain a file “mimetype”.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">may</text:span> contain files whose relative paths begin with “META-INF/” and whose names contain the string “signatures”. These file shall meet the following requirements:</text:p>
+     <text:p text:style-name="P25">It <text:span text:style-name="ISO_20_Keyword">may</text:span> contain files whose relative paths begin with “META-INF/” and whose names contain the string “signatures”. These file <text:span text:style-name="ISO_20_Keyword">shall</text:span> meet the following requirements:</text:p>
      <text:list>
       <text:list-item>
        <text:p text:style-name="P25">The files <text:span text:style-name="ISO_20_Keyword">shall</text:span> be well-formed XML files in accordance with<text:span text:style-name="T4"> </text:span><text:span text:style-name="T4"><text:reference-ref text:reference-format="text" text:ref-name="nref-XML1.0">[XML1.0]</text:reference-ref></text:span>.</text:p>
