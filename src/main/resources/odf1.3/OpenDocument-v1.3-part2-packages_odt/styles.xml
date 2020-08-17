@@ -106,7 +106,7 @@
    <style:paragraph-properties fo:margin-top="0.152cm" fo:margin-bottom="0cm" fo:hyphenation-ladder-count="no-limit" fo:keep-with-next="always" text:number-lines="false" text:line-number="0"/>
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-size-complex="10pt" fo:hyphenate="false"/>
   </style:style>
-  <style:style style:name="Title_20_page_20_info" style:display-name="Title page info" style:family="paragraph" style:parent-style-name="Title_20_page" style:next-style-name="Title_20_page_20_info_20_description">   
+  <style:style style:name="Title_20_page_20_info" style:display-name="Title page info" style:family="paragraph" style:parent-style-name="Title_20_page" style:next-style-name="Title_20_page_20_info_20_description">
    <style:text-properties fo:color="#446caa"/>
   </style:style>
   <style:style style:name="Title_20_page_20_info_20_description" style:display-name="Title page info description" style:family="paragraph" style:parent-style-name="Title_20_page" style:next-style-name="Title_20_page_20_info" style:master-page-name="">
@@ -114,7 +114,7 @@
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties fo:font-weight="normal" style:font-weight-asian="normal" fo:hyphenate="false"/>
-  </style:style>  
+  </style:style>
   <style:style style:name="Contributor" style:family="paragraph" style:parent-style-name="Title_20_page_20_info_20_description">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:hyphenation-ladder-count="no-limit"/>
    <style:text-properties fo:hyphenate="false"/>

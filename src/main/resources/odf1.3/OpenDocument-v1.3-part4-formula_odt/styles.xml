@@ -55,7 +55,7 @@
    <style:paragraph-properties fo:margin-top="0.102cm" fo:margin-bottom="0.102cm"/>
    <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
   </style:style>
-  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Abstract" style:class="text">
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Normal" style:class="text">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.102cm" fo:margin-bottom="0.102cm" fo:hyphenation-ladder-count="no-limit" fo:text-indent="0cm" style:auto-text-indent="false" fo:background-color="transparent">
     <style:tab-stops/>
    </style:paragraph-properties>
@@ -295,15 +295,18 @@
   <style:style style:name="List_20_Heading" style:display-name="List Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="List_20_Contents" style:class="html">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false"/>
   </style:style>
-  <style:style style:name="Title_20_page_20_info" style:display-name="Title page info" style:family="paragraph" style:parent-style-name="Normal" style:next-style-name="Title_20_page_20_info_20_description">
+  <style:style style:name="Title_20_page" style:display-name="Title page" style:family="paragraph" style:parent-style-name="Normal">
    <style:paragraph-properties fo:margin-top="0.152cm" fo:margin-bottom="0cm" fo:hyphenation-ladder-count="no-limit" fo:keep-with-next="always" text:number-lines="false" text:line-number="0"/>
-   <style:text-properties fo:color="#446caa" fo:font-weight="bold" style:font-weight-asian="bold" style:font-size-complex="10pt" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-size-complex="10pt" fo:hyphenate="false"/>
   </style:style>
-  <style:style style:name="Title_20_page_20_info_20_description" style:display-name="Title page info description" style:family="paragraph" style:parent-style-name="Title_20_page_20_info" style:next-style-name="Title_20_page_20_info" style:master-page-name="">
+  <style:style style:name="Title_20_page_20_info" style:display-name="Title page info" style:family="paragraph" style:parent-style-name="Title_20_page" style:next-style-name="Title_20_page_20_info_20_description">
+   <style:text-properties fo:color="#446caa"/>
+  </style:style>
+  <style:style style:name="Title_20_page_20_info_20_description" style:display-name="Title page info description" style:family="paragraph" style:parent-style-name="Title_20_page" style:next-style-name="Title_20_page_20_info" style:master-page-name="">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:hyphenation-ladder-count="no-limit" fo:text-indent="0cm" style:auto-text-indent="false" style:page-number="auto" fo:background-color="transparent" style:shadow="none" fo:keep-with-next="auto">
     <style:tab-stops/>
    </style:paragraph-properties>
-   <style:text-properties style:use-window-font-color="true" fo:font-weight="normal" style:font-weight-asian="normal" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+   <style:text-properties fo:font-weight="normal" style:font-weight-asian="normal" fo:hyphenate="false"/>
   </style:style>
   <style:style style:name="Contributor" style:family="paragraph" style:parent-style-name="Title_20_page_20_info_20_description">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" fo:hyphenation-ladder-count="no-limit"/>
@@ -548,7 +551,7 @@
    <style:text-properties fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
   </style:style>
   <style:style style:name="Normal" style:family="paragraph">
-   <style:paragraph-properties fo:margin-top="0.141cm" fo:margin-bottom="0.141cm" fo:hyphenation-ladder-count="no-limit"/>
+   <style:paragraph-properties fo:line-height="normal" fo:margin-top="0.141cm" fo:margin-bottom="0.141cm" fo:hyphenation-ladder-count="no-limit"/>
    <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-style-name="Regular" style:font-family-generic="swiss" style:font-pitch="variable" style:font-size-complex="12pt" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
   </style:style>
   <style:style style:name="TOC_20_1" style:display-name="TOC 1" style:family="paragraph" style:parent-style-name="Normal" style:next-style-name="Normal" style:auto-update="true">
