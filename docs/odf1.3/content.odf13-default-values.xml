@@ -535,8 +535,6 @@
                  defaultValue="simple"
                  element="text:section-source"/>
       <attribute name="chart:regression-force-intercept" defaultValue="false"/>
-      <attribute name="chart:regression-intercept-value"
-                 defaultValue="linearpolynomialexponential"/>
       <attribute name="chart:regression-max-degree" defaultValue="2"/>
       <attribute name="chart:regression-name" defaultValue=""/>
       <attribute name="style:contextual-spacing" defaultValue="false"/>
