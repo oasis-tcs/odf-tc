@@ -32,7 +32,7 @@
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="graphic">
-   <style:graphic-properties draw:stroke="solid" svg:stroke-width="0.071cm" svg:stroke-color="#385d8a" draw:fill-color="#4f81bd" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
+   <style:graphic-properties draw:stroke="solid" svg:stroke-width="0.071cm" svg:stroke-color="#385d8a" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
    <style:paragraph-properties fo:line-height="100%" fo:text-align="start" style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
@@ -1849,7 +1849,7 @@
    </style:page-layout-properties>
    <style:header-style/>
    <style:footer-style>
-    <style:header-footer-properties svg:height="0.891cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.79cm" fo:background-color="transparent" style:dynamic-spacing="true" draw:fill="none" draw:fill-color="#4f81bd"/>
+    <style:header-footer-properties svg:height="0.891cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.79cm" fo:background-color="transparent" style:dynamic-spacing="true"/>
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="Mpm2">
@@ -1896,7 +1896,7 @@
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="Mpm7">
-   <style:page-layout-properties fo:page-width="21.59cm" fo:page-height="27.94cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2.54cm" fo:margin-bottom="1.27cm" fo:margin-left="2.54cm" fo:margin-right="2.54cm" fo:background-color="#ffffff" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="44" style:layout-grid-base-height="0.55cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="true" style:layout-grid-display="true" style:layout-grid-base-width="0.37cm" style:layout-grid-snap-to="true" draw:fill="solid" draw:fill-color="#ffffff" draw:opacity="100%" style:footnote-max-height="0cm">
+   <style:page-layout-properties fo:page-width="21.59cm" fo:page-height="27.94cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="2.54cm" fo:margin-bottom="1.27cm" fo:margin-left="2.54cm" fo:margin-right="2.54cm" fo:background-color="#ffffff" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="44" style:layout-grid-base-height="0.55cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="true" style:layout-grid-display="true" style:layout-grid-base-width="0.37cm" style:layout-grid-snap-to="true" style:footnote-max-height="0cm">
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style>
