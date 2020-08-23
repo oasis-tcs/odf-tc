@@ -439,71 +439,78 @@
    </text:list>
    <text:p text:style-name="Standard">The following individuals have participated in the creation of this specification and are gratefully acknowledged:</text:p>
    <text:p text:style-name="Title_20_page_20_info">Participants:</text:p>
-   <text:p text:style-name="Contributor">Chieko Asakawa, IBM</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-12"/>Chieko Asakawa, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-14"/>Waldo Bastian, Intel Corporation</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-15"/>Thorsten Behrens, Novell</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-15"/>Thorsten Behrens, CIB labs GmbH</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-16"/>Nathaniel Borenstein, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-17"/>Michael Brauer, Oracle Corporation</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Pete Brunet, IBM</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Pete Brunet, IBM</text:p>   
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-191"/>Manuel Cano</text:p>
-   <text:p text:style-name="Contributor">Francis Cave, Individual<text:line-break/>Suresh Chande, Nokia Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Francis Cave</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-182"/>Suresh Chande, Nokia Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-20"/>Robin Cover, OASIS</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-21"/>Pierre Ducroquet</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-22"/>Jerome Dumonteil, Ars Aperta</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-23"/>Patrick Durusau</text:p>
-   <text:p text:style-name="Contributor">Cherie Ekholm, Microsoft Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-484"/>Cherie Ekholm, Microsoft</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-242"/>Ezer Farhi</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-252"/>David Faure</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-221"/>Jean Gouarne, Ars Aperta</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-260"/>Siegmund Gorr, CIB labs GmbH</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-261"/>Jean Gouarne, Ars Aperta</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-262"/>Andreas J. Guelzow</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-272"/>Bettina Haberer, Sun Microsystems</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-282"/>Dennis E. Hamilton</text:p>
-   <text:p text:style-name="Contributor">Bart Hanssens, Fedict</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-283"/>Bart Hanssens, Fedict</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-292"/>Donald Harbison, IBM</text:p>
-   <text:p text:style-name="Contributor">Alfred Hellstern, Microsoft</text:p>
-   <text:p text:style-name="Contributor">Regina Henschel, The Document Foundation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-293"/>Alfred Hellstern, Microsoft</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-294"/>Regina Henschel, The Document Foundation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-302"/>Mingfei Jia, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-312"/>Bob Jolliffe</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-313"/>Camilla Boemann, KDE e.V.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-321"/>Peter Junge</text:p>
-   <text:p text:style-name="Contributor">Kazmer Koleszar, MultiRacio Ltd.</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-330"/>Kazmer Koleszar, MultiRacio Ltd.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-331"/>Peter Korn, Oracle Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-341"/>Jirka Kosek</text:p>
-   <text:p text:style-name="Contributor">Robin LaFontaine</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-344"/>Robin LaFontaine</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-351"/>Marcus Lange, Sun Microsystems</text:p>
-   <text:p text:style-name="Contributor">David LeBlanc, Microsoft </text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-488"/>Marina Latini, The Document Foundation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-352"/>David LeBlanc, Microsoft </text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-361"/>Fong Lin, Novell</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-371"/>Jun Ma, Beijing Redflag Chinese 2000 Software Co., Ltd.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-381"/>Yue Ma, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-391"/>John Madden, Duke University</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-402"/>Doug Mahugh, Microsoft Corporation</text:p>
-   <text:p text:style-name="Contributor">Ben Martin, KDE e.V.</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-403"/>Ben Martin, KDE e.V.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-411"/>James Mason, ISO/IEC JTC1/SC34</text:p>
-   <text:p text:style-name="Contributor">Rich McLain, Microsoft</text:p>
-   <text:p text:style-name="Contributor">Tristan Mitchell</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-412"/>Rich McLain, Microsoft</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-413"/>Tristan Mitchell</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-421"/>Duane Nickull, Adobe Systems</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-431"/>Michael Paciello<text:line-break/>Ganesh Paramasivam, KDE e.V.</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-44"/>Eric Patterson, Microsoft Corporation <text:s/></text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-45"/>David Pawson<text:line-break/>Steven Pemberton, Stichting Centrum voor Wiskunde &amp; Informatica</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-46"/><text:soft-page-break/>Stephen Peront, Microsoft Corporation</text:p>
-   <text:p text:style-name="Contributor">Asokan Ramanathan, IBM</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-425"/>Michael Paciello</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-431"/>Ganesh Paramasivam, KDE e.V.</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-44"/>Eric Patterson, Microsoft Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-45"/>David Pawson</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-45"/>Steven Pemberton, Stichting Centrum voor Wiskunde &amp; Informatica</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-46"/>Stephen Peront, Microsoft Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-461"/>Asokan Ramanathan, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-47"/>Eike Rathke, Oracle Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-481"/>Florian Reuter, Novell</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-491"/>Janina Sajka</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-501"/>Svante Schubert, Oracle Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-491"/>Janina Sajka</text:p>   
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-501"/>Svante Schubert</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-511"/>Charles Schulz, Ars Aperta</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-521"/>Richard Schwerdtfeger, IBM</text:p>
-   <text:p text:style-name="Contributor">Douglas Schepers</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-520"/>Douglas Schepers</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-531"/>Wei Guo Shi, IBM</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-482"/>Keld Simonsen, ISO/IEC JTC1/SC34</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-541"/>Michael Stahl, CIB labs GmbH</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-551"/>Yan Shi, Beijing Sursen International Information Technology Co., Ltd.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-561"/>Jomar Silva, OpenDocument Format Alliance</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-571"/>Frank Stecher, Sun Microsystems</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-581"/>Hironobu Takagi, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-591"/>Malte Timmermann, Oracle Corporation</text:p>
-   <text:p text:style-name="Contributor">John Tolbert, The Boeing Company</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-592"/>John Tolbert, The Boeing Company</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-601"/>Elias Torres, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-611"/>Warren Turkal, Google Inc.</text:p>
-   <text:p text:style-name="Contributor">Jos van den Oever, KDE e.V.</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-612"/>Jos van den Oever, Logius</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-62"/>Alex Wang, Beijing Sursen International Information Technology Co., Ltd.</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-63"/>Robert Weir, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-641"/>Oliver-Rainer Wittmann, Oracle Corporation</text:p>
