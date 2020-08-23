@@ -341,7 +341,7 @@
     <text:user-field-decl office:value-type="string" office:string-value="urn:oasis:names:tc:opendocument:xmlns:" text:name="DefaultNamespace"/>
     <text:user-field-decl office:value-type="string" office:string-value=":1.0" text:name="DefaultNamespaceVersion"/>
     <text:user-field-decl office:value-type="string" office:string-value="OpenDocument" text:name="CommitteeName"/>
-    <text:user-field-decl office:value-type="string" office:string-value="1.2" text:name="Version"/>
+    <text:user-field-decl office:value-type="string" office:string-value="1.3" text:name="Version"/>
     <text:user-field-decl office:value-type="string" office:string-value="A.1" text:name="AppendixManifestSchema"/>
     <text:user-field-decl office:value-type="string" office:string-value="A.2" text:name="AppendixDigitalSignatureSchema"/>
     <text:user-field-decl office:value-type="string" office:string-value="C" text:name="AppendixZip"/>
@@ -613,7 +613,7 @@
    <text:p text:style-name="Text_20_body"/>
    <text:h text:style-name="P19" text:outline-level="1"><text:bookmark-start text:name="__RefHeading__1663_2066116382"/>Introduction<text:bookmark-end text:name="__RefHeading__1663_2066116382"/></text:h>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc3425783_125451375"/>Introduction<text:bookmark-end text:name="__RefHeading___Toc3425783_125451375"/></text:h>
-   <text:p text:style-name="Text_20_body">This document is part of the Open Document Format for Office Applications (<text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get>) Version <text:user-field-get text:name="Version">1.2</text:user-field-get><text:s/>specification. It defines a package format for <text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get><text:s/>documents.</text:p>
+   <text:p text:style-name="Text_20_body">This document is part of the Open Document Format for Office Applications (<text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get>) Version <text:user-field-get text:name="Version">1.3</text:user-field-get><text:s/>specification. It defines a package format for <text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get><text:s/>documents.</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading__752779_826425813"/>Terminology<text:bookmark-end text:name="__RefHeading__752779_826425813"/></text:h>
    <text:p text:style-name="Text_20_body">All text is normative unless otherwise labeled.</text:p>
    <text:p text:style-name="Text_20_body">Text with a gray background color which is contained in boxes is informative. It lists the XML element-element and element-attribute relations for cross reference purposes.</text:p>
