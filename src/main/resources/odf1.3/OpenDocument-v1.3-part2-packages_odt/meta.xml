@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document-meta xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" office:version="1.2">
- <office:meta><meta:generator>LibreOffice/6.4.5.2$Windows_X86_64 LibreOffice_project/a726b36747cf2001e06b58ad5db1aa3a9a1872d6</meta:generator><dc:title>Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</dc:title><meta:creation-date>2020-08-14T19:39:55.251000000</meta:creation-date><meta:editing-cycles>1</meta:editing-cycles><meta:editing-duration>P0D</meta:editing-duration><dc:description>This document is Part 2 of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification.</dc:description><meta:document-statistic meta:table-count="3" meta:image-count="2" meta:object-count="0" meta:page-count="36" meta:paragraph-count="639" meta:word-count="9361" meta:character-count="68763" meta:non-whitespace-character-count="59848"/><meta:user-defined meta:name="Editor #1">Editor #1 name</meta:user-defined><meta:user-defined meta:name="Editor #2">Editor #2 name</meta:user-defined><meta:user-defined meta:name="TC Chair">TC Chair name</meta:user-defined><meta:user-defined meta:name="TC Name">OASIS Full Name TC</meta:user-defined><meta:user-defined meta:name="Title" meta:value-type="string">Full Title Version 1.0</meta:user-defined><meta:user-defined meta:name="WP abbreviation" meta:value-type="string">WP abbrev.; no version or stage</meta:user-defined><meta:user-defined meta:name="namespace" meta:value-type="string">namespace link</meta:user-defined></office:meta>
+    <office:meta>
+        <meta:generator>LibreOffice/6.4.5.2$Windows_X86_64 LibreOffice_project/a726b36747cf2001e06b58ad5db1aa3a9a1872d6</meta:generator>
+        <dc:title>Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</dc:title>
+        <meta:creation-date>2020-08-14T19:39:55.251000000</meta:creation-date>
+        <meta:editing-cycles>1</meta:editing-cycles>
+        <meta:editing-duration>P0D</meta:editing-duration>
+        <meta:keyword>OASIS</meta:keyword>
+        <meta:keyword>OpenDocument</meta:keyword>
+        <meta:keyword>ODF</meta:keyword>        
+        <dc:description>This document is Part 2 of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification.</dc:description>
+        <meta:document-statistic meta:table-count="3" meta:image-count="2" meta:object-count="0" meta:page-count="36" meta:paragraph-count="639" meta:word-count="9361" meta:character-count="68763" meta:non-whitespace-character-count="59848"/>
+        <meta:user-defined meta:name="TC Chair">Patrick Durusau</meta:user-defined>
+        <meta:user-defined meta:name="TC Chair">Jos van den Oever</meta:user-defined>
+        <meta:user-defined meta:name="Editor">Francis Cave</meta:user-defined>
+        <meta:user-defined meta:name="Editor">Patrick Durusau</meta:user-defined>
+        <meta:user-defined meta:name="Editor">Svante Schubert</meta:user-defined>
+        <meta:user-defined meta:name="Editor">Michael Stahl</meta:user-defined>
+        <meta:user-defined meta:name="TC Name">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined>
+        <meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</meta:user-defined>
+        <meta:user-defined meta:name="WP abbreviation" meta:value-type="string">CSD;03</meta:user-defined>
+        <meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined>
+        <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</meta:user-defined>
+        <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part2-packages/OpenDocument-v1.3-cs01-part2-packages.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Identifier" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-24</meta:user-defined>
+        <meta:user-defined meta:name="DC.Creator" meta:value-type="string">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
+        <meta:user-defined meta:name="DC.Description.Abstract" meta:value-type="string">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines a package format for OpenDocument documents.</meta:user-defined>
+    </office:meta>
 </office:document-meta>
