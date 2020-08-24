@@ -72,7 +72,7 @@ td {
 }
 
 .line-number::before {
-    content: attr(value);
+    content: attr(id);
 }
 
 tbody:last-child .line-content:empty:before {
