@@ -180,7 +180,7 @@
 <xsl:value-of select="$pageSize"/>
 <xsl:text> }
     </xsl:text>
-        </xsl:if>        
+        </xsl:if>
     </xsl:template>
 
 
