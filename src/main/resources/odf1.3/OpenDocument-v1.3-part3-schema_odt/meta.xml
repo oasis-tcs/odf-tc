@@ -27,7 +27,7 @@
         <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</meta:user-defined>
         <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part3-schema/OpenDocument-v1.3-cs01-part3-schema.odt</meta:user-defined>
         <meta:user-defined meta:name="DC.Identifier" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.odt</meta:user-defined>
-        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-24</meta:user-defined>
+        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined>
         <meta:user-defined meta:name="DC.Creator" meta:value-type="string">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
         <meta:user-defined meta:name="DC.Description.Abstract" meta:value-type="string">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines an XML schema for office documents. Office documents include text documents, spreadsheets, charts and graphical documents like drawings or presentations, and other forms of documents.</meta:user-defined>        
     </office:meta>

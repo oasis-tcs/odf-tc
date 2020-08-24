@@ -25,7 +25,7 @@
         <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</meta:user-defined>
         <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part2-packages/OpenDocument-v1.3-cs01-part2-packages.odt</meta:user-defined>
         <meta:user-defined meta:name="DC.Identifier" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.odt</meta:user-defined>
-        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-24</meta:user-defined>
+        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined>
         <meta:user-defined meta:name="DC.Creator" meta:value-type="string">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
         <meta:user-defined meta:name="DC.Description.Abstract" meta:value-type="string">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines a package format for OpenDocument documents.</meta:user-defined>
     </office:meta>
