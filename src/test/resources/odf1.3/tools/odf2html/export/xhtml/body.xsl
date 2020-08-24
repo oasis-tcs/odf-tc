@@ -275,7 +275,7 @@
     </xsl:template>
 
     <xsl:template match="@fo:min-width">
-        <xsl:text>min-width:</xsl:text>
+        <xsl:text>min-width1:</xsl:text>
         <xsl:value-of select="."/>
         <xsl:text>;</xsl:text>
     </xsl:template>
@@ -2037,7 +2037,12 @@
                                                 <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
                                             </xsl:call-template>
                                             <xsl:text>;min-width:</xsl:text>
-                                            <xsl:value-of select="$listLabelWidth"/>
+                                            <xsl:choose>
+                                                <xsl:when test="$listLabelWidth and not($listLabelWidth!='') and not($listLabelWidth!='NaN')">
+                                                    <xsl:value-of select="$listLabelWidth"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>0</xsl:otherwise>
+                                            </xsl:choose>
                                             <xsl:text>cm;</xsl:text>
                                         </xsl:attribute>
                                         <xsl:variable name="labelContent">
@@ -2099,7 +2104,12 @@
                                         <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
                                     </xsl:call-template>
                                     <xsl:text>;min-width:</xsl:text>
-                                    <xsl:value-of select="$listLabelWidth"/>
+                                    <xsl:choose>
+                                        <xsl:when test="$listLabelWidth and not($listLabelWidth!='') and not($listLabelWidth!='NaN')">
+                                            <xsl:value-of select="$listLabelWidth"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>0</xsl:otherwise>
+                                    </xsl:choose>
                                     <xsl:text>cm</xsl:text>
                                 </xsl:attribute>
                                 <xsl:comment>&#160;</xsl:comment>
