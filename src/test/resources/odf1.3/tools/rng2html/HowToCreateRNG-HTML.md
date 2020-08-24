@@ -19,11 +19,15 @@
         </tr>
 3. From the 'source' window, choose again from the context menu 'inspect'
 4. From the shown nodes, choose the body element and from the context menu choose 'copy element'
-5. Copy it into the [template](template.html)
-6. Make it XML by replacing &lt;br&gt; with &lt;br/&gt; (likely that's all)
-7. (Better do step 0. And only necessary for ODF 1.2 parts: Change in HTML correct indent from tab to 4 spaces - easy with UltraEdit ^t)
-8. Trigger an [XSL transformation](../../../sample_xslt/rng/rng2html.xsl) via Maven 'mvn clean install' to add IDs for RelaxNG Defines & HRefs for RelaxNG refs
-9. Copy the [sample_xslt/rng/view-source.css](../../../sample_xslt/rng/view-source.css) to the new created output target\generated-resources\xml\xslt)
+5. Copy body element without closing tag into the [template](template.html)
+6. Rename the template according to RNG and adapt new settings (e.g. release date)
+7. Make it XML by replacing &lt;br&gt; with &lt;br/&gt; (likely that's all)
+8. (Better do step 0. And only necessary for ODF 1.2 parts: Change in HTML correct indent from tab to 4 spaces - easy with UltraEdit ^t)
+9. 2DO: Check if the 'value' have to be manually replaced with 'id'
+10. Trigger an [XSL transformation](addRefs4rng-html.xsl) via Maven 'mvn clean install' to add IDs for RelaxNG Defines & HRefs for RelaxNG refs
+11. Copy the transformed "*-rng.html" files
+    from "ROOT\target\generated-resources\xml\xslt"
+    to   "ROOT\docs\odf1.3\csd03" (or correct destination)
 
 **NOTE:**
 Original CSS was downloaded from [Chromium sources](https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/view-source.css?autodive=0%2F%2F%2F)
