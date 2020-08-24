@@ -78,8 +78,8 @@
         <xsl:param name="globalData" />
 
         <xsl:element name="style">
-        	<!-- https://validator.w3.org/unicorn:
-        		The “type” attribute for the “style” element is not needed and should be omitted.	
+            <!-- https://validator.w3.org/unicorn:
+                The “type” attribute for the “style” element is not needed and should be omitted.
             <xsl:attribute name="type">text/css</xsl:attribute> -->
 <xsl:text>
     </xsl:text>
@@ -168,20 +168,23 @@
          <!-- Find the according style:page-layout and store the properties in a variable  -->
         <xsl:variable name="pageProperties" select="key('pageLayoutElements', $pageLayoutName)/style:page-layout-properties"/>
 
+        <xsl:variable name="pageSize">
+            <xsl:call-template name="page-size">
+                <xsl:with-param name="globalData"       select="$globalData" />
+                <xsl:with-param name="pageProperties"   select="$pageProperties" />
+            </xsl:call-template>
+            <xsl:call-template name="page-margin">
+                <xsl:with-param name="globalData"       select="$globalData" />
+                <xsl:with-param name="pageProperties"   select="$pageProperties" />
+            </xsl:call-template>
+        </xsl:variable>
+
+        <xsl:if test="$pageSize and $pageSize!=''">
 <xsl:text>@page { </xsl:text>
-
-        <xsl:call-template name="page-size">
-            <xsl:with-param name="globalData"       select="$globalData" />
-            <xsl:with-param name="pageProperties"   select="$pageProperties" />
-        </xsl:call-template>
-        <xsl:call-template name="page-margin">
-            <xsl:with-param name="globalData"       select="$globalData" />
-            <xsl:with-param name="pageProperties"   select="$pageProperties" />
-        </xsl:call-template>
-
+<xsl:value-of select="$pageSize"/>
 <xsl:text> }
     </xsl:text>
-
+        </xsl:if>        
     </xsl:template>
 
 
@@ -282,7 +285,7 @@
                         <xsl:text>, </xsl:text>
                     </xsl:if>
             </xsl:for-each>
-        </xsl:variable>        
+        </xsl:variable>
 
         <!-- explicit output content-type for low-tech browser (e.g. IE6) -->
         <xsl:element name="meta">
@@ -381,7 +384,7 @@
                         <xsl:with-param name="meta-name" select="'DCTERMS.subject'" />
                         <xsl:with-param name="meta-data" select="normalize-space(concat($globalData/meta-file/*/office:meta/dc:subject,', ',$keywords))" />
                         <xsl:with-param name="meta-lang" select="$lang" />
-                    </xsl:call-template>                    
+                    </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="($globalData/meta-file/*/office:meta/dc:subject != '')">
                     <xsl:call-template name="add-meta-tag">
@@ -423,7 +426,7 @@
             <xsl:with-param name="meta-data" select="." />
             <!-- <xsl:with-param name="meta-lang" select="$lang" /> -->
         </xsl:call-template>
-        </xsl:for-each>        
+        </xsl:for-each>
         <xsl:call-template name="add-meta-tag">
             <xsl:with-param name="meta-name" select="'xsl:vendor'" />
             <xsl:with-param name="meta-data" select="system-property('xsl:vendor')" />
@@ -476,7 +479,7 @@
                 </xsl:attribute>
                 </xsl:if>
             </xsl:element>
-        </xsl:if>        
+        </xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>
