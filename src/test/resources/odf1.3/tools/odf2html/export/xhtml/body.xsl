@@ -275,7 +275,7 @@
     </xsl:template>
 
     <xsl:template match="@fo:min-width">
-        <xsl:text>min-width1:</xsl:text>
+        <xsl:text>min-width:</xsl:text>
         <xsl:value-of select="."/>
         <xsl:text>;</xsl:text>
     </xsl:template>
@@ -2038,7 +2038,7 @@
                                             </xsl:call-template>
                                             <xsl:text>;min-width:</xsl:text>
                                             <xsl:choose>
-                                                <xsl:when test="$listLabelWidth and not($listLabelWidth!='') and not($listLabelWidth!='NaN')">
+                                                <xsl:when test="$listLabelWidth and not($listLabelWidth='') and not($listLabelWidth='NaN')">
                                                     <xsl:value-of select="$listLabelWidth"/>
                                                 </xsl:when>
                                                 <xsl:otherwise>0</xsl:otherwise>
@@ -2105,7 +2105,7 @@
                                     </xsl:call-template>
                                     <xsl:text>;min-width:</xsl:text>
                                     <xsl:choose>
-                                        <xsl:when test="$listLabelWidth and not($listLabelWidth!='') and not($listLabelWidth!='NaN')">
+                                        <xsl:when test="$listLabelWidth and not($listLabelWidth='') and not($listLabelWidth='NaN')">
                                             <xsl:value-of select="$listLabelWidth"/>
                                         </xsl:when>
                                         <xsl:otherwise>0</xsl:otherwise>
