@@ -518,47 +518,6 @@
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-712"/>Thorsten Zachmann, Nokia Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-722"/>Thomas Zander, Nokia Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-732"/>Pine Zhang, UOML Alliance</text:p>
-   <text:list xml:id="list173624750225444" text:continue-numbering="true" text:style-name="Appendix">
-    <text:list-item>
-     <text:h text:style-name="P20" text:outline-level="1"><text:bookmark-start text:name="__RefHeading__1481_174928413"/>Revision History<text:bookmark-end text:name="__RefHeading__1481_174928413"/></text:h>
-    </text:list-item>
-   </text:list>
-   <text:p text:style-name="Standard"/>
-   <table:table table:name="Table1" table:style-name="Table1">
-    <table:table-column table:style-name="Table1.A"/>
-    <table:table-column table:style-name="Table1.B"/>
-    <table:table-column table:style-name="Table1.C"/>
-    <table:table-column table:style-name="Table1.D"/>
-    <table:table-row table:style-name="Table1.1">
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P13">Revision</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P13">Date</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P13">Editor</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.D1" office:value-type="string">
-      <text:p text:style-name="P14">Changes Made</text:p>
-     </table:table-cell>
-    </table:table-row>
-    <table:table-row table:style-name="Table1.1">
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P15">01</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P15"/>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P15">Patrick Durusau</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.D1" office:value-type="string">
-      <text:p text:style-name="P15">Initial draft</text:p>
-     </table:table-cell>
-    </table:table-row>
-   </table:table>
-   <text:p text:style-name="Standard"/>
   </office:text>
  </office:body>
 </office:document-content>
