@@ -1337,13 +1337,13 @@
    </text:list-level-style-bullet>
   </text:list-style>
   <text:list-style style:name="Appendix">
-   <text:list-level-style-number text:level="1" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix=" " style:num-format="A" style:num-letter-sync="true">
+   <text:list-level-style-number text:level="1" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="A" style:num-letter-sync="true">
     <style:list-level-properties text:min-label-width="0.762cm" text:min-label-distance="0.127cm"/>
    </text:list-level-style-number>
-   <text:list-level-style-number text:level="2" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="2">
+   <text:list-level-style-number text:level="2" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="1" text:display-levels="2">
     <style:list-level-properties text:min-label-width="1.016cm"/>
    </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="3">
+   <text:list-level-style-number text:level="3" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="1" text:display-levels="3">
     <style:list-level-properties text:min-label-width="1.27cm"/>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="4" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="4">

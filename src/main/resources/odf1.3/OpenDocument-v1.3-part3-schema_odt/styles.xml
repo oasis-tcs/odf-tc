@@ -358,7 +358,7 @@
    </style:paragraph-properties>
    <style:text-properties fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
   </style:style>
-  <style:style style:name="Appendix_20_Heading_20_1" style:display-name="Appendix Heading 1" style:family="paragraph" style:parent-style-name="Heading_20_1" style:next-style-name="Standard" style:default-outline-level="" style:list-style-name="Appendix">
+  <style:style style:name="Appendix_20_Heading_20_1" style:display-name="Appendix Heading 1" style:family="paragraph" style:parent-style-name="Heading_20_1" style:next-style-name="Standard" style:default-outline-level="1" style:list-style-name="Appendix">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.494cm" fo:margin-bottom="0.494cm" fo:text-indent="0cm" style:auto-text-indent="false"/>
    <style:text-properties fo:color="#446caa" style:letter-kerning="true"/>
   </style:style>
@@ -370,10 +370,10 @@
   <style:style style:name="Example_20_End" style:display-name="Example End" style:family="paragraph" style:parent-style-name="Example" style:next-style-name="Text_20_body">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.21cm"/>
   </style:style>
-  <style:style style:name="Appendix_20_Heading_20_2" style:display-name="Appendix Heading 2" style:family="paragraph" style:parent-style-name="Heading_20_2" style:next-style-name="Text_20_body" style:default-outline-level="" style:list-style-name="">
+  <style:style style:name="Appendix_20_Heading_20_2" style:display-name="Appendix Heading 2" style:family="paragraph" style:parent-style-name="Heading_20_2" style:next-style-name="Text_20_body" style:default-outline-level="2" style:list-style-name="Appendix">
    <style:paragraph-properties fo:margin-top="0.42cm" fo:margin-bottom="0.18cm"/>
   </style:style>
-  <style:style style:name="Appendix_20_Heading" style:display-name="Appendix Heading" style:family="paragraph" style:parent-style-name="Heading_20_1" style:next-style-name="Text_20_body" style:default-outline-level="2" style:list-style-name="Appendix">
+  <style:style style:name="Appendix_20_Heading" style:display-name="Appendix Heading" style:family="paragraph" style:parent-style-name="Heading_20_1" style:next-style-name="Text_20_body" style:default-outline-level="1" style:list-style-name="Appendix">
    <style:text-properties fo:color="#446caa"/>
    <style:map style:condition="list-level()=1" style:apply-style-name="Appendix_20_Heading_20_1"/>
    <style:map style:condition="list-level()=2" style:apply-style-name="Appendix_20_Heading_20_2"/>
@@ -397,7 +397,7 @@
   <style:style style:name="Changed" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:background-color="#ffff00"/>
   </style:style>
-  <style:style style:name="Appendix_20_Heading_20_3" style:display-name="Appendix Heading 3" style:family="paragraph" style:parent-style-name="Heading_20_3" style:default-outline-level="" style:list-style-name=""/>
+  <style:style style:name="Appendix_20_Heading_20_3" style:display-name="Appendix Heading 3" style:family="paragraph" style:parent-style-name="Heading_20_3" style:default-outline-level="3" style:list-style-name="Appendix"/>
   <style:style style:name="RelaxNG_20_Strict" style:display-name="RelaxNG Strict" style:family="paragraph" style:parent-style-name="Code">
    <style:paragraph-properties text:number-lines="true" text:line-number="0"/>
   </style:style>
@@ -1234,13 +1234,13 @@
    </text:list-level-style-bullet>
   </text:list-style>
   <text:list-style style:name="Appendix">
-   <text:list-level-style-number text:level="1" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix=" " style:num-format="A" style:num-letter-sync="true">
+   <text:list-level-style-number text:level="1" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="A" style:num-letter-sync="true">
     <style:list-level-properties text:min-label-width="0.76cm"/>
    </text:list-level-style-number>
-   <text:list-level-style-number text:level="2" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="2">
+   <text:list-level-style-number text:level="2" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="1" text:display-levels="2">
     <style:list-level-properties text:min-label-width="1.016cm"/>
    </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="3">
+   <text:list-level-style-number text:level="3" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-suffix="  " style:num-format="1" text:display-levels="3">
     <style:list-level-properties text:min-label-width="1.27cm"/>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="4" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="4">
