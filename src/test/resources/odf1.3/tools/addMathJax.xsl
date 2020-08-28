@@ -12,7 +12,7 @@
                <script type="text/javascript" src="..."/> -->
         <xsl:element name="script">
             <xsl:attribute name="type">text/javascript</xsl:attribute>
-            <xsl:attribute name="src">styles/mml-svg.js</xsl:attribute>
+            <xsl:attribute name="src">https://oasis-tcs.github.io/odf-tc/odf1.3/styles/mml-svg.js</xsl:attribute>
             <xsl:comment>Because browsers are utterly terrible, here is a comment to force a script end tag to be generated from XSLT so you don't see a blank page</xsl:comment>
         </xsl:element>
     </xsl:template>
