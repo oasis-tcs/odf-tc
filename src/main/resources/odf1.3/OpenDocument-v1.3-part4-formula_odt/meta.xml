@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document-meta xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" office:version="1.2">
-    <office:meta>
+ <office:meta>
         <meta:generator>LibreOffice/6.4.5.2$Windows_X86_64 LibreOffice_project/a726b36747cf2001e06b58ad5db1aa3a9a1872d6</meta:generator>
         <dc:title>Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</dc:title>
         <meta:creation-date>2019-09-17T16:05:35.986000000</meta:creation-date>
@@ -13,22 +13,22 @@
         <dc:description>This document is Part 4 of Open Document Format for Office Applications (OpenDocument) v1.3.</dc:description>
         <dc:date>2019-09-24T17:31:18.215000000</dc:date>
         <meta:initial-creator>OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:initial-creator>
-        <meta:document-statistic meta:table-count="36" meta:image-count="1" meta:object-count="306" meta:page-count="214" meta:paragraph-count="6433" meta:word-count="65732" meta:character-count="398176" meta:non-whitespace-character-count="337818"/>
-        <meta:user-defined meta:name="TC Chair">Patrick Durusau</meta:user-defined>
-        <meta:user-defined meta:name="TC Chair">Jos van den Oever</meta:user-defined>
-        <meta:user-defined meta:name="Editor">Francis Cave</meta:user-defined>
-        <meta:user-defined meta:name="Editor">Patrick Durusau</meta:user-defined>
-        <meta:user-defined meta:name="Editor">Svante Schubert</meta:user-defined>
-        <meta:user-defined meta:name="Editor">Michael Stahl</meta:user-defined>
-        <meta:user-defined meta:name="TC Name">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined>
-        <meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</meta:user-defined>
-        <meta:user-defined meta:name="WP abbreviation" meta:value-type="string">CSD;03</meta:user-defined>
-        <meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined>
-        <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</meta:user-defined>
-        <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part4-formula/OpenDocument-v1.3-cs01-part4-formula.odt</meta:user-defined>
-        <meta:user-defined meta:name="DC.Identifier" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.odt</meta:user-defined>
-        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined>
-        <meta:user-defined meta:name="DC.Creator" meta:value-type="string">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
-        <meta:user-defined meta:name="DC.Description.Abstract" meta:value-type="string">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines a formula language for OpenDocument documents, which is also called OpenFormula.</meta:user-defined>                
-    </office:meta>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        
+    <meta:document-statistic meta:table-count="36" meta:image-count="1" meta:object-count="306" meta:page-count="215" meta:paragraph-count="6436" meta:word-count="65737" meta:character-count="398224" meta:non-whitespace-character-count="337866"/><meta:user-defined meta:name="DC.Creator">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined><meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined><meta:user-defined meta:name="DC.Description.Abstract">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines a formula language for OpenDocument documents, which is also called OpenFormula.</meta:user-defined><meta:user-defined meta:name="DC.Identifier">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.odt</meta:user-defined><meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part4-formula/OpenDocument-v1.3-cs01-part4-formula.odt</meta:user-defined><meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</meta:user-defined><meta:user-defined meta:name="Editor" meta:value-type="string">Francis Cave</meta:user-defined><meta:user-defined meta:name="TC Chair" meta:value-type="string">Patrick Durusau</meta:user-defined><meta:user-defined meta:name="TC Name" meta:value-type="string">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined><meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</meta:user-defined><meta:user-defined meta:name="WP abbreviation" meta:value-type="string">CSD;03</meta:user-defined><meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined></office:meta>
 </office:document-meta>

@@ -3,13 +3,12 @@
 <office:document-content xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2">
  <office:scripts/>
  <office:font-face-decls>
-  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
+  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol" style:font-charset="x-symbol"/>
   <style:font-face style:name="StarSymbol1" svg:font-family="StarSymbol" style:font-charset="x-symbol"/>
   <style:font-face style:name="StarSymbol" svg:font-family="StarSymbol" style:font-adornments="Regular" style:font-charset="x-symbol"/>
   <style:font-face style:name="Symbol" svg:font-family="Symbol" style:font-family-generic="roman" style:font-pitch="variable" style:font-charset="x-symbol"/>
-  <style:font-face style:name="Wingdings" svg:font-family="Wingdings" style:font-family-generic="system" style:font-pitch="variable" style:font-charset="x-symbol"/>
   <style:font-face style:name="Arial" svg:font-family="Arial"/>
-  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol"/>
+  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol"/>
   <style:font-face style:name="Courier New" svg:font-family="&apos;Courier New&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   <style:font-face style:name="Courier New1" svg:font-family="&apos;Courier New&apos;" style:font-adornments="Standard" style:font-family-generic="modern" style:font-pitch="fixed"/>
   <style:font-face style:name="Liberation Mono" svg:font-family="&apos;Liberation Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
@@ -17,36 +16,12 @@
   <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Arial1" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Arial Unicode MS" svg:font-family="&apos;Arial Unicode MS&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="Liberation Sans1" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-adornments="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans1" svg:font-family="&apos;Liberation Sans&apos;" style:font-adornments="Regular" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="MS Mincho" svg:font-family="&apos;MS Mincho&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Tahoma" svg:font-family="Tahoma" style:font-family-generic="system" style:font-pitch="variable"/>
  </office:font-face-decls>
  <office:automatic-styles>
-  <style:style style:name="Table1" style:family="table">
-   <style:table-properties style:width="16.909cm" fo:margin-left="-0.199cm" table:align="left" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Table1.A" style:family="table-column">
-   <style:table-column-properties style:column-width="2.731cm"/>
-  </style:style>
-  <style:style style:name="Table1.B" style:family="table-column">
-   <style:table-column-properties style:column-width="2.54cm"/>
-  </style:style>
-  <style:style style:name="Table1.C" style:family="table-column">
-   <style:table-column-properties style:column-width="3.81cm"/>
-  </style:style>
-  <style:style style:name="Table1.D" style:family="table-column">
-   <style:table-column-properties style:column-width="7.828cm"/>
-  </style:style>
-  <style:style style:name="Table1.1" style:family="table-row">
-   <style:table-row-properties fo:keep-together="auto"/>
-  </style:style>
-  <style:style style:name="Table1.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="0.5pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Table1.D1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Footer">
    <style:paragraph-properties fo:margin-top="0.141cm" fo:margin-bottom="0cm">
     <style:tab-stops>
@@ -54,6 +29,7 @@
      <style:tab-stop style:position="16.51cm" style:type="right"/>
     </style:tab-stops>
    </style:paragraph-properties>
+   <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Footer">
    <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm">
@@ -103,45 +79,45 @@
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Bibliography_20_1">
    <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
   </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold"/>
-  </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-  </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="TOC_20_2">
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Contents_20_1">
    <style:paragraph-properties>
     <style:tab-stops>
-     <style:tab-stop style:position="16.087cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+     <style:tab-stop style:position="15.251cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
     </style:tab-stops>
    </style:paragraph-properties>
   </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="TOC_20_1">
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Contents_20_2">
    <style:paragraph-properties>
     <style:tab-stops>
-     <style:tab-stop style:position="16.51cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+     <style:tab-stop style:position="14.751cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
     </style:tab-stops>
    </style:paragraph-properties>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Normal" style:master-page-name="MP0">
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Normal" style:master-page-name="MP0">
    <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
   </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="AppendixHeading1">
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="AppendixHeading1">
    <style:paragraph-properties fo:margin-top="0.494cm" fo:margin-bottom="0.494cm"/>
   </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="AppendixHeading1">
-   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.494cm"/>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Contents_20_1">
+   <style:paragraph-properties>
+    <style:tab-stops>
+     <style:tab-stop style:position="15.251cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Contents_20_2">
+   <style:paragraph-properties>
+    <style:tab-stops>
+     <style:tab-stop style:position="14.751cm" style:type="right" style:leader-style="dotted" style:leader-text="."/>
+    </style:tab-stops>
+   </style:paragraph-properties>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Related_20_Work" style:list-style-name="BulletedList"/>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Related_20_Work" style:list-style-name="BulletedList" style:master-page-name="">
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Related_20_Work" style:list-style-name="BulletedList"/>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Related_20_Work" style:list-style-name="BulletedList" style:master-page-name="">
    <style:paragraph-properties style:page-number="auto"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -151,42 +127,33 @@
    <style:text-properties fo:font-size="8pt" style:font-size-asian="8pt" style:font-name-complex="Arial1" style:font-size-complex="8pt"/>
   </style:style>
   <style:style style:name="T3" style:family="text">
-   <style:text-properties style:font-name="Liberation Sans" fo:font-size="8pt" style:font-size-asian="8pt" style:font-size-complex="8pt"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Sans1" fo:font-weight="normal" style:font-weight-asian="normal" style:font-size-complex="10pt"/>
   </style:style>
   <style:style style:name="T4" style:family="text">
-   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Sans" fo:font-weight="normal" style:font-weight-asian="normal" style:font-size-complex="10pt"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Sans1" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T5" style:family="text">
-   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Sans" fo:font-style="italic" fo:font-weight="normal" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-size-complex="10pt" style:font-style-complex="italic"/>
-  </style:style>
-  <style:style style:name="T6" style:family="text">
-   <style:text-properties style:font-name="Arial1" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="T7" style:family="text">
    <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="T8" style:family="text">
+  <style:style style:name="T6" style:family="text">
    <style:text-properties fo:color="#000000"/>
   </style:style>
-  <style:style style:name="T9" style:family="text">
+  <style:style style:name="T7" style:family="text">
    <style:text-properties fo:language="en" fo:country="US" style:language-complex="ar" style:country-complex="SA"/>
   </style:style>
-  <style:style style:name="T10" style:family="text">
-   <style:text-properties style:font-name="Liberation Sans1"/>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties style:font-name="Liberation Sans"/>
   </style:style>
-  <style:style style:name="T11" style:family="text">
+  <style:style style:name="T9" style:family="text">
    <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
-  <style:style style:name="T12" style:family="text">
+  <style:style style:name="T10" style:family="text">
    <style:text-properties fo:font-size="14pt" fo:font-weight="bold" style:font-size-asian="14pt" style:font-weight-asian="bold" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T13" style:family="text">
-   <style:text-properties fo:color="#446caa" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-weight="bold" style:letter-kerning="true" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-name-complex="Arial1" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="T14" style:family="text"/>
+  <style:style style:name="T11" style:family="text"/>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
-   <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="transparent" draw:fill="none" draw:fill-color="#ffffff" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" style:flow-with-text="false"/>
-  </style:style>
+   <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="transparent" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" style:flow-with-text="false"/>
+   </style:style>
   <style:style style:name="Sect1" style:family="section">
    <style:section-properties style:editable="false">
     <style:columns fo:column-count="1" fo:column-gap="0cm"/>
@@ -215,19 +182,19 @@
     <text:user-field-decl office:value-type="string" office:string-value="Note:" text:name="Note"/>
     <text:user-field-decl office:value-type="string" office:string-value="B" text:name="AppendixOWL"/>
    </text:user-field-decls>
-   <text:p text:style-name="P18"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="6.35cm" svg:height="1.397cm" draw:z-index="0"><draw:image xlink:href="Pictures/10000000000000FA00000037ADD6BFDB9497D43F.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+   <text:p text:style-name="P15"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="6.35cm" svg:height="1.397cm" draw:z-index="0"><draw:image xlink:href="Pictures/10000000000000FA00000037ADD6BFDB9497D43F.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
     </draw:frame></text:p>
    <text:p text:style-name="Title">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:p>
    <text:p text:style-name="Subtitle">Committee Specification Draft 03</text:p>
    <text:p text:style-name="Subtitle">31 August 2020</text:p>
    <text:p text:style-name="Title_20_page_20_info">This stage:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.odt" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.odt</text:a> (Authoritative)</text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:span></text:a></text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.pdf" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.pdf</text:span></text:a></text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:span></text:a></text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.pdf" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.pdf</text:span></text:a></text:p>
    <text:p text:style-name="Title_20_page_20_info">Previous stage:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.odt" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.odt</text:a> (Authoritative)</text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.html</text:span></text:a></text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.pdf" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.pdf</text:span></text:a></text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.html</text:span></text:a></text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.pdf" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.pdf</text:span></text:a></text:p>
    <text:p text:style-name="Title_20_page_20_info">Latest stage:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.odt" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.odt</text:a> (Authoritative)</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description"><text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html</text:a></text:p>
@@ -238,47 +205,47 @@
    <text:p text:style-name="Title_20_page_20_info_20_description">Patrick Durusau (<text:a xlink:type="simple" xlink:href="mailto:patrick@durusau.net" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">patrick@durusau.net</text:a>), Individual</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description">Jos van den Oever (<text:a xlink:type="simple" xlink:href="mailto:jos.vanden.oever@logius.nl" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">jos.vanden.oever@logius.nl</text:a>), <text:a xlink:type="simple" xlink:href="http://www.logius.nl/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Logius</text:a></text:p>
    <text:p text:style-name="Title_20_page_20_info">Editors:</text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description">Francis Cave (<text:a xlink:type="simple" xlink:href="mailto:francis@franciscave.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink"><text:span text:style-name="T18">francis@franciscave.com</text:span></text:span></text:a>), Individual</text:p>
-   <text:p text:style-name="Title_20_page_20_info_20_description">Patrick Durusau (<text:a xlink:type="simple" xlink:href="mailto:patrick@durusau.net" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink"><text:span text:style-name="T18">patrick@durusau.net</text:span></text:span></text:a>), Individual</text:p>      
-   <text:p text:style-name="Title_20_page_20_info_20_description">Svante Schubert (<text:a xlink:type="simple" xlink:href="mailto:svante.schubert@gmail.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink"><text:span text:style-name="T18">svante.schubert@gmail.com</text:span></text:span></text:a>), Individual</text:p>   
-   <text:p text:style-name="Title_20_page_20_info_20_description">Michael Stahl (<text:a xlink:type="simple" xlink:href="mailto:michael.stahl@cib.de" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink"><text:span text:style-name="T18">michael.stahl@cib.de</text:span></text:span></text:a>), <text:a xlink:type="simple" xlink:href="https://www.cib.de" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">CIB labs GmbH</text:a></text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description">Francis Cave (<text:a xlink:type="simple" xlink:href="mailto:francis@franciscave.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink">francis@franciscave.com</text:span></text:a>), Individual</text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description">Patrick Durusau (<text:a xlink:type="simple" xlink:href="mailto:patrick@durusau.net" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink">patrick@durusau.net</text:span></text:a>), Individual</text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description">Svante Schubert (<text:a xlink:type="simple" xlink:href="mailto:svante.schubert@gmail.com" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink">svante.schubert@gmail.com</text:span></text:a>), Individual</text:p>
+   <text:p text:style-name="Title_20_page_20_info_20_description">Michael Stahl (<text:a xlink:type="simple" xlink:href="mailto:michael.stahl@cib.de" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="Hyperlink">michael.stahl@cib.de</text:span></text:a>), <text:a xlink:type="simple" xlink:href="https://www.cib.de/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">CIB labs GmbH</text:a></text:p>
    <text:p text:style-name="Title_20_page_20_info"><text:bookmark-start text:name="AdditionalArtifacts"/>Additional artifacts<text:bookmark-end text:name="AdditionalArtifacts"/>:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description">This prose specification is one component of a Work Product which includes:</text:p>
-   <text:list xml:id="list3359831869" text:style-name="BulletedList">
+   <text:list xml:id="list2706312404" text:style-name="BulletedList">
     <text:list-item>
-     <text:p text:style-name="P23"><text:span text:style-name="T7">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:span>.<text:span text:style-name="T11"> (this part)</text:span> <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:a>.</text:p>
+     <text:p text:style-name="P21"><text:span text:style-name="T5">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:span>.<text:span text:style-name="T9"> (this part)</text:span> <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:a>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P22"><text:soft-page-break/><text:span text:style-name="T7">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</text:span>. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.html</text:a>.</text:p>
+     <text:p text:style-name="P20"><text:soft-page-break/><text:span text:style-name="T5">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 2: Packages</text:span>. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part2-packages/OpenDocument-v1.3-csd03-part2-packages.html</text:a>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P22"><text:span text:style-name="T7">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</text:span><text:span text:style-name="T11">.</text:span> <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.html</text:span></text:a>.</text:p>
+     <text:p text:style-name="P20"><text:span text:style-name="T5">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</text:span><text:span text:style-name="T9">.</text:span> <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.html</text:span></text:a>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P22"><text:span text:style-name="T7">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</text:span>. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.html</text:a>.</text:p>
+     <text:p text:style-name="P20"><text:span text:style-name="T5">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 4: Recalculated Formula (OpenFormula) Format</text:span>. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part4-formula/OpenDocument-v1.3-csd03-part4-formula.html</text:a>.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P22">XML/RNG schemas and OWL ontologies. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/schemas/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/schemas/</text:a>.</text:p>
+     <text:p text:style-name="P20">XML/RNG schemas and OWL ontologies. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/schemas/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/schemas/</text:a>.</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="Title_20_page_20_info">Related work:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description">This specification replaces or supersedes:</text:p>
    <text:list xml:id="list368054253" text:style-name="BulletedList">
     <text:list-item>
-     <text:p text:style-name="P22"><text:span text:style-name="T5">OASIS Open Document Format for Office Applications (OpenDocument) Version 1.2</text:span><text:span text:style-name="T4">. 29 September 2011. OASIS Standard. </text:span><text:a xlink:type="simple" xlink:href="http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os.html</text:a><text:span text:style-name="T4">.</text:span></text:p>
+     <text:p text:style-name="P20"><text:span text:style-name="T4">OASIS Open Document Format for Office Applications (OpenDocument) Version 1.2</text:span><text:span text:style-name="T3">. 29 September 2011. OASIS Standard. </text:span><text:a xlink:type="simple" xlink:href="http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os.html</text:a><text:span text:style-name="T3">.</text:span></text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="Title_20_page_20_info">Abstract:</text:p>
    <text:p text:style-name="P7">This document is Part 1 of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification.</text:p>
    <text:p text:style-name="Title_20_page_20_info">Status:</text:p>
    <text:p text:style-name="P6">This document was last revised or approved by the OASIS Open Document Format for Office Applications (OpenDocument) TC on the above date. The level of approval is also listed above. Check the “Latest stage” location noted above for possible later revisions of this document. Any other numbered Versions and other technical work produced by the Technical Committee (TC) are listed at <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office#technical" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office#technical</text:a>.</text:p>
-   <text:p text:style-name="Text_20_body">TC members should send comments on this specification to the TC’s email list. Others should send comments to the TC’s public comment list, after subscribing to it by following the instructions at the “<text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=odata" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">S</text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=office" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">end </text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=office" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">A Comment</text:a>” button on the TC’s web page at <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oasis-open.org/committees/office/</text:a><text:span text:style-name="T8">.</text:span></text:p>
+   <text:p text:style-name="Text_20_body">TC members should send comments on this specification to the TC’s email list. Others should send comments to the TC’s public comment list, after subscribing to it by following the instructions at the “<text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=odata" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">S</text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=office" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">end </text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=office" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">A Comment</text:a>” button on the TC’s web page at <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oasis-open.org/committees/office/</text:a><text:span text:style-name="T6">.</text:span></text:p>
    <text:p text:style-name="Text_20_body">This specification is provided under the <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/ipr#RF-on-Limited-Mode" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">RF on Limited Terms</text:a> Model of the <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/ipr" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">OASIS IPR Policy</text:a>, the mode chosen when the Technical Committee was established. For information on whether any patents have been disclosed that may be essential to implementing this specification, and any offers of patent licensing terms, please refer to the Intellectual Property Rights section of the TC’s web page (<text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/ipr.php" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oasis-open.org/committees/office/ipr.php</text:a>).</text:p>
    <text:p text:style-name="Text_20_body">Note that any machine-readable content (<text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/tc-process#wpComponentsCompLang" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Computer Language Definitions</text:a>) declared Normative for this Work Product is provided in separate plain text files. In the event of a discrepancy between any such plain text file and display content in the Work Product&apos;s prose narrative document(s), the content in the separate plain text file prevails.</text:p>
    <text:p text:style-name="Title_20_page_20_info">Citation format:</text:p>
    <text:p text:style-name="Title_20_page_20_info_20_description">When referencing this specification the following citation format should be used:</text:p>
    <text:p text:style-name="P8">[OpenDocument-v1.3-part1]</text:p>
-   <text:p text:style-name="Abstract"><text:span text:style-name="T7">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:span>. Edited by Patrick Durusau. 31 August 2020. OASIS Committee Specification Draft 03. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:span></text:a>. Latest stage: <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html</text:a>.</text:p>
+   <text:p text:style-name="Abstract"><text:span text:style-name="T5">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:span>. Edited by Patrick Durusau. 31 August 2020. OASIS Committee Specification Draft 03. <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T8">https://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.html</text:span></text:a>. Latest stage: <text:a xlink:type="simple" xlink:href="https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html</text:a>.</text:p>
    <text:p text:style-name="Notices">Notices</text:p>
    <text:p text:style-name="P10">Copyright © OASIS Open 2020. All Rights Reserved.</text:p>
    <text:p text:style-name="P9">All capitalized terms in the following text have the meanings assigned to them in the OASIS Intellectual Property Rights Policy (the &quot;OASIS IPR Policy&quot;). The full <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/ipr" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Policy</text:a> may be found at the OASIS website.</text:p>
@@ -293,115 +260,114 @@
    <text:table-of-content text:style-name="Sect1" text:name="_TOC85">
     <text:table-of-content-source text:outline-level="4" text:use-index-marks="false">
      <text:index-title-template text:style-name="Contents_20_Heading"/>
-     <text:table-of-content-entry-template text:outline-level="1" text:style-name="TOC_20_1">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
+     <text:table-of-content-entry-template text:outline-level="1" text:style-name="Contents_20_1">
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
-     <text:table-of-content-entry-template text:outline-level="2" text:style-name="TOC_20_2">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
+     <text:table-of-content-entry-template text:outline-level="2" text:style-name="Contents_20_2">
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
-     <text:table-of-content-entry-template text:outline-level="3" text:style-name="TOC_20_3">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
+     <text:table-of-content-entry-template text:outline-level="3" text:style-name="Contents_20_3">
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="4" text:style-name="Contents_20_4">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="5" text:style-name="Contents_20_5">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="6" text:style-name="Contents_20_6">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="7" text:style-name="Contents_20_7">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="8" text:style-name="Contents_20_8">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="9" text:style-name="Contents_20_9">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
      <text:table-of-content-entry-template text:outline-level="10" text:style-name="Contents_20_10">
-      <text:index-entry-chapter/>
-      <text:index-entry-span>  </text:index-entry-span>
       <text:index-entry-link-start text:style-name="Index_20_Link"/>
+      <text:index-entry-chapter/>
+      <text:index-entry-span> </text:index-entry-span>
       <text:index-entry-text/>
-      <text:index-entry-link-end/>
       <text:index-entry-tab-stop style:type="right" style:leader-char="."/>
       <text:index-entry-page-number/>
+      <text:index-entry-link-end/>
      </text:table-of-content-entry-template>
     </text:table-of-content-source>
     <text:index-body>
-     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc887364_954701257" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1 <text:s text:c="2"/>Introduction</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc859_4144407680" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.1 <text:s text:c="2"/>IPR Policy</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc33248_2392979541" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.2 <text:s text:c="2"/>Scope</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__138639_919180473" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.3 <text:s text:c="2"/>Terminology</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414984_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.4 <text:s text:c="2"/>Normative References</text:a><text:tab/>6</text:p>
-     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414986_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.5 <text:s text:c="2"/>Non Normative References</text:a><text:tab/>6</text:p>
-     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading__1477_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Appendix A. <text:s text:c="2"/>Acknowledgments</text:a><text:tab/>7</text:p>
-     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading__1481_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Appendix B. <text:s text:c="2"/>Revision History</text:a><text:tab/>9</text:p>
+     <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc887364_954701257" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1 <text:s text:c="2"/>Introduction<text:tab/>5</text:a></text:p>
+     <text:p text:style-name="P14"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc859_4144407680" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1.1 <text:s text:c="2"/>IPR Policy<text:tab/>5</text:a></text:p>
+     <text:p text:style-name="P14"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc33248_2392979541" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1.2 <text:s text:c="2"/>Scope<text:tab/>5</text:a></text:p>
+     <text:p text:style-name="P14"><text:a xlink:type="simple" xlink:href="#__RefHeading__138639_919180473" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1.3 <text:s text:c="2"/>Terminology<text:tab/>5</text:a></text:p>
+     <text:p text:style-name="P14"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414984_253892949" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1.4 <text:s text:c="2"/>Normative References<text:tab/>6</text:a></text:p>
+     <text:p text:style-name="P14"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414986_253892949" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">1.5 <text:s text:c="2"/>Non Normative References<text:tab/>6</text:a></text:p>
+     <text:p text:style-name="P13"><text:a xlink:type="simple" xlink:href="#__RefHeading__1477_174928413" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">Appendix A <text:s/>Acknowledgments<text:tab/>7</text:a></text:p>
     </text:index-body>
    </text:table-of-content>
    <text:p text:style-name="Text_20_body"/>
    <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="../../part2-packages/OpenDocument-v1.3-csd03-part2-packages.odt#TableOfContents" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Link to Table of Contents for Part 2: Packages</text:a></text:p>
    <text:p text:style-name="P5"/>
-   <text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="../../part3-schema/OpenDocument-v1.3-csd03-part3-schema.odt#TableOfContents" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T12">Link to Table of Contents for Part 3: OpenDocument Schema</text:span></text:a></text:p>
+   <text:p text:style-name="Text_20_body"><text:a xlink:type="simple" xlink:href="../../part3-schema/OpenDocument-v1.3-csd03-part3-schema.odt#TableOfContents" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T10">Link to Table of Contents for Part 3: OpenDocument Schema</text:span></text:a></text:p>
    <text:p text:style-name="P5"/>
    <text:p text:style-name="P5"><text:a xlink:type="simple" xlink:href="../../part4-formula/OpenDocument-v1.3-csd03-part4-formula.odt#TableOfContents" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Link to Table of Contents for Part 4: Recalculated Formula (OpenFormula) Format</text:a></text:p>
-   <text:h text:style-name="P21" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc887364_954701257"/>Introduction<text:bookmark-end text:name="__RefHeading___Toc887364_954701257"/></text:h>
+   <text:h text:style-name="P19" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc887364_954701257"/>Introduction<text:bookmark-end text:name="__RefHeading___Toc887364_954701257"/></text:h>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc859_4144407680"/>IPR Policy<text:bookmark-end text:name="__RefHeading___Toc859_4144407680"/></text:h>
    <text:p text:style-name="Text_20_body">This specification is provided under the <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/ipr#RF-on-Limited-Mode" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">RF on Limited Terms</text:a> Model of the <text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/policies-guidelines/ipr" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">OASIS IPR Policy</text:a>, the mode chosen when the Technical Committee was established. For information on whether any patents have been disclosed that may be essential to implementing this specification, and any offers of patent licensing terms, please refer to the Intellectual Property Rights section of the TC’s web page (<text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/ipr.php" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.oasis-open.org/committees/</text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/ipr.php" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">office</text:a><text:a xlink:type="simple" xlink:href="https://www.oasis-open.org/committees/office/ipr.php" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">/ipr.php</text:a>).</text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc33248_2392979541"/>Scope<text:bookmark-end text:name="__RefHeading___Toc33248_2392979541"/></text:h>
@@ -409,8 +375,8 @@
    <text:p text:style-name="Text_20_body">This standard has three parts.</text:p>
    <text:p text:style-name="Text_20_body">Part 1 presents a master table of contents for parts 2 (packages), 3 (schema) and 4 (formulas). It also acknowledges the participation of all who made it possible.</text:p>
    <text:p text:style-name="Text_20_body">Part 2 defines the package format language for <text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get><text:s/>documents.</text:p>
-   <text:p text:style-name="Text_20_body"><text:span text:style-name="T9">Part 3 defines the XML schema for </text:span><text:span text:style-name="T9"><text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get></text:span><text:span text:style-name="T9"><text:s/>documents.</text:span></text:p>
-   <text:p text:style-name="Text_20_body"><text:span text:style-name="T9">Part 4 defines the formula language for </text:span><text:span text:style-name="T9"><text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get></text:span><text:span text:style-name="T9"><text:s/>documents.</text:span></text:p>
+   <text:p text:style-name="Text_20_body"><text:span text:style-name="T7">Part 3 defines the XML schema for </text:span><text:span text:style-name="T7"><text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get></text:span><text:span text:style-name="T7"><text:s/>documents.</text:span></text:p>
+   <text:p text:style-name="Text_20_body"><text:span text:style-name="T7">Part 4 defines the formula language for </text:span><text:span text:style-name="T7"><text:user-field-get text:name="CommitteeName">OpenDocument</text:user-field-get></text:span><text:span text:style-name="T7"><text:s/>documents.</text:span></text:p>
    <text:p text:style-name="P4">This standard, for illustrative purposes, describes functionality using terminology common in desktop computing environments that contain a display terminal, keyboard and mouse, attached to a computer hosting an operating system with a graphical user interface which includes user interface controls such as input controls, command buttons, selection boxes, etc. </text:p>
    <text:p text:style-name="P4">However, this standard is not limited to such environments. The standard also supports the use of alternative computing environments, other form factors, non-GUI consumers and producers, and the use of assistive technologies, using analogous user interface operations. </text:p>
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading__138639_919180473"/>Terminology<text:bookmark-end text:name="__RefHeading__138639_919180473"/></text:h>
@@ -427,9 +393,9 @@
    <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading__1414986_253892949"/>Non Normative References<text:bookmark-end text:name="__RefHeading__1414986_253892949"/></text:h>
    <text:p text:style-name="Normal">None.</text:p>
    <text:p text:style-name="P11">The individual parts of the OpenDocument specification may contains further non normative references.</text:p>
-   <text:list xml:id="list3360731042" text:style-name="Appendix">
+   <text:list xml:id="list424026760" text:style-name="Appendix">
     <text:list-item>
-     <text:h text:style-name="P19" text:outline-level="1"><text:bookmark-start text:name="__RefHeading__1477_174928413"/>Acknowledgments<text:bookmark-end text:name="__RefHeading__1477_174928413"/></text:h>
+     <text:h text:style-name="P16" text:outline-level="1"><text:bookmark-start text:name="__RefHeading__1477_174928413"/>Acknowledgments<text:bookmark-end text:name="__RefHeading__1477_174928413"/></text:h>
     </text:list-item>
    </text:list>
    <text:p text:style-name="Standard">The following individuals have participated in the creation of this specification and are gratefully acknowledged:</text:p>
@@ -439,9 +405,9 @@
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-15"/>Thorsten Behrens, CIB labs GmbH</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-16"/>Nathaniel Borenstein, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-17"/>Michael Brauer, Oracle Corporation</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Pete Brunet, IBM</text:p>   
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Pete Brunet, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-191"/>Manuel Cano</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-181"/>Francis Cave</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-1811"/>Francis Cave</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-182"/>Suresh Chande, Nokia Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-20"/>Robin Cover, OASIS</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-21"/>Pierre Ducroquet</text:p>
@@ -482,14 +448,14 @@
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-421"/>Duane Nickull, Adobe Systems</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-425"/>Michael Paciello</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-431"/>Ganesh Paramasivam, KDE e.V.</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-44"/>Eric Patterson, Microsoft Corporation</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-44"/><text:soft-page-break/>Eric Patterson, Microsoft Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-45"/>David Pawson</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-45"/>Steven Pemberton, Stichting Centrum voor Wiskunde &amp; Informatica</text:p>
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-451"/>Steven Pemberton, Stichting Centrum voor Wiskunde &amp; Informatica</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-46"/>Stephen Peront, Microsoft Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-461"/>Asokan Ramanathan, IBM</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-47"/>Eike Rathke, Oracle Corporation</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-481"/>Florian Reuter, Novell</text:p>
-   <text:p text:style-name="Contributor"><text:bookmark text:name="line-491"/>Janina Sajka</text:p>   
+   <text:p text:style-name="Contributor"><text:bookmark text:name="line-491"/>Janina Sajka</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-501"/>Svante Schubert</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-511"/>Charles Schulz, Ars Aperta</text:p>
    <text:p text:style-name="Contributor"><text:bookmark text:name="line-521"/>Richard Schwerdtfeger, IBM</text:p>
