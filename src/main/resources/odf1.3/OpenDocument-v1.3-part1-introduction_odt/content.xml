@@ -385,14 +385,14 @@
      </text:table-of-content-entry-template>
     </text:table-of-content-source>
     <text:index-body>
-     <text:p text:style-name="P17">1 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc887364_954701257" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Introduction</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16">1.1 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc859_4144407680" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">IPR Policy</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16">1.2 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc33248_2392979541" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Scope</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16">1.3 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading__138639_919180473" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Terminology</text:a><text:tab/>5</text:p>
-     <text:p text:style-name="P16">1.4 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading__1414984_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Normative References</text:a><text:tab/>6</text:p>
-     <text:p text:style-name="P16">1.5 <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading__1414986_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Non Normative References</text:a><text:tab/>6</text:p>
-     <text:p text:style-name="P17">Appendix A. <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading__1477_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Acknowledgments</text:a><text:tab/>7</text:p>
-     <text:p text:style-name="P17">Appendix B. <text:s text:c="3"/><text:a xlink:type="simple" xlink:href="#__RefHeading__1481_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Revision History</text:a><text:tab/>9</text:p>
+     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc887364_954701257" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1 <text:s text:c="2"/>Introduction</text:a><text:tab/>5</text:p>
+     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc859_4144407680" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.1 <text:s text:c="2"/>IPR Policy</text:a><text:tab/>5</text:p>
+     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc33248_2392979541" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.2 <text:s text:c="2"/>Scope</text:a><text:tab/>5</text:p>
+     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__138639_919180473" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.3 <text:s text:c="2"/>Terminology</text:a><text:tab/>5</text:p>
+     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414984_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.4 <text:s text:c="2"/>Normative References</text:a><text:tab/>6</text:p>
+     <text:p text:style-name="P16"><text:a xlink:type="simple" xlink:href="#__RefHeading__1414986_253892949" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">1.5 <text:s text:c="2"/>Non Normative References</text:a><text:tab/>6</text:p>
+     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading__1477_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Appendix A. <text:s text:c="2"/>Acknowledgments</text:a><text:tab/>7</text:p>
+     <text:p text:style-name="P17"><text:a xlink:type="simple" xlink:href="#__RefHeading__1481_174928413" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Appendix B. <text:s text:c="2"/>Revision History</text:a><text:tab/>9</text:p>
     </text:index-body>
    </text:table-of-content>
    <text:p text:style-name="Text_20_body"/>
