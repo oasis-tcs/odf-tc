@@ -176,7 +176,7 @@ limitations under the License.
                             </fileMappers>
                         </transformationSet> -->
 
-                        <!-- part 2 HTML transformation (packages) 
+                        <!-- part 2 HTML transformation (packages) -->
                         <transformationSet>
                             <dir>${odf13.part2.input}</dir>
                             <includes>content.xml</includes>
@@ -186,7 +186,7 @@ limitations under the License.
                                     <targetExtension>odf13-packages.html</targetExtension>
                                 </fileMapper>
                             </fileMappers>
-                        </transformationSet> -->
+                        </transformationSet> 
 
                         <!-- part 3 HTML transformation (schema) 
                         <transformationSet>

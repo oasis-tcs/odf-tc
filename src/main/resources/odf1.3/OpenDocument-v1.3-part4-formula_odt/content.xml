@@ -1724,7 +1724,7 @@
   </style:style>
   <style:style style:name="T96" style:family="text"/>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
-   <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="transparent" draw:fill="none" draw:fill-color="#ffffff" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" style:flow-with-text="false"/>
+   <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="transparent" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" style:flow-with-text="false"/>
   </style:style>
   <style:style style:name="fr2" style:family="graphic" style:parent-style-name="Formula">
    <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" draw:ole-draw-aspect="1"/>
@@ -1745,13 +1745,13 @@
    <style:graphic-properties style:vertical-pos="from-top" draw:ole-draw-aspect="1"/>
   </style:style>
   <style:style style:name="fr8" style:family="graphic" style:parent-style-name="OLE">
-   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" fo:background-color="#ffff00" style:background-transparency="100%" draw:fill="solid" draw:fill-color="#ffff00" draw:opacity="0%" draw:ole-draw-aspect="1"/>
+   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" fo:background-color="#ffff00" style:background-transparency="100%" draw:ole-draw-aspect="1"/>
   </style:style>
   <style:style style:name="fr9" style:family="graphic" style:parent-style-name="OLE">
-   <style:graphic-properties style:vertical-pos="from-top" fo:background-color="#ffff00" style:background-transparency="100%" draw:fill="solid" draw:fill-color="#ffff00" draw:opacity="0%" draw:ole-draw-aspect="1"/>
+   <style:graphic-properties style:vertical-pos="from-top" fo:background-color="#ffff00" style:background-transparency="100%" draw:ole-draw-aspect="1"/>
   </style:style>
   <style:style style:name="fr10" style:family="graphic" style:parent-style-name="Formula">
-   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="#ffff00" style:background-transparency="100%" draw:fill="solid" draw:fill-color="#ffff00" draw:opacity="0%" draw:ole-draw-aspect="1"/>
+   <style:graphic-properties style:vertical-pos="top" style:vertical-rel="baseline" style:horizontal-pos="from-left" style:horizontal-rel="paragraph-content" fo:background-color="#ffff00" style:background-transparency="100%" draw:ole-draw-aspect="1"/>
   </style:style>
   <style:style style:name="Sect1" style:family="section">
    <style:section-properties style:editable="false">
