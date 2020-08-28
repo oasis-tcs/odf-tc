@@ -1930,8 +1930,8 @@
                 <span>5.2 </span>
             </a>
             <a id="__RefHeading__752875_826425813"/>
-            <a id="element2-dsig_document-signatures"/>
             <a id="attribute-manifest_version_element-dsig_document-signatures"/>
+            <a id="element2-dsig_document-signatures"/>
             <a id="DDE_LINK"/>&lt;dsig:document-signatures&gt;</h2>
         <p class="Text_20_body">The <span class="Element">&lt;dsig:document-signatures&gt;</span> root element serves as a container for any number of <span class="Alien_20_Element">&lt;ds:Signature&gt;</span>
             <a href="#element2-xmldsig_Signature">5.3</a> elements. If the <span class="Element">&lt;dsig:document-signatures&gt;</span> element contains multiple <span class="Alien_20_Element">&lt;ds:Signature&gt;</span> elements, then there <span class="ISO_20_Keyword">should</span> be a relation between the digital signatures they define, for instance, they may all apply to the same set of files.</p>
@@ -1960,8 +1960,8 @@
                 <span>5.3 </span>
             </a>
             <a id="__RefHeading__752877_826425813"/>
-            <a id="attribute-manifest_version_element-ds_Signature"/>
-            <a id="element2-xmldsig_Signature"/>&lt;ds:Signature&gt;</h2>
+            <a id="element2-xmldsig_Signature"/>
+            <a id="attribute-manifest_version_element-ds_Signature"/>&lt;ds:Signature&gt;</h2>
         <p class="Text_20_body">The <span class="Alien_20_Element">&lt;ds:Signature&gt;</span> element is defined by the <a href="#nref-xmldsig-core">[xmldsig-core]</a> specification. Each <span class="Alien_20_Element">&lt;ds:Signature&gt;</span> element <span class="ISO_20_Keyword">shall</span> contain an <span class="Alien_20_Attribute">Id</span> attribute specifying a unique value. A producer may use the XAdES extensions as specified in ETSI TS 101 903 v1.4.1 <a href="#nref-XAdES">[XAdES]</a>, or later versions of the XAdES specification.</p>
         <p class="Text_20_body">A <span class="Alien_20_Element">&lt;ds:KeyInfo&gt;</span> element, as specified in <a href="#nref-xmldsig-core">[xmldsig-core]</a>, section 4.4 <span class="ISO_20_Keyword">shall</span> be included. The <span class="Alien_20_Element">&lt;ds:KeyInfo&gt;</span> element should contain an <span class="Alien_20_Element">&lt;ds:X509Data&gt;</span> element containing an <span class="Alien_20_Element">&lt;ds:X509IssuerSerial&gt;</span> element specifying the issuer and serial number of the signing certificate, and an <span class="Alien_20_Element">&lt;ds:X509Certificate&gt;</span> element specifying the full signing certificate.</p>
         <p class="Text_20_body">Additional <span class="Alien_20_Element">&lt;ds:X509Certificate&gt;</span> elements may be placed in the <span class="Alien_20_Element">&lt;ds:X509Data&gt;</span>, or may be placed in the <span class="Alien_20_Element">&lt;xades:CertificateValues&gt;</span> element of the XAdES <span class="Alien_20_Element">&lt;ds:Object&gt;</span>, as defined in <a href="#nref-XAdES">[XAdES]</a> section 7.6.1. The additional certificates should represent the entire certificate chain used for verification at signing time.</p>
@@ -2391,6 +2391,6 @@
                 </p>
             </li>
         </ol>
-        <script type="text/javascript" src="styles/mml-svg.js"><!--Because browsers are utterly terrible, here is a comment to force a script end tag to be generated from XSLT so you don't see a blank page--></script>
+        <script type="text/javascript" src="https://oasis-tcs.github.io/odf-tc/odf1.3/styles/mml-svg.js"><!--Because browsers are utterly terrible, here is a comment to force a script end tag to be generated from XSLT so you don't see a blank page--></script>
     </body>
 </html>
