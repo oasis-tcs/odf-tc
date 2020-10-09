@@ -32,7 +32,7 @@
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="graphic">
-   <style:graphic-properties draw:stroke="solid" svg:stroke-width="0.071cm" svg:stroke-color="#385d8a" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
+   <style:graphic-properties draw:stroke="solid" svg:stroke-width="0.071cm" svg:stroke-color="#385d8a" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="true"/>
    <style:paragraph-properties fo:line-height="100%" fo:text-align="start" style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
@@ -1850,7 +1850,7 @@
    </style:page-layout-properties>
    <style:header-style/>
    <style:footer-style>
-    <style:header-footer-properties svg:height="0.891cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.79cm" fo:background-color="transparent" style:dynamic-spacing="true" draw:fill="none" draw:fill-color="#729fcf"/>
+    <style:header-footer-properties svg:height="0.891cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.79cm" fo:background-color="transparent" style:dynamic-spacing="true"/>
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="Mpm2">

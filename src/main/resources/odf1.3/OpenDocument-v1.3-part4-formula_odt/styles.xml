@@ -1344,7 +1344,7 @@
     <style:list-level-properties text:min-label-width="1.016cm" text:min-label-distance="0.2cm"/>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="3" text:style-name="Zeichenformat" style:num-prefix="Appendix " style:num-format="1" text:display-levels="3">
-    <style:list-level-properties text:min-label-width="1.27cmcm" text:min-label-distance="0.2cm"/>
+    <style:list-level-properties text:min-label-width="1.27cm" text:min-label-distance="0.2cm"/>
    </text:list-level-style-number>  
    <text:list-level-style-number text:level="4" text:style-name="Zeichenformat" style:num-suffix=" " style:num-format="1" text:display-levels="4">
     <style:list-level-properties text:min-label-width="1.524cm"/>
