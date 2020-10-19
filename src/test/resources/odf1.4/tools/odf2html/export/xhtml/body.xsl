@@ -2035,7 +2035,7 @@
                                             <xsl:text>;min-width:</xsl:text>
                                             <xsl:choose>
                                                 <xsl:when test="$listLabelWidth and not($listLabelWidth='') and not($listLabelWidth='NaN')">
-                                                    <xsl:value-of select="$listLabelWidth"/>
+                                                    <xsl:value-of select="translate($listLabelWidth,',','.')"/>
                                                 </xsl:when>
                                                 <xsl:otherwise>0</xsl:otherwise>
                                             </xsl:choose>
@@ -2095,7 +2095,7 @@
                                     <xsl:text>;min-width:</xsl:text>
                                     <xsl:choose>
                                         <xsl:when test="$minLabelWidth and not($minLabelWidth='') and not($minLabelWidth='NaN')">
-                                            <xsl:value-of select="$minLabelWidth"/>
+                                            <xsl:value-of select="translate($minLabelWidth,',','.')"/>
                                         </xsl:when>
                                         <xsl:otherwise>0</xsl:otherwise>
                                     </xsl:choose>
