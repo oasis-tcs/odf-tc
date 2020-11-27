@@ -578,7 +578,8 @@
  <manifest:file-entry manifest:full-path="Pictures/10000201000001790000011B40B69668D10369CA.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="Pictures/10000200000000BE000000BE0F10EB0E20C95144.gif" manifest:media-type="image/gif"/>
  <manifest:file-entry manifest:full-path="Pictures/10000200000000BE000000BEF55E133B1E14C9FD.gif" manifest:media-type="image/gif"/>
- <manifest:file-entry manifest:full-path="Pictures/10000000000000FA00000037ADD6BFDB9497D43F.jpg" manifest:media-type="image/jpeg"/>
+ <manifest:file-entry manifest:full-path="Pictures/10000E9800001CA1000005CA923763AE09D71344.svg" manifest:media-type="image/svg+xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/100002010000015A00000046A6ED48C8BFEB70AB.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="Pictures/100002000000000A0000000A5B354D19DE71D0E4.gif" manifest:media-type="image/gif"/>
  <manifest:file-entry manifest:full-path="Pictures/10000200000000BE000000BEECD981B7054DF585.gif" manifest:media-type="image/gif"/>
  <manifest:file-entry manifest:full-path="Pictures/10000000000001D800000075EA638B5EFC5F39F7.png" manifest:media-type="image/png"/>
