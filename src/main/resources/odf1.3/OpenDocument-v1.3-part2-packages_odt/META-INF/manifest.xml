@@ -8,7 +8,8 @@
  <manifest:file-entry manifest:full-path="meta.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="settings.xml" manifest:media-type="text/xml"/>
  <manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>
- <manifest:file-entry manifest:full-path="Pictures/10000000000000FA00000037ADD6BFDB9497D43F.jpg" manifest:media-type="image/jpeg"/>
+ <manifest:file-entry manifest:full-path="Pictures/10000E9800001CA1000005CA923763AE09D71344.svg" manifest:media-type="image/svg+xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/100002010000015A00000046A6ED48C8BFEB70AB.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="Pictures/10000200000001200000019214F0E3B28E10AD07.gif" manifest:media-type="image/gif"/>
  <manifest:file-entry manifest:full-path="layout-cache" manifest:media-type="application/binary"/>
 </manifest:manifest>

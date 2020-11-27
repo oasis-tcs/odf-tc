@@ -182,7 +182,8 @@
     <text:user-field-decl office:value-type="string" office:string-value="Note:" text:name="Note"/>
     <text:user-field-decl office:value-type="string" office:string-value="B" text:name="AppendixOWL"/>
    </text:user-field-decls>
-   <text:p text:style-name="P15"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="6.35cm" svg:height="1.397cm" draw:z-index="0"><draw:image xlink:href="Pictures/10000000000000FA00000037ADD6BFDB9497D43F.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+   <text:p text:style-name="P15"><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="11.1cm" svg:height="2.221cm" draw:z-index="0"><draw:image xlink:href="Pictures/10000E9800001CA1000005CA923763AE09D71344.svg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
+     <draw:image xlink:href="Pictures/100002010000015A00000046A6ED48C8BFEB70AB.png" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad"/>
     </draw:frame></text:p>
    <text:p text:style-name="Title">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</text:p>
    <text:p text:style-name="Subtitle">Committee Specification 02</text:p>
