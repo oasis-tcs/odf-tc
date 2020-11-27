@@ -173,7 +173,7 @@
    </style:paragraph-properties>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Subtitle">
-   <style:text-properties fo:color="#446caa" style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-weight="bold" style:letter-kerning="true" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-name-complex="Arial1" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="18pt" fo:font-weight="bold" style:letter-kerning="true" style:font-size-asian="18pt" style:font-weight-asian="bold" style:font-name-complex="Arial1" style:font-size-complex="18pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Contents_20_1">
    <style:paragraph-properties>
