@@ -3,6 +3,7 @@ package org.oasis_open.odf_tc;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -18,7 +19,7 @@ static void writeFile(ZipOutputStream zip, String dirname, Path file, int method
     throws Exception
 {
     byte[] buf = Files.readAllBytes(file);
-    ZipEntry entry = new ZipEntry(Paths.get(dirname).relativize(file).toString());
+    ZipEntry entry = new ZipEntry(Paths.get(dirname).relativize(file).toString().replace(File.separatorChar, '/'));
     if (method == ZipOutputStream.STORED) { // have to provide these for STORED
         CRC32 crc = new CRC32();
         crc.update(buf, 0, buf.length);
