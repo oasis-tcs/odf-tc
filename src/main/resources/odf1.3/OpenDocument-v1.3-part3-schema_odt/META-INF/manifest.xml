@@ -596,5 +596,13 @@
  <manifest:file-entry manifest:full-path="Pictures/100000000000009A000000914DD412D78D619E56.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="Pictures/100000000000009A000000A059773B4C62FA218F.png" manifest:media-type="image/png"/>
  <manifest:file-entry manifest:full-path="Pictures/100000000000009A000000A060B95E7C1823CB80.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="Pictures/1000020100000018000000180BC51C9B45D6F3DD.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="Pictures/10000201000000180000001813260A03B202E3D1.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="Pictures/100002010000001800000018D2895B8241107550.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="Pictures/100002010000001800000018D5018CFF363117F5.png" manifest:media-type="image/png"/>
+ <manifest:file-entry manifest:full-path="Pictures/10000FC7000001F7000001F7A049C74D145DBBED.svg" manifest:media-type="image/svg+xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/10001194000001F7000001F79CAB4F1BFF022869.svg" manifest:media-type="image/svg+xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/100011C3000001F8000001F8F788A324E5BAF633.svg" manifest:media-type="image/svg+xml"/>
+ <manifest:file-entry manifest:full-path="Pictures/1000172B000001F7000001F7451C3DCC3A3A2ED6.svg" manifest:media-type="image/svg+xml"/>
  <manifest:file-entry manifest:full-path="layout-cache" manifest:media-type="application/binary"/>
 </manifest:manifest>
