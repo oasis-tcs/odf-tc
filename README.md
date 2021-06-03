@@ -4,8 +4,8 @@
 
 The purpose of this project is to provide:
 
-1. Automated tooling for the artifacts of the OASIS ODF TC foremost for its specification and grammar.
-2. Test documents according to the new features provided by the specification.
+1. Automated tooling for the deliverables of the OASIS ODF TC foremost for its specification and grammar.
+2. Test documents according to the new ODF features provided by the specification.
 
 The project aligns to the [standard directory layout of a Maven build system](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
@@ -80,8 +80,8 @@ Our Git repository is containing the ODF TC deliverables in the GitHub directori
 
 Within the above folders the TC deliverables are saved under the following restrictions:
 
-1. Ordered in a flat directory hierarchy. They might be still delivered by OASIS in various directories later to the users.
-2. Their file names will not contain the usual OASIS versioning abbreviation as versions should be labeled with GIT tags instead.
+1. Ordered in a single flat directory hierarchy. They might be still delivered by OASIS in various directories later to the users.
+2. Their file names will not contain the usual OASIS state abbreviation within the file names (e.g. OS). Versioning is being done by using GIT tags instead.
 3. ODT specification documents are for ease of use duplicated as:
     1. ODT files - being zipped XML files & pictures
     2. Unpacked directory named as the document with the suffix '.' exchanged as '_'
