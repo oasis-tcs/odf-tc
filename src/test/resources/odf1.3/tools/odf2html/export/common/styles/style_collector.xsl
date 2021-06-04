@@ -517,13 +517,13 @@
             <!-- split border into border parts for better activation-check on style:joint-border feature -->
             <xsl:if test="*/@fo:border">
                 <xsl:attribute name="fo:border-top" select="*/@fo:border" />
-                <xsl:attribute name="fo:border-left" select="*/@fo:border" /> 
+                <xsl:attribute name="fo:border-left" select="*/@fo:border" />
                 <xsl:attribute name="fo:border-bottom" select="*/@fo:border" />
                 <xsl:attribute name="fo:border-right" select="*/@fo:border" />
             </xsl:if>
-            
+
            <!--All current attributes will override already inserted attributes of the same name
-               XSLT Spec: "Adding an attribute to an element replaces any existing attribute of that element with the same expanded-name." -->               
+               XSLT Spec: "Adding an attribute to an element replaces any existing attribute of that element with the same expanded-name." -->
             <xsl:for-each select="*/@*[name() != 'style:font-size-rel'][name() != 'fo:border']">
                 <xsl:copy-of select="." />
             </xsl:for-each>
@@ -717,15 +717,15 @@
                 and
                     (
                         $style/*/@fo:border-top
-                        or 
+                        or
                         $style/*/@fo:border-bottom
                     )
-                and 
+                and
                     (
                         not($style/*/@fo:border-top='none' and
                             $style/*/@fo:border-left='none' and
-                            $style/*/@fo:border-right='none' and 
-                            $style/*/@fo:border-bottom='none') 
+                            $style/*/@fo:border-right='none' and
+                            $style/*/@fo:border-bottom='none')
                     )
                 and
                    (

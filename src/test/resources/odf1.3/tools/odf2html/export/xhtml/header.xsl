@@ -67,7 +67,6 @@
             <xsl:call-template name='create-css-styleheader'>
                 <xsl:with-param name="globalData" select="$globalData" />
             </xsl:call-template>
-
             <xsl:if test="$debugEnabled"><xsl:message>CSS header creation finished!</xsl:message></xsl:if>
         </xsl:element>
 
@@ -78,8 +77,8 @@
         <xsl:param name="globalData" />
 
         <xsl:element name="style">
-            <!-- https://validator.w3.org/unicorn:
-                The “type” attribute for the “style” element is not needed and should be omitted.
+          <!-- https://validator.w3.org/unicorn:
+               The “type” attribute for the “style” element is not needed and should be omitted.
             <xsl:attribute name="type">text/css</xsl:attribute> -->
 <xsl:text>
     </xsl:text>

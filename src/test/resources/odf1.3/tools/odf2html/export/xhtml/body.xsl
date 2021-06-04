@@ -341,7 +341,7 @@
                     <draw:frame>
                         <draw:text-box>
                             <text:p>
-                Which results in a paragraphs (the last text:p) having a paragraph as its anchestor.
+                Which results in a paragraphs (the last text:p) having a paragraph as its ancestor.
                 In HTML a 'p' can only have inline documents (no other 'p' as children'),
                 a 'div' will be given for the ancestors instead.
              2) ODF images are embedded in a paragraph, but CSS is not able to express a horizontal alignment for an HTML image (text:align is only valid for block elements).
@@ -1153,7 +1153,7 @@
         <!-- no creation of empty headings (without text content)   -->
         <xsl:if test="text() or descendant::text()">
             <!-- The URL linking of a table-of-content is due to a bug (cp. bug id# 102311) not mapped as URL in the XML.
-                 Linking of the table-of-content can therefore only be archieved by a work-around in HTML -->
+                 Linking of the table-of-content can therefore only be achieved by a work-around in HTML -->
             <xsl:call-template name="create-heading">
                 <xsl:with-param name="globalData" select="$globalData"/>
             </xsl:call-template>
@@ -1682,7 +1682,7 @@
 
         <!-- $globalData/styles-file/*/office:styles/ -->
         <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
-        <!-- 2DO: Acces new list styles
+        <!-- 2DO: Access new list styles
         <xsl:variable name="listLevelLabelAlignment1" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment"/>-->
         <xsl:variable name="listIndent">
             <xsl:call-template name="getListIndent">
@@ -1936,7 +1936,7 @@
                     A numbered label (e.g. 2.C.III) is created for every text:list-item/header.
                     Above list levels are listed in the label, if the list-style requires this. Levels are separated by @style:num-suffix
                     Formatation is dependent for every list level depth.
-                    The label is passed from anchestor text:list-item/header and if required truncated.
+                    The label is passed from ancestor text:list-item/header and if required truncated.
                     The prefix/suffix (as well list level dependent) comes before and after the complete label (after truncation)
                 -->
                 <!-- Numbered label will be generated  -->
