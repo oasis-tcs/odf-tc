@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document-meta xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" office:version="1.2">
- <office:meta>
+    <office:meta>
         <meta:generator>LibreOffice/6.4.5.2$Windows_X86_64 LibreOffice_project/a726b36747cf2001e06b58ad5db1aa3a9a1872d6</meta:generator>
         <dc:title>Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</dc:title>
         <meta:creation-date>2019-09-17T15:57:38.448000000</meta:creation-date>
@@ -9,26 +9,22 @@
         <meta:editing-duration>PT3M37S</meta:editing-duration>
         <meta:keyword>OASIS</meta:keyword>
         <meta:keyword>OpenDocument</meta:keyword>
-        <meta:keyword>ODF</meta:keyword>        
+        <meta:keyword>ODF</meta:keyword>
         <dc:description>This document is Part 1 of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification.</dc:description>
         <dc:date>2019-09-24T16:09:28.646000000</dc:date>
         <meta:initial-creator>OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:initial-creator>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="8" meta:paragraph-count="184" meta:word-count="1989" meta:character-count="15418" meta:non-whitespace-character-count="13587"/><meta:user-defined meta:name="DC.Creator">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined><meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined><meta:user-defined meta:name="DC.Description.Abstract">This standard specifies the characteristics of an XML-based application-independent and platform-independent digital document file format, as well as the characteristics of software applications which read, write and process such documents. This standard is applicable to document authoring, editing, viewing, exchange and archiving, including text documents, spreadsheets, presentation graphics, drawings, charts and similar documents commonly used by personal productivity software applications.</meta:user-defined><meta:user-defined meta:name="DC.Identifier">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part1-introduction/OpenDocument-v1.3-csd03-part1-introduction.odt</meta:user-defined><meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part1-introduction/OpenDocument-v1.3-cs01-part1-introduction.odt</meta:user-defined><meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</meta:user-defined><meta:user-defined meta:name="Editor" meta:value-type="string">Francis Cave</meta:user-defined><meta:user-defined meta:name="TC Chair" meta:value-type="string">Patrick Durusau</meta:user-defined><meta:user-defined meta:name="TC Name" meta:value-type="string">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined><meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</meta:user-defined><meta:user-defined meta:name="WP abbreviation" meta:value-type="string">CSD;03</meta:user-defined><meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined></office:meta>
+        <meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="8" meta:paragraph-count="184" meta:word-count="1989" meta:character-count="15418" meta:non-whitespace-character-count="13587"/>
+        <meta:user-defined meta:name="DC.Creator">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
+        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2021-04-27</meta:user-defined>
+        <meta:user-defined meta:name="DC.Description.Abstract">This standard specifies the characteristics of an XML-based application-independent and platform-independent digital document file format, as well as the characteristics of software applications which read, write and process such documents. This standard is applicable to document authoring, editing, viewing, exchange and archiving, including text documents, spreadsheets, presentation graphics, drawings, charts and similar documents commonly used by personal productivity software applications.</meta:user-defined>
+        <meta:user-defined meta:name="DC.Identifier">http://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs02/part1-introduction/OpenDocument-v1.3-cs02-part1-introduction.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</meta:user-defined>
+        <meta:user-defined meta:name="Editor" meta:value-type="string">Francis Cave, Patrick Durusau, Svante Schubert, Michael Stahl</meta:user-defined>
+        <meta:user-defined meta:name="TC Chair" meta:value-type="string">Patrick Durusau, Jos van den Oever</meta:user-defined>
+        <meta:user-defined meta:name="TC Name" meta:value-type="string">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined>
+        <meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 1: Introduction</meta:user-defined>
+        <meta:user-defined meta:name="WP abbreviation" meta:value-type="string">OS</meta:user-defined>
+        <meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined>
+    </office:meta>
 </office:document-meta>
