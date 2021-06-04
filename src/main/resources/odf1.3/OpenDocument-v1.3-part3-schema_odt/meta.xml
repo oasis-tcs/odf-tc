@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document-meta xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" office:version="1.2">
- <office:meta>
+    <office:meta>
         <meta:generator>LibreOffice/6.4.5.2$Windows_X86_64 LibreOffice_project/a726b36747cf2001e06b58ad5db1aa3a9a1872d6</meta:generator>
         <dc:title>Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</dc:title>
         <meta:creation-date>2019-09-17T16:03:15.075000000</meta:creation-date>
@@ -13,22 +13,18 @@
         <dc:description>This document is Part 3 of Open Document Format for Office Applications (OpenDocument) v1.3.</dc:description>
         <dc:date>2019-09-24T16:23:34.219000000</dc:date>
         <meta:initial-creator>OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:initial-creator>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                
-    <meta:document-statistic meta:table-count="27" meta:image-count="18" meta:object-count="102" meta:page-count="782" meta:paragraph-count="19187" meta:word-count="219676" meta:character-count="1718867" meta:non-whitespace-character-count="1513332"/><meta:user-defined meta:name="DC.Creator">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined><meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2020-08-31</meta:user-defined><meta:user-defined meta:name="DC.Description.Abstract">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines an XML schema for office documents. Office documents include text documents, spreadsheets, charts and graphical documents like drawings or presentations, and other forms of documents.</meta:user-defined><meta:user-defined meta:name="DC.Identifier">http://docs.oasis-open.org/office/OpenDocument/v1.3/csd03/part3-schema/OpenDocument-v1.3-csd03-part3-schema.odt</meta:user-defined><meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs01/part3-schema/OpenDocument-v1.3-cs01-part3-schema.odt</meta:user-defined><meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</meta:user-defined><meta:user-defined meta:name="Editor" meta:value-type="string">Francis Cave</meta:user-defined><meta:user-defined meta:name="TC Chair" meta:value-type="string">Patrick Durusau</meta:user-defined><meta:user-defined meta:name="TC Name" meta:value-type="string">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined><meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</meta:user-defined><meta:user-defined meta:name="WP abbreviation" meta:value-type="string">CSD;03</meta:user-defined><meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined></office:meta>
+        <meta:document-statistic meta:table-count="27" meta:image-count="18" meta:object-count="102" meta:page-count="782" meta:paragraph-count="19187" meta:word-count="219676" meta:character-count="1718867" meta:non-whitespace-character-count="1513332"/>
+        <meta:user-defined meta:name="DC.Creator">https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office</meta:user-defined>
+        <meta:user-defined meta:name="DC.Date.Issued" meta:value-type="date">2021-04-27</meta:user-defined>
+        <meta:user-defined meta:name="DC.Description.Abstract">This document is part of the Open Document Format for Office Applications (OpenDocument) Version 1.3 specification. It defines an XML schema for office documents. Office documents include text documents, spreadsheets, charts and graphical documents like drawings or presentations, and other forms of documents.</meta:user-defined>
+        <meta:user-defined meta:name="DC.Identifier">http://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Relation.Replaces" meta:value-type="string">http://docs.oasis-open.org/office/OpenDocument/v1.3/cs02/part3-schema/OpenDocument-v1.3-cs02-part3-schema.odt</meta:user-defined>
+        <meta:user-defined meta:name="DC.Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</meta:user-defined>
+        <meta:user-defined meta:name="Editor" meta:value-type="string">Francis Cave, Patrick Durusau, Svante Schubert, Michael Stahl</meta:user-defined>
+        <meta:user-defined meta:name="TC Chair" meta:value-type="string">Patrick Durusau, Jos van den Oever</meta:user-defined>
+        <meta:user-defined meta:name="TC Name" meta:value-type="string">OASIS Open Document Format for Office Applications (OpenDocument) TC</meta:user-defined>
+        <meta:user-defined meta:name="Title" meta:value-type="string">Open Document Format for Office Applications (OpenDocument) Version 1.3. Part 3: OpenDocument Schema</meta:user-defined>
+        <meta:user-defined meta:name="WP abbreviation" meta:value-type="string">OS</meta:user-defined>
+        <meta:user-defined meta:name="namespace" meta:value-type="string">http://purl.org/dc/elements/1.1/</meta:user-defined>
+    </office:meta>
 </office:document-meta>
