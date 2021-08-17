@@ -108,7 +108,8 @@ In the future, providing a new ODT should trigger an automated process:
 
 ### ODF Editing Tool
 
-Currently, [LibreOffice 7.1.5](https://www.libreoffice.org/download/download/?version=7.1.5&lang=en-US) is being used to edit the ODT files.
+Currently, [LibreOffice 7.1.5](https://www.libreoffice.org/download/download/?version=7.1.5&lang=en-US) is being used to edit the ODT files by all editors in en-US.
+It might be helpful to install the Editor LibreOffice version in parallel with other LibreOffice installations to avoid automatic exchange (see [translatable German documentation](https://wiki.documentfoundation.org/Installing_in_parallel/de#Installation_der_Versionen_3.5.x_und_neuer)).
 
 It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools->Options...->Advanced->Expert Configuration", search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
 
