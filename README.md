@@ -106,7 +106,9 @@ In the future, providing a new ODT should trigger an automated process:
 2. Transform the changed ODT to HTML & commit the results beyond reference /docs/odf&lt;VERSION&gt;
 3. In case of ODT schema - extract the default values & compare them with the reference beyond /docs/odf&lt;VERSION&gt;
 
-Currently, LibreOffice 6.4 is being used to edit the ODT files.
+### ODF Editing Tool
+
+Currently, [LibreOffice 7.1.5](https://www.libreoffice.org/download/download/?version=7.1.5&lang=en-US) is being used to edit the ODT files.
 
 It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools->Options...->Advanced->Expert Configuration", search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
 
