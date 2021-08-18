@@ -66,12 +66,6 @@ The ODF 1.3 HTML shows problems with:
 
 **NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
 
-To use LibreOffice to generate XHTML:
-
-1. install Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt)
-2. in LibreOffice menu, Tools/Macros/XML Filter settings..., click XHTML Writer file, Edit.../Transformation, check "The filter needs XSLT 2.0 processor", and edit "XSLT for export" to point to the file src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl in this repository
-3. File/Export..., select "XHTML (.html,.xhtml)", click Save
-
 ## Editor Workflow & Tools
 
 Our Git repository is containing the ODF TC deliverables in the GitHub directories:
@@ -82,7 +76,7 @@ Our Git repository is containing the ODF TC deliverables in the GitHub directori
 Within the above folders the TC deliverables are saved under the following restrictions:
 
 1. Ordered in a single flat directory hierarchy. They might be still delivered by OASIS in various directories later to the users.
-2. Their file names will not contain the usual OASIS state abbreviation within the file names (e.g. OS). Versioning is being done by using GIT tags instead.
+2. Their file names will not contain the usual OASIS state abbreviation within the file names (e.g. OS). Versioning is being done by using GIT  tags instead.
 3. ODT specification documents are for ease of use duplicated as:
     1. ODT files - being zipped XML files & pictures
     2. Unpacked directory named as the document with the suffix '.' exchanged as '_'
@@ -138,23 +132,27 @@ Search for "prettyprinting" and toggle it on, or alternatively add this line in 
 
 #### LibreOffice XHTML XSLT export taking from our GitHub
 
-In the LO menu go to "Tools-->Macros-->XML Filter Settings, in this window select the "XHTML Writer export filter", press "Edit" and choose the "Transformation" label.
-Exchange the existing "XSLT for export" from your
+1. In the LO menu go to "Tools-->Macros-->XML Filter Settings, in this window select the "XHTML Writer export filter", press "Edit" and choose the "Transformation"     label. Exchange the existing "XSLT for export" from your
 
-```shell
-<LO_PATH>\program\..\share\xslt\export\xhtml\opendoc2xhtml.xsl
-```
+    ```shell
+    <LO_PATH>\program\..\share\xslt\export\xhtml\opendoc2xhtml.xsl
+    ```
 
-```shell
-<GITHUB_ODF-TC_PATH>\src\test\resources\odf1.3\tools\odf2html\export\xhtml\opendoc2xhtml.xsl
-```
+    ```shell
+    <GITHUB_ODF-TC_PATH>\src\test\resources\odf1.3\tools\odf2html\export\xhtml\opendoc2xhtml.xsl
+    ```
 
-**NOTE:**: You need to enable the checkbox "The filter needs XSLT 2.0 processor".
+    **NOTE:**: You need to enable the checkbox "The filter needs XSLT 2.0 processor".
 
-Finally, you need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
+1. You need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
 We suggest the long-term-support JDK 11 version, others should work.
 
+1. You need to install the Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt)
+
+After this you are able to create XHTML via: "File/Export...", select "XHTML (.html,.xhtml)", click "Export"
+
 #### LibreOffice ODF Settings
+
 In the LO menu go to "Tools-->Load & Save" and choose on the right side among "Default File Format and ODF Settings" as "ODF format version" "ODF 1.3".
 
 ## Background
