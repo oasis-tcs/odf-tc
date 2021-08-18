@@ -147,7 +147,9 @@ Search for "prettyprinting" and toggle it on, or alternatively add this line in 
 1. You need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
 We suggest the long-term-support JDK 11 version, others should work.
 
-1. You need to install the Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt)
+1. You need to install the Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt). Just drag&drop the OXT file onto the menu bar of the new LibreOffice for TC editing 
+
+    **BEWARE:** Double click on the OXT file might trigger the default LibreOffice, which is likely not the required for TC Editing. The missing extension will result into an endless transformation. You start testing the installation with the smaller ODF package specification.
 
 After this you are able to create XHTML via: "File/Export...", select "XHTML (.html,.xhtml)", click "Export"
 
