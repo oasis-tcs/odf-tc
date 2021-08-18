@@ -67,6 +67,7 @@ The ODF 1.3 HTML shows problems with:
 **NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
 
 To use LibreOffice to generate XHTML:
+
 1. install Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt)
 2. in LibreOffice menu, Tools/Macros/XML Filter settings..., click XHTML Writer file, Edit.../Transformation, check "The filter needs XSLT 2.0 processor", and edit "XSLT for export" to point to the file src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl in this repository
 3. File/Export..., select "XHTML (.html,.xhtml)", click Save
@@ -108,14 +109,50 @@ In the future, providing a new ODT should trigger an automated process:
 
 ### ODF Editing Tool
 
-Currently, [LibreOffice 7.1.5](https://www.libreoffice.org/download/download/?version=7.1.5&lang=en-US) is being used to edit the ODT files by all editors in en-US.
-It might be helpful to install the Editor LibreOffice version in parallel with other LibreOffice installations to avoid automatic exchange (see [translatable German documentation](https://wiki.documentfoundation.org/Installing_in_parallel/de#Installation_der_Versionen_3.5.x_und_neuer)).
+#### LibreOffice paralell installation
 
-It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools->Options...->Advanced->Expert Configuration", search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
+Currently, [LibreOffice 7.1.5](https://www.libreoffice.org/download/download/?version=7.1.5&lang=en-US) is being used to edit the ODT files by all editors in en-US.
+It might be helpful to install the Editor LibreOffice version in parallel with other LibreOffice (LO) installations to avoid automatic exchange (see [LO documentation](https://wiki.documentfoundation.org/Installing_in_parallel)).
+
+#### LibreOffice unique configuration
+
+In addition, to the parallel installation the configuration should not be shared. As only one LO instance of one configuration can run at one time.
+This can be done manually after installation - likely before the first start - editing the file <LO_PATH>/program/bootstraprc (or
+<LO_PATH>/program/bootstrap.ini on Windows) and change the last line to:
+
+```shell
+    UserInstallation=$ORIGIN/..
+```
+
+The above puts the profile directory as a sibling of "program".
+
+#### LibreOffice pretty printing XML within ODT/ZIP
+
+It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools-->Options...-->Advanced"
+Press on the "Open Expert Configuration" button.
+Search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
 
 ```xml
 <item oor:path="/org.openoffice.Office.Common/Save/Document"><prop oor:name="PrettyPrinting" oor:op="fuse"><value>true</value></prop></item>
 ```
+
+#### LibreOffice XHTML XSLT export taking from our GitHub
+
+In the LO menu go to "Tools-->Macros-->XML Filter Settings, in this window select the "XHTML Writer export filter", press "Edit" and choose the "Transformation" label.
+Exchange the existing "XSLT for export" from your
+
+```shell
+<LO_PATH>\program\..\share\xslt\export\xhtml\opendoc2xhtml.xsl
+```
+
+```shell
+<GITHUB_ODF-TC_PATH>\src\test\resources\odf1.3\tools\odf2html\export\xhtml\opendoc2xhtml.xsl
+```
+
+**NOTE:**: You need to enable the checkbox "The filter needs XSLT 2.0 processor".
+
+Finally, you need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
+We suggest the long-term-support JDK 11 version, others should work.
 
 ## Background
 
