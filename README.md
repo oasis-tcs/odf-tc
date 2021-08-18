@@ -128,7 +128,7 @@ The above puts the profile directory as a sibling of "program".
 
 #### LibreOffice pretty printing XML within ODT/ZIP
 
-It's convenient to enable the XML pretty-printing in LibreOffice: go to "Tools-->Options...-->Advanced"
+It's convenient for Git reviews to enable the XML pretty-printing in LibreOffice: go to "Tools-->Options...-->Advanced"
 Press on the "Open Expert Configuration" button.
 Search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $HOME/.config/libreoffice/4
 
@@ -153,6 +153,9 @@ Exchange the existing "XSLT for export" from your
 
 Finally, you need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
 We suggest the long-term-support JDK 11 version, others should work.
+
+#### LibreOffice ODF Settings
+In the LO menu go to "Tools-->Load & Save" and choose on the right side among "Default File Format and ODF Settings" as "ODF format version" "ODF 1.3".
 
 ## Background
 
