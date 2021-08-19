@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi>s</mi>
+   <mi mathvariant="normal">=</mi>
+   <msqrt>
+    <mrow>
+     <mfrac>
+      <mn>1</mn>
+      <mrow>
+       <mi>n</mi>
+       <mi mathvariant="normal">−</mi>
+       <mn>1</mn>
+      </mrow>
+     </mfrac>
+     <mrow>
+      <munderover>
+       <mi mathvariant="normal">∑</mi>
+       <mrow>
+        <mi>i</mi>
+        <mi mathvariant="normal">=</mi>
+        <mn>1</mn>
+       </mrow>
+       <mi>n</mi>
+      </munderover>
+      <msup>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <msub>
+          <mi>x</mi>
+          <mi>i</mi>
+         </msub>
+         <mi mathvariant="normal">−</mi>
+         <mover accent="true">
+          <mi>x</mi>
+          <mo>¯
+          </mo>
+         </mover>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+    </mrow>
+   </msqrt>
+  </mrow>
+  <annotation encoding="StarMath 5.0">s = sqrt{{1 over {n-1}} sum from {i=1} to n {( x sub i - overline x )}^2 }</annotation>
+ </semantics>
+</math>

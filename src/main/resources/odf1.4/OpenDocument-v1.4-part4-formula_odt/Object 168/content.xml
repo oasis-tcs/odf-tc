@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mrow>
+    <msubsup>
+     <mi mathvariant="normal">∫</mi>
+     <mn>0</mn>
+     <mfrac>
+      <mrow>
+       <mi>x</mi>
+       <mi mathvariant="normal">−</mi>
+       <mi>a</mi>
+      </mrow>
+      <mrow>
+       <mi>b</mi>
+       <mi mathvariant="normal">−</mi>
+       <mi>a</mi>
+      </mrow>
+     </mfrac>
+    </msubsup>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mo stretchy="false">Γ</mo>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <mo stretchy="false">α</mo>
+         <mo stretchy="false">+</mo>
+         <mo stretchy="false">β</mo>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+      <mrow>
+       <mo stretchy="false">Γ</mo>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">α</mo>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mo stretchy="false">Γ</mo>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">β</mo>
+        <mo stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+     </mfrac>
+     <mrow>
+      <mrow>
+       <mi/>
+       <mi mathvariant="normal">⋅</mi>
+       <msup>
+        <mi>z</mi>
+        <mrow>
+         <mo stretchy="false">α</mo>
+         <mi mathvariant="normal">−</mi>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+      </mrow>
+      <mi mathvariant="normal">⋅</mi>
+      <msup>
+       <mrow>
+        <mo stretchy="false">(</mo>
+        <mrow>
+         <mn>1</mn>
+         <mi mathvariant="normal">−</mi>
+         <mi>z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+       </mrow>
+       <mrow>
+        <mo stretchy="false">β</mo>
+        <mi mathvariant="normal">−</mi>
+        <mn>1</mn>
+       </mrow>
+      </msup>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi mathvariant="italic">dz</mi>
+  </mrow>
+  <annotation encoding="StarMath 5.0">int sub 0 sup {{x-a} over {b-a}} {{{%GAMMA (%alpha + %beta)} over {%GAMMA (%alpha) %GAMMA (%beta)}} `cdot {z} sup {%alpha - 1} cdot (1 - {z}) sup {%beta - 1}} dz</annotation>
+ </semantics>
+</math>

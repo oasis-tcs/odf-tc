@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mfrac><mrow><mi>N</mi><mi>!</mi></mrow><mrow><mrow><mo fence="true" stretchy="true">(</mo><mrow><mrow><mi>N</mi><mo stretchy="false">−</mo><mi>K</mi></mrow></mrow><mo fence="true" stretchy="true">)</mo></mrow><mi>!</mi></mrow></mfrac><annotation encoding="StarMath 5.0">{N!} over {left( N - K right)!}</annotation></semantics></math>

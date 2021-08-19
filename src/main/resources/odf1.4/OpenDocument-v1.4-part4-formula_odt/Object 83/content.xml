@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><msub><mi>C</mi><mrow><mi>M</mi><mo stretchy="false">×</mo><mi>N</mi></mrow></msub><mo stretchy="false">=</mo><msub><mi>A</mi><mrow><mi>M</mi><mo stretchy="false">×</mo><mi>K</mi></mrow></msub></mrow><msub><mi>B</mi><mrow><mi>K</mi><mo stretchy="false">×</mo><mi>N</mi></mrow></msub></mrow><annotation encoding="StarMath 5.0">C_{M times N} = A_{M times K} B_{K times N}</annotation></semantics></math>

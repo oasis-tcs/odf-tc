@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mo stretchy="false">∑</mo><mrow><mi>x</mi><mo stretchy="false">∈</mo><mi>N</mi></mrow></munder><msup><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo stretchy="false">−</mo><mi>a</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="StarMath 5.0">sum from{x in N } (x - a)^{2}</annotation></semantics></math>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo stretchy="false">=</mo><mfrac><msub><mi mathvariant="italic">SS</mi><mi mathvariant="italic">reg</mi></msub><mrow><munderover><mo stretchy="false">∑</mo><mrow><mi>i</mi><mo stretchy="false">=</mo><mn>1</mn></mrow><mi>k</mi></munderover><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding="StarMath 5.0">R^2 = SS_reg over {sum from i=1 to k y_i^2}</annotation></semantics></math>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo stretchy="false">=</mo><mfenced open="(" close=")"><mtable><mtr><mtd><msub><mi>y</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mo stretchy="false">⋮</mo></mtd></mtr><mtr><mtd><msub><mi>y</mi><mi>k</mi></msub></mtd></mtr></mtable></mfenced></mrow><annotation encoding="StarMath 5.0">Y=left(stack{y_1#dotsvert#y_k } right)</annotation></semantics></math>

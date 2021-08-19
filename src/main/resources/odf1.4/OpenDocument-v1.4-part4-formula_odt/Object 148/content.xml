@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <mi>z</mi>
+   <mi mathvariant="normal">≝</mi>
+   <mfrac>
+    <mrow>
+     <mi>t</mi>
+     <mi mathvariant="normal">−</mi>
+     <mi>a</mi>
+    </mrow>
+    <mrow>
+     <mi>b</mi>
+     <mi mathvariant="normal">−</mi>
+     <mi>a</mi>
+    </mrow>
+   </mfrac>
+  </mrow>
+  <annotation encoding="StarMath 5.0">z def {t-a} over {b-a}</annotation>
+ </semantics>
+</math>

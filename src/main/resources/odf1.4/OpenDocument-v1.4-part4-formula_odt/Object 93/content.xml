@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ln</mi><mrow><mo fence="true" stretchy="false">(</mo><mrow><mfrac><mrow><mn>1</mn><mo stretchy="false">+</mo><mi>R</mi></mrow><mrow><mn>1</mn><mo stretchy="false">−</mo><mi>R</mi></mrow></mfrac></mrow><mo fence="true" stretchy="false">)</mo></mrow></mrow><annotation encoding="StarMath 5.0">1 over 2 ln({1+R} over {1-R} ) </annotation></semantics></math>

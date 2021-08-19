@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mrow>
+   <msubsup>
+    <mi>s</mi>
+    <mi>p</mi>
+    <mn>2</mn>
+   </msubsup>
+   <mi mathvariant="normal">=</mi>
+   <mfrac>
+    <mrow>
+     <mrow>
+      <mo stretchy="false">(</mo>
+      <mrow>
+       <mi>n</mi>
+       <mi mathvariant="normal">−</mi>
+       <mn>1</mn>
+      </mrow>
+      <mo stretchy="false">)</mo>
+     </mrow>
+     <mrow>
+      <msubsup>
+       <mi>s</mi>
+       <mi>X</mi>
+       <mn>2</mn>
+      </msubsup>
+      <mo stretchy="false">+</mo>
+      <mrow>
+       <mo stretchy="false">(</mo>
+       <mrow>
+        <mi>m</mi>
+        <mi mathvariant="normal">−</mi>
+        <mn>1</mn>
+       </mrow>
+       <mo stretchy="false">)</mo>
+      </mrow>
+     </mrow>
+     <msubsup>
+      <mi>s</mi>
+      <mi>Y</mi>
+      <mn>2</mn>
+     </msubsup>
+    </mrow>
+    <mrow>
+     <mrow>
+      <mi>n</mi>
+      <mo stretchy="false">+</mo>
+      <mi>m</mi>
+     </mrow>
+     <mi mathvariant="normal">−</mi>
+     <mn>2</mn>
+    </mrow>
+   </mfrac>
+  </mrow>
+  <annotation encoding="StarMath 5.0">s^2_{p}={(n-1)s^2_X + (m-1) s^2_Y} over {n+m-2}</annotation>
+ </semantics>
+</math>
