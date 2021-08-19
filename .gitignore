@@ -1,6 +1,12 @@
 # Created by https://www.gitignore.io/api/java,maven,eclipse,intellij+all
 # Edit at https://www.gitignore.io/?templates=java,maven,eclipse,intellij+all
 
+# with ODF 1.4 we stop adding binaries (only adding unzip files)
+src/main/resources/odf1.4/OpenDocument-v1.4-part1-introduction.odt
+src/main/resources/odf1.4/OpenDocument-v1.4-part2-packages.odt
+src/main/resources/odf1.4/OpenDocument-v1.4-part3-schema.odt
+src/main/resources/odf1.4/OpenDocument-v1.4-part4-formula.odt
+
 # EMACS
 *~
 

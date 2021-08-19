@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi>z</mi><mo stretchy="false">=</mo><mfrac><mrow><mover accent="true"><mi mathvariant="italic">Sample</mi><mo>¯</mo></mover><mo stretchy="false">−</mo><mi mathvariant="italic">Mean</mi></mrow><mi mathvariant="italic">Sigma</mi></mfrac></mrow><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="StarMath 5.0">z = { overline {Sample} - Mean } over { Sigma } sqrt n</annotation></semantics></math>

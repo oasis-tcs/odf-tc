@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+       </msup>
+       <mi mathvariant="normal">=</mi>
+       <mfrac>
+        <mn>1</mn>
+        <mrow>
+         <mi>n</mi>
+         <mi mathvariant="normal">−</mi>
+         <mn>1</mn>
+        </mrow>
+       </mfrac>
+      </mrow>
+      <mrow>
+       <munderover>
+        <mi mathvariant="normal">∑</mi>
+        <mrow>
+         <mi>i</mi>
+         <mi mathvariant="normal">=</mi>
+         <mn>1</mn>
+        </mrow>
+        <mi>n</mi>
+       </munderover>
+       <msup>
+        <mrow>
+         <mo stretchy="false">(</mo>
+         <mrow>
+          <msub>
+           <mi>x</mi>
+           <mi>i</mi>
+          </msub>
+          <mi mathvariant="normal">−</mi>
+          <mover accent="true">
+           <mi>x</mi>
+           <mo>¯
+           </mo>
+          </mover>
+         </mrow>
+         <mo stretchy="false">)</mo>
+        </mrow>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd/>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mtext>with</mtext>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mover accent="true">
+        <mi>x</mi>
+        <mo>¯
+        </mo>
+       </mover>
+       <mi mathvariant="normal">=</mi>
+       <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+       </mfrac>
+      </mrow>
+      <mrow>
+       <munderover>
+        <mi mathvariant="normal">∑</mi>
+        <mrow>
+         <mi>i</mi>
+         <mi mathvariant="normal">=</mi>
+         <mn>1</mn>
+        </mrow>
+        <mi>n</mi>
+       </munderover>
+       <msub>
+        <mi>x</mi>
+        <mi>i</mi>
+       </msub>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">s^2 = {1 over {n-1}} sum from {i=1} to n {( x_i - overline x )}^2 newline newline
+&quot;with&quot; newline
+overline x = 1 over {n} sum from {i=1} to n x_i</annotation>
+ </semantics>
+</math>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mrow><mo fence="true" stretchy="false">(</mo><mrow><mrow><msup><mi>X</mi><mi>T</mi></msup><mo stretchy="false">⋅</mo><mi>X</mi></mrow></mrow><mo fence="true" stretchy="false">)</mo></mrow><mrow><mo stretchy="false">−</mo><mn>1</mn></mrow></msup><mo stretchy="false">⋅</mo><msup><mi>X</mi><mi>T</mi></msup><mo stretchy="false">⋅</mo><mi>Y</mi></mrow><annotation encoding="StarMath 5.0">(X^T cdot X)^{-1} cdot X^T cdot Y</annotation></semantics></math>

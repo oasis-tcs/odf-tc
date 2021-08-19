@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>t</mi><mo stretchy="false">=</mo><mfrac><mrow><mi mathvariant="italic">Cost</mi><mo stretchy="false">−</mo><mi mathvariant="italic">Salvage</mi></mrow><mrow><mi mathvariant="italic">Cost</mi><mo stretchy="false">⋅</mo><mi mathvariant="italic">Rate</mi></mrow></mfrac></mrow><annotation encoding="StarMath 5.0">t = { Cost - Salvage } over { Cost cdot Rate }</annotation></semantics></math>
