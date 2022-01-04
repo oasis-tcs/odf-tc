@@ -348,7 +348,7 @@
                 A surrounding 'div' element taking over the image style solves that problem, but the div is invalid as child of a paragraph
                 Therefore the paragraph has to be exchanged with a HTML div element
         -->
-        <!-- 2DO page alignment fix - PART1 -->
+        <!-- TODO page alignment fix - PART1 -->
         <xsl:variable name="childText"><xsl:apply-templates mode="getAllTextChildren"/></xsl:variable>
         <xsl:choose>
             <xsl:when test="name() = 'text:p' and not(*) and (normalize-space($childText) = '')">
@@ -395,7 +395,7 @@
                             <xsl:with-param name="previousFrameHeights" select="0"/>
                             <xsl:with-param name="leftPosition" select="0" />
                             <xsl:with-param name="stopAtFirstFrame" select="true()" />
-                            <!-- 2DO for me (Svante) - Not used, uncertain 4now...
+                            <!-- TODO for me (Svante) - Not used, uncertain for now...
                             <xsl:with-param name="pageMarginLeft">
                                 <xsl:call-template name="getPageMarginLeft"/>
                             </xsl:with-param>-->
@@ -408,7 +408,7 @@
                         <xsl:with-param name="previousFrameHeights" select="0"/>
                         <xsl:with-param name="leftPosition" select="0"/>
 
-                        <!-- 2DO for me (Svante) - Not used, uncertain 4now...
+                        <!-- TODO for me (Svante) - Not used, uncertain for now...
                         <xsl:with-param name="pageMarginLeft">
                             <xsl:call-template name="getPageMarginLeft"/>
                          </xsl:with-param>-->
@@ -437,7 +437,7 @@
                             <xsl:variable name="paragraphName" select="@text:style-name" />
                             <xsl:variable name="imageParagraphStyle" select="$globalData/all-styles/style[@style:name = $paragraphName]/final-properties"/>
                             <!-- Only the left margin of the first paragraph of a list item will be added to the margin of the complete list (all levels)-->
-<!-- 2DO: left-margin in order with bidirectional -->
+<!-- TODO: left-margin in order with bidirectional -->
                             <xsl:choose>
                                 <xsl:when test="contains($imageParagraphStyle, 'margin-left:')">
                                     <xsl:call-template name="convert2cm">
@@ -504,7 +504,7 @@
         <xsl:param name="parentMarginLeft" />
         <xsl:param name="pageMarginLeft" />
 
-<!-- 2DO: EXCHANGE FOLLOWING SIBLING BY VARIABLE -->
+<!-- TODO: EXCHANGE FOLLOWING SIBLING BY VARIABLE -->
         <xsl:variable name="followingSiblingNode" select="following-sibling::node()[1]"/>
 
 
@@ -529,7 +529,7 @@
 
         <xsl:choose>
             <xsl:when test="name() = 'text:tab'">
-                <!-- every frame sibling have to be incapuslated within a div with left indent  -->
+                <!-- every frame sibling have to be encapsulated within a div with left indent  -->
                 <xsl:element name="span">
                     <xsl:choose>
                         <xsl:when test="count($tabStops/style:tab-stop) &gt; 0 and count($tabStops/style:tab-stop) &lt; 3">
@@ -823,7 +823,7 @@
                 <xsl:choose>
                     <xsl:when test="normalize-space(.) != ''">
                         <!-- every following frame sibling till the next draw:frame
-                            have to be incapuslated within a div with left indent.
+                            have to be encapsulated within a div with left indent.
                             To be moved altogether according the indent (usually right) -->
                         <xsl:comment>Next 'div' added for floating.</xsl:comment>
                         <xsl:element name="div">
@@ -835,7 +835,7 @@
                             <xsl:apply-templates select=".">
                                 <xsl:with-param name="globalData" select="$globalData"/>
                             </xsl:apply-templates>
-                            <!-- if it is a frame sibling it will be NOT incapuslated within the div (as already within one) -->
+                            <!-- if it is a frame sibling it will be NOT encapsulated within the div (as already within one) -->
                             <xsl:if test="not($nextSiblingIsFrame)">
                                 <xsl:apply-templates select="following-sibling::node()[1]" mode="frameFloating">
                                     <xsl:with-param name="globalData" select="$globalData"/>
@@ -1694,7 +1694,7 @@
 
         <!-- $globalData/styles-file/*/office:styles/ -->
         <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
-        <!-- 2DO: Access new list styles
+        <!-- TODO: Access new list styles
         <xsl:variable name="listLevelLabelAlignment1" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment"/>-->
         <xsl:variable name="listIndent">
             <xsl:call-template name="getListIndent">
@@ -2005,7 +2005,7 @@
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@fo:text-indent)"/>
                                                     </xsl:call-template>
                                                 </xsl:variable>
-                                                <!-- 2DO: Access new ODF 1.2 list styles
+                                                <!-- TODO: Access new ODF 1.2 list styles
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@text:list-tab-stop-position)"/>
@@ -2027,7 +2027,7 @@
                                         </xsl:if>
                                         <xsl:attribute name="style">
                                             <xsl:text>display:block;float:</xsl:text>
-                                            <!-- 2DO: Svante - copy this functionality for other used margin:left (in western country 'left') -->
+                                            <!-- TODO: Svante - copy this functionality for other used margin:left (in western country 'left') -->
                                             <xsl:call-template name="getOppositeWritingDirection">
                                                 <xsl:with-param name="globalData" select="$globalData"/>
                                                 <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
@@ -2276,7 +2276,7 @@
                                     <xsl:choose>
                                         <!-- if it has content the counting is ended -->
                                         <xsl:when test="*[name() = 'text:h' or name() = 'text:p'] or $isListHeader">
-                                            <!-- 2DO: Perhaps the children still have to be processed -->
+                                            <!-- TODO: Perhaps the children still have to be processed -->
                                             <xsl:value-of select="$itemNumber + $pseudoLevel"/>
                                         </xsl:when>
                                         <xsl:otherwise>
@@ -2531,7 +2531,7 @@
         <xsl:param name="minLabelDist"/>
         <xsl:param name="minLabelWidth"/>
 
-        <!-- 2DO page alignment fix - PART1 -->
+        <!-- TODO page alignment fix - PART1 -->
 
         <!-- xhtml:p may only contain inline elements.
              If there is one frame beyond, div must be used! -->
