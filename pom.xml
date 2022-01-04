@@ -78,150 +78,290 @@ limitations under the License.
         </dependency>
     </dependencies>
 
-    <build>
-        <defaultGoal>install</defaultGoal>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
+    <profiles>
+        <profile>
+            <id>html</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <defaultGoal>install</defaultGoal>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>${jdk.version}</source>
+                            <target>${jdk.version}</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <configuration>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                        </configuration>
+                    </plugin>
 
-            <!-- SAXON XSLT 2.0 processor -->
-            <!-- see https://www.mojohaus.org/xml-maven-plugin/examples/transform-saxon.html-->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>xml-maven-plugin</artifactId>
-                <version>1.0.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>transform</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <transformationSets>
-                        <!-- extract default values from schema part  -->
-                        <transformationSet>
-                            <dir>${odf14.part3.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf14.default.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf14-default-values.xml</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                        <!-- add references to all three semi-automatic created RNG-HTML files -->
-                        <transformationSet>
-                            <dir>${odf14.rng-html.input}</dir>
-                            <includes>*-rng.html</includes>
-                            <stylesheet>${odf14.rnghtml.stylesheet}</stylesheet>
-                            <outputProperties>
-                                <outputProperty>
-                                    <name>omit-xml-declaration</name>
-                                    <value>yes</value>
-                                </outputProperty>
-                                <outputProperty>
-                                    <name>version</name>
-                                    <value>5</value>
-                                </outputProperty>
-                            </outputProperties>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                        <!-- HTML XSL transformations triggered by LO to have all content (esp. mathml) in one file 
+                    <!-- SAXON XSLT 2.0 processor -->
+                    <!-- see https://www.mojohaus.org/xml-maven-plugin/examples/transform-saxon.html-->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>xml-maven-plugin</artifactId>
+                        <version>1.0.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>transform</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <transformationSets>
+                                <!-- HTML XSL transformations triggered by LO to have all content (esp. mathml) in one file 
                             a) Local XSL would require update 
                             b) We receive the images within the HTML base64 encoded -->
 
-                        <!-- part 1 HTML transformation (introduction) -->
-                        <transformationSet>
-                            <dir>${odf14.part1.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf14.html.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf14-intro.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
+                                <!-- part 1 HTML transformation (introduction) -->
+                                <transformationSet>
+                                    <dir>${odf14.part1.input}</dir>
+                                    <includes>content.xml</includes>
+                                    <stylesheet>${odf14.html.stylesheet}</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>odf14-intro.html</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
 
-                        <!-- part 2 HTML transformation (packages) -->
-                        <transformationSet>
-                            <dir>${odf14.part2.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf14.html.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf14-packages.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
+                                <!-- part 2 HTML transformation (packages) -->
+                                <transformationSet>
+                                    <dir>${odf14.part2.input}</dir>
+                                    <includes>content.xml</includes>
+                                    <stylesheet>${odf14.html.stylesheet}</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>odf14-packages.html</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
 
-                        <!-- part 3 HTML transformation (schema) -->
-                        <transformationSet>
-                            <dir>${odf14.part3.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf14.html.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf14-schema.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
+                                <!-- part 3 HTML transformation (schema) -->
+                                <transformationSet>
+                                    <dir>${odf14.part3.input}</dir>
+                                    <includes>content.xml</includes>
+                                    <stylesheet>${odf14.html.stylesheet}</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>odf14-schema.html</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
 
-                        <!-- part 4 HTML transformation (formula) -->
-                        <transformationSet>
-                            <dir>${odf14.part4.input}</dir>
-                            <includes>content.xml</includes>
-                            <stylesheet>${odf14.html.stylesheet}</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>odf14-formula.html</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                    </transformationSets>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>net.sf.saxon</groupId>
-                        <artifactId>Saxon-HE</artifactId>
-                        <version>${version.saxon-he}</version>
-                        <scope>runtime</scope>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <configuration>
-                    <!-- <forkCount>3</forkCount>
+                                <!-- part 4 HTML transformation (formula) -->
+                                <transformationSet>
+                                    <dir>${odf14.part4.input}</dir>
+                                    <includes>content.xml</includes>
+                                    <stylesheet>${odf14.html.stylesheet}</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>odf14-formula.html</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
+                            </transformationSets>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>net.sf.saxon</groupId>
+                                <artifactId>Saxon-HE</artifactId>
+                                <version>${version.saxon-he}</version>
+                                <scope>runtime</scope>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.2</version>
+                        <configuration>
+                            <!-- <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>-->
-                    <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
-                    <systemPropertyVariables>
-                        <basedir>${basedir}</basedir>
-                    </systemPropertyVariables>
-                    <!--<skipTests>${skipTests}</skipTests>-->
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+                            <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
+                            <systemPropertyVariables>
+                                <basedir>${basedir}</basedir>
+                            </systemPropertyVariables>
+                            <!--<skipTests>${skipTests}</skipTests>-->
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>default</id>
+            <build>
+                <defaultGoal>install</defaultGoal>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>${jdk.version}</source>
+                            <target>${jdk.version}</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <configuration>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                        </configuration>
+                    </plugin>
+
+                    <!-- SAXON XSLT 2.0 processor -->
+                    <!-- see https://www.mojohaus.org/xml-maven-plugin/examples/transform-saxon.html-->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>xml-maven-plugin</artifactId>
+                        <version>1.0.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>transform</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <transformationSets>
+                                <!-- extract default values from schema part  -->
+                                <transformationSet>
+                                    <dir>${odf14.part3.input}</dir>
+                                    <includes>content.xml</includes>
+                                    <stylesheet>${odf14.default.stylesheet}</stylesheet>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>odf14-default-values.xml</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
+                            </transformationSets>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>net.sf.saxon</groupId>
+                                <artifactId>Saxon-HE</artifactId>
+                                <version>${version.saxon-he}</version>
+                                <scope>runtime</scope>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.2</version>
+                        <configuration>
+                            <!-- <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>-->
+                            <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
+                            <systemPropertyVariables>
+                                <basedir>${basedir}</basedir>
+                            </systemPropertyVariables>
+                            <!--<skipTests>${skipTests}</skipTests>-->
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>rng</id>
+            <build>
+                <defaultGoal>install</defaultGoal>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>${jdk.version}</source>
+                            <target>${jdk.version}</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <configuration>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                        </configuration>
+                    </plugin>
+
+                    <!-- SAXON XSLT 2.0 processor -->
+                    <!-- see https://www.mojohaus.org/xml-maven-plugin/examples/transform-saxon.html-->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>xml-maven-plugin</artifactId>
+                        <version>1.0.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>transform</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <transformationSets>
+                                <!-- add references to all three semi-automatic created RNG-HTML files -->
+                                <transformationSet>
+                                    <dir>${odf14.rng-html.input}</dir>
+                                    <includes>*-rng.html</includes>
+                                    <stylesheet>${odf14.rnghtml.stylesheet}</stylesheet>
+                                    <outputProperties>
+                                        <outputProperty>
+                                            <name>omit-xml-declaration</name>
+                                            <value>yes</value>
+                                        </outputProperty>
+                                        <outputProperty>
+                                            <name>version</name>
+                                            <value>5</value>
+                                        </outputProperty>
+                                    </outputProperties>
+                                    <fileMappers>
+                                        <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                            <targetExtension>.html</targetExtension>
+                                        </fileMapper>
+                                    </fileMappers>
+                                </transformationSet>
+                            </transformationSets>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>net.sf.saxon</groupId>
+                                <artifactId>Saxon-HE</artifactId>
+                                <version>${version.saxon-he}</version>
+                                <scope>runtime</scope>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.2</version>
+                        <configuration>
+                            <!-- <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>-->
+                            <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
+                            <systemPropertyVariables>
+                                <basedir>${basedir}</basedir>
+                            </systemPropertyVariables>
+                            <!--<skipTests>${skipTests}</skipTests>-->
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
