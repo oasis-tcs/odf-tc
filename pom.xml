@@ -187,8 +187,15 @@ limitations under the License.
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.22.2</version>
                         <configuration>
+<<<<<<< HEAD
                             <!-- <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>-->
+=======
+                            <!-- 
+                            <forkCount>3</forkCount>
+                            <reuseForks>true</reuseForks>
+                            -->
+>>>>>>> 98b230d (pom.xml: ODF XSLT transformations split into three Maven profiles: html, default, rng - where html is running by default!)
                             <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                             <systemPropertyVariables>
                                 <basedir>${basedir}</basedir>
@@ -264,8 +271,15 @@ limitations under the License.
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.22.2</version>
                         <configuration>
+<<<<<<< HEAD
                             <!-- <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>-->
+=======
+                            <!-- 
+                            <forkCount>3</forkCount>
+                            <reuseForks>true</reuseForks>
+                            -->
+>>>>>>> 98b230d (pom.xml: ODF XSLT transformations split into three Maven profiles: html, default, rng - where html is running by default!)
                             <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                             <systemPropertyVariables>
                                 <basedir>${basedir}</basedir>
@@ -351,8 +365,15 @@ limitations under the License.
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.22.2</version>
                         <configuration>
+<<<<<<< HEAD
                             <!-- <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>-->
+=======
+                            <!-- 
+                            <forkCount>3</forkCount>
+                            <reuseForks>true</reuseForks>
+                            -->
+>>>>>>> 98b230d (pom.xml: ODF XSLT transformations split into three Maven profiles: html, default, rng - where html is running by default!)
                             <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                             <systemPropertyVariables>
                                 <basedir>${basedir}</basedir>
