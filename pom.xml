@@ -28,17 +28,17 @@ limitations under the License.
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!-- shared latest update of XSL transformation for ODF 1.2 and ODF 1.3 --> 
+        <!-- shared latest update of XSL transformation for ODF 1.2 and ODF 1.3 -->
         <odf13.html.stylesheet>src/test/resources/odf1.3/tools/odf2html/export/xhtml/opendoc2xhtml.xsl</odf13.html.stylesheet>
         <odf13.default.stylesheet>src/test/resources/odf1.3/tools/getAttributeDefaults.xsl</odf13.default.stylesheet>
         <odf13.rnghtml.stylesheet>src/test/resources/odf1.3/tools/rng2html/addRefs4rng-html.xsl</odf13.rnghtml.stylesheet>
-        <!-- ODF 1.3 input --> 
+        <!-- ODF 1.3 input -->
         <odf13.part1.input>src/main/resources/odf1.3/OpenDocument-v1.3-part1-introduction_odt</odf13.part1.input>
         <odf13.part2.input>src/main/resources/odf1.3/OpenDocument-v1.3-part2-packages_odt</odf13.part2.input>
         <odf13.part3.input>src/main/resources/odf1.3/OpenDocument-v1.3-part3-schema_odt</odf13.part3.input>
         <odf13.part4.input>src/main/resources/odf1.3/OpenDocument-v1.3-part4-formula_odt</odf13.part4.input>
         <odf13.rng-html.input>src/test/resources/odf1.3/tools/rng2html/</odf13.rng-html.input>
-        <!-- ODF 1.2 input - using same new part numbering as in ODF 1.3 -->                
+        <!-- ODF 1.2 input - using same new part numbering as in ODF 1.3 -->
         <odf12.part1.input>src/main/resources/odf1.2/OpenDocument-v1.2-os_odt</odf12.part1.input>
         <odf12.part2.input>src/main/resources/odf1.2/OpenDocument-v1.2-os-part3_odt</odf12.part2.input>
         <odf12.part3.input>src/main/resources/odf1.2/OpenDocument-v1.2-os-part1_odt</odf12.part3.input>
@@ -166,7 +166,7 @@ limitations under the License.
                                     <targetExtension>odf13-packages.html</targetExtension>
                                 </fileMapper>
                             </fileMappers>
-                        </transformationSet> 
+                        </transformationSet>
 
                         <!-- part 3 HTML transformation (schema) 
                         <transformationSet>
