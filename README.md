@@ -56,7 +56,7 @@ Default values can now be extracted from ODF 1.4 part 3 via:
 mvn install -Pdefault
 ```
 
-**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-defaultvalues-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-default](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-default) and do an XML indent using [xmllint](http://xmlsoft.org/xmllint.html).
 
 #### RelaxNG HTML (not yet a test)
 
@@ -66,23 +66,18 @@ The RelaxNG schemas can be transformed via XSLT to HTML, enriched with hyperlink
 mvn install -Prng
 ```
 
-**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-rnghtml-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-html](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-html). There are problems with the indent of rng-html and [full automation from RNG to HTML-RNG is yet missing](https://github.com/tdf/odftoolkit/blob/master/xslt-runner/src/test/resources/HowTo.md)!
 
 #### ODF2HTML transformation (not yet a test)
 
 The second automated test will be the transformation of the ODT specifications part 3 of ODF 1.2 and ODF 1.3 to HTML.
 The most recent & stable SAXON XSLT processing engine will be used to transform the documents into HTML.
 
-The ODF 1.3 HTML shows problems with:
-
-1. Upper border of paragraph boxes
-2. Line indent
-
-**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-html-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-rng](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-rng) and do an XML indent using [xmllint](http://xmlsoft.org/xmllint.html).
 
 **NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
 
-For testing only, the ODF 1.4 parts can be transformed via maven too (this is aly the default if no profile is specified):
+Therefore the stand-alone XSLT via Maven can only be used for testing. But the advantage is that there is no "noise" of changed names during reloading in LO the ODT during testing. The ODF 1.4 parts can be transformed via maven too (this is aly the default if no profile is specified):
 
 ```shell
 mvn install -Phtml
@@ -169,7 +164,7 @@ Search for "prettyprinting" and toggle it on, or alternatively add this line in 
 1. You need to **select your Java installation** used by the XHTML XSLT export via the menue: "Tools-->Options...-->Advanced".
 We suggest the long-term-support JDK 11 version, others should work.
 
-1. You need to install the Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt). Just drag&drop the OXT file onto the menu bar of the new LibreOffice for TC editing 
+1. You need to install the Saxon extension: [xslt2-transformer.oxt](https://github.com/dtardon/xslt2-transformer/releases/download/v1.0.0/xslt2-transformer.oxt). Just drag&drop the OXT file onto the menu bar of the new LibreOffice for TC editing
 
     **BEWARE:** Double click on the OXT file might trigger the default LibreOffice, which is likely not the required for TC Editing. The missing extension will result into an endless transformation. You start testing the installation with the smaller ODF package specification.
 
