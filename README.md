@@ -50,6 +50,22 @@ A complete list of ODF 1.2 default values can be found in the [ODF Toolkit](http
 
 The most recent & stable SAXON XSLT processing engine will be used to extract the default values.
 
+Default values can now be extracted from ODF 1.4 part 3 via:
+
+```shell
+mvn install -Pdefault
+```
+
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
+
+#### RelaxNG HTML (not yet a test)
+
+The RelaxNG schemas can be transformed via XSLT to HTML, enriched with hyperlinks between the different named patterns and syntax highlighting.
+
+```shell
+mvn install -Prng
+```
+
 **NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
 
 #### ODF2HTML transformation (not yet a test)
@@ -65,6 +81,12 @@ The ODF 1.3 HTML shows problems with:
 **NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*
 
 **NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
+
+For testing only, the ODF 1.4 parts can be transformed via maven too (this is aly the default if no profile is specified):
+
+```shell
+mvn install -Phtml
+```
 
 ## Editor Workflow & Tools
 
