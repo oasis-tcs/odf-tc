@@ -813,11 +813,13 @@
           <rng:ref name="styleNameRef"/>
         </rng:attribute>
       </rng:optional>
+<!-- Deleted as per Office-3741 for ODF 1.4
       <rng:optional>
         <rng:attribute name="table:cell-range-address">
           <rng:ref name="cellRangeAddressList"/>
         </rng:attribute>
       </rng:optional>
+-->
       <rng:optional>
         <rng:attribute name="chart:data-source-has-labels">
           <rng:choice>
@@ -1296,6 +1298,9 @@
           <rng:value>auto</rng:value>
           <rng:value>column</rng:value>
           <rng:value>page</rng:value>
+	  <!-- added as per Office-3751 -->
+	  <rng:value>even-page</rng:value>
+	  <rng:value>odd-page</rng:value>
         </rng:choice>
       </rng:attribute>
     </rng:optional>
@@ -1305,6 +1310,9 @@
           <rng:value>auto</rng:value>
           <rng:value>column</rng:value>
           <rng:value>page</rng:value>
+	  <!-- added as per Office-3751 -->
+	  <rng:value>even-page</rng:value>
+	  <rng:value>odd-page</rng:value>
         </rng:choice>
       </rng:attribute>
     </rng:optional>
@@ -2737,6 +2745,27 @@
           </rng:attribute>
         </rng:optional>
       </rng:group>
+      <rng:group>
+      <rng:attribute name="office:value-type">
+          <rng:value>error</rng:value>
+      </rng:attribute>
+      <rng:optional>
+        <rng:attribute name="office:string-value">
+          <rng:ref name="string"/>
+        </rng:attribute>
+      </rng:optional>
+    </rng:group>
+    <rng:group>
+      <rng:attribute name="office:value-type">
+          <rng:value>string</rng:value>
+      </rng:attribute>
+      <rng:optional>
+        <rng:attribute name="office:string-value">
+          <rng:ref name="string"/>
+        </rng:attribute>
+      </rng:optional>
+    </rng:group>
+    <!-- change for Office-3759 -->
     </rng:choice>
   </rng:define>
   <rng:define name="common-value-attlist">
@@ -5869,6 +5898,8 @@
       <rng:choice>
         <rng:ref name="text-p"/>
         <rng:ref name="text-list"/>
+	<!-- Added as per Office-3761 -->
+	<rng:ref name="table-table"/>
       </rng:choice>
     </rng:zeroOrMore>
   </rng:define>
