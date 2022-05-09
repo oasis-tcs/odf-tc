@@ -17,7 +17,7 @@ Latest ODF 1.3 artifacts | Latest ODF 1.2 artifacts
 [ODF 1.3 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-packages.html) | [ODF 1.2 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-packages.html)
 [ODF 1.3 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-schema.html) | [ODF 1.2 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-schema.html)
 [ODF 1.3 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-formula.html) | [ODF 1.2 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-formula.html)
-[ODF 1.3 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml) | [ODF 1.2 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12-default-values.xml)
+[ODF 1.3 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml) | [ODF 1.2 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12fixed-default-values.xml)
 
 ### Automated Tests
 
@@ -46,7 +46,10 @@ see "The default value for this attribute is "*" (U+002A, ASTERISK)." compare th
 2. @smil:fadeColor for value value "#000000"
 3. @style:leader-text for value value " " (Space)
 
-A complete list of ODF 1.2 default values can be found in the [ODF Toolkit](https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218).
+The complete list of ODF default values
+
+1. for ODF 1.2  can be found [here](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12fixed-default-values.xml) or in the [ODF Toolkit](<https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218>.
+2. for ODF 1.3  can be found [here](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml)
 
 The most recent & stable SAXON XSLT processing engine will be used to extract the default values.
 
