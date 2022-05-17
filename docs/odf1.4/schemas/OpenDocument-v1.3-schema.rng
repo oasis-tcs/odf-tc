@@ -529,7 +529,7 @@
     <rng:ref name="common-draw-position-attlist"/>
     <rng:ref name="common-draw-size-attlist"/>
   </rng:define>
-	<!-- https://issues.oasis-open.org/browse/OFFICE-3928 -->
+  <!-- https://issues.oasis-open.org/browse/OFFICE-3928 -->
   <rng:define name="chart-data-label">
     <rng:element name="chart:data-label">
       <rng:ref name="chart-data-label-attlist"/>
@@ -747,7 +747,7 @@
             <rng:ref name="double"/>
           </rng:attribute>
           <rng:ref name="common-draw-size-attlist"/>
-	        <!-- https://issues.oasis-open.org/browse/OFFICE-3883 -->
+          <!-- https://issues.oasis-open.org/browse/OFFICE-3883 -->
         </rng:group>
         <rng:empty/>
       </rng:choice>
@@ -775,7 +775,7 @@
     <rng:element name="chart:plot-area">
       <rng:ref name="chart-plot-area-attlist"/>
       <rng:optional>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3928 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3928 -->
         <rng:ref name="chart-coordinate-region"/>
       </rng:optional>
       <rng:zeroOrMore>
@@ -813,7 +813,7 @@
           <rng:ref name="styleNameRef"/>
         </rng:attribute>
       </rng:optional>
-<!-- Deleted as per Office-3741 for ODF 1.4
+<!-- Deleted as per https://issues.oasis-open.org/browse/OFFICE-3741 for ODF 1.4
       <rng:optional>
         <rng:attribute name="table:cell-range-address">
           <rng:ref name="cellRangeAddressList"/>
@@ -1298,9 +1298,9 @@
           <rng:value>auto</rng:value>
           <rng:value>column</rng:value>
           <rng:value>page</rng:value>
-	  <!-- added as per Office-3751 -->
-	  <rng:value>even-page</rng:value>
-	  <rng:value>odd-page</rng:value>
+          <!-- https://issues.oasis-open.org/browse/OFFICE-3751 -->
+          <rng:value>even-page</rng:value>
+          <rng:value>odd-page</rng:value>
         </rng:choice>
       </rng:attribute>
     </rng:optional>
@@ -1310,9 +1310,9 @@
           <rng:value>auto</rng:value>
           <rng:value>column</rng:value>
           <rng:value>page</rng:value>
-	  <!-- added as per Office-3751 -->
-	  <rng:value>even-page</rng:value>
-	  <rng:value>odd-page</rng:value>
+          <!-- https://issues.oasis-open.org/browse/OFFICE-3751 -->
+          <rng:value>even-page</rng:value>
+          <rng:value>odd-page</rng:value>
         </rng:choice>
       </rng:attribute>
     </rng:optional>
@@ -2086,7 +2086,7 @@
     </rng:attribute>
     <rng:ref name="common-meta-literal-attlist"/>
   </rng:define>
-  <!-- Office-4121 -->
+  <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
    <rng:define name="common-input-required-attlist">
    <rng:optional>
      <rng:attribute name="form:input-required">
@@ -2178,7 +2178,7 @@
       </rng:attribute>
     </rng:optional>
   </rng:define>
-  <!-- Office-4108 -->
+  <!-- https://issues.oasis-open.org/browse/OFFICE-4108 -->
   <rng:define name="common-num-list-format-name-attlist">
     <rng:optional>
       <rng:attribute name="style:num-list-format-name">
@@ -2250,7 +2250,7 @@
           <rng:ref name="nonNegativeInteger"/>
           <rng:value>auto</rng:value>
         </rng:choice>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3923 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3923 -->
       </rng:attribute>
     </rng:optional>
   </rng:define>
@@ -2324,7 +2324,7 @@
       </rng:attribute>
     </rng:optional>
   </rng:define>
- <!-- Office-4035
+ <!-- https://issues.oasis-open.org/browse/OFFICE-4035
 
  <rng:define name="common-ref-format-values">
     <rng:choice>
@@ -2765,27 +2765,27 @@
           </rng:attribute>
         </rng:optional>
       </rng:group>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3759 -->
       <rng:group>
-      <rng:attribute name="office:value-type">
+        <rng:attribute name="office:value-type">
           <rng:value>error</rng:value>
-      </rng:attribute>
-      <rng:optional>
-        <rng:attribute name="office:string-value">
-          <rng:ref name="string"/>
         </rng:attribute>
-      </rng:optional>
-    </rng:group>
-    <rng:group>
-      <rng:attribute name="office:value-type">
+        <rng:optional>
+          <rng:attribute name="office:string-value">
+            <rng:ref name="string"/>
+          </rng:attribute>
+        </rng:optional>
+      </rng:group>
+      <rng:group>
+        <rng:attribute name="office:value-type">
           <rng:value>string</rng:value>
-      </rng:attribute>
-      <rng:optional>
-        <rng:attribute name="office:string-value">
-          <rng:ref name="string"/>
         </rng:attribute>
-      </rng:optional>
-    </rng:group>
-    <!-- change for Office-3759 -->
+        <rng:optional>
+          <rng:attribute name="office:string-value">
+            <rng:ref name="string"/>
+          </rng:attribute>
+        </rng:optional>
+      </rng:group>
     </rng:choice>
   </rng:define>
   <rng:define name="common-value-attlist">
@@ -2842,8 +2842,8 @@
         <rng:choice>
           <rng:value>page</rng:value>
           <rng:value>page-content</rng:value>
-	  <!-- Office-4073 -->
-	  <rng:value>page-content-bottom</rng:value>
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4073 -->
+          <rng:value>page-content-bottom</rng:value>
           <rng:value>frame</rng:value>
           <rng:value>frame-content</rng:value>
           <rng:value>paragraph</rng:value>
@@ -4095,7 +4095,7 @@
   <rng:define name="dr3d-cube">
     <rng:element name="dr3d:cube">
       <rng:ref name="dr3d-cube-attlist"/>
-      <!-- Office-4072 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4072 -->
       <rng:ref name="common-draw-name-attlist"/>
       <rng:ref name="common-draw-z-index-attlist"/>
       <rng:ref name="common-draw-id-attlist"/>
@@ -4119,7 +4119,7 @@
   </rng:define>
   <rng:define name="dr3d-extrude">
     <rng:element name="dr3d:extrude">
-      <!-- Office-4072 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4072 -->
       <rng:ref name="common-draw-name-attlist"/>
       <rng:ref name="common-draw-path-data-attlist"/>
       <rng:ref name="common-draw-viewbox-attlist"/>
@@ -4161,7 +4161,7 @@
   </rng:define>
   <rng:define name="dr3d-rotate">
     <rng:element name="dr3d:rotate">
-      <!-- Office-4072 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4072 -->
       <rng:ref name="common-draw-name-attlist"/>
       <rng:ref name="common-draw-viewbox-attlist"/>
       <rng:ref name="common-draw-path-data-attlist"/>
@@ -4176,7 +4176,7 @@
   <rng:define name="dr3d-scene">
     <rng:element name="dr3d:scene">
       <rng:ref name="dr3d-scene-attlist"/>
-      <!-- Office-4072 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4072 -->
       <rng:ref name="common-draw-name-attlist"/>
       <rng:ref name="common-draw-position-attlist"/>
       <rng:ref name="common-draw-size-attlist"/>
@@ -4269,7 +4269,7 @@
   <rng:define name="dr3d-sphere">
     <rng:element name="dr3d:sphere">
       <rng:ref name="dr3d-sphere-attlist"/>
-      <!-- Office-4072 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4072 -->
       <rng:ref name="common-draw-name-attlist"/>
       <rng:ref name="common-draw-z-index-attlist"/>
       <rng:ref name="common-draw-id-attlist"/>
@@ -4905,6 +4905,7 @@
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:extrusion-specularity">
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4122 - changed from "zeroToHundredPercent" to "percent" -->
           <rng:ref name="percent"/>
         </rng:attribute>
       </rng:optional>
@@ -5608,6 +5609,10 @@
       <rng:optional>
         <rng:ref name="presentation-notes"/>
       </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3022 -->
+      <rng:zeroOrMore>
+        <rng:ref name="office-annotation"/>
+      </rng:zeroOrMore>
     </rng:element>
   </rng:define>
   <rng:define name="draw-page-attlist">
@@ -5930,8 +5935,8 @@
       <rng:choice>
         <rng:ref name="text-p"/>
         <rng:ref name="text-list"/>
-	<!-- Added as per Office-3761 -->
-	<rng:ref name="table-table"/>
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3761 -->
+        <rng:ref name="table-table"/>
       </rng:choice>
     </rng:zeroOrMore>
   </rng:define>
@@ -6108,7 +6113,7 @@
     <rng:interleave>
       <rng:ref name="form-control-attlist"/>
       <rng:ref name="common-disabled-attlist"/>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
       <rng:ref name="common-input-required-attlist"/>
       <rng:ref name="label"/>
       <rng:ref name="common-printable-attlist"/>
@@ -6155,7 +6160,7 @@
       <rng:ref name="common-current-value-attlist"/>
       <rng:ref name="common-disabled-attlist"/>
       <rng:ref name="dropdown"/>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
       <rng:ref name="common-input-required-attlist"/>
       <rng:ref name="common-maxlength-attlist"/>
       <rng:ref name="common-printable-attlist"/>
@@ -6192,7 +6197,7 @@
   </rng:define>
   <rng:define name="form-date-attlist">
     <rng:interleave>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
       <rng:ref name="common-input-required-attlist"/>
       <rng:optional>
         <rng:attribute name="form:value">
@@ -6387,7 +6392,7 @@
       <rng:ref name="form-control-attlist"/>
       <rng:ref name="common-current-value-attlist"/>
       <rng:ref name="common-disabled-attlist"/>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
       <rng:ref name="common-input-required-attlist"/>
       <rng:ref name="common-maxlength-attlist"/>
       <rng:ref name="common-printable-attlist"/>
@@ -6455,7 +6460,7 @@
   <rng:define name="form-image-frame-attlist">
     <rng:ref name="form-control-attlist"/>
     <rng:ref name="common-disabled-attlist"/>
-    <!-- Office-4121 -->
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
     <rng:ref name="image-data"/>
     <rng:ref name="common-printable-attlist"/>
@@ -6477,7 +6482,7 @@
       <rng:ref name="form-control-attlist"/>
       <rng:ref name="common-disabled-attlist"/>
       <rng:ref name="dropdown"/>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
       <rng:ref name="common-printable-attlist"/>
       <rng:ref name="size"/>
@@ -6542,7 +6547,7 @@
     <rng:interleave>
       <rng:ref name="form-control-attlist"/>
       <rng:ref name="common-disabled-attlist"/>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
       <rng:ref name="common-maxlength-attlist"/>
       <rng:ref name="common-printable-attlist"/>
@@ -6690,7 +6695,7 @@
     <rng:ref name="form-control-attlist"/>
     <rng:ref name="current-selected"/>
     <rng:ref name="common-disabled-attlist"/>
-    <!-- Office-4121 -->
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
     <rng:ref name="label"/>
     <rng:ref name="common-printable-attlist"/>
@@ -6707,7 +6712,7 @@
     <rng:ref name="form-control-attlist"/>
     <rng:ref name="common-current-value-attlist"/>
     <rng:ref name="common-disabled-attlist"/>
-    <!-- Office-4121 -->
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
     <rng:ref name="common-maxlength-attlist"/>
     <rng:ref name="common-printable-attlist"/>
@@ -6723,7 +6728,7 @@
     <rng:ref name="form-control-attlist"/>
     <rng:ref name="common-current-value-attlist"/>
     <rng:ref name="common-disabled-attlist"/>
-    <!-- Office-4121 -->
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
     <rng:ref name="common-maxlength-attlist"/>
     <rng:ref name="common-printable-attlist"/>
@@ -6737,7 +6742,7 @@
   </rng:define>
   <rng:define name="form-time-attlist">
     <rng:interleave>
-      <!-- Office-4121 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4121 -->
     <rng:ref name="common-input-required-attlist"/>
       <rng:optional>
         <rng:attribute name="form:value">
@@ -7176,7 +7181,7 @@
         <rng:optional>
           <rng:ref name="number-text-with-fillchar"/>
         </rng:optional>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
       </rng:oneOrMore>
       <rng:zeroOrMore>
         <rng:ref name="style-map"/>
@@ -7344,7 +7349,7 @@
       </rng:optional>
     </rng:interleave>
   </rng:define>
-  <!-- Office-4108 -->
+  <!-- https://issues.oasis-open.org/browse/OFFICE-4108 -->
   <rng:define name="number-num-list-format">
     <rng:element name="number:num-list-format">
       <rng:attribute name="style:name">
@@ -7522,7 +7527,7 @@
         <rng:optional>
           <rng:ref name="number-text-with-fillchar"/>
         </rng:optional>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
       </rng:zeroOrMore>
       <rng:zeroOrMore>
         <rng:ref name="style-map"/>
@@ -7558,7 +7563,7 @@
         <rng:optional>
           <rng:ref name="number-text-with-fillchar"/>
         </rng:optional>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3765 -->
       </rng:oneOrMore>
       <rng:zeroOrMore>
         <rng:ref name="style-map"/>
@@ -8655,7 +8660,7 @@
         <rng:text/>
       </rng:element>
       <rng:ref name="text-drop-down"/>
-      <!-- OFFICE-3881 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3881 -->
       <rng:element name="text:initial-creator">
         <rng:ref name="common-field-fixed-attlist"/>
         <rng:text/>
@@ -9741,8 +9746,6 @@
             <rng:value>no-repeat</rng:value>
             <rng:value>repeat</rng:value>
             <rng:value>stretch</rng:value>
-	    <!-- Office-4106 -->
-	    <rng:value>scale</rng:value>
           </rng:choice>
         </rng:attribute>
       </rng:optional>
@@ -9989,9 +9992,21 @@
           <rng:ref name="double"/>
         </rng:attribute>
       </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3936 -->
+      <rng:optional>
+        <rng:attribute name="chart:major-origin">
+          <rng:ref name="double"/>
+        </rng:attribute>
+      </rng:optional>
       <rng:optional>
         <rng:attribute name="chart:interval-major">
           <rng:ref name="double"/>
+        </rng:attribute>
+      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3936 -->
+      <rng:optional>
+        <rng:attribute name="chart:minor-logarithmic">
+          <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
       <rng:optional>
@@ -10928,6 +10943,8 @@
             <rng:value>no-repeat</rng:value>
             <rng:value>repeat</rng:value>
             <rng:value>stretch</rng:value>
+            <!-- https://issues.oasis-open.org/browse/OFFICE-4106 -->
+            <rng:value>scale</rng:value>
           </rng:choice>
         </rng:attribute>
       </rng:optional>
@@ -11010,11 +11027,11 @@
   </rng:define>
   <rng:define name="style-graphic-properties-attlist">
     <rng:interleave>
-      <!-- Office-4047 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4047 -->
       <rng:optional>
-	<rng:attribute name="draw:allow-overlap">
-	  <rng:ref name="boolean"/>
-	</rng:attribute>
+        <rng:attribute name="draw:allow-overlap">
+          <rng:ref name="boolean"/>
+        </rng:attribute>
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:stroke">
@@ -11228,7 +11245,7 @@
         <rng:attribute name="draw:luminance">
           <rng:ref name="signedZeroToHundredPercent"/>
         </rng:attribute>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3821 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3821 -->
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:contrast">
@@ -12160,6 +12177,7 @@
       <rng:attribute name="style:name">
         <rng:ref name="styleName"/>
       </rng:attribute>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4105 -->
       <rng:optional>
         <rng:attribute name="style:page-usage">
           <rng:choice>
@@ -12267,7 +12285,8 @@
       <rng:optional>
         <rng:attribute name="style:first-page-number">
           <rng:choice>
-            <rng:ref name="positiveInteger"/>
+            <!-- https://issues.oasis-open.org/browse/OFFICE-3953 -->
+            <rng:ref name="integer"/>
             <rng:value>continue</rng:value>
           </rng:choice>
         </rng:attribute>
@@ -12458,6 +12477,12 @@
       <rng:optional>
         <rng:attribute name="style:tab-stop-distance">
           <rng:ref name="nonNegativeLength"/>
+        </rng:attribute>
+      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-3846 -->
+      <rng:optional>
+        <rng:attribute name="text:relative-tab-stop-position">
+        <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
       <rng:optional>
@@ -13755,11 +13780,10 @@
       <rng:zeroOrMore>
         <rng:ref name="text-list-style"/>
       </rng:zeroOrMore>
-      <!-- Office-4108 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4108 -->
       <rng:zeroOrMore>
         <rng:ref name="number-num-list-format"/>
       </rng:zeroOrMore>
-       <rng:zeroOrMore>
       <rng:zeroOrMore>
         <rng:ref name="number-number-style"/>
       </rng:zeroOrMore>
@@ -15024,7 +15048,7 @@
       <rng:attribute name="table:field-number">
         <rng:ref name="nonNegativeInteger"/>
       </rng:attribute>
-<!-- Office-4107
+<!-- https://issues.oasis-open.org/browse/OFFICE-4107
       <rng:attribute name="table:value">
         <rng:choice>
           <rng:ref name="string"/>
@@ -15040,7 +15064,7 @@
           <rng:ref name="string"/>
         </rng:attribute>
       </rng:optional>
-<!-- Office-4107
+<!-- https://issues.oasis-open.org/browse/OFFICE-4107
      <rng:optional>
         <rng:attribute name="table:data-type">
           <rng:choice>
@@ -15050,7 +15074,7 @@
         </rng:attribute>
      </rng:optional>
 -->
-<!-- Office-4107 -->
+<!-- https://issues.oasis-open.org/browse/OFFICE-4107 -->
        <rng:choice>
         <rng:group>
           <rng:optional>
@@ -15732,7 +15756,7 @@
     </rng:element>
   </rng:define>
   <rng:define name="table-source-cell-range-attlist">
-    <!-- OFFICE-3665 -->
+    <!-- https://issues.oasis-open.org/browse/OFFICE-3665 -->
     <rng:interleave>
       <rng:choice>
         <rng:attribute name="table:cell-range-address">
@@ -16750,11 +16774,11 @@
     <rng:optional>
       <rng:attribute name="text:reference-format">
         <rng:choice>
-	  <!-- Office-4035 -->
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4035 -->
           <rng:value>page</rng:value>
-	  <rng:value>chapter</rng:value>
-	  <rng:value>direction</rng:value>
-	  <rng:value>text</rng:value>
+          <rng:value>chapter</rng:value>
+          <rng:value>direction</rng:value>
+          <rng:value>text</rng:value>
           <rng:value>number-no-superior</rng:value>
           <rng:value>number-all-superior</rng:value>
           <rng:value>number</rng:value>
@@ -17075,7 +17099,7 @@
         <rng:ref name="text-index-entry-tab-stop"/>
         <rng:ref name="text-index-entry-link-start"/>
         <rng:ref name="text-index-entry-link-end"/>
-	      <!-- https://issues.oasis-open.org/browse/OFFICE-3941 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-3941 -->
       </rng:choice>
     </rng:zeroOrMore>
   </rng:define>
@@ -17530,7 +17554,7 @@
       </rng:optional>
       <rng:ref name="common-num-format-attlist"/>
       <rng:ref name="common-num-format-prefix-suffix-attlist"/>
-      <!-- Office-4108 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4108 -->
       <rng:ref name="common-num-list-format-name-attlist"/>
       <rng:optional>
         <rng:attribute name="text:display-levels">
@@ -17539,10 +17563,10 @@
       </rng:optional>
       <rng:optional>
         <rng:attribute name="text:start-value">
-	  <!-- Office-4118
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4118
           <rng:ref name="positiveInteger"/>
-	  -->
-	  <rng:ref name="nonNegativeInteger"/>
+          -->
+          <rng:ref name="nonNegativeInteger"/>
         </rng:attribute>
       </rng:optional>
     </rng:interleave>
@@ -17632,11 +17656,11 @@
       <rng:optional>
         <rng:attribute name="text:reference-format">
           <rng:choice>
-	    <!-- Office-4035 -->
+            <!-- https://issues.oasis-open.org/browse/OFFICE-4035 -->
             <rng:value>page</rng:value>
-	    <rng:value>chapter</rng:value>
-	    <rng:value>direction</rng:value>
-	    <rng:value>text</rng:value>
+            <rng:value>chapter</rng:value>
+            <rng:value>direction</rng:value>
+            <rng:value>text</rng:value>
           </rng:choice>
         </rng:attribute>
       </rng:optional>
@@ -17829,10 +17853,10 @@
   <rng:define name="text-outline-level-style-attlist">
     <rng:interleave>
       <rng:attribute name="text:level">
-	<!-- Office-4118
+        <!-- https://issues.oasis-open.org/browse/OFFICE-4118
         <rng:ref name="positiveInteger"/>
-	-->
-	<rng:ref name="nonNegativeInteger"/>
+        -->
+        <rng:ref name="nonNegativeInteger"/>
       </rng:attribute>
       <rng:optional>
         <rng:attribute name="text:style-name">
@@ -17841,7 +17865,7 @@
       </rng:optional>
       <rng:ref name="common-num-format-attlist"/>
       <rng:ref name="common-num-format-prefix-suffix-attlist"/>
-      <!-- Office-4108 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4108 -->
       <rng:ref name="common-num-list-format-name-attlist"/>
       <rng:optional>
         <rng:attribute name="text:display-levels">
@@ -18044,11 +18068,11 @@
     <rng:optional>
       <rng:attribute name="text:reference-format">
         <rng:choice>
-	  <!-- Office-4035 -->
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4035 -->
           <rng:value>page</rng:value>
-	  <rng:value>chapter</rng:value>
-	  <rng:value>direction</rng:value>
-	  <rng:value>text</rng:value>
+          <rng:value>chapter</rng:value>
+          <rng:value>direction</rng:value>
+          <rng:value>text</rng:value>
           <rng:value>category-and-value</rng:value>
           <rng:value>caption</rng:value>
           <rng:value>value</rng:value>
@@ -18336,7 +18360,7 @@
           <rng:ref name="text-index-entry-tab-stop"/>
           <rng:ref name="text-index-entry-link-start"/>
           <rng:ref name="text-index-entry-link-end"/>
-	        <!-- https://issues.oasis-open.org/browse/OFFICE-3941 -->
+          <!-- https://issues.oasis-open.org/browse/OFFICE-3941 -->
         </rng:choice>
       </rng:zeroOrMore>
     </rng:element>
