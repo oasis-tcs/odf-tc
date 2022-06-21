@@ -4492,11 +4492,26 @@
           <rng:ref name="coordinate"/>
         </rng:attribute>
       </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:corner-radius">
-          <rng:ref name="nonNegativeLength"/>
-        </rng:attribute>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-1909 -->
+      <rng:choice>
+        <rng:optional>
+          <rng:attribute name="draw:corner-radius">
+            <rng:ref name="nonNegativeLength"/>
+          </rng:attribute>
+        </rng:optional>
+        <rng:group>
+          <rng:optional>
+            <rng:attribute name="svg:rx">
+              <rng:ref name="nonNegativeLength"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="svg:ry">
+              <rng:ref name="nonNegativeLength"/>
+            </rng:attribute>
+          </rng:optional>
+        </rng:group>
+      </rng:choice>
     </rng:interleave>
   </rng:define>
   <rng:define name="draw-circle">
@@ -5955,11 +5970,26 @@
           <rng:ref name="string"/>
         </rng:attribute>
       </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:corner-radius">
-          <rng:ref name="nonNegativeLength"/>
-        </rng:attribute>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-1909 -->
+      <rng:choice>
+        <rng:optional>
+          <rng:attribute name="draw:corner-radius">
+            <rng:ref name="nonNegativeLength"/>
+          </rng:attribute>
+        </rng:optional>
+        <rng:group>
+          <rng:optional>
+            <rng:attribute name="svg:rx">
+              <rng:ref name="nonNegativeLength"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="svg:ry">
+              <rng:ref name="nonNegativeLength"/>
+            </rng:attribute>
+          </rng:optional>
+        </rng:group>
+      </rng:choice>
       <rng:optional>
         <rng:attribute name="fo:min-height">
           <rng:choice>
