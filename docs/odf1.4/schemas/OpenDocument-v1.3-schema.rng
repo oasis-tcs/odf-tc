@@ -12271,6 +12271,7 @@
       <rng:ref name="common-horizontal-margin-attlist"/>
       <rng:ref name="common-vertical-margin-attlist"/>
       <rng:ref name="common-margin-attlist"/>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4105 -->
       <rng:optional>
         <rng:attribute name="style:margin-gutter">
          <rng:ref name="nonNegativeLength"/>
