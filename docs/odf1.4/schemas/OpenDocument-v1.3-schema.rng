@@ -9755,6 +9755,15 @@
   </rng:define>
   <rng:define name="string">
     <rng:data type="string"/>
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+    <rng:define name="style-background-fill">
+    <rng:optional>
+      <rng:element name="style:background-fill">
+        <rng:ref name="common-draw-fill-kind-attlist"/>
+        <rng:ref name="common-draw-fill-details-attlist"/>
+      </rng:element>
+    </rng:optional>
+  </rng:define>
   </rng:define>
   <rng:define name="style-background-image">
     <rng:optional>
@@ -10922,15 +10931,25 @@
   <rng:define name="style-graphic-fill-properties-attlist">
     <rng:interleave>
       <rng:optional>
-        <rng:attribute name="draw:fill">
-          <rng:choice>
-            <rng:value>none</rng:value>
-            <rng:value>solid</rng:value>
-            <rng:value>bitmap</rng:value>
-            <rng:value>gradient</rng:value>
-            <rng:value>hatch</rng:value>
-          </rng:choice>
-        </rng:attribute>
+        <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+	<rng:ref name="common-draw-fill-kind-attlist"/>
+       </rng:optional>
+      <rng:ref name="common-draw-fill-details-attlist"/>
+    </rng:interleave>
+  </rng:define>
+  <rng:define name="common-draw-fill-kind-attlist">
+    <rng:attribute name="draw:fill">
+      <rng:choice>
+        <rng:value>none</rng:value>
+        <rng:value>solid</rng:value>
+        <rng:value>bitmap</rng:value>
+        <rng:value>gradient</rng:value>
+        <rng:value>hatch</rng:value>
+      </rng:choice>
+    </rng:attribute>
+  </rng:define>
+  <rng:define name="common-draw-fill-details-attlist">
+    <rng:interleave>
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:fill-color">
@@ -11998,6 +12017,8 @@
   </rng:define>
   <rng:define name="style-header-footer-properties-elements">
     <rng:ref name="style-background-image"/>
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+    <rng:ref name="style-background-fill"/>
   </rng:define>
   <rng:define name="style-header-left">
     <rng:element name="style:header-left">
@@ -12634,6 +12655,8 @@
       <rng:ref name="style-tab-stops"/>
       <rng:ref name="style-drop-cap"/>
       <rng:ref name="style-background-image"/>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+      <rng:ref name="style-background-fill"/>
     </rng:interleave>
   </rng:define>
   <rng:define name="style-presentation-page-layout">
@@ -12731,6 +12754,8 @@
   <rng:define name="style-section-properties-elements">
     <rng:interleave>
       <rng:ref name="style-background-image"/>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+      <rng:ref name="style-background-fill"/>
       <rng:ref name="style-columns"/>
       <rng:zeroOrMore>
         <rng:ref name="text-notes-configuration"/>
@@ -13139,6 +13164,8 @@
   </rng:define>
   <rng:define name="style-table-cell-properties-elements">
     <rng:ref name="style-background-image"/>
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+    <rng:ref name="style-background-fill"/>
   </rng:define>
   <rng:define name="style-table-column-properties">
     <rng:element name="style:table-column-properties">
@@ -13240,6 +13267,8 @@
   </rng:define>
   <rng:define name="style-table-properties-elements">
     <rng:ref name="style-background-image"/>
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+    <rng:ref name="style-background-fill"/>
   </rng:define>
   <rng:define name="style-table-row-properties">
     <rng:element name="style:table-row-properties">
@@ -13281,6 +13310,8 @@
   </rng:define>
   <rng:define name="style-table-row-properties-elements">
     <rng:ref name="style-background-image"/>
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4125 -->
+    <rng:ref name="style-background-fill"/>
   </rng:define>
   <rng:define name="style-text-properties">
     <rng:element name="style:text-properties">
