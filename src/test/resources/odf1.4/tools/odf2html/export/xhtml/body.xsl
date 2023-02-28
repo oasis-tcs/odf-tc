@@ -50,9 +50,11 @@
     <xsl:key name="writingModeStyles" match="/*/office:styles/style:style/style:paragraph-properties/@style:writing-mode | /*/office:automatic-styles/style:style/style:paragraph-properties/@style:writing-mode" use="'test'"/>
     <xsl:template name="create-body">
         <xsl:param name="globalData"/>
+        <xsl:text>&#xa;</xsl:text>
         <xsl:call-template name="create-body.collect-page-properties">
             <xsl:with-param name="globalData" select="$globalData"/>
         </xsl:call-template>
+        <xsl:text>&#xa;</xsl:text>
     </xsl:template>
 
     <xsl:template name="create-body.collect-page-properties">
@@ -178,6 +180,7 @@
                     </xsl:if>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:text>&#xa;</xsl:text>
             <!-- processing the content of the OpenDocument content file -->
             <xsl:apply-templates select="/*/office:body/*">
                 <xsl:with-param name="globalData" select="$globalData"/>
@@ -240,6 +243,7 @@
                 <xsl:with-param name="globalData" select="$globalData"/>
             </xsl:apply-templates>
         </xsl:element>
+        <xsl:text>&#xa;</xsl:text>
     </xsl:template>
 
 
@@ -479,10 +483,12 @@
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise>
+                        <xsl:text>&#xa;</xsl:text>
                         <xsl:call-template name="create-paragraph">
                             <xsl:with-param name="globalData" select="$globalData" />
                             <xsl:with-param name="footnotePrefix" select="$footnotePrefix" />
                         </xsl:call-template>
+                        <xsl:text>&#xa;</xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -554,6 +560,7 @@
                         <xsl:with-param name="globalData" select="$globalData"/>
                     </xsl:apply-templates>
                 </xsl:element>
+                <xsl:text>&#xa;</xsl:text>
                 <xsl:apply-templates select="following-sibling::node()[1]" mode="tabHandling">
                     <xsl:with-param name="globalData" select="$globalData"/>
                     <xsl:with-param name="tabStops" select="$tabStops"/>
@@ -565,6 +572,7 @@
             <xsl:when test="name() = 'text:line-break'">
                 <!-- A line-break resets the tabCount to '0' -->
                 <br/>
+                <xsl:text>&#xa;</xsl:text>
                 <xsl:apply-templates select="following-sibling::node()[1]" mode="tabHandling">
                     <xsl:with-param name="globalData" select="$globalData"/>
                     <xsl:with-param name="tabStops" select="$tabStops"/>
@@ -572,6 +580,7 @@
                     <xsl:with-param name="parentMarginLeft" select="$parentMarginLeft"/>
                     <xsl:with-param name="pageMarginLeft" select="$pageMarginLeft"/>
                 </xsl:apply-templates>
+                <xsl:text>&#xa;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <!-- only before the first tab all content is written out -->
@@ -587,6 +596,7 @@
                     <xsl:with-param name="parentMarginLeft" select="$parentMarginLeft"/>
                     <xsl:with-param name="pageMarginLeft" select="$pageMarginLeft"/>
                 </xsl:apply-templates>
+                <xsl:text>&#xa;</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -1200,6 +1210,7 @@
             </xsl:apply-templates>
         </xsl:element>
 
+        <xsl:text>&#xa;</xsl:text>
     </xsl:template>
 
     <xsl:template name="create-heading-anchor">
