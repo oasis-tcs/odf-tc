@@ -11096,6 +11096,12 @@
           <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:optional>
+	<rng:attribute name="draw:decorative">
+	  <rng:ref name="boolean"/>
+	</rng:attribute>
+      </rng:optional
       <rng:optional>
         <rng:attribute name="draw:stroke">
           <rng:choice>
