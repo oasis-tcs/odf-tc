@@ -1753,6 +1753,16 @@
       </rng:attribute>
     </rng:optional>
   </rng:define>
+  <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+  <rng:define name="common-draw-shape-accessibility">
+    <!-- https://issues.oasis-open.org/browse/OFFICE-4142 -->
+    <rng:optional>
+      <rng:ref name="svg-title"/>
+    </rng:optional>
+    <rng:optional>
+      <rng:ref name="svg-desc"/>
+    </rng:optional>
+  </rng:define>
   <rng:define name="common-draw-shape-with-styles-attlist">
     <rng:ref name="common-draw-z-index-attlist"/>
     <rng:ref name="common-draw-id-attlist"/>
@@ -4189,12 +4199,8 @@
       <rng:ref name="common-text-spreadsheet-shape-attlist"/>
       <rng:ref name="common-dr3d-transform-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:zeroOrMore>
         <rng:ref name="dr3d-light"/>
       </rng:zeroOrMore>
@@ -4469,12 +4475,8 @@
       <rng:ref name="common-draw-size-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -4531,12 +4533,8 @@
       <rng:ref name="common-draw-circle-ellipse-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -4557,12 +4555,8 @@
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
       <rng:ref name="common-draw-viewbox-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -4688,12 +4682,8 @@
       <rng:ref name="common-draw-size-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -4735,12 +4725,8 @@
       <rng:ref name="common-draw-circle-ellipse-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5134,12 +5120,8 @@
       <rng:optional>
         <rng:ref name="draw-image-map"/>
       </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:choice>
           <rng:ref name="draw-contour-polygon"/>
@@ -5164,12 +5146,8 @@
       <rng:ref name="common-draw-style-name-attlist"/>
       <rng:ref name="common-text-spreadsheet-shape-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5452,12 +5430,8 @@
       <rng:ref name="draw-line-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5508,12 +5482,8 @@
       <rng:ref name="draw-measure-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5683,12 +5653,8 @@
       <rng:ref name="presentation-shape-attlist"/>
       <rng:ref name="common-draw-shape-with-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
     </rng:element>
   </rng:define>
   <rng:define name="draw-page-thumbnail-attlist">
@@ -5726,12 +5692,8 @@
       <rng:ref name="common-draw-viewbox-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5767,12 +5729,8 @@
       <rng:ref name="common-draw-viewbox-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5790,12 +5748,8 @@
       <rng:ref name="common-draw-viewbox-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5812,12 +5766,8 @@
       <rng:ref name="common-draw-size-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -5855,12 +5805,8 @@
       <rng:ref name="common-draw-size-attlist"/>
       <rng:ref name="common-draw-shape-with-text-and-styles-attlist"/>
       <rng:ref name="common-draw-caption-id-attlist"/>
-      <rng:optional>
-        <rng:ref name="svg-title"/>
-      </rng:optional>
-      <rng:optional>
-        <rng:ref name="svg-desc"/>
-      </rng:optional>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <rng:ref name="common-draw-shape-accessibility"/>
       <rng:optional>
         <rng:ref name="office-event-listeners"/>
       </rng:optional>
@@ -11096,11 +11042,11 @@
           <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
-      <!-- https://issues.oasis-open.org/browse/OFFICE-4132 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4142 -->
       <rng:optional>
-	<rng:attribute name="draw:decorative">
-	  <rng:ref name="boolean"/>
-	</rng:attribute>
+	    <rng:attribute name="draw:decorative">
+	      <rng:ref name="boolean"/>
+	    </rng:attribute>
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:stroke">
