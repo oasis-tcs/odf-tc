@@ -5255,6 +5255,65 @@
   </rng:define>
   <rng:define name="draw-handle-attlist">
     <rng:interleave>
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4110 -->
+      <rng:choice>
+        <rng:group> <!-- XY-handle -->
+          <rng:attribute name="draw:handle-position-x">
+            <rng:ref name="string"/>
+          </rng:attribute>
+          <rng:attribute name="draw:handle-position-y">
+            <rng:ref name="string"/>
+          </rng:attribute>
+          <rng:optional>
+            <rng:attribute name="draw:handle-range-x-minimum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-range-x-maximum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-range-y-minimum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-range-y-maximum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+        </rng:group>
+        <rng:group> <!-- polar handle -->
+          <rng:attribute name="draw:handle-polar-pole-x">
+            <rng:ref name="string"/>
+          </rng:attribute>
+          <rng:attribute name="draw:handle-polar-pole-y">
+            <rng:ref name="string"/>
+          </rng:attribute>
+          <rng:optional>
+            <rng:attribute name="draw:handle-polar-radius">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-polar-angle">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-radius-range-minimum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+          <rng:optional>
+            <rng:attribute name="draw:handle-radius-range-maximum">
+              <rng:ref name="string"/>
+            </rng:attribute>
+          </rng:optional>
+        </rng:group>
+      </rng:choice>
       <rng:optional>
         <rng:attribute name="draw:handle-mirror-vertical">
           <rng:ref name="boolean"/>
@@ -5270,41 +5329,14 @@
           <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
-      <rng:attribute name="draw:handle-position">
-        <rng:ref name="string"/>
-      </rng:attribute>
+      <!-- The attributes draw:handle-position and draw:handle-polar are deprecated. -->
       <rng:optional>
-        <rng:attribute name="draw:handle-range-x-minimum">
-          <rng:ref name="string"/>
-        </rng:attribute>
-      </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:handle-range-x-maximum">
-          <rng:ref name="string"/>
-        </rng:attribute>
-      </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:handle-range-y-minimum">
-          <rng:ref name="string"/>
-        </rng:attribute>
-      </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:handle-range-y-maximum">
+        <rng:attribute name="draw:handle-position">
           <rng:ref name="string"/>
         </rng:attribute>
       </rng:optional>
       <rng:optional>
         <rng:attribute name="draw:handle-polar">
-          <rng:ref name="string"/>
-        </rng:attribute>
-      </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:handle-radius-range-minimum">
-          <rng:ref name="string"/>
-        </rng:attribute>
-      </rng:optional>
-      <rng:optional>
-        <rng:attribute name="draw:handle-radius-range-maximum">
           <rng:ref name="string"/>
         </rng:attribute>
       </rng:optional>
