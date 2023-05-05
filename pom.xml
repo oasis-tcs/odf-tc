@@ -205,9 +205,6 @@ limitations under the License.
         <!-- the following is called by the xslt-regression-test.sh-->
         <profile>
             <id>testfile</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <defaultGoal>install</defaultGoal>
                 <plugins>
