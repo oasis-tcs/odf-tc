@@ -3166,6 +3166,7 @@
 				$parentName='text:index-entry-span' or
 				$parentName='text:index-entry-tab-stop' or
 				$parentName='text:index-entry-text' or
+				$parentName='text:a' or
 				$parentName='text:span' or
 				$parentName='style:drop-cap' or
 				$parentName='text:line-break' or
