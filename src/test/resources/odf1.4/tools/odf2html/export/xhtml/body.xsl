@@ -2933,7 +2933,7 @@
 
     <xsl:template name="abbreviate-style-family-name">
             <xsl:param name="styleFamily" />
-        <xsl:message>abbreviate-style-family-name: The style family is '<xsl:value-of select="$styleFamily"/>'</xsl:message>
+        <!--<xsl:message>abbreviate-style-family-name: The style family is '<xsl:value-of select="$styleFamily"/>'</xsl:message>-->
 
         <!-- 
         	The complete set of family types (aka @style:family) is defined in the ODF specification:
@@ -3001,7 +3001,7 @@
         <xsl:param name="parentName" />
 
 
-        <xsl:message>get-style-family-name: The style parent is '<xsl:value-of select="name(..)"/>'</xsl:message>
+        <!--<xsl:message>get-style-family-name: The style parent is '<xsl:value-of select="name(..)"/>'</xsl:message>-->
         <!--
         	The complete set of family types (aka @style:family) is defined in the ODF specification:
             	https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#attribute-style_family
