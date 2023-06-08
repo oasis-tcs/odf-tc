@@ -2035,7 +2035,8 @@
                                 <xsl:otherwise>
                                     <xsl:variable name="listLabelWidth">
                                         <xsl:choose>
-                                            <xsl:when test="$minLabelWidth">
+                                            <!-- only evaluate this attribute if is higher 0 -->
+                                            <xsl:when test="$minLabelWidth &gt; 0">
                                                 <xsl:value-of select="$minLabelWidth"/>
                                             </xsl:when>
                                             <xsl:otherwise>
