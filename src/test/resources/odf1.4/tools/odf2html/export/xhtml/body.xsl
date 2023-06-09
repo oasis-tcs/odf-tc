@@ -193,6 +193,7 @@
             </xsl:apply-templates>
 
             <!-- adding MathML polyfill JavaScript for Chromium -
+                MathJax mml-svg.js as retrieved from https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-svg.js
                 <script type="text/javascript" src="https://oasis-tcs.github.io/odf-tc/odf1.3/styles/mml-svg.js"/> -->
             <xsl:element name="script">
                 <xsl:attribute name="type">text/javascript</xsl:attribute>
@@ -2046,12 +2047,12 @@
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@fo:text-indent)"/>
                                                     </xsl:call-template>
                                                 </xsl:variable>
-                                                <!-- TODO: Access new ODF 1.2 list styles
+                                                <!-- Access new ODF 1.2 list styles -->
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@text:list-tab-stop-position)"/>
                                                     </xsl:call-template>
-                                                </xsl:variable> -->
+                                                </xsl:variable>
                                                 <xsl:value-of select="-$listLevelTextIndent"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
