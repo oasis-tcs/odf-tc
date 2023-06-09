@@ -69,22 +69,34 @@ The RelaxNG schemas can be transformed via XSLT to HTML, enriched with hyperlink
 mvn install -Prng
 ```
 
-**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-rnghtml-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-html](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-html). There are problems with the indent of rng-html and [full automation from RNG to HTML-RNG is yet missing](https://github.com/tdf/odftoolkit/blob/master/xslt-runner/src/test/resources/HowTo.md)!
+**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-rnghtml-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-html](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-rng). There are problems with the indent of rng-html and [full automation from RNG to HTML-RNG is yet missing](https://github.com/tdf/odftoolkit/blob/master/xslt-runner/src/test/resources/HowTo.md)!
 
-#### ODF2HTML transformation (not yet a test)
+#### ODF2HTML transformation (not yet automated regression tests)
 
-The second automated test will be the transformation of the ODT specifications part 3 of ODF 1.2 and ODF 1.3 to HTML.
-The most recent & stable SAXON XSLT processing engine will be used to transform the documents into HTML.
+The transformation of the ODT specifications from ODF to HTML is being done via the [LibreOffice (LO) XSL transformation](https://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt).
+<br/><br/>
+The XSLT source have been duplicated here for some usability reasons:
 
-**NOTE**: All XSLT output will be written into the directory: *target/generated-resources/xml/xslt*. To be able to easily compare the new result with the prior, there is a [bash script](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/copy-xslt-html-output-from-target-to-references.sh) to copy these output files to [resources/odf1.4/references/xslt-rng](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-rng) and do an XML indent using [xmllint](http://xmlsoft.org/xmllint.html).
+1. To use the ODF2HTML XSLT filters as a stand-alone, out-of-the box running bundle
+2. To allow our own regression tests - not using flat XML (as LO) but [unzipped ODT test files](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/html-export/input)
+3. To allow our own modifications on-top (we are only adding a [MathML Javascript](https://github.com/oasis-tcs/odf-tc/blob/master/src/test/resources/odf1.4/tools/odf2html/export/xhtml/body.xsl#L195) by default as Chromium had a bad MathML support and we added [MathML support](https://github.com/mathjax/MathJax) for our formulas).
+4. Using the most recent & stable SAXON XSLT processing engine to transform the documents into HTML.
 
-**NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT require the MathML to be *inline* which means Flat ODT, but only LibreOffice supports Flat ODT currently.
+But we are keeping the XSLT filter in synch!
 
+**NOTE**: To get MathML handled properly, the XSLT must be run from LibreOffice; this is because the XSLT requires the MathML to be *inline* which is only offered by the provide flat ODT (single XML stream/file) and only LibreOffice supports this Flat ODT currently.
 Therefore the stand-alone XSLT via Maven can only be used for testing. But the advantage is that there is no "noise" of changed names during reloading in LO the ODT during testing. The ODF 1.4 parts can be transformed via maven too (this is aly the default if no profile is specified):
 
-```shell
-mvn install -Phtml
-```
+##### Using the ODF2HTML Test
+
+* Start ODF2HTML XSLT tests by calling on Linux ./xslt-regression-test.sh
+* The HTML XSLT output (from ./target) will be compared via diff with a reference file from [resources/odf1.4/references/xslt-html](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-html).
+
+##### Adding a ODF2HTML Test
+
+1. New test files have to be added as ODT and similar named unzipped folder in [src/test/resources/html-export/input](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/html-export/input)
+2. Add the name of the test document in []./xslt-regression-test.sh](<https://github.com/oasis-tcs/odf-tc/blob/master/xslt-regression-test.sh#L7>)
+3. When the output HTML works as expected copy it to the reference folder [src/test/resources/odf1.4/references/xslt-html](https://github.com/oasis-tcs/odf-tc/tree/master/src/test/resources/odf1.4/references/xslt-html)
 
 ## Editor Workflow & Tools
 
