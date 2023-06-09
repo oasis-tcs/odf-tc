@@ -50,6 +50,7 @@ The complete list of ODF default values
 
 1. for ODF 1.2  can be found [here](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12fixed-default-values.xml) or in the [ODF Toolkit](<https://github.com/tdf/odftoolkit/blob/1.0.0_SNAPSHOT/odfdom/src/codegen/resources/config.xml#L218>.
 2. for ODF 1.3  can be found [here](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml)
+3. for ODF 1.4  (not yet created)
 
 The most recent & stable SAXON XSLT processing engine will be used to extract the default values.
 
@@ -104,6 +105,7 @@ Our Git repository is containing the ODF TC deliverables in the GitHub directori
 
 1. src/main/resources/odf1.2
 2. src/main/resources/odf1.3
+3. src/main/resources/odf1.4
 
 Within the above folders the TC deliverables are saved under the following restrictions:
 
@@ -171,7 +173,7 @@ Search for "prettyprinting" and toggle it on, or alternatively add this line in 
     ```
 
     ```shell
-    <GITHUB_ODF-TC_PATH>\src\test\resources\odf1.3\tools\odf2html\export\xhtml\opendoc2xhtml.xsl
+    <GITHUB_ODF-TC_PATH>\src\test\resources\odf1.4\tools\odf2html\export\xhtml\opendoc2xhtml.xsl
     ```
 
     **NOTE:**: You need to enable the checkbox "The filter needs XSLT 2.0 processor".
