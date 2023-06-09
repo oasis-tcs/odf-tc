@@ -2047,12 +2047,12 @@
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@fo:text-indent)"/>
                                                     </xsl:call-template>
                                                 </xsl:variable>
-                                                <!-- Access new ODF 1.2 list styles -->
+                                                <!-- TODO: Access new ODF 1.2 list styles
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
                                                         <xsl:with-param name="value" select="string($listLevelLabelAlignment/@text:list-tab-stop-position)"/>
                                                     </xsl:call-template>
-                                                </xsl:variable>
+                                                </xsl:variable> -->
                                                 <xsl:value-of select="-$listLevelTextIndent"/>
                                             </xsl:otherwise>
                                         </xsl:choose>
