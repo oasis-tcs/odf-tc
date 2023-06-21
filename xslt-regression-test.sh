@@ -4,7 +4,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 # test input, ouput and reference follow a pattern according to the test name and ODF version:
-TEST_NAMES=("frames-without-wrap" "floating_image_as_character" "frames-without-wrap" "tdf146264" "floating" "spec-fragment") 
+TEST_NAMES=("frames-without-wrap" "floating_image_as_character" "frames-without-wrap" "tdf146264" "floating" "spec-fragment" "default-styles")
 ODF_VERSION=odf1.4
 TEST_INPUT_FILE=content.xml
 TEST_STYLESHEET=src/test/resources/${ODF_VERSION}/tools/odf2html/export/xhtml/opendoc2xhtml.xsl
@@ -14,11 +14,11 @@ for TEST_NAME in ${TEST_NAMES[@]}; do
     # DO NOT ALTER BELOW..
     TEST_INPUT_DIR=src/test/resources/html-export/input/${TEST_NAME}
     TEST_OUTPUT_FILE=${TEST_NAME}.html
-    TEST_REFERENCE_FILE=src/test/resources/${ODF_VERSION}/references/xslt-html/${TEST_NAME}-tidy.html
+    TEST_REFERENCE_FILE=src/test/resources/${ODF_VERSION}/references/xslt-html/${TEST_NAME}.html
 
     # OUTPUT FILE is named like the TEST_INPUT_FILE just with html suffix
     # OUTPUT directory is originally: ./target/generated-resources/xml/xslt/ 
-    # Final OUTPUT DIR - after post-processing with tidy - is ./target
+    # Final OUTPUT DIR is ./target
     # Results from previous build are at ./target/generated-resources/last-build-deliverables
     # the XSLT plugin does not transform if the output already exists
     # remove if only there is something to move (without error if not existent), doing the following move silently:
@@ -26,13 +26,9 @@ for TEST_NAME in ${TEST_NAMES[@]}; do
     mvn test -Ptestfile -DtestInputDir=$TEST_INPUT_DIR -DtestInputFile=$TEST_INPUT_FILE -DtestStylesheet=$TEST_STYLESHEET
     [[ -e ./target/generated-resources/xml/xslt/$TEST_INPUT_FILE ]] && cp ./target/generated-resources/xml/xslt/$TEST_INPUT_FILE ./target/$TEST_OUTPUT_FILE
     outputTruncName="${TEST_OUTPUT_FILE%.*}"
-    # remove any previous tidy version 
-    [[ -e ./target/${outputTruncName}-tidy.html ]] &&  rm ./target/${outputTruncName}-tidy.html 
-    # create tidy output - expect xml and indent the file
-    tidy -xml -i  ./target/$TEST_OUTPUT_FILE > ./target/${outputTruncName}-tidy.html 2>/dev/null
     echo 
     echo Comparing:
     echo ref: ${TEST_REFERENCE_FILE}
-    echo new: ./target/${outputTruncName}-tidy.html
-    diff ${TEST_REFERENCE_FILE} ./target/${outputTruncName}-tidy.html
+    echo new: ./target/${outputTruncName}.html
+    diff ${TEST_REFERENCE_FILE} ./target/$TEST_OUTPUT_FILE
 done

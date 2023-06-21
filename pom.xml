@@ -240,6 +240,7 @@ limitations under the License.
                             </execution>
                         </executions>
                         <configuration>
+                            <forceCreation>true</forceCreation>
                             <transformationSets>
                                 <!-- HTML XSL transformations triggered by LO to have all content (esp. mathml) in one file 
                             a) Local XSL would require update 
