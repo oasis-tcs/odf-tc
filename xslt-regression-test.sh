@@ -4,7 +4,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 # test input, ouput and reference follow a pattern according to the test name and ODF version:
-TEST_NAMES=("frames-without-wrap" "floating_image_as_character" "frames-without-wrap" "tdf146264" "floating" "spec-fragment" "default-styles" "tdf156093-image")
+TEST_NAMES=("frames-without-wrap" "floating_image_as_character" "frames-without-wrap" "tdf146264" "floating" "spec-fragment" "default-styles" "tdf156093-image" "RedSquare" "DefaultSquare")
 ODF_VERSION=odf1.4
 TEST_INPUT_FILE=content.xml
 TEST_STYLESHEET=src/test/resources/${ODF_VERSION}/tools/odf2html/export/xhtml/opendoc2xhtml.xsl
