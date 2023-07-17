@@ -1566,6 +1566,7 @@
                     </xsl:if>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:if test="../@text:anchor-type='as-char'"><xsl:attribute name="align">middle</xsl:attribute></xsl:if>
             <xsl:attribute name="alt">
                 <xsl:choose>
                     <xsl:when test="../svg:title">
