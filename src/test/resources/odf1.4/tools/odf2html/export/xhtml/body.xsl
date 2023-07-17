@@ -1131,6 +1131,9 @@
                             <xsl:text>cm; </xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
+                    <xsl:if test="@draw:z-index">
+                        <xsl:text>z-index:</xsl:text><xsl:value-of select="@draw:z-index"/><xsl:text>; </xsl:text>
+                    </xsl:if>
                 </xsl:attribute>
                 <xsl:apply-templates select="@*">
                     <xsl:with-param name="globalData" select="$globalData"/>
