@@ -1054,9 +1054,9 @@
             <xsl:if test="$svgY &gt; 0">
                 <xsl:element name="div">
                     <xsl:attribute name="style">
-                        <xsl:text>height:</xsl:text>
+                        <xsl:text>position:absolute; top:</xsl:text>
                         <xsl:value-of select="$svgY"/>
-                        <xsl:text>cm;</xsl:text>
+                        <xsl:text>cm; </xsl:text>
                     </xsl:attribute>
                     <xsl:text>&#160;</xsl:text>
                 </xsl:element>
@@ -1109,11 +1109,13 @@
                         </xsl:when>
                         <xsl:when test="@text:anchor-type!='as-char'">
                             <!-- all images float (CSS float relative) with a left position calculated by svg:x - parentMarginLeft - previousFrameWidths -->
-                            <xsl:text> float:left; position:relative; left:</xsl:text>
-                                    <xsl:value-of select="$leftPosition" />
-                            <xsl:text>cm; </xsl:text>
+                            <xsl:if test="$leftPosition">
+                                <xsl:text> float:left; position:relative; left:</xsl:text>
+                                        <xsl:value-of select="$leftPosition" />
+                                <xsl:text>cm; </xsl:text>
+                            </xsl:if>
                             <!-- if the frame is anchored on a char -->
-                            <xsl:if test="@text:anchor-type='char'">
+                            <xsl:if test="$svgY">
                                 <xsl:text>top:</xsl:text>
                                         <xsl:value-of select="$svgY" />
                                 <xsl:text>cm; </xsl:text>

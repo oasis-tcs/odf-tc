@@ -173,15 +173,15 @@
     <xsl:template match="@style:horizontal-pos">
         <xsl:choose>
             <xsl:when test=".='left'">
-                <xsl:text>text-align:left; </xsl:text>
+                <xsl:text>float:left; position:relative; </xsl:text>
             </xsl:when>
             <xsl:when test=". = 'right'">
-                <xsl:text>text-align:right; </xsl:text>
+                <xsl:text>float:right; position:relative; </xsl:text>
             </xsl:when>
             <xsl:when test=".='center'">
-                <xsl:text>text-align:center; </xsl:text>
+            	  <xsl:text>display:block; margin-left:auto; margin-right:auto; </xsl:text>
             </xsl:when>
-            <!-- NOTE: currently other values are not used.
+           <!-- NOTE: currently other values are not used.
                 If the property value is from-left or from-inside,
                 the svg:x attribute associated with the frame element specifies
                 the horizontal position of the frame.
