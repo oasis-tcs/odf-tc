@@ -2610,6 +2610,7 @@
                 <xsl:with-param name="globalData" select="$globalData"/>
                 <xsl:with-param name="listIndent" select="$listIndent"/>
                 <xsl:with-param name="styleName" select="@text:style-name"/>
+                <xsl:with-param name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
             </xsl:call-template>
             <xsl:choose>
                 <xsl:when test="$listLabelElement">
@@ -2670,6 +2671,7 @@
                 <xsl:with-param name="globalData" select="$globalData"/>
                 <xsl:with-param name="listIndent" select="$listIndent"/>
                 <xsl:with-param name="styleName" select="@text:style-name"/>
+                <xsl:with-param name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
             </xsl:call-template>
             <xsl:variable name="title">
                 <xsl:apply-templates mode="concatenate"/>
@@ -2815,20 +2817,58 @@
         <xsl:param name="globalData"/>
         <xsl:param name="listIndent" select="0"/>
         <xsl:param name="styleName"/>
+        <xsl:param name="listLevelStyle" />
 
         <xsl:if test="$styleName">
             <xsl:attribute name="class">
-                <xsl:value-of select="translate($styleName, '.,;: %()[]/\+', '_____________')"/>
+                <xsl:call-template name="create-unique-style-id">
+                    <xsl:with-param name="styleName" select="translate($styleName, '.,;: %()[]/\+', '_____________')"/>
+                    <xsl:with-param name="styleFamily" select="'paragraph'"/>
+                </xsl:call-template>
             </xsl:attribute>
         </xsl:if>
+
         <xsl:attribute name="style">
-            <xsl:text>margin-</xsl:text>
-            <xsl:call-template name="getOppositeWritingDirection">
-                <xsl:with-param name="globalData" select="$globalData"/>
-                <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
-            </xsl:call-template>
-            <xsl:text>:</xsl:text>
-            <xsl:value-of select="$listIndent"/>
+            <xsl:choose>
+                <xsl:when test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left">
+                    <xsl:text>margin-left:</xsl:text>
+                    <xsl:variable name="listLevelMarginLeft">
+                        <xsl:call-template name="convert2cm">
+                            <xsl:with-param name="value" select="string($listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left)"/>
+                        </xsl:call-template>
+                    </xsl:variable>
+                    <xsl:choose>
+                        <xsl:when test="$listLevelMarginLeft and not($listLevelMarginLeft='') and not($listLevelMarginLeft='NaN')">
+                            <xsl:value-of select="translate($listLevelMarginLeft,',','.')"/>
+                        </xsl:when>
+                        <xsl:otherwise>0cm;</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right">
+                    <xsl:text>margin-right:</xsl:text>
+                    <xsl:variable name="listLevelMarginRight">
+                        <xsl:call-template name="convert2cm">
+                            <xsl:with-param name="value" select="string($listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right)"/>
+                        </xsl:call-template>
+                    </xsl:variable>
+                    <xsl:choose>
+                        <xsl:when test="$listLevelMarginRight and not($listLevelMarginRight='') and not($listLevelMarginRight='NaN')">
+                            <xsl:value-of select="translate($listLevelMarginRight,',','.')"/>
+                        </xsl:when>
+                        <xsl:otherwise>0cm;</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>                
+                <xsl:otherwise>
+                    <xsl:text>margin-</xsl:text>
+                    <xsl:call-template name="getOppositeWritingDirection">
+                        <xsl:with-param name="globalData" select="$globalData"/>
+                        <xsl:with-param name="paraStyleName" select="$styleName"/>
+                    </xsl:call-template>
+                    <xsl:text>:</xsl:text>
+                    <xsl:value-of select="$listIndent"/>
+                    <xsl:text>cm;</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:text>cm;</xsl:text>
         </xsl:attribute>
     </xsl:template>
