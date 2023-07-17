@@ -739,7 +739,10 @@
                             <xsl:choose>
                                 <xsl:when test="not($isPrecedingBorderParagraph) and $isFollowingBorderParagraph">
                                     <xsl:attribute name="class">
-                                        <xsl:value-of select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderStart')"/>
+                                        <xsl:call-template name="create-unique-style-id">
+                                            <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderStart')"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                        </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
                                         <xsl:with-param name="globalData" select="$globalData"/>
@@ -747,7 +750,10 @@
                                 </xsl:when>
                                 <xsl:when test="$isPrecedingBorderParagraph and not($isFollowingBorderParagraph)">
                                     <xsl:attribute name="class">
-                                        <xsl:value-of select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderEnd')"/>
+                                        <xsl:call-template name="create-unique-style-id">
+                                            <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderEnd')"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                        </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
                                         <xsl:with-param name="globalData" select="$globalData"/>
@@ -756,7 +762,10 @@
                                 <!-- inbetween paragraphs with border/margin -->
                                 <xsl:when test="$isPrecedingBorderParagraph and $isFollowingBorderParagraph">
                                     <xsl:attribute name="class">
-                                        <xsl:value-of select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderSides')"/>
+                                        <xsl:call-template name="create-unique-style-id">
+                                            <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderSides')"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                        </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
                                         <xsl:with-param name="globalData" select="$globalData"/>
@@ -2064,7 +2073,10 @@
                                     <xsl:element name="span">
                                         <xsl:if test="$listLevelStyle/@text:style-name">
                                             <xsl:attribute name="class">
-                                                <xsl:value-of select="$listLevelStyle/@text:style-name"/>
+                                                <xsl:call-template name="create-unique-style-id">
+                                                    <xsl:with-param name="styleName" select="$listLevelStyle/@text:style-name"/>
+                                                    <xsl:with-param name="styleFamily" select="'text'"/>
+                                                </xsl:call-template>
                                             </xsl:attribute>
                                         </xsl:if>
                                         <xsl:attribute name="style">
@@ -2127,7 +2139,10 @@
                             <xsl:element name="span">
                                 <xsl:if test="$listLevelStyle/@text:style-name">
                                     <xsl:attribute name="class">
-                                        <xsl:value-of select="$listLevelStyle/@text:style-name"/>
+                                        <xsl:call-template name="create-unique-style-id">
+                                            <xsl:with-param name="styleName" select="$listLevelStyle/@text:style-name"/>
+                                            <xsl:with-param name="styleFamily" select="'text'"/>
+                                        </xsl:call-template>
                                     </xsl:attribute>
                                 </xsl:if>
                                 <xsl:attribute name="style">
@@ -3207,7 +3222,10 @@
         <!-- write anchor -->
         <xsl:element name="span">
             <xsl:attribute name="class">
-                <xsl:value-of select="$footnoteConfig/@text:citation-body-style-name"/>
+                <xsl:call-template name="create-unique-style-id">
+                    <xsl:with-param name="styleName" select="$footnoteConfig/@text:citation-body-style-name"/>
+                    <xsl:with-param name="styleFamily" select="'text'"/>
+                </xsl:call-template>
             </xsl:attribute>
             <xsl:attribute name="title">
                 <xsl:value-of select="$titlePrefix"/>
@@ -3269,7 +3287,10 @@
                     <xsl:attribute name="class">footnodeNumber</xsl:attribute>
                     <xsl:element name="a">
                         <xsl:attribute name="class">
-                            <xsl:value-of select="$footnoteConfig/@text:citation-style-name"/>
+                            <xsl:call-template name="create-unique-style-id">
+                                <xsl:with-param name="styleName" select="$footnoteConfig/@text:citation-style-name"/>
+                                <xsl:with-param name="styleFamily" select="'text'"/>
+                            </xsl:call-template>
                         </xsl:attribute>
                         <xsl:attribute name="id">
                             <xsl:value-of select="@text:id"/>
