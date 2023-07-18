@@ -2165,6 +2165,17 @@
                                                 <xsl:otherwise>0</xsl:otherwise>
                                             </xsl:choose>
                                             <xsl:text>cm;</xsl:text>
+                                            <xsl:text>margin-left:</xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="$labelIndent and not($labelIndent='') and not($labelIndent='NaN')">
+                                                    <xsl:call-template name="convert2cm">
+                                                        <xsl:with-param name="value" select="translate($labelIndent,',','.')"/>
+                                                    </xsl:call-template>
+                                                </xsl:when>
+                                                <xsl:otherwise>0</xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:text>cm;</xsl:text>
+
                                             <xsl:if test="$minLabelDist &gt; 0">
                                                 <xsl:text>padding-right:</xsl:text><xsl:value-of select="$minLabelDist"/><xsl:text>cm;</xsl:text>
                                             </xsl:if>
