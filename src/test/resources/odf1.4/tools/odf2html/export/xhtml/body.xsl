@@ -1945,6 +1945,7 @@
         <xsl:param name="listIndent" />
 
         <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
+
         <!-- The text:list-header shall not be labeled. According to ODF specification (sect. 4.3.2):
         "The <text:list-header> element represents a list header and is a special kind of list item. It
         contains one or more paragraphs that are displayed before a list. The paragraphs are formatted
@@ -2033,6 +2034,8 @@
                 </xsl:choose>
             </xsl:if>
         </xsl:variable>
+
+
         <xsl:variable name="itemLabelNew">
             <xsl:if test="$listStyle/text:list-style/text:list-level-style-number">
                 <!--
@@ -2056,6 +2059,7 @@
                         </xsl:choose>
                     </xsl:with-param>
                     <xsl:with-param name="listLevel" select="$listLevel"/>
+                    <xsl:with-param name="listLevelCountDown" select="$listLevel"/>
                     <xsl:with-param name="listStyle" select="$listStyle"/>
                     <xsl:with-param name="listStyleName" select="$listStyleName"/>
                 </xsl:call-template>
@@ -2556,10 +2560,11 @@
         <xsl:param name="listStyle" />
         <xsl:param name="listLevel" />
         <xsl:param name="listLevelsToDisplay" />
-        
+        <xsl:param name="listLevelCountDown" />
+
         <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
         <xsl:choose>
-            <xsl:when test="$listLevelsToDisplay &lt; $listLevel">
+            <xsl:when test="$listLevelsToDisplay &lt; $listLevelCountDown">
                 <xsl:call-template name="truncLabel">
                     <xsl:with-param name="itemLabel" select="$itemLabel"/>
                     <xsl:with-param name="itemNumber" select="$itemNumber" />
@@ -2567,8 +2572,13 @@
                     <xsl:with-param name="listLevelStyle" select="$listLevelStyle" />
                     <xsl:with-param name="listStyle" select="$listStyle" />
                     <xsl:with-param name="listLevelsToDisplay" select="$listLevelsToDisplay"/>
+                    <xsl:with-param name="listLevelCountDown" select="$listLevelCountDown - 1"/>
                 </xsl:call-template>
-            </xsl:when>
+            </xsl:when><!--
+            <xsl:when test="$itemLabel != ''">
+                <xsl:message>### RETURNED ITEMLABEL:<xsl:value-of select="$itemLabel"/>:</xsl:message>
+                <xsl:value-of select="$itemLabel"/>
+            </xsl:when>-->
             <xsl:otherwise>
                 <xsl:variable name="numberedSymbol">
                     <!-- only give out a number when number format is not empty -->
@@ -2595,17 +2605,29 @@
         <xsl:param name="listLevelsToDisplay" />
         <xsl:param name="listStyle" />
         <xsl:param name="listStyleName" />
+        <xsl:param name="listLevelCountDown" />
 
-        <xsl:call-template name="createItemLabel">
-            <xsl:with-param name="itemLabel">
-                <xsl:if test="contains($itemLabel, '.')">
-                    <xsl:value-of select="substring-after($itemLabel, '.')"/>
-                </xsl:if>
-            </xsl:with-param>
-            <xsl:with-param name="itemNumber" select="$itemNumber"/>
-            <xsl:with-param name="listStyle" select="$listStyle"/>
-            <xsl:with-param name="listLevelsToDisplay" select="$listLevelsToDisplay"/>
-        </xsl:call-template>
+        <xsl:variable name="countDownListLevelStyleSuffix" select="$listStyle/*/*[@text:level = (number($listLevelCountDown) - 1)]/@style:num-suffix"/>
+        
+        <xsl:choose>
+            <xsl:when test="listLevelCountDown = listLevelsToDisplay">
+                <xsl:value-of select="substring-after($itemLabel, $countDownListLevelStyleSuffix)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="createItemLabel">
+                    <xsl:with-param name="itemLabel">
+                        <xsl:if test="contains($itemLabel, $countDownListLevelStyleSuffix)">
+                            <xsl:value-of select="substring-after($itemLabel, $countDownListLevelStyleSuffix)"/>
+                        </xsl:if>
+                    </xsl:with-param>
+                    <xsl:with-param name="itemNumber" select="$itemNumber"/>
+                    <xsl:with-param name="listStyle" select="$listStyle"/>
+                    <xsl:with-param name="listLevel" select="$listLevel"/>
+                    <xsl:with-param name="listLevelsToDisplay" select="$listLevelsToDisplay"/>
+                    <xsl:with-param name="listLevelCountDown" select="$listLevelCountDown"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose> 
     </xsl:template>
 
 
