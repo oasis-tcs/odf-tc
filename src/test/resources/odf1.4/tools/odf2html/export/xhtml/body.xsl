@@ -471,7 +471,7 @@
                     &#160; is an unbreakable whitespace to give content to the element and force a browser not to ignore the element -->
                 <div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;">&#160;</div>
             </xsl:when>
-            <xsl:when test="text:tab and not(ancestor::text:index-body)">                
+            <xsl:when test="text:tab and not(ancestor::text:index-body)">
                 <!-- If there is a tabulator (ie. text:tab) within a paragraph, a heuristic for ODF tabulators creates a
                     span for every text:tab embracing the following text nodes aligning them according to the tabulator.
                     A line break or another text:tab starts a new text:span, line break even the tab counter for the line.
@@ -549,7 +549,7 @@
         <xsl:value-of select="."/>
     </xsl:template>
 
-    <!-- A span will be created for every text:tab embracing the following text nodes.
+    <!-- A span will be created for every <text:tab> embracing the following text nodes.
         A line break or another text:tab starts a new text:span -->
     <xsl:template match="* | text()" mode="tabHandling">
         <xsl:param name="globalData"/>
@@ -559,10 +559,7 @@
         <xsl:param name="parentMarginLeft" />
         <xsl:param name="pageMarginLeft" />
 
-<!-- TODO: EXCHANGE FOLLOWING SIBLING BY VARIABLE -->
         <xsl:variable name="followingSiblingNode" select="following-sibling::node()[1]"/>
-
-
         <!--
             Every tabulator indents its following content, encapuslated in a span
             element.
@@ -584,12 +581,15 @@
 
         <xsl:choose>
             <xsl:when test="name() = 'text:tab'">
+
                 <!-- every frame sibling have to be encapsulated within a div with left indent  -->
+                <xsl:variable name="tabStopDistance" select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@text:style-name]/*/@style:tab-stop-distance"/>
                 <xsl:element name="span">
                     <xsl:choose>
-                        <xsl:when test="count($tabStops/style:tab-stop) &gt; 0 and count($tabStops/style:tab-stop) &lt; 3">
+                        <xsl:when test="(count($tabStops/style:tab-stop) &gt; 0 or $tabStopDistance !='') and count($tabStops/style:tab-stop) &lt; 3">
                             <!-- only allow the heuristic when the style has less than 3 TABS -->
                             <!-- ignore heuristics if no TABS are defined -->
+
                             <xsl:attribute name="style">
                                 <xsl:call-template name="createTabIndent">
                                     <xsl:with-param name="globalData" select="$globalData"/>
@@ -597,10 +597,12 @@
                                     <xsl:with-param name="tabCount" select="$tabCount + 1"/>
                                     <xsl:with-param name="parentMarginLeft" select="$parentMarginLeft"/>
                                     <xsl:with-param name="pageMarginLeft" select="$pageMarginLeft"/>
+                                    <xsl:with-param name="tabStopDistance" select="$tabStopDistance"/>
                                 </xsl:call-template>
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:otherwise>
+
                             <!-- if there are more than 3 TABS in the style, create a none-breakable-space as whitespace -->
                             <xsl:text>&#160;</xsl:text>
                         </xsl:otherwise>
@@ -632,6 +634,7 @@
                 <xsl:text>&#xa;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
+
                 <!-- only before the first tab all content is written out -->
                 <xsl:if test="$tabCount = 0">
                     <xsl:apply-templates select=".">
@@ -676,23 +679,47 @@
         <xsl:param name="tabCount"/>
         <xsl:param name="parentMarginLeft" />
         <xsl:param name="pageMarginLeft" />
+        <xsl:param name="tabStopDistance"/>
 
-        <xsl:text>position:absolute;left:</xsl:text>
-        <xsl:variable name="tabPosition">
-            <xsl:call-template name="convert2cm">
-                <xsl:with-param name="value" select="$tabStops/style:tab-stop[$tabCount]/@style:position"/>
-            </xsl:call-template>
+        <xsl:text>position:relative;left:</xsl:text>
+        <xsl:variable name="tabPosition" select="$tabStops/style:tab-stop[$tabCount]/@style:position"/>
+        <xsl:variable name="tabPositionValue">
+            <xsl:if test="$tabPosition!=''">
+                <xsl:call-template name="convert2cm">
+                    <xsl:with-param name="value" select="$tabPosition"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:variable>
+        
+        <xsl:variable name="tabStopDistanceValue">
+            <xsl:if test="$tabStopDistance!=''">
+                <xsl:call-template name="convert2cm">
+                    <xsl:with-param name="value" select="$tabStopDistance"/>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:variable>
+        <xsl:variable name="tabWidth">
+            <xsl:choose>
+                <xsl:when test="$tabStopDistanceValue!=''">
+                    <xsl:value-of select="$tabStopDistanceValue * $tabCount"/>
+                </xsl:when>
+                <xsl:when test="$tabPosition !=''">
+                    <xsl:value-of select="$tabPosition"/>
+                </xsl:when>
+            </xsl:choose>
+
+        </xsl:variable>
+
         <xsl:variable name="tabIndent">
             <xsl:choose>
                 <xsl:when test="$tabStops/style:tab-stop[$tabCount]/@style:type = 'center'">
                     <!-- in case of style:type 'center' the text is even before the tab stop,
                       centered around the beginning. As I see currently no way in mapping this,
                       therefore I do some HEURISTIC (minus -2.5cm) -->
-                    <xsl:value-of select="$tabPosition + $parentMarginLeft + $pageMarginLeft - 2.5"/>
+                    <xsl:value-of select="$tabWidth + $parentMarginLeft + $pageMarginLeft - 2.5"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="$tabPosition + $parentMarginLeft + $pageMarginLeft"/>
+                    <xsl:value-of select="$tabWidth + $parentMarginLeft + $pageMarginLeft"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -2087,6 +2114,7 @@
                             <xsl:choose>
                                 <xsl:when test="name() = 'text:list-header'"/>
                                 <xsl:otherwise>
+                                    <xsl:variable name="labelIndent" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:text-indent"/>
                                     <xsl:variable name="listLabelWidth">
                                         <xsl:choose>
                                             <!-- only evaluate this attribute if is higher 0 -->
@@ -2096,7 +2124,7 @@
                                             <xsl:otherwise>
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:text-indent"/>
+                                                        <xsl:with-param name="value" select="$labelIndent"/>
                                                     </xsl:call-template>
                                                 </xsl:variable>
                                                 <!-- TODO: Access new ODF 1.2 list styles
@@ -3417,7 +3445,6 @@
 
     <xsl:template match="text:bookmark-end"/>
 
-    <!-- DISABLING this tab handling as the tab width is only relative
     <xsl:template match="text:tab">
         <xsl:param name="globalData"/>
 
@@ -3433,6 +3460,8 @@
             </xsl:choose>
         </xsl:variable>
 
+        
+        <xsl:variable name="tabStopDistance" select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@text:style-name]/*/@style:tab-stop-distance"/>
         <xsl:element name="span">
              <xsl:attribute name="style">margin-left:<xsl:value-of select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@text:style-name]/*/style:tab-stops/style:tab-stop[$tabNo]/@style:position"/>;</xsl:attribute>
         </xsl:element>
@@ -3465,7 +3494,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
--->
+
     <!-- MathML -->
     <xsl:template match="draw:object[math:math]">
         <xsl:apply-templates select="math:math" mode="math"/>
