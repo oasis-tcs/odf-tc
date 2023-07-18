@@ -269,8 +269,12 @@
             <xsl:variable name="dimension">
                 <xsl:apply-templates select="@fo:min-width" />
                 <xsl:apply-templates select="@fo:max-width" />
-                <xsl:apply-templates select="@fo:min-height" />
-                <xsl:apply-templates select="@fo:max-height" />
+                <xsl:apply-templates select="@fo:min-height" >
+                    <xsl:with-param name="column-count" select="$globalData/all-doc-styles/style[@style:family='graphic' and @style:name=current()/../@draw:style-name]/*/style:columns/@fo:column-count"/>
+                </xsl:apply-templates>
+                <xsl:apply-templates select="@fo:max-height" >
+                    <xsl:with-param name="column-count" select="$globalData/all-doc-styles/style[@style:family='graphic' and @style:name=current()/../@draw:style-name]/*/style:columns/@fo:column-count"/>
+                </xsl:apply-templates>
             </xsl:variable>
             <xsl:if test="normalize-space($dimension)!=''">
                 <xsl:attribute name="style">
@@ -297,15 +301,47 @@
         <xsl:value-of select="."/>
         <xsl:text>;</xsl:text>
     </xsl:template>
+
+    <!-- the height is being divided in HTML/CSS to the number of columns and has to be multipled again -->
     <xsl:template match="@fo:min-height">
+        <xsl:param name="column-count" select="1" />
+
         <xsl:text>min-height:</xsl:text>
-        <xsl:value-of select="."/>
-        <xsl:text>;</xsl:text>
+        <xsl:variable name="valueInCm">
+            <xsl:call-template name="convert2cm">
+                <xsl:with-param name="value" select="."/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$column-count != ''">
+                <xsl:value-of select="$valueInCm * $column-count"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$valueInCm"/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>cm;</xsl:text>
     </xsl:template>
+
+    <!-- the height is being divided in HTML/CSS to the number of columns and has to be multipled again -->
     <xsl:template match="@fo:max-height">
+        <xsl:param name="column-count" select="1" />
+
         <xsl:text>max-height:</xsl:text>
-        <xsl:value-of select="."/>
-        <xsl:text>;</xsl:text>
+        <xsl:variable name="valueInCm">
+            <xsl:call-template name="convert2cm">
+                <xsl:with-param name="value" select="."/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$column-count != ''">
+                <xsl:value-of select="$valueInCm * $column-count"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$valueInCm"/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>cm;</xsl:text>
     </xsl:template>
 
 
