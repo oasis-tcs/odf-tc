@@ -2153,9 +2153,8 @@
                                                     <xsl:value-of select="$listLevelStyle/@style:num-suffix"/>-->
                                                 </xsl:when>
                                                 <xsl:when test="name($listLevelStyle) = 'text:list-level-style-number'">
-                                                    <xsl:value-of select="$listLevelStyle/@style:num-prefix"/>
+                                                    <!-- prefix and suffix already part of variable itemLabelNew -->
                                                     <xsl:value-of select="$itemLabelNew"/>
-                                                    <xsl:value-of select="$listLevelStyle/@style:num-suffix"/>
                                                 </xsl:when>
                                                 <xsl:otherwise>
                                                 <!-- Listing with image as bullets, taken from the list style's href -->
