@@ -2875,7 +2875,7 @@
                     </xsl:variable>
                     <xsl:choose>
                         <xsl:when test="$listLevelMarginLeft and not($listLevelMarginLeft='') and not($listLevelMarginLeft='NaN')">
-                            <xsl:value-of select="translate($listLevelMarginLeft,',','.')"/>
+                            <xsl:value-of select="translate($listLevelMarginLeft,',','.')"/><xsl:text>cm;</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>0cm;</xsl:otherwise>
                     </xsl:choose>
@@ -2889,11 +2889,11 @@
                     </xsl:variable>
                     <xsl:choose>
                         <xsl:when test="$listLevelMarginRight and not($listLevelMarginRight='') and not($listLevelMarginRight='NaN')">
-                            <xsl:value-of select="translate($listLevelMarginRight,',','.')"/>
+                            <xsl:value-of select="translate($listLevelMarginRight,',','.')"/><xsl:text>cm;</xsl:text>
                         </xsl:when>
                         <xsl:otherwise>0cm;</xsl:otherwise>
                     </xsl:choose>
-                </xsl:when>                
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:text>margin-</xsl:text>
                     <xsl:call-template name="getOppositeWritingDirection">
@@ -2905,7 +2905,6 @@
                     <xsl:text>cm;</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:text>cm;</xsl:text>
         </xsl:attribute>
     </xsl:template>
 
