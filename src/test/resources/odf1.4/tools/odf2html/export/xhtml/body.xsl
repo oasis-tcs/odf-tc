@@ -1708,12 +1708,14 @@
     <xsl:template match="text:list">
         <xsl:param name="globalData"/>
         <xsl:param name="isListNumberingReset"/>
-        <xsl:param name="isNextLevelNumberingReset"/>
-        <xsl:param name="listLevel" select="count(ancestor::text:list) + 1"/>
+        <xsl:param name="isNextLevelNumberingReset"/>        
         <xsl:param name="listRestart" select="false()"/>
         <xsl:param name="itemLabel" select="''"/>
         <xsl:param name="listStyle"/>
         <xsl:param name="listStyleName" select="@text:style-name"/>
+
+        <!-- restart counting at every <text:list> -->
+        <xsl:variable name="listLevel" select="count(ancestor::text:list) + 1"/>
 
         <!-- To choose list type - get the list style, with the same 'text:style-name' and same 'text:level' >-->
         <xsl:variable name="listStyleRTF">
@@ -1785,9 +1787,7 @@
         <xsl:param name="listStyleName" />
 
         <!-- $globalData/styles-file/*/office:styles/ -->
-        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
-        <!-- TODO: Access new list styles
-        <xsl:variable name="listLevelLabelAlignment1" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment"/>-->
+        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>        
         <xsl:variable name="listIndent">
             <xsl:call-template name="getListIndent">
                 <xsl:with-param name="globalData" select="$globalData"/>
@@ -1828,7 +1828,6 @@
                 <xsl:with-param name="itemLabel" select="$itemLabel"/>
                 <xsl:with-param name="listIndent" select="$listIndent"/>
                 <xsl:with-param name="listLevel" select="$listLevel"/>
-                <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
                 <xsl:with-param name="listRestart">
                     <xsl:choose>
                         <xsl:when test="$listRestart">
@@ -1938,7 +1937,6 @@
         <xsl:param name="itemNumber"/>
         <xsl:param name="itemLabel"/>
         <xsl:param name="listLevel"/>
-        <xsl:param name="listLevelStyle"/>
         <xsl:param name="listRestart"/>
         <xsl:param name="listStyle"/>
         <xsl:param name="listStyleName"/>
@@ -1946,6 +1944,7 @@
         <xsl:param name="minLabelWidth"/>
         <xsl:param name="listIndent" />
 
+        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
         <!-- The text:list-header shall not be labeled. According to ODF specification (sect. 4.3.2):
         "The <text:list-header> element represents a list header and is a special kind of list item. It
         contains one or more paragraphs that are displayed before a list. The paragraphs are formatted
@@ -2048,17 +2047,16 @@
                     <xsl:with-param name="itemNumber" select="$itemNumberNew"/>
                     <xsl:with-param name="itemLabel" select="$itemLabel"/>
                     <xsl:with-param name="listLevelsToDisplay">
-                        <xsl:variable name="display" select="$listLevelStyle/@text:display-levels"/>
                         <xsl:choose>
-                            <xsl:when test="$display">
-                                <xsl:value-of select="$display"/>
+                            <xsl:when test="$listLevelStyle/@text:display-levels">
+                                <xsl:value-of select="$listLevelStyle/@text:display-levels"/>
                             </xsl:when>
                             <xsl:when test="$isListHeader">0</xsl:when>
                             <xsl:otherwise>1</xsl:otherwise>
                         </xsl:choose>
                     </xsl:with-param>
                     <xsl:with-param name="listLevel" select="$listLevel"/>
-                    <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+                    <xsl:with-param name="listStyle" select="$listStyle"/>
                     <xsl:with-param name="listStyleName" select="$listStyleName"/>
                 </xsl:call-template>
             </xsl:if>
@@ -2069,7 +2067,7 @@
                     <xsl:apply-templates>
                         <xsl:with-param name="globalData" select="$globalData"/>
                         <xsl:with-param name="itemLabel" select="$itemLabelNew"/>
-                        <xsl:with-param name="listLevel" select="$listLevel + 1"/>
+                        <xsl:with-param name="listLevel" select="listLevel"/>
                         <xsl:with-param name="listStyleName" select="$listStyleName"/>
                     </xsl:apply-templates>
                 </xsl:when>
@@ -2092,16 +2090,15 @@
                                                 <xsl:value-of select="$minLabelWidth"/>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:variable name="listLevelLabelAlignment" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment"/>
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="string($listLevelLabelAlignment/@fo:text-indent)"/>
+                                                        <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:text-indent"/>
                                                     </xsl:call-template>
                                                 </xsl:variable>
                                                 <!-- TODO: Access new ODF 1.2 list styles
                                                 <xsl:variable name="listLevelTextIndent">
                                                     <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="string($listLevelLabelAlignment/@text:list-tab-stop-position)"/>
+                                                        <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@text:list-tab-stop-position"/>
                                                     </xsl:call-template>
                                                 </xsl:variable> -->
                                                 <xsl:value-of select="-$listLevelTextIndent"/>
@@ -2207,7 +2204,7 @@
                                 <xsl:comment>&#160;</xsl:comment>
                             </xsl:element>
                         </xsl:with-param>
-                        <xsl:with-param name="listLevel" select="$listLevel + 1"/>
+                        <xsl:with-param name="listLevel" select="$listLevel"/>
                         <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
                         <xsl:with-param name="listRestart" select="$listRestart"/>
                         <xsl:with-param name="listStyle" select="$listStyle"/>
@@ -2273,7 +2270,6 @@
         <xsl:param name="itemNumber"/>
         <xsl:param name="listIndent"/>
         <xsl:param name="listLevel"/>
-        <xsl:param name="listLevelStyle" />
         <xsl:param name="listRestart"/>
         <xsl:param name="listStyle"/>
         <xsl:param name="listStyleName"/>
@@ -2288,7 +2284,7 @@
             <xsl:with-param name="listLabelElement" select="$listLabelElement"/>
             <xsl:with-param name="listLabelEmptyElement" select="$listLabelEmptyElement"/>
             <xsl:with-param name="listLevel" select="$listLevel"/>
-            <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+            <xsl:with-param name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
             <xsl:with-param name="listRestart" select="$listRestart"/>
             <xsl:with-param name="listStyle" select="$listStyle"/>
             <xsl:with-param name="listStyleName" select="$listStyleName"/>
@@ -2308,17 +2304,15 @@
     but have to be reused on following items with no text:start-value -->
     <xsl:template name="getItemNumber">
         <xsl:param name="listLevel"/>
-        <xsl:param name="listLevelStyle"/>
         <xsl:param name="listStyleName"/>
         <xsl:param name="listStyle"/>
 
         <xsl:call-template name="countListItemTillStartValue">
             <xsl:with-param name="listLevel" select="$listLevel"/>
-            <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+            <xsl:with-param name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
             <xsl:with-param name="listStyleName" select="$listStyleName"/>
             <xsl:with-param name="listStyle" select="$listStyle"/>
             <xsl:with-param name="precedingListItemsOfSameLevelAndStyle" select="preceding::text:list-item[generate-id(key('getListItemsByLevelAndStyle', concat($listLevel, $listStyleName))) = generate-id(key('getListItemsByLevelAndStyle', concat(count(ancestor::text:list), ancestor::text:list/@text:style-name)))]"/>
-
             <xsl:with-param name="precedingListItemsOfSameStyle" select="preceding::text:list-item[generate-id(key('getListItemsByStyle', $listStyleName)) = generate-id(key('getListItemsByStyle', ancestor::text:list/@text:style-name))]"/>
         </xsl:call-template>
     </xsl:template>
@@ -2329,19 +2323,20 @@
         <xsl:param name="IteratorSameStyle" select="1"/>
         <xsl:param name="itemNumber" select="1"/>
         <xsl:param name="listLevel"/>
-        <xsl:param name="listLevelStyle"/>
         <xsl:param name="listStyle"/>
         <xsl:param name="listStyleName"/>
         <xsl:param name="precedingListItemsOfSameLevelAndStyle" />
         <xsl:param name="precedingListItemsOfSameLevelAndStyleCount" select="count($precedingListItemsOfSameLevelAndStyle)"/>
         <xsl:param name="precedingListItemsOfSameStyle" />
         <xsl:param name="precedingListItemsOfSameStyleCount" select="count($precedingListItemsOfSameStyle)"/>
+
         <!-- E.g.: If a list level 2 number is searched, a level 3 with content found with only a level 1 parent with content,
             the level 3 gets a 'pseudoLevel' -->
         <xsl:param name="pseudoLevel" select="0" />
 
         <xsl:variable name="isListHeader" select="boolean(self::text:list-header)"/>
         <xsl:variable name="isEmptyList" select="not(*[name() = 'text:h' or name() = 'text:p'])"/>
+        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
 
         <!-- set the next of preceding list items. Starting from the current to the next previous text:list-item -->
         <xsl:variable name="precedingListItemOfSameLevelAndStyle" select="$precedingListItemsOfSameLevelAndStyle[$precedingListItemsOfSameLevelAndStyleCount - $IteratorSameLevelAndStyle + 1]"/>
@@ -2454,7 +2449,6 @@
         <xsl:param name="IteratorSameStyle"/>
         <xsl:param name="itemNumber"/>
         <xsl:param name="listLevel"/>
-        <xsl:param name="listLevelStyle"/>
         <xsl:param name="listStyle"/>
         <xsl:param name="listStyleName"/>
         <xsl:param name="precedingListItemsOfSameLevelAndStyle"/>
@@ -2463,6 +2457,7 @@
         <xsl:param name="precedingListItemsOfSameStyleCount"/>
         <xsl:param name="pseudoLevel" />
 
+        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
         <xsl:variable name="isListHeader" select="boolean(self::text:list-header)"/>
         <xsl:variable name="isEmptyList" select="not(*[name() = 'text:h' or name() = 'text:p'])"/>
 
@@ -2558,10 +2553,11 @@
     <xsl:template name="createItemLabel">
         <xsl:param name="itemLabel" select="''"/>
         <xsl:param name="itemNumber" />
+        <xsl:param name="listStyle" />
         <xsl:param name="listLevel" />
-        <xsl:param name="listLevelStyle" />
         <xsl:param name="listLevelsToDisplay" />
-
+        
+        <xsl:variable name="listLevelStyle" select="$listStyle/*/*[@text:level = number($listLevel)]"/>
         <xsl:choose>
             <xsl:when test="$listLevelsToDisplay &lt; $listLevel">
                 <xsl:call-template name="truncLabel">
@@ -2569,6 +2565,7 @@
                     <xsl:with-param name="itemNumber" select="$itemNumber" />
                     <xsl:with-param name="listLevel" select="$listLevel"/>
                     <xsl:with-param name="listLevelStyle" select="$listLevelStyle" />
+                    <xsl:with-param name="listStyle" select="$listStyle" />
                     <xsl:with-param name="listLevelsToDisplay" select="$listLevelsToDisplay"/>
                 </xsl:call-template>
             </xsl:when>
@@ -2595,7 +2592,6 @@
         <xsl:param name="itemLabel" />
         <xsl:param name="itemNumber" />
         <xsl:param name="listLevel" />
-        <xsl:param name="listLevelStyle" />
         <xsl:param name="listLevelsToDisplay" />
         <xsl:param name="listStyle" />
         <xsl:param name="listStyleName" />
@@ -2607,8 +2603,7 @@
                 </xsl:if>
             </xsl:with-param>
             <xsl:with-param name="itemNumber" select="$itemNumber"/>
-            <xsl:with-param name="listLevel" select="$listLevel - 1"/>
-            <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+            <xsl:with-param name="listStyle" select="$listStyle"/>
             <xsl:with-param name="listLevelsToDisplay" select="$listLevelsToDisplay"/>
         </xsl:call-template>
     </xsl:template>
@@ -2813,7 +2808,6 @@
         <xsl:param name="listLevel"/>
         <xsl:param name="listRestart"/>
         <xsl:param name="listStyle"/>
-        <xsl:param name="listLevelStyle"/>
         <xsl:param name="listStyleName"/>
 
         <xsl:apply-templates select="self::*">
@@ -2863,14 +2857,13 @@
                 </xsl:call-template>
             </xsl:attribute>
         </xsl:if>
-
         <xsl:attribute name="style">
             <xsl:choose>
                 <xsl:when test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left">
                     <xsl:text>margin-left:</xsl:text>
                     <xsl:variable name="listLevelMarginLeft">
                         <xsl:call-template name="convert2cm">
-                            <xsl:with-param name="value" select="string($listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left)"/>
+                            <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left"/>
                         </xsl:call-template>
                     </xsl:variable>
                     <xsl:choose>
@@ -2884,7 +2877,7 @@
                     <xsl:text>margin-right:</xsl:text>
                     <xsl:variable name="listLevelMarginRight">
                         <xsl:call-template name="convert2cm">
-                            <xsl:with-param name="value" select="string($listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right)"/>
+                            <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right"/>
                         </xsl:call-template>
                     </xsl:variable>
                     <xsl:choose>
