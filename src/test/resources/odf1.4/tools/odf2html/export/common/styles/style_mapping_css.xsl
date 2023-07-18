@@ -204,6 +204,38 @@
         <xsl:text>; </xsl:text>
     </xsl:template>
 
+    <xsl:template match="style:columns/@fo:column-count">
+        <xsl:param name="globalData" />
+
+        <xsl:text>column-count:</xsl:text>
+        <xsl:choose>
+            <!-- changing the distance measure: inch to in -->
+            <xsl:when test="contains(., 'inch')">
+                <xsl:value-of select="substring-before(.,'ch')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>; </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="style:columns/@fo:column-gap">
+        <xsl:param name="globalData" />
+        
+        <xsl:text>column-gap:</xsl:text>
+        <xsl:choose>
+            <!-- changing the distance measure: inch to in -->
+            <xsl:when test="contains(., 'inch')">
+                <xsl:value-of select="substring-before(.,'ch')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>; </xsl:text>
+    </xsl:template>
+
     <xsl:template match="@style:text-underline-style">
         <xsl:text>text-decoration:</xsl:text>
         <xsl:choose>
