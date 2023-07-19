@@ -804,7 +804,7 @@
                                     <xsl:attribute name="class">
                                         <xsl:call-template name="create-unique-style-id">
                                             <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderStart')"/>
-                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()/@text:style-name]/@style:family"/>
                                         </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
@@ -815,7 +815,7 @@
                                     <xsl:attribute name="class">
                                         <xsl:call-template name="create-unique-style-id">
                                             <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderEnd')"/>
-                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()/@text:style-name]/@style:family"/>
                                         </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
@@ -827,7 +827,7 @@
                                     <xsl:attribute name="class">
                                         <xsl:call-template name="create-unique-style-id">
                                             <xsl:with-param name="styleName" select="concat(translate(@text:style-name, '.,;: %()[]/\+', '_____________'), '_borderSides')"/>
-                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()]/@style:family"/>
+                                            <xsl:with-param name="styleFamily" select="$globalData/all-styles/style[@style:name = current()/@text:style-name]/@style:family"/>
                                         </xsl:call-template>
                                     </xsl:attribute>
                                     <xsl:apply-templates>
@@ -3036,11 +3036,7 @@
             <xsl:if test="parent::*/@draw:text-style-name != ''"> 
                 <xsl:call-template name="create-unique-style-id">
                     <xsl:with-param name="styleName" select="parent::*/@draw:text-style-name"/>
-                    <xsl:with-param name="styleFamily">
-                        <xsl:call-template name="get-style-family-name">
-                            <xsl:with-param name="parentName" select="name(..)"/>
-                        </xsl:call-template>
-                    </xsl:with-param>
+                    <xsl:with-param name="styleFamily" select="'paragraph'"/>
                 </xsl:call-template><xsl:text> </xsl:text>
             </xsl:if>
             <xsl:if test="parent::*/@table:style-name != ''"> 
@@ -3056,11 +3052,7 @@
             <xsl:if test="parent::*/@presentation:style-name != ''"> 
                 <xsl:call-template name="create-unique-style-id">
                     <xsl:with-param name="styleName" select="parent::*/@presentation:style-name"/>
-                    <xsl:with-param name="styleFamily">
-                        <xsl:call-template name="get-style-family-name">
-                            <xsl:with-param name="parentName" select="name(..)"/>
-                        </xsl:call-template>
-                    </xsl:with-param>
+                    <xsl:with-param name="styleFamily" select="'presentation'"/>
                 </xsl:call-template><xsl:text> </xsl:text>
             </xsl:if>
         </xsl:variable>
@@ -3141,7 +3133,7 @@
                 <xsl:text>text</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:message>WARNING: No style family found for <xsl:value-of select="$styleFamily"/></xsl:message>
+                <xsl:message>WARNING: No style family found for '<xsl:value-of select="$styleFamily"/>'</xsl:message>
                 <xsl:text>unknown-family</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
