@@ -72,8 +72,6 @@
                 doctype-public       = "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
                 doctype-system       = "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd" />
 
-
-
     <xsl:variable name="namespace" select="'http://www.w3.org/1999/xhtml'" />
 
     <!--+++++ PARAMETER SECTION +++++-->
@@ -163,6 +161,7 @@
         <xsl:element name="html">
 
             <xsl:attribute name="lang"><xsl:value-of select="$lang"/></xsl:attribute>
+
             <xsl:text>&#xa;</xsl:text>
             <xsl:comment>This file was converted to xhtml by LibreOffice - see https://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.</xsl:comment>
             <xsl:text>&#xa;</xsl:text>

@@ -3526,8 +3526,9 @@
     <xsl:template match="draw:custom-shape">
         <xsl:param name="globalData" />
 
-        <xsl:element name="svg">
-            
+        <xsl:element name="svg" namespace="http://www.w3.org/2000/svg">
+            <xsl:attribute name="version">1.1</xsl:attribute>
+     
             <xsl:if test="@svg:width">
                 <xsl:attribute name="width"><xsl:value-of select="@svg:width"/></xsl:attribute>
             </xsl:if> 
@@ -3573,13 +3574,13 @@
                                     contains($enhancedPath, 'U') or 
                                     contains($enhancedPath, 'W') or 
                                     contains($enhancedPath, 'X'))">
-                    <xsl:element name="g">
+                    <xsl:element name="g" namespace="http://www.w3.org/2000/svg">
                         <xsl:attribute name="style">fill-rule:nonzero</xsl:attribute>
 
                         <!-- every ' N' in @draw:enhanced-path is a new svg:path element -->
                         <xsl:for-each select="tokenize($enhancedPath, ' N')">
                             <xsl:if test="normalize-space(.) != ''">
-                                <xsl:element name="path">
+                                <xsl:element name="path" namespace="http://www.w3.org/2000/svg">
                                     <xsl:attribute name="d" select="normalize-space(.)"/>
                                     <xsl:attribute name="style">
                                         <xsl:if test="$fillColor != ''">
@@ -3612,7 +3613,8 @@
         <xsl:template match="draw:area-polygon | draw:contour-polygon | draw:polygon | draw:polyline">
             <xsl:param name="globalData" />
 
-            <xsl:element name="svg">
+            <xsl:element name="svg" namespace="http://www.w3.org/2000/svg">
+                <xsl:attribute name="version">1.1</xsl:attribute>
                 
                 <xsl:if test="@svg:width">
                     <xsl:attribute name="width"><xsl:value-of select="@svg:width"/></xsl:attribute>
@@ -3639,10 +3641,10 @@
                 <xsl:variable name="fillColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@fo:background-color"/>
                 <xsl:variable name="strokeColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@svg:stroke-color"/>
 
-                    <xsl:element name="g">
+                    <xsl:element name="g" namespace="http://www.w3.org/2000/svg">
                         <xsl:attribute name="style">fill-rule:nonzero</xsl:attribute>
 
-                        <xsl:element name="path">
+                        <xsl:element name="path" namespace="http://www.w3.org/2000/svg">
                             <xsl:attribute name="d"><xsl:value-of select="concat('M 0,0 L ', @draw:points)"/></xsl:attribute>
                             <xsl:attribute name="style">
                                 <xsl:if test="$fillColor != ''">
