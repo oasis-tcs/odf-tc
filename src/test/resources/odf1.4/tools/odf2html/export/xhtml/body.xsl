@@ -3498,6 +3498,103 @@
         </xsl:choose>
     </xsl:template>
 
+
+    <!-- *********** -->
+    <!-- *** SVG *** -->
+    <!-- *********** -->
+
+   
+    <xsl:template match="draw:custom-shape">
+        <xsl:param name="globalData" />
+
+        <xsl:element name="svg">
+            
+            <xsl:if test="@svg:width">
+                <xsl:attribute name="width"><xsl:value-of select="@svg:width"/></xsl:attribute>
+            </xsl:if> 
+            <xsl:if test="@svg:height">
+                <xsl:attribute name="height"><xsl:value-of select="@svg:height"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@svg:x">
+                <xsl:attribute name="x"><xsl:value-of select="@svg:x"/></xsl:attribute>
+            </xsl:if> 
+            <xsl:if test="@svg:y">
+                <xsl:attribute name="y"><xsl:value-of select="@svg:y"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@draw:z-index">
+                <xsl:attribute name="z-index"><xsl:value-of select="@draw:z-index"/></xsl:attribute>
+            </xsl:if> 
+            <xsl:apply-templates select="@*">
+                <xsl:with-param name="globalData" select="$globalData"/>
+            </xsl:apply-templates>
+            <xsl:if test="draw:enhanced-geometry/@svg:viewBox">
+                <xsl:attribute name="viewBox"><xsl:value-of select="draw:enhanced-geometry/@svg:viewBox"/></xsl:attribute>
+            </xsl:if>
+
+            <xsl:variable name="enhancedPath" select="draw:enhanced-geometry/@draw:enhanced-path" />
+            <xsl:variable name="fillColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@fo:background-color"/>
+            <xsl:variable name="strokeColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@svg:stroke-color"/>
+            
+            <!-- 
+                There is superset of functionality in ODF, which requires math calculation not easily done in XSLT, e.g. create a rounded rectancle as draw
+                ODF: https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#attribute-draw_enhanced-path
+                    ODF superset:
+                        command character "meaning"
+                        B "arc"
+                        F "nofill"
+                        U "angle­ellipse"
+                        W "clockwise­arcto"
+                        X "elliptical­quatrantx"
+                SVG: https://www.w3.org/TR/SVG11/paths.html#PathData 
+            -->
+            <xsl:choose>
+                <xsl:when test="not(contains($enhancedPath, '?') or contains($enhancedPath, '$'))">
+                    <xsl:element name="g">
+                        <xsl:attribute name="style">fill-rule:nonzero</xsl:attribute>
+
+                        <!-- every ' N' in @draw:enhanced-path is a new svg:path element -->
+                        <xsl:for-each select="tokenize($enhancedPath, ' N')">
+                            <xsl:if test="normalize-space(.) != ''">
+                                <xsl:element name="path">
+                                    <xsl:attribute name="d" select="normalize-space(.)"/>
+                                    <xsl:attribute name="style">
+                                        <xsl:if test="$fillColor != ''">
+                                            <xsl:text>fill:</xsl:text>
+                                            <xsl:value-of select="$fillColor"/>
+                                            <xsl:text>;fill-opacity:1;fill-rule:evenodd;</xsl:text>
+                                        </xsl:if>
+                                        <xsl:if test="$strokeColor != ''">
+                                            <xsl:text>stroke:</xsl:text>
+                                            <xsl:value-of select="$strokeColor"/>
+                                            <xsl:text>;stroke-opacity:1;</xsl:text>
+                                        </xsl:if>                                        
+                                    </xsl:attribute>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:comment>The drawing was too complex to be transformed via XSLT!</xsl:comment>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+
+        <!--
+    <svg viewBox="0 0 21600 21600" width="4.74cm" height="4.74cm" x="3.561cm" y="1.799cm">
+        <g id="g21" style="fill-rule:nonzero">
+            <path d="M 0 0 L 21600 0 21600 21600 0 21600 Z"
+                style="fill:green;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path23" />
+        </g>
+    </svg>
+
+<draw:custom-shape text:anchor-type="paragraph" draw:z-index="0" draw:name="Form 1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="4.74cm" svg:height="4.74cm" svg:x="3.561cm" svg:y="1.799cm">
+    <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
+</draw:custom-shape>
+
+        -->
+    </xsl:template>
+
     <!-- MathML -->
     <xsl:template match="draw:object[math:math]">
         <xsl:apply-templates select="math:math" mode="math"/>
