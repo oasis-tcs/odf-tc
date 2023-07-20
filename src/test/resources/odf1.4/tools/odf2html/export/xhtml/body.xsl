@@ -3504,6 +3504,25 @@
     <!-- *********** -->
 
    
+    <!-- *****
+        Basic Draw to SVG functionality. 
+        
+        If the complexity is too high at least frame with correct width/height is provided 
+        keeping the look and feel of the document!
+
+    => ODF Rectangle:
+        <draw:custom-shape text:anchor-type="paragraph" draw:z-index="0" draw:name="Form 1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="4.74cm" svg:height="4.74cm" svg:x="3.561cm" svg:y="1.799cm">
+            <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
+        </draw:custom-shape>
+
+    => SVG Rectangle:
+        <svg viewBox="0 0 21600 21600" width="4.74cm" height="4.74cm" x="3.561cm" y="1.799cm">
+            <g id="g21" style="fill-rule:nonzero">
+                <path d="M 0 0 L 21600 0 21600 21600 0 21600 Z"
+                    style="fill:green;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path23" />
+            </g>
+        </svg>
+    -->
     <xsl:template match="draw:custom-shape">
         <xsl:param name="globalData" />
 
@@ -3579,20 +3598,6 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:element>
-
-        <!--
-    <svg viewBox="0 0 21600 21600" width="4.74cm" height="4.74cm" x="3.561cm" y="1.799cm">
-        <g id="g21" style="fill-rule:nonzero">
-            <path d="M 0 0 L 21600 0 21600 21600 0 21600 Z"
-                style="fill:green;fill-opacity:1;fill-rule:evenodd;stroke:none" id="path23" />
-        </g>
-    </svg>
-
-<draw:custom-shape text:anchor-type="paragraph" draw:z-index="0" draw:name="Form 1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="4.74cm" svg:height="4.74cm" svg:x="3.561cm" svg:y="1.799cm">
-    <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
-</draw:custom-shape>
-
-        -->
     </xsl:template>
 
     <!-- MathML -->
