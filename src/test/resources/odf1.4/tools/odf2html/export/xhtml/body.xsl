@@ -3567,7 +3567,12 @@
                 SVG: https://www.w3.org/TR/SVG11/paths.html#PathData 
             -->
             <xsl:choose>
-                <xsl:when test="not(contains($enhancedPath, '?') or contains($enhancedPath, '$'))">
+                <xsl:when test="not(contains($enhancedPath, '?') or 
+                                    contains($enhancedPath, 'B') or 
+                                    contains($enhancedPath, 'F') or 
+                                    contains($enhancedPath, 'U') or 
+                                    contains($enhancedPath, 'W') or 
+                                    contains($enhancedPath, 'X'))">
                     <xsl:element name="g">
                         <xsl:attribute name="style">fill-rule:nonzero</xsl:attribute>
 
@@ -3599,6 +3604,62 @@
             </xsl:choose>
         </xsl:element>
     </xsl:template>
+
+    <!-- <draw:polygon draw:style-name="gr3" draw:text-style-name="P3" draw:layer="layout" svg:width="10.249cm" svg:height="1.999cm" svg:x="2.5cm" svg:y="20.75cm" svg:viewBox="0 0 10250 2000" draw:points="3250,0 10250,250 7000,2000 3000,2000 0,750 1500,250">
+    -->
+        <!-- draw:style-name="gr3" draw:text-style-name="P3" draw:points="3250,0 10250,250 7000,2000 3000,2000 0,750 1500,250">
+        -->
+        <xsl:template match="draw:area-polygon | draw:contour-polygon | draw:polygon | draw:polyline">
+            <xsl:param name="globalData" />
+
+            <xsl:element name="svg">
+                
+                <xsl:if test="@svg:width">
+                    <xsl:attribute name="width"><xsl:value-of select="@svg:width"/></xsl:attribute>
+                </xsl:if> 
+                <xsl:if test="@svg:height">
+                    <xsl:attribute name="height"><xsl:value-of select="@svg:height"/></xsl:attribute>
+                </xsl:if>
+                <xsl:if test="@svg:x">
+                    <xsl:attribute name="x"><xsl:value-of select="@svg:x"/></xsl:attribute>
+                </xsl:if> 
+                <xsl:if test="@svg:y">
+                    <xsl:attribute name="y"><xsl:value-of select="@svg:y"/></xsl:attribute>
+                </xsl:if>
+                <xsl:if test="@draw:z-index">
+                    <xsl:attribute name="z-index"><xsl:value-of select="@draw:z-index"/></xsl:attribute>
+                </xsl:if> 
+                <xsl:apply-templates select="@*[name(  ) != 'draw:style-name'][name(  ) != 'draw:text-style-name']">
+                    <xsl:with-param name="globalData" select="$globalData"/>
+                </xsl:apply-templates>
+                <xsl:if test="@svg:viewBox">
+                    <xsl:attribute name="viewBox"><xsl:value-of select="@svg:viewBox"/></xsl:attribute>
+                </xsl:if>
+    
+                <xsl:variable name="fillColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@fo:background-color"/>
+                <xsl:variable name="strokeColor" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@svg:stroke-color"/>
+
+                    <xsl:element name="g">
+                        <xsl:attribute name="style">fill-rule:nonzero</xsl:attribute>
+
+                        <xsl:element name="path">
+                            <xsl:attribute name="d"><xsl:value-of select="concat('M 0,0 L ', @draw:points)"/></xsl:attribute>
+                            <xsl:attribute name="style">
+                                <xsl:if test="$fillColor != ''">
+                                    <xsl:text>fill:</xsl:text>
+                                    <xsl:value-of select="$fillColor"/>
+                                    <xsl:text>;fill-opacity:1;fill-rule:evenodd;</xsl:text>
+                                </xsl:if>
+                                <xsl:if test="$strokeColor != ''">
+                                    <xsl:text>stroke:</xsl:text>
+                                    <xsl:value-of select="$strokeColor"/>
+                                    <xsl:text>;stroke-opacity:1;</xsl:text>
+                                </xsl:if>
+                            </xsl:attribute>
+                        </xsl:element>
+                    </xsl:element>
+            </xsl:element>
+        </xsl:template>
 
     <!-- MathML -->
     <xsl:template match="draw:object[math:math]">
