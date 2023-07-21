@@ -1610,8 +1610,9 @@
     <xsl:template name="create-image-element">
         <xsl:param name="globalData"/>
 
+        <xsl:variable name="verticalPos" select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@draw:style-name]/*/@style:vertical-pos"/>
         <xsl:element name="img">
-            <xsl:if test="../@svg:width or ../@svg:height">
+            <xsl:if test="../@svg:width or ../@svg:height or $verticalPos!=''">
                 <xsl:attribute name="style">
                     <xsl:if test="../@svg:height">
                         <xsl:text>height:</xsl:text>
@@ -1627,10 +1628,16 @@
                         </xsl:call-template>
                         <xsl:text>cm;</xsl:text>
                     </xsl:if>
+                    <!-- see for ODF: https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#property-style_vertical-pos  
+                         see for CSS: https://www.w3.org/TR/css-inline-3/#propdef-vertical-align -->                    
+                    <xsl:choose>
+                        <xsl:when test="$verticalPos='top'">vertical-align:top; </xsl:when>
+                        <xsl:when test="$verticalPos='middle'">vertical-align:middle; </xsl:when>
+                        <xsl:when test="$verticalPos='bottom'">vertical-align:bottom; </xsl:when>
+                    </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:if test="../@text:anchor-type='as-char'"><xsl:attribute name="align">middle</xsl:attribute></xsl:if>
-            <xsl:attribute name="alt">
+            <xsl:variable name="alt">
                 <xsl:choose>
                     <xsl:when test="../svg:title">
                         <xsl:value-of select="../svg:title"/>
@@ -1644,8 +1651,10 @@
                         </xsl:message>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:attribute>
-
+            </xsl:variable>
+            <xsl:if test="$alt != ''">
+                <xsl:attribute name="alt"><xsl:value-of select="$alt"/></xsl:attribute>
+            </xsl:if>
             <xsl:attribute name="src">
                 <xsl:call-template name="create-href">
                     <xsl:with-param name="href" select="@xlink:href"/>

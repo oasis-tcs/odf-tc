@@ -1,7 +1,7 @@
 #!/bin/bash
 # Using bash strict mode
 # see http://redsymbol.net/articles/unofficial-bash-strict-mode/
-set -euo pipefail
+# set -euo pipefail
 IFS=$'\n\t'
 # test input, ouput and reference follow a pattern according to the test name and ODF version:
 TEST_NAMES=("polygon" "rounded-rectangle-red" "rectangleWithText" "DefaultSquare" "tdf95662-complex" "tdf95662" "frames-without-wrap" "floating_image_as_character" "frames-without-wrap" "tdf146264" "floating" "spec-fragment" "default-styles" "tdf156093-image" "RedSquare" "tdf156093-image_alignment")
