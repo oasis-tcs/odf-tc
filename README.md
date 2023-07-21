@@ -152,14 +152,15 @@ This can be done manually after installation - likely before the first start - e
     UserInstallation=$ORIGIN/..
 ```
 
-The above puts the profile directory as a sibling of "program".
+**NOTE**: This places the usually shared configuration directory (since 7.5 called "user") into the LibreOffice installation directory (as a sibling of "program" directory).
 
 #### LibreOffice pretty printing XML within ODT/ZIP
 
 It's convenient for Git reviews to enable the XML pretty-printing in LibreOffice: go to "Tools-->Options...[-->LibreOffice]-->Advanced"
 Press on the "Open Expert Configuration" button.
 Search for "prettyprinting" and toggle it on, or alternatively add this line in registrymodifications.xcu in $ORIGIN/.config/libreoffice/4
-[NOTE: LibreOffice should not be opened during edting, otherwise it might overwrite the line when closing]
+
+**NOTE**: LibreOffice should not be opened during editing, otherwise it might overwrite the line when being closed.
 
 ```xml
 <item oor:path="/org.openoffice.Office.Common/Save/Document"><prop oor:name="PrettyPrinting" oor:op="fuse"><value>true</value></prop></item>
