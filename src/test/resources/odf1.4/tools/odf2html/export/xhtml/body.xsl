@@ -2791,7 +2791,7 @@
         <xsl:param name="listStyleName"/>
         <xsl:param name="minLabelWidth"/>
 
-        <xsl:variable name="headingName" select="concat('h', $listLevel - 1)"/>
+        <xsl:variable name="headingName" select="concat('h', $listLevel)"/>
         <xsl:element name="{$headingName}">
             <xsl:call-template name="create-list-style">
                 <xsl:with-param name="globalData" select="$globalData"/>
