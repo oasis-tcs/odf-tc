@@ -308,9 +308,16 @@
 
         <xsl:text>min-height:</xsl:text>
         <xsl:variable name="valueInCm">
-            <xsl:call-template name="convert2cm">
-                <xsl:with-param name="value" select="."/>
-            </xsl:call-template>
+            <xsl:choose>
+                <xsl:when test=". != ''">
+                    <xsl:call-template name="convert2cm">
+                        <xsl:with-param name="value" select="."/>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise>
+                        <xsl:message>The value of @fo:min-height is empty!</xsl:message>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="$column-count != ''">
@@ -329,9 +336,16 @@
 
         <xsl:text>max-height:</xsl:text>
         <xsl:variable name="valueInCm">
-            <xsl:call-template name="convert2cm">
-                <xsl:with-param name="value" select="."/>
-            </xsl:call-template>
+            <xsl:choose>
+                <xsl:when test=". != ''">
+                    <xsl:call-template name="convert2cm">
+                        <xsl:with-param name="value" select="."/>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message>The value of @fo:max-height is empty!</xsl:message>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="$column-count != ''">
@@ -1035,7 +1049,7 @@
          <!-- Find the according style:page-layout and store the properties in a variable  -->
         <xsl:variable name="pageMarginLeftAttr" select="key('pageLayoutElements', $pageLayoutName)/style:page-layout-properties/@fo:margin-left"/>
         <xsl:choose>
-            <xsl:when test="$pageMarginLeftAttr">
+            <xsl:when test="$pageMarginLeftAttr != ''">
                 <xsl:call-template name="convert2cm">
                     <xsl:with-param name="value" select="$pageMarginLeftAttr"/>
                 </xsl:call-template>
@@ -1062,9 +1076,15 @@
                     <!-- Only the left margin of the first paragraph of a list item will be added to the margin of the complete list (all levels)-->
                     <xsl:choose>
                         <xsl:when test="contains($imageParagraphStyle, 'margin-left:')">
-                            <xsl:call-template name="convert2cm">
-                                <xsl:with-param name="value" select="normalize-space(substring-before(substring-after($imageParagraphStyle, 'margin-left:'), ';'))"/>
-                            </xsl:call-template>
+                            <xsl:variable name="marginLeftValue" select="normalize-space(substring-before(substring-after($imageParagraphStyle, 'margin-left:'), ';'))" />
+                            <xsl:choose>
+                                <xsl:when test="$marginLeftValue != ''">
+                                    <xsl:call-template name="convert2cm">
+                                        <xsl:with-param name="value" select="$marginLeftValue"/>
+                                    </xsl:call-template>
+                                </xsl:when>
+                                <xsl:otherwise>0</xsl:otherwise>
+                            </xsl:choose>
                         </xsl:when>
                         <xsl:otherwise>0</xsl:otherwise>
                     </xsl:choose>
@@ -1141,9 +1161,11 @@
         <xsl:param name="leftPosition" />
         <xsl:param name="svgY" />
 
+        <xsl:variable name="styleWrap" select="$globalData/all-doc-styles/style[@style:name = current()/@draw:style-name]/*/@style:wrap"/>
         <xsl:variable name="elem-name">
             <xsl:choose>
-                <xsl:when test="@text:anchor-type='as-char'">span</xsl:when>
+                <!-- images as frame should not break the text, unless there is no text around the image allowed -->                
+                <xsl:when test="@text:anchor-type='as-char' and ($styleWrap = '' or not($styleWrap = 'none'))">span</xsl:when>
                 <xsl:otherwise>div</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -1196,6 +1218,11 @@
                     </xsl:choose>
                     <xsl:if test="@draw:z-index">
                         <xsl:text>z-index:</xsl:text><xsl:value-of select="@draw:z-index"/><xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:variable name="descendendDrawStyle" select="descendant::*/@draw:style-name"/>
+                    <xsl:variable name="styleWrapDescendant" select="$globalData/all-doc-styles/style[@style:name = $descendendDrawStyle]/*/@style:wrap"/>                    
+                    <xsl:if test="$styleWrapDescendant = 'none'">
+                        <xsl:text>float:none;</xsl:text>
                     </xsl:if>
                 </xsl:attribute>
                 <xsl:apply-templates select="@*">
@@ -1516,7 +1543,7 @@
                 </xsl:call-template>
             </xsl:when>
             <xsl:when test="$currentoutlineLevel &lt; $precedingoutlineLevel">
-                <xsl:message terminate="yes">this should not happen</xsl:message>
+                <xsl:message terminate="yes">This should not happen</xsl:message>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$value"/>
@@ -1924,7 +1951,7 @@
         </xsl:variable>
         <xsl:variable name="spaceBefore">
             <xsl:choose>
-                <xsl:when test="$listLevelStyle/*/@text:space-before">
+                <xsl:when test="$listLevelStyle/*/@text:space-before != ''">
                     <xsl:call-template name="convert2cm">
                         <xsl:with-param name="value" select="$listLevelStyle/*/@text:space-before"/>
                     </xsl:call-template>
@@ -2120,141 +2147,22 @@
                         <!-- The new created label is given to the children -->
                         <xsl:with-param name="itemLabel" select="$itemLabelNew"/>
                         <xsl:with-param name="listLabelElement">
-                            <xsl:choose>
-                                <xsl:when test="name() = 'text:list-header'"/>
-                                <xsl:otherwise>
-                                    <xsl:variable name="labelIndent" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:text-indent"/>
-                                    <xsl:variable name="listLabelWidth">
-                                        <xsl:choose>
-                                            <!-- only evaluate this attribute if is higher 0 -->
-                                            <xsl:when test="$minLabelWidth &gt; 0">
-                                                <xsl:value-of select="$minLabelWidth"/>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:variable name="listLevelTextIndent">
-                                                    <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="$labelIndent"/>
-                                                    </xsl:call-template>
-                                                </xsl:variable>
-                                                <!-- TODO: Access new ODF 1.2 list styles
-                                                <xsl:variable name="listLevelTextIndent">
-                                                    <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@text:list-tab-stop-position"/>
-                                                    </xsl:call-template>
-                                                </xsl:variable> -->
-                                                <xsl:value-of select="-$listLevelTextIndent"/>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:variable>
-                                    <!-- Numbering is being done by this transformation creating a HTML span representing the number label
-                                         The html:span represents the list item/header label (e.g. 1.A.III)
-                                         As the html:span is usually an inline element is formatted by CSS as block element to use width upon it,
-                                         to disable the carriage return float:left is used and later neglected -->
-                                    <xsl:element name="span">
-                                        <xsl:if test="$listLevelStyle/@text:style-name">
-                                            <xsl:attribute name="class">
-                                                <xsl:call-template name="create-unique-style-id">
-                                                    <xsl:with-param name="styleName" select="$listLevelStyle/@text:style-name"/>
-                                                    <xsl:with-param name="styleFamily" select="'text'"/>
-                                                </xsl:call-template>
-                                            </xsl:attribute>
-                                        </xsl:if>
-                                        <xsl:attribute name="style">
-                                            <xsl:text>display:block;float:</xsl:text>
-                                            <!-- TODO: Svante - copy this functionality for other used margin:left (in western country 'left') -->
-                                            <xsl:call-template name="getOppositeWritingDirection">
-                                                <xsl:with-param name="globalData" select="$globalData"/>
-                                                <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
-                                            </xsl:call-template>
-                                            <xsl:text>;min-width:</xsl:text>
-                                            <xsl:choose>
-                                                <xsl:when test="$listLabelWidth and not($listLabelWidth='') and not($listLabelWidth='NaN')">
-                                                    <xsl:value-of select="translate($listLabelWidth,',','.')"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>0</xsl:otherwise>
-                                            </xsl:choose>
-                                            <xsl:text>cm;</xsl:text>
-                                            <xsl:text>margin-left:</xsl:text>
-                                            <xsl:choose>
-                                                <xsl:when test="$labelIndent and not($labelIndent='') and not($labelIndent='NaN')">
-                                                    <xsl:call-template name="convert2cm">
-                                                        <xsl:with-param name="value" select="translate($labelIndent,',','.')"/>
-                                                    </xsl:call-template>
-                                                </xsl:when>
-                                                <xsl:otherwise>0</xsl:otherwise>
-                                            </xsl:choose>
-                                            <xsl:text>cm;</xsl:text>
-
-                                            <xsl:if test="$minLabelDist &gt; 0">
-                                                <xsl:text>padding-right:</xsl:text><xsl:value-of select="$minLabelDist"/><xsl:text>cm;</xsl:text>
-                                            </xsl:if>
-                                        </xsl:attribute>
-                                        <xsl:variable name="labelContent">
-                                            <xsl:choose>
-                                                <xsl:when test="text:number">
-                                                    <xsl:apply-templates select="text:number" mode="listnumber"/>
-                                                </xsl:when>
-                                                <xsl:when test="name($listLevelStyle) = 'text:list-level-style-bullet'">
-                                                    <!-- not viewed in LO similar to tdf146264
-                                                    <xsl:value-of select="$listLevelStyle/@style:num-prefix"/>-->
-                                                    <xsl:value-of select="$listLevelStyle/@text:bullet-char"/>
-                                                    <!-- not viewed in LO see tdf146264
-                                                    <xsl:value-of select="$listLevelStyle/@style:num-suffix"/>-->
-                                                </xsl:when>
-                                                <xsl:when test="name($listLevelStyle) = 'text:list-level-style-number'">
-                                                    <!-- prefix and suffix already part of variable itemLabelNew -->
-                                                    <xsl:value-of select="$itemLabelNew"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                <!-- Listing with image as bullets, taken from the list style's href -->
-                                                    <xsl:value-of select="$listLevelStyle/@xlink:href"/>
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-                                        </xsl:variable>
-                                        <!-- Some browsers have problem with stand-alone elements (e.g. <span/>)
-                                            Therefore a comment is being inserted into an empty label -->
-                                        <xsl:choose>
-                                            <xsl:when test="$labelContent != ''">
-                                                <xsl:value-of select="$labelContent"/>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:comment>&#160;</xsl:comment>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:element>
-                                </xsl:otherwise>
-                            </xsl:choose>
+                            <xsl:call-template name="createLabelSpan">
+                                <xsl:with-param name="globalData" select="$globalData"/>
+                                <xsl:with-param name="itemLabel" select="$itemLabelNew"/>
+                                <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+                                <xsl:with-param name="minLabelDist" select="$minLabelDist"/>
+                                <xsl:with-param name="minLabelWidth" select="$minLabelWidth"/>
+                            </xsl:call-template>
                         </xsl:with-param>
                         <xsl:with-param name="listLabelEmptyElement">
-                            <xsl:element name="span">
-                                <xsl:if test="$listLevelStyle/@text:style-name">
-                                    <xsl:attribute name="class">
-                                        <xsl:call-template name="create-unique-style-id">
-                                            <xsl:with-param name="styleName" select="$listLevelStyle/@text:style-name"/>
-                                            <xsl:with-param name="styleFamily" select="'text'"/>
-                                        </xsl:call-template>
-                                    </xsl:attribute>
-                                </xsl:if>
-                                <xsl:attribute name="style">
-                                    <xsl:text>display:block;float:</xsl:text>
-                                    <xsl:call-template name="getOppositeWritingDirection">
-                                        <xsl:with-param name="globalData" select="$globalData"/>
-                                        <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
-                                    </xsl:call-template>
-                                    <xsl:text>;min-width:</xsl:text>
-                                    <xsl:choose>
-                                        <xsl:when test="$minLabelWidth and not($minLabelWidth='') and not($minLabelWidth='NaN')">
-                                            <xsl:value-of select="translate($minLabelWidth,',','.')"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>0</xsl:otherwise>
-                                    </xsl:choose>
-                                    <xsl:text>cm</xsl:text>
-                                    <xsl:if test="$minLabelDist &gt; 0">
-                                        <xsl:text>padding-right:</xsl:text><xsl:value-of select="$minLabelDist"/><xsl:text>cm;</xsl:text>
-                                    </xsl:if>
-                                </xsl:attribute>
-                                <xsl:comment>&#160;</xsl:comment>
-                            </xsl:element>
+                            <xsl:call-template name="createLabelSpan">
+                                <xsl:with-param name="globalData" select="$globalData"/>
+                                <xsl:with-param name="itemLabel" select="$itemLabelNew"/>
+                                <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
+                                <xsl:with-param name="minLabelDist" select="$minLabelDist"/>
+                                <xsl:with-param name="minLabelWidth" select="$minLabelWidth"/>
+                            </xsl:call-template>
                         </xsl:with-param>
                         <xsl:with-param name="listLevel" select="$listLevel"/>
                         <xsl:with-param name="listLevelStyle" select="$listLevelStyle"/>
@@ -2288,6 +2196,123 @@
             <xsl:with-param name="minLabelDist" select="$minLabelDist"/>
             <xsl:with-param name="minLabelWidth" select="$minLabelWidth"/>
         </xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template name="createLabelSpan">
+        <xsl:param name="globalData" />
+        <xsl:param name="listLevelStyle" />
+        <xsl:param name="minLabelDist" />
+        <xsl:param name="minLabelWidth" />
+        
+        <!-- The list label -->
+        <xsl:param name="itemLabel" />
+
+        <xsl:choose>
+            <xsl:when test="name() = 'text:list-header'"/>
+            <xsl:otherwise>
+                <xsl:variable name="labelIndent" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:text-indent"/>
+                <xsl:variable name="listLabelWidth">
+                    <xsl:choose>
+                        <!-- only evaluate this attribute if is higher 0 -->
+                        <xsl:when test="$minLabelWidth &gt; 0">
+                            <xsl:value-of select="$minLabelWidth"/>
+                        </xsl:when>
+                        <xsl:otherwise> 
+                            <xsl:variable name="listLevelTextIndent">
+                                <xsl:if test="$labelIndent != ''">
+                                    <xsl:call-template name="convert2cm">
+                                        <xsl:with-param name="value" select="$labelIndent"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                            </xsl:variable>
+                            <!-- TODO: Access new ODF 1.2 list styles
+                            <xsl:variable name="listLevelTextIndent">
+                                <xsl:call-template name="convert2cm">
+                                    <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@text:list-tab-stop-position"/>
+                                </xsl:call-template>
+                            </xsl:variable> -->
+                            <xsl:value-of select="-$listLevelTextIndent"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <!-- Numbering is being done by this transformation creating a HTML span representing the number label
+                     The html:span represents the list item/header label (e.g. 1.A.III)
+                     As the html:span is usually an inline element is formatted by CSS as block element to use width upon it,
+                     to disable the carriage return float:left is used and later neglected -->
+                <xsl:element name="span">
+                    <xsl:if test="$listLevelStyle/@text:style-name">
+                        <xsl:attribute name="class">
+                            <xsl:call-template name="create-unique-style-id">
+                                <xsl:with-param name="styleName" select="$listLevelStyle/@text:style-name"/>
+                                <xsl:with-param name="styleFamily" select="'text'"/>
+                            </xsl:call-template>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:attribute name="style">
+                        <xsl:text>display:block;float:</xsl:text>
+                        <!-- TODO: Svante - copy this functionality for other used margin:left (in western country 'left') -->
+                        <xsl:call-template name="getOppositeWritingDirection">
+                            <xsl:with-param name="globalData" select="$globalData"/>
+                            <xsl:with-param name="paraStyleName" select="descendant-or-self::*/@text:style-name"/>
+                        </xsl:call-template>
+                        <xsl:text>;min-width:</xsl:text>
+                        <xsl:choose>
+                            <xsl:when test="$listLabelWidth and not($listLabelWidth='') and not($listLabelWidth='NaN')">
+                                <xsl:value-of select="translate($listLabelWidth,',','.')"/>
+                            </xsl:when>
+                            <xsl:otherwise>0</xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>cm;</xsl:text>
+                        <xsl:text>margin-left:</xsl:text>
+                        <xsl:choose>
+                            <xsl:when test="$labelIndent and not($labelIndent='') and not($labelIndent='NaN')">
+                                <xsl:call-template name="convert2cm">
+                                    <xsl:with-param name="value" select="translate($labelIndent,',','.')"/>
+                                </xsl:call-template>
+                            </xsl:when>
+                            <xsl:otherwise>0</xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>cm;</xsl:text>
+
+                        <xsl:if test="$minLabelDist &gt; 0">
+                            <xsl:text>padding-right:</xsl:text><xsl:value-of select="$minLabelDist"/><xsl:text>cm;</xsl:text>
+                        </xsl:if>
+                    </xsl:attribute>
+                    <xsl:variable name="labelContent">
+                        <xsl:choose>
+                            <xsl:when test="text:number">
+                                <xsl:apply-templates select="text:number" mode="listnumber"/>
+                            </xsl:when>
+                            <xsl:when test="name($listLevelStyle) = 'text:list-level-style-bullet'">
+                                <!-- not viewed in LO similar to tdf146264
+                                <xsl:value-of select="$listLevelStyle/@style:num-prefix"/>-->
+                                <xsl:value-of select="$listLevelStyle/@text:bullet-char"/>
+                                <!-- not viewed in LO see tdf146264
+                                <xsl:value-of select="$listLevelStyle/@style:num-suffix"/>-->
+                            </xsl:when>
+                            <xsl:when test="name($listLevelStyle) = 'text:list-level-style-number'">
+                                <!-- prefix and suffix already part of variable itemLabel -->
+                                <xsl:value-of select="$itemLabel"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                            <!-- Listing with image as bullets, taken from the list style's href -->
+                                <xsl:value-of select="$listLevelStyle/@xlink:href"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <!-- Some browsers have problem with stand-alone elements (e.g. <span/>)
+                        Therefore a comment is being inserted into an empty label -->
+                    <xsl:choose>
+                        <xsl:when test="$labelContent != ''">
+                            <xsl:value-of select="$labelContent"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:comment>&#160;</xsl:comment>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template name="getOppositeWritingDirection">
@@ -2932,9 +2957,11 @@
                 <xsl:when test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left">
                     <xsl:text>margin-left:</xsl:text>
                     <xsl:variable name="listLevelMarginLeft">
-                        <xsl:call-template name="convert2cm">
-                            <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left"/>
-                        </xsl:call-template>
+                        <xsl:if test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left != ''">
+                            <xsl:call-template name="convert2cm">
+                                <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-left"/>
+                            </xsl:call-template>
+                        </xsl:if>
                     </xsl:variable>
                     <xsl:choose>
                         <xsl:when test="$listLevelMarginLeft and not($listLevelMarginLeft='') and not($listLevelMarginLeft='NaN')">
@@ -2946,9 +2973,11 @@
                 <xsl:when test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right">
                     <xsl:text>margin-right:</xsl:text>
                     <xsl:variable name="listLevelMarginRight">
-                        <xsl:call-template name="convert2cm">
-                            <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right"/>
-                        </xsl:call-template>
+                        <xsl:if test="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right != ''">
+                            <xsl:call-template name="convert2cm">
+                                <xsl:with-param name="value" select="$listLevelStyle/style:list-level-properties/style:list-level-label-alignment/@fo:margin-right"/>
+                            </xsl:call-template>
+                        </xsl:if>
                     </xsl:variable>
                     <xsl:choose>
                         <xsl:when test="$listLevelMarginRight and not($listLevelMarginRight='') and not($listLevelMarginRight='NaN')">

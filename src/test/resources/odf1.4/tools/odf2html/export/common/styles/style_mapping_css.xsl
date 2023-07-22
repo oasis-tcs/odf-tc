@@ -171,11 +171,12 @@
     <!-- NOTE: Can 'inside' | 'from-inside' better be handled:
     <!ATTLIST * style:horizontal-pos (from-left|left|center|right|from-inside|inside|outside)#IMPLIED>-->
     <xsl:template match="@style:horizontal-pos">
+        <xsl:variable name="styleWrap" select="parent::*/@style:wrap"/>
         <xsl:choose>
-            <xsl:when test=".='left'">
+            <xsl:when test=".='left' and not($styleWrap = 'none')">
                 <xsl:text>float:left; position:relative; </xsl:text>
             </xsl:when>
-            <xsl:when test=". = 'right'">
+            <xsl:when test=". = 'right'  and not($styleWrap = 'none')">
                 <xsl:text>float:right; position:relative; </xsl:text>
             </xsl:when>
             <xsl:when test=".='center'">
