@@ -4870,7 +4870,7 @@
           <rng:ref name="boolean"/>
         </rng:attribute>
       </rng:optional>
-      <!-- Office-4123 -->
+      <!-- https://issues.oasis-open.org/browse/OFFICE-4123 -->
       <rng:optional>
        <rng:attribute name="draw:extrusion-metal-type">
           <rng:ref name="namespacedToken"/>
@@ -7078,7 +7078,7 @@
       <rng:param name="pattern">([0-9]+(\.[0-9]*)?|\.[0-9]+)((cm)|(mm)|(in)|(pt)|(pc)|(px))</rng:param>
     </rng:data>
   </rng:define>
-  <!-- Office-4122 nonNegativePercent -->
+  <!-- https://issues.oasis-open.org/browse/OFFICE-4122 nonNegativePercent -->
   <rng:define name="nonNegativePercent">
   <rng:data type="string">
     <rng:param name="pattern">([0-9]+(\.[0-9]*)?|\.[0-9]+)</rng:param>
@@ -7823,7 +7823,7 @@
   <rng:define name="office-document-common-attrs">
     <rng:interleave>
       <rng:attribute name="office:version">
-	<!-- Office-4140 -->
+        <!-- https://issues.oasis-open.org/browse/OFFICE-4140 -->
         <rng:value>1.4</rng:value>
       </rng:attribute>
       <rng:optional>
