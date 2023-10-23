@@ -11,13 +11,15 @@ The project aligns to the [standard directory layout of a Maven build system](ht
 
 We are using GitHub pages - our [docs directory](https://github.com/oasis-tcs/odf-tc/tree/master/docs) - to store our latest HTML & default value transformations:
 
-Latest ODF 1.3 artifacts | Latest ODF 1.2 artifacts
------------- | -------------
-[ODF 1.3 Intro HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-intro.html) | [ODF 1.2 Intro HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-intro.html)
-[ODF 1.3 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-packages.html) | [ODF 1.2 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-packages.html)
-[ODF 1.3 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-schema.html) | [ODF 1.2 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-schema.html)
-[ODF 1.3 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-formula.html) | [ODF 1.2 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-formula.html)
-[ODF 1.3 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml) | [ODF 1.2 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12fixed-default-values.xml)
+Latest ODF 1.4 artifacts | Latest ODF 1.3 artifacts | Latest ODF 1.2 artifacts
+------------ |------------ | -------------
+[ODF 1.4 Intro HTML](https://oasis-tcs.github.io/odf-tc/odf1.4/part1-introduction/OpenDocument-v1.4-part1-introduction.html) | [ODF 1.3 Intro HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-intro.html) | [ODF 1.2 Intro HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-intro.html)
+[ODF 1.4 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.4/part2-packages/OpenDocument-v1.4-part2-packages.html) | [ODF 1.3 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-packages.html) | [ODF 1.2 Packages HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-packages.html)
+[ODF 1.4 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.4/part3-schema/OpenDocument-v1.4-part3-schema.html) | [ODF 1.3 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-schema.html) | [ODF 1.2 Schema HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-schema.html)
+[ODF 1.4 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.4/part4-formula/OpenDocument-v1.4-part4-formula.html) | [ODF 1.3 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.3/content.odf13-formula.html) | [ODF 1.2 Formula HTML](https://oasis-tcs.github.io/odf-tc/odf1.2/content.odf12-formula.html)
+[ODF 1.4 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.4/content.odf14-default-values.xml) | [ODF 1.3 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.3/content.odf13-default-values.xml) | [ODF 1.2 Attribute Default Values](https://github.com/oasis-tcs/odf-tc/blob/master/docs/odf1.2/content.odf12fixed-default-values.xml)
+
+
 
 ### Automated Tests
 
