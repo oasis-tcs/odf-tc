@@ -2788,16 +2788,6 @@
           </rng:attribute>
         </rng:optional>
       </rng:group>
-      <rng:group>
-        <rng:attribute name="office:value-type">
-          <rng:value>string</rng:value>
-        </rng:attribute>
-        <rng:optional>
-          <rng:attribute name="office:string-value">
-            <rng:ref name="string"/>
-          </rng:attribute>
-        </rng:optional>
-      </rng:group>
     </rng:choice>
   </rng:define>
   <rng:define name="common-value-attlist">
