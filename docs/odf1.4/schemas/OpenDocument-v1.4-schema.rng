@@ -2846,6 +2846,8 @@
           <rng:value>page-content</rng:value>
           <!-- https://issues.oasis-open.org/browse/OFFICE-4073 -->
           <rng:value>page-content-bottom</rng:value>
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4129 -->
+          <rng:value>page-content-top</rng:value>
           <rng:value>frame</rng:value>
           <rng:value>frame-content</rng:value>
           <rng:value>paragraph</rng:value>
