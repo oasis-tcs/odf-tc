@@ -613,6 +613,10 @@
             <!-- providing tabulator indentation -->
             <xsl:copy-of select="$inheritedStyleProperties/style:tab-stops"/>
             <xsl:copy-of select="*/style:tab-stops"/>
+
+            <!-- providing columns from styles -->
+            <xsl:copy-of select="$inheritedStyleProperties/style:columns"/>
+            <xsl:copy-of select="*/style:columns"/>
         </xsl:element>
     </xsl:template>
 
@@ -844,6 +848,9 @@
                                 <xsl:apply-templates select="$style/*/@*">
                                     <xsl:with-param name="globalData" select="$globalData" />
                                 </xsl:apply-templates>
+                                <xsl:apply-templates select="$style/*/style:columns/@*">
+                                    <xsl:with-param name="globalData" select="$globalData" />
+                                </xsl:apply-templates>
                             </xsl:element>
                         </xsl:element>
                     </xsl:when>
@@ -853,6 +860,9 @@
                             <xsl:attribute name="style:name"><xsl:value-of select="$style/@style:name"/></xsl:attribute>
                             <xsl:element name="final-properties" namespace="">
                                 <xsl:apply-templates select="$style/*/@*">
+                                    <xsl:with-param name="globalData" select="$globalData" />
+                                </xsl:apply-templates>
+                                <xsl:apply-templates select="$style/*/style:columns/@*">
                                     <xsl:with-param name="globalData" select="$globalData" />
                                 </xsl:apply-templates>
                             </xsl:element>

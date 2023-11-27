@@ -397,7 +397,7 @@
     <!-- ******************** -->
 
     <!-- ignore / neglect the following elements -->
-    <xsl:template match="draw:custom-shape | draw:g | office:forms | text:alphabetical-index-mark | text:alphabetical-index-mark-end | text:alphabetical-index-mark-start | text:bibliography-source | text:number | text:reference-mark-end | text:sequence-decls | text:soft-page-break | text:table-of-content-source | text:tracked-changes | text:user-field-decls"/>
+    <xsl:template match="draw:g | office:forms | text:alphabetical-index-mark | text:alphabetical-index-mark-end | text:alphabetical-index-mark-start | text:bibliography-source | text:number | text:reference-mark-end | text:sequence-decls | text:soft-page-break | text:table-of-content-source | text:tracked-changes | text:user-field-decls"/>
 
     <!-- default template used by purpose-->
     <xsl:template match="text:bibliography | text:change-end | text:change-start">

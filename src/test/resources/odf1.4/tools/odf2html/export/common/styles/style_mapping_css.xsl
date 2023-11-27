@@ -171,17 +171,18 @@
     <!-- NOTE: Can 'inside' | 'from-inside' better be handled:
     <!ATTLIST * style:horizontal-pos (from-left|left|center|right|from-inside|inside|outside)#IMPLIED>-->
     <xsl:template match="@style:horizontal-pos">
+        <xsl:variable name="styleWrap" select="parent::*/@style:wrap"/>
         <xsl:choose>
-            <xsl:when test=".='left'">
-                <xsl:text>text-align:left; </xsl:text>
+            <xsl:when test=".='left' and not($styleWrap = 'none')">
+                <xsl:text>float:left; position:relative; </xsl:text>
             </xsl:when>
-            <xsl:when test=". = 'right'">
-                <xsl:text>text-align:right; </xsl:text>
+            <xsl:when test=". = 'right'  and not($styleWrap = 'none')">
+                <xsl:text>float:right; position:relative; </xsl:text>
             </xsl:when>
             <xsl:when test=".='center'">
-                <xsl:text>text-align:center; </xsl:text>
+            	  <xsl:text>display:block; margin-left:auto; margin-right:auto; </xsl:text>
             </xsl:when>
-            <!-- NOTE: currently other values are not used.
+           <!-- NOTE: currently other values are not used.
                 If the property value is from-left or from-inside,
                 the svg:x attribute associated with the frame element specifies
                 the horizontal position of the frame.
@@ -192,6 +193,38 @@
 
     <xsl:template match="@style:column-width">
         <xsl:text>width:</xsl:text>
+        <xsl:choose>
+            <!-- changing the distance measure: inch to in -->
+            <xsl:when test="contains(., 'inch')">
+                <xsl:value-of select="substring-before(.,'ch')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>; </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="style:columns/@fo:column-count">
+        <xsl:param name="globalData" />
+
+        <xsl:text>column-count:</xsl:text>
+        <xsl:choose>
+            <!-- changing the distance measure: inch to in -->
+            <xsl:when test="contains(., 'inch')">
+                <xsl:value-of select="substring-before(.,'ch')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>; </xsl:text>
+    </xsl:template>
+
+    <xsl:template match="style:columns/@fo:column-gap">
+        <xsl:param name="globalData" />
+        
+        <xsl:text>column-gap:</xsl:text>
         <xsl:choose>
             <!-- changing the distance measure: inch to in -->
             <xsl:when test="contains(., 'inch')">

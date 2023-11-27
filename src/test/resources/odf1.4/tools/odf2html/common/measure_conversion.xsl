@@ -161,7 +161,7 @@
                 <xsl:value-of select="round($rounding-factor * number(substring-before($value, 'px') div $centimeter-in-mm * $pixel-in-mm)) div $rounding-factor"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:message>measure_conversion.xsl: Find no conversion for <xsl:value-of select="$value"/> to 'cm'!</xsl:message>
+                <xsl:message>measure_conversion.xsl: Find no conversion for '<xsl:value-of select="$value"/>' to 'cm'!</xsl:message>
                 <xsl:value-of select="$value"/>
             </xsl:otherwise>
         </xsl:choose>
@@ -379,6 +379,7 @@
         <xsl:param name="TargetMeasure" select="'cm'"/>
         <xsl:param name="TargetTruncate" select=" 'all' "/>
         <xsl:param name="value"/>
+<xsl:message>ConvertMeasure: '<xsl:value-of select="$value"/>' to 'cm'!</xsl:message>
         <!-- When TargetTruncate ='all'  it returns the number whichsoever the return value is negative or positive
             When TargetTruncate ='nonNegative' it only returns nonNegative number, all negative number to be returned as 0
             When TargetTruncate ='positive" it only returns positive number, all nonPositive number to be returned as 1 -->
