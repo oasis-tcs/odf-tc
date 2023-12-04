@@ -532,7 +532,8 @@
     .T101 { color:#000000; }
     .T102 { font-family:'Liberation Sans'; }
     .T103 { font-family:'Liberation Sans'; }
-    .T106 { font-family:Arial; font-size:10pt; letter-spacing:normal; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; background-color:transparent; }
+    .T105 { color:#610506; font-family:Arial; font-size:10pt; font-style:italic; font-weight:bold; }
+    .T107 { font-family:Arial; font-size:10pt; letter-spacing:normal; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; background-color:transparent; }
     .T11 { font-family:Arial; }
     .T12 { font-family:Arial; }
     .T13 { font-family:Arial; font-size:10pt; }
@@ -880,11 +881,11 @@
 
 <p class="Text_20_body">Numbers <span class="ISO_20_Keyword"><span class="T38">shall</span></span> be able to represent fractional values (they <span class="ISO_20_Keyword"><span class="T38">shall not</span></span> be limited to only integers). Evaluators may implement Number with a fixed or with a variable bit length. A cell with a constant numeric value has the Number type.</p>
 
-<p class="Text_20_body">Implementations typically support many subtypes of Number, including Date, Time, DateTime, Percentage, fixed-point arithmetic, and arithmetic supporting arbitrarily long integers, and determine the display format from this. All such Number subtypes <span class="T38">shall</span> yield TRUE for the ISNUMBER <a href="#ISNUMBER">6.13.22</a> function. </p>
+<p class="Text_20_body">Implementations typically support many subtypes of Number, including Date, Time, DateTime, Percentage, fixed-point arithmetic, and arithmetic supporting arbitrarily long integers, and determine the display format from this. </p>
 
 <p class="Note"><span class="T36">Note:</span> This specification does not require that specific subtypes be distinguishable from each other, or that the subtype be tracked, but in practice most implementations do such tracking because requiring users to manually format every cell appropriately becomes tedious very quickly. Automatically determining the most likely subtype is especially important for a good user interface when generating OpenDocument format, since some subtypes (such as date, time, and currency) are stored in a different manner depending on their subtype. Thus, this specification identifies some common subtypes and identifies those subtypes where relevant in some function definitions, as an aid to implementing good user interfaces. Many applications vary in the subtype produced when combining subtypes (e.g., what is the result when percentages are multiplied together), so unless otherwise noted these are unspecified. Typical implementations try to heuristically determine the "right" format for a cell when a formula is first created, based on the operations in the formula. Users can then override this format, so as a result the heuristics are not important for data exchange (and thus outside the scope of this specification).</p>
 
-<p class="Text_20_body">All Number subtypes <span class="ISO_20_Keyword">shall</span> yield TRUE for the ISNUMBER function.</p>
+<p class="Text_20_body">All such Number subtypes <span class="T38">shall</span> yield TRUE for the ISNUMBER <a href="#ISNUMBER">6.13.22</a> function. </p>
 <h3 class="Heading_20_3"><a id="a_4_3_2_Time"><span>4.3.2 </span></a><a id="__RefHeading__1017886_715980110"/><a id="Time"/><a id="Time"/>Time</h3>
 
 <p class="Text_20_body">Time is a subtype of Number.</p>
@@ -1078,7 +1079,7 @@
 <p class="Text_20_Body_20_Single">Historically day-count bases used the naming convention x/y, which indicated that the convention assumed x days per month and y days per year. These names are given for reference purposes.</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Date-Bases"><colgroup><col/><col/><col/><col/></colgroup><tr class="TableLine1729490530416"><td style="text-align:left;" class="Date-Bases_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Date-Bases"><colgroup><col/><col/><col/><col/></colgroup><tr class="TableLine2943748130720"><td style="text-align:left;" class="Date-Bases_A1">
 <p class="Table_20_Heading">Date Basis</p>
 </td><td style="text-align:left;" class="Date-Bases_A1">
 <p class="Table_20_Heading">Historical Name</p>
@@ -1086,7 +1087,7 @@
 <p class="Table_20_Heading">Day Count</p>
 </td><td style="text-align:left;" class="Date-Bases_D1">
 <p class="Table_20_Heading">Days in Year</p>
-</td></tr><tr class="TableLine1729490538576"><td style="text-align:right; " class="Date-Bases_A2">
+</td></tr><tr class="TableLine2943748135616"><td style="text-align:right; " class="Date-Bases_A2">
 <p class="Table_20_Contents">0</p>
 </td><td style="text-align:left;" class="Date-Bases_B6">
 <p class="Table_20_Contents">US (NASD) 30/360</p>
@@ -1102,7 +1103,7 @@
 <p class="Table_20_Contents">Procedure B, <a href="#Basis-ProcedureB">4.11.7.4</a></p>
 </td><td style="text-align:left;" class="Date-Bases_D6">
 <p class="Table_20_Contents">Procedure E, <a href="#Basis-ProcedureE">4.11.7.7</a></p>
-</td></tr><tr class="TableLine1729490541024"><td style="text-align:right; " class="Date-Bases_A2">
+</td></tr><tr class="TableLine2943748150848"><td style="text-align:right; " class="Date-Bases_A2">
 <p class="Table_20_Contents">2</p>
 </td><td style="text-align:left;" class="Date-Bases_B6">
 <p class="Table_20_Contents">Actual/360</p>
@@ -1110,7 +1111,7 @@
 <p class="Table_20_Contents">Procedure B, <a href="#Basis-ProcedureB">4.11.7.4</a></p>
 </td><td style="text-align:left;" class="Date-Bases_D6">
 <p class="Table_20_Contents">Procedure D, <a href="#Basis-ProcedureD">4.11.7.6</a></p>
-</td></tr><tr class="TableLine1729490539392"><td style="text-align:right; " class="Date-Bases_A2">
+</td></tr><tr class="TableLine2943748156832"><td style="text-align:right; " class="Date-Bases_A2">
 <p class="Table_20_Contents">3</p>
 </td><td style="text-align:left;" class="Date-Bases_B6">
 <p class="Table_20_Contents">Actual/365</p>
@@ -1118,7 +1119,7 @@
 <p class="Table_20_Contents">Procedure B, <a href="#Basis-ProcedureB">4.11.7.4</a></p>
 </td><td style="text-align:left;" class="Date-Bases_D6">
 <p class="Table_20_Contents">Procedure F, <a href="#Basis-ProcedureF">4.11.7.8</a></p>
-</td></tr><tr class="TableLine1729490539664"><td style="text-align:right; " class="Date-Bases_A2">
+</td></tr><tr class="TableLine2943748158464"><td style="text-align:right; " class="Date-Bases_A2">
 <p class="Table_20_Contents">4</p>
 </td><td style="text-align:left;" class="Date-Bases_B6">
 <p class="Table_20_Contents">European 30/360</p>
@@ -1285,25 +1286,25 @@
 <p class="Table">Table <a id="refTable0"/>1 - Operators</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table1"><colgroup><col width="110"/><col width="103"/><col width="453"/></colgroup><tr class="TableLine1729490541296"><td style="text-align:left;width:2.514cm; " class="Table1_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table1"><colgroup><col width="110"/><col width="103"/><col width="453"/></colgroup><tr class="TableLine2943748151120"><td style="text-align:left;width:2.514cm; " class="Table1_A1">
 <p class="Table_20_Heading">Associativity</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A1">
 <p class="Table_20_Heading">Operator(s)</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C1">
 <p class="Table_20_Heading">Comments</p>
-</td></tr><tr class="TableLine1729490542384"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748153024"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">:</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Range.</p>
-</td></tr><tr class="TableLine1729490537488"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748150304"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">!</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Reference intersection ([.A1:.C4]![.B1:.B5] is [.B1:.B4]). Displayed as the space character in some implementations.</p>
-</td></tr><tr class="TableLine1729490542656"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748160096"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">~</p>
@@ -1311,43 +1312,43 @@
 <p class="Table_20_Contents">Reference union. </p>
 
 <p class="Table_20_Contents"><span class="Note_20_Label">Note:</span> Displayed as the function parameter separator in some implementations.</p>
-</td></tr><tr class="TableLine1729490540752"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748155744"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">right</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">+,-</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Prefix unary operators, e.g., -5 or -[.A1]. Note that these have a different precedence than add and subtract.</p>
-</td></tr><tr class="TableLine1729490541568"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748152480"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">%</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Postfix unary operator % (divide by 100). Note that this is legal with expressions (e.g., [.B1]%).</p>
-</td></tr><tr class="TableLine1729490535040"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748148672"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36"><span class="Teletype">^</span></p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Power (2 <span class="Teletype">^</span> 3 is 8).</p>
-</td></tr><tr class="TableLine1729490541840"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748147312"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">*,/</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Multiply, divide.</p>
-</td></tr><tr class="TableLine1729490534224"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748158192"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">+,-</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Binary operations add, subtract. Note that unary (prefix) + and - have a different precedence.</p>
-</td></tr><tr class="TableLine1729490542112"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748147856"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">&amp;</p>
 </td><td style="text-align:left;width:10.363cm; " class="Table1_C2">
 <p class="Table_20_Contents">Binary operation string concatenation. Note that unary (prefix) + and - have a different precedence. Note that "&amp;" <span class="ISO_20_Keyword">shall</span> be escaped when included in an XML document</p>
-</td></tr><tr class="TableLine1729490542928"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
+</td></tr><tr class="TableLine2943748156288"><td style="text-align:left;width:2.514cm; " class="Table1_A2">
 <p class="Table_20_Contents">left</p>
 </td><td style="text-align:left;width:2.367cm; " class="Table1_A2">
 <p class="P36">=, &lt;&gt;, &lt;, &lt;=,<br/>&gt;, &gt;=</p>
@@ -1507,7 +1508,7 @@
 <p class="Table_20_Heading">Result</p>
 </td><td style="text-align:left;" class="Table2_E1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729490545104"><td style="text-align:left;" class="Table2_A2">
+</td></tr><tr class="TableLine2943748154112"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">1</p>
 </td><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Contents">Label</p>
@@ -1517,25 +1518,25 @@
 <p class="Table_20_Contents">3</p>
 </td><td rowspan="8" style="text-align:left;" class="Table2_E2">
 <p class="Table_20_Contents">Empty cell in row 2 is skipped (two empty cells in row 2 and 3 would not be skipped and would stop the automatic range), empty cell in row 5 stops the automatic range.</p>
-</td></tr><tr class="TableLine1729490487440"><td style="text-align:left;" class="Table2_A2">
+</td></tr><tr class="TableLine2943748108688"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">2</p>
-</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine1729490486352"><td style="text-align:left;" class="Table2_A2">
+</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine2943748109232"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">3</p>
 </td><td style="text-align:left;" class="Table2_A2">
 <p class="P39">1</p>
-</td></tr><tr class="TableLine1729490483088"><td style="text-align:left;" class="Table2_A2">
+</td></tr><tr class="TableLine2943748104608"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">4</p>
 </td><td style="text-align:left;" class="Table2_A2">
 <p class="P39">2</p>
-</td></tr><tr class="TableLine1729490497232"><td style="text-align:left;" class="Table2_A2">
+</td></tr><tr class="TableLine2943748096448"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">5</p>
-</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine1729490493152"><td style="text-align:left;" class="Table2_A2">
+</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine2943748101344"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">6</p>
 </td><td style="text-align:left;" class="Table2_A2">
 <p class="P39">8</p>
-</td></tr><tr class="TableLine1729490489888"><td style="text-align:left;" class="Table2_A2">
+</td></tr><tr class="TableLine2943748109504"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">7</p>
-</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine1729490482000"><td style="text-align:left;" class="Table2_A2">
+</td><td style="text-align:left;" class="Table2_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine2943748097808"><td style="text-align:left;" class="Table2_A2">
 <p class="Table_20_Heading">8</p>
 </td><td style="text-align:left;" class="Table2_A2">
 <p class="P39">32</p>
@@ -1557,7 +1558,7 @@
 <p class="Table_20_Heading">Result</p>
 </td><td style="text-align:left;" class="Table217_E1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729490490432"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748104336"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">1</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Contents">Label</p>
@@ -1567,27 +1568,27 @@
 <p class="Table_20_Contents">15</p>
 </td><td rowspan="8" style="text-align:left;" class="Table217_E2">
 <p class="Table_20_Contents">Empty cell in row 2 is skipped, empty cell in row 7 stops the automatic range.</p>
-</td></tr><tr class="TableLine1729490486080"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748095360"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">2</p>
-</td><td style="text-align:left;" class="Table217_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine1729490488528"><td style="text-align:left;" class="Table217_A2">
+</td><td style="text-align:left;" class="Table217_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine2943748098352"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">3</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="P39">1</p>
-</td></tr><tr class="TableLine1729490491520"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748099712"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">4</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="P39">2</p>
-</td></tr><tr class="TableLine1729490495872"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748095904"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">5</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="P39">4</p>
-</td></tr><tr class="TableLine1729490482272"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748098624"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">6</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="P39">8</p>
-</td></tr><tr class="TableLine1729490492608"><td style="text-align:left;" class="Table217_A2">
+</td></tr><tr class="TableLine2943748102976"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">7</p>
-</td><td style="text-align:left;" class="Table217_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine1729490498320"><td style="text-align:left;" class="Table217_A2">
+</td><td style="text-align:left;" class="Table217_A2"><p class="Table_20_Contents"> </p></td></tr><tr class="TableLine2943748098896"><td style="text-align:left;" class="Table217_A2">
 <p class="Table_20_Heading">8</p>
 </td><td style="text-align:left;" class="Table217_A2">
 <p class="P39">32</p>
@@ -1659,35 +1660,35 @@
 <p class="Table">Table <a id="refTable3"/>4 - Possible Other Constant Error Names</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table3"><colgroup><col width="73"/><col width="593"/></colgroup><tr class="TableLine1729490492880"><td style="text-align:left;width:1.676cm; " class="Table3_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table3"><colgroup><col width="73"/><col width="593"/></colgroup><tr class="TableLine2943748108416"><td style="text-align:left;width:1.676cm; " class="Table3_A1">
 <p class="Table_20_Heading">Name</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B1">
 <p class="Table_20_Heading">Comments</p>
-</td></tr><tr class="TableLine1729490490160"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748110320"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#DIV/0!</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Attempt to divide by zero, including division by an empty cell. ERROR.TYPE of 2 <a href="#ERROR_TYPE">6.13.11</a></p>
-</td></tr><tr class="TableLine1729490496144"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748107600"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#NAME?</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Unrecognized/deleted name. ERROR.TYPE of 5.</p>
-</td></tr><tr class="TableLine1729490490704"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748109776"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#N/A</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Not available. ISNA() applied to this value will return TRUE. Lookup functions which failed, and NA(), return this value. ERROR.TYPE of 7.</p>
-</td></tr><tr class="TableLine1729490490976"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748112224"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#NULL!</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Intersection of ranges produced zero cells. ERROR.TYPE of 1.</p>
-</td></tr><tr class="TableLine1729490491792"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748099440"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#NUM!</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Failed to meet domain constraints (e.g., input was too large or too small). ERROR.TYPE of 6.</p>
-</td></tr><tr class="TableLine1729490483360"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748110048"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#REF!</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Reference to invalid cell (e.g., beyond the application’s abilities). ERROR.TYPE of 4.</p>
-</td></tr><tr class="TableLine1729490483632"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
+</td></tr><tr class="TableLine2943748097264"><td style="text-align:left;width:1.676cm; " class="Table3_A2">
 <p class="Table_20_Contents">#VALUE!</p>
 </td><td style="text-align:left;width:13.568cm; " class="Table3_B2">
 <p class="Table_20_Contents">Parameter is wrong type. ERROR.TYPE of 3.</p>
@@ -1746,7 +1747,7 @@
 <ul><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>Number, Logical, or Text, return the value.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>reference to a single cell: obtain the value of the referenced cell, and return that value.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>reference to more than one cell: do an implied intersection, <a href="#ImpliedIntersection">6.3.3</a>, to determine which single cell to use, then handle as a reference to a single cell.<span class="odfLiEnd"/> </p></li></ul><h3 class="Heading_20_3"><a id="a_6_3_3_Implied_intersection"><span>6.3.3 </span></a><a id="__RefHeading__1017984_715980110"/><a id="Implied_intersection"/><a id="ImpliedIntersection"/>Implied intersection</h3>
 
 <p class="Text_20_body">In some cases a reference to a single cell is needed, but a reference to multiple cells is provided. In this case an "implied intersection" is performed. To perform an implied intersection:</p>
-<ul><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>Compute the union of cells contained in the current row and current column of the formula being computed.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>Intersect this with the provided reference to multiple cells<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>If a single cell is referenced; return it; otherwise, return an Error.<span class="odfLiEnd"/> </p></li></ul><h3 class="Heading_20_3"><a id="a_6_3_4_Force_to_array_context__ForceArray_"><span>6.3.4 </span></a><a id="__RefHeading__1017986_715980110"/><a id="ForceArray"/><a id="Force_to_array_context"/><a id="ForceToArrayContext"/>Force to array context (ForceArray)</h3>
+<ul><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>Compute the union of cells contained in the current row and current column of the formula being computed.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>Intersect this with the provided reference to multiple cells<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>If a single cell is referenced; return it; otherwise, return an Error.<span class="odfLiEnd"/> </p></li></ul><h3 class="Heading_20_3"><a id="a_6_3_4_Force_to_array_context__ForceArray_"><span>6.3.4 </span></a><a id="__RefHeading__1017986_715980110"/><a id="Force_to_array_context"/><a id="ForceArray"/><a id="ForceToArrayContext"/>Force to array context (ForceArray)</h3>
 
 <p class="P23">A <span class="T61">ForceArray</span> attribute forces calculation of the argument's expression into non-scalar array mode. This means that no implied intersection is performed, instead where a reference to a single cell is expected and multiple cells are provided, iteration over the multiple cells is performed and results are stored in an array that is passed on.</p>
 
@@ -1974,7 +1975,7 @@
 <p class="Text_20_body"><span class="Note_20_Label">Note 2:</span> Intersection is notated as "!" in OpenFormula format, but as a space character in some user interfaces.</p>
 
 <p class="Text_20_body"><span class="Label">See also</span> Infix Operator Reference Union <a href="#Infix_Operator_Reference_Union">6.4.13</a></p>
-<h3 class="Heading_20_3"><a id="a_6_4_13_Infix_Operator_Reference_Concatenation__&#34;~&#34;___aka_Union_"><span>6.4.13 </span></a><a id="__RefHeading__1018036_715980110"/><a id="Infix_Operator_Reference_Concatenation"/><a id="Infix_Operator_Reference_Union"/><a id="DDE_LINK3"/><a id="DDE_LINK4"/>Infix Operator Reference Concatenation ("~") (aka Union)</h3>
+<h3 class="Heading_20_3"><a id="a_6_4_13_Infix_Operator_Reference_Concatenation__&#34;~&#34;___aka_Union_"><span>6.4.13 </span></a><a id="__RefHeading__1018036_715980110"/><a id="DDE_LINK3"/><a id="Infix_Operator_Reference_Union"/><a id="Infix_Operator_Reference_Concatenation"/><a id="DDE_LINK4"/>Infix Operator Reference Concatenation ("~") (aka Union)</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Concatenate two references</p>
 
@@ -2042,7 +2043,7 @@
 <!--Next 'div' was a 'text:p'.-->
 <div class="Formula">
 <!--Next 'div' added for floating.-->
-<div style="display:inline; position:relative; left:0cm;"><span xmlns="" title="annotation" class="annotation_style_by_filter"><br/>[ANNOTATION:<br/><br/><span title="dc:creator">BY 'Francis Cave'</span><br/><span title="dc:date">ON '2021-12-06T19:55:44.722000000'</span><br/><span>NOTE: '<span xmlns="http://www.w3.org/1999/xhtml" class="T106">https://issues.oasis-open.org/browse/OFFICE-4096</span>'</span>]</span></div>
+<div style="display:inline; position:relative; left:0cm;"><span xmlns="" title="annotation" class="annotation_style_by_filter"><br/>[ANNOTATION:<br/><br/><span title="dc:creator">BY 'Francis Cave'</span><br/><span title="dc:date">ON '2021-12-06T19:55:44.722000000'</span><br/><span>NOTE: '<span xmlns="http://www.w3.org/1999/xhtml" class="T107">https://issues.oasis-open.org/browse/OFFICE-4096</span>'</span>]</span></div>
 <!--Next 'span' is a draw:frame. -->
 <span id="Object78"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
        <mrow>
@@ -3092,7 +3093,7 @@
 
 </p>
 <p class="Text_20_body"><span class="Label">See also</span> IMDIV <a href="#IMDIV">6.8.12</a>, <span class="T35">IMSIN</span> <a href="#IMSIN">6.8.20</a></p>
-<h3 class="Heading_20_3"><a id="a_6_8_11_IMCSCH"><span>6.8.11 </span></a><a id="__RefHeading__1018110_715980110"/><a id="IMCSCH"/><a id="COSH12"/>IMCSCH</h3>
+<h3 class="Heading_20_3"><a id="a_6_8_11_IMCSCH"><span>6.8.11 </span></a><a id="__RefHeading__1018110_715980110"/><a id="COSH12"/><a id="IMCSCH"/>IMCSCH</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Returns the hyperbolic cosecant of a complex number.</p>
 
@@ -3347,7 +3348,7 @@
 
 </p>
 <p class="Text_20_body"><span class="Label">See also</span> <span class="T35">IMCOS</span> <a href="#IMCOS">6.8.7</a>, IMDIV <a href="#IMDIV">6.8.12</a></p>
-<h3 class="Heading_20_3"><a id="a_6_8_23_IMSECH"><span>6.8.23 </span></a><a id="__RefHeading__1018132_715980110"/><a id="IMSECH"/><a id="COSH121"/>IMSECH</h3>
+<h3 class="Heading_20_3"><a id="a_6_8_23_IMSECH"><span>6.8.23 </span></a><a id="__RefHeading__1018132_715980110"/><a id="COSH121"/><a id="IMSECH"/>IMSECH</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Returns the hyperbolic secant of a complex number.</p>
 
@@ -3686,7 +3687,7 @@
 
 <p class="Text_20_body"><span class="Label">Constraints:</span> None</p>
 
-<p class="Text_20_body"><span class="Label">Semantics:</span> Returns the number of days between two dates. If <span class="Parameter_20_Name">StartDate</span> and <span class="Parameter_20_Name">EndDate</span> are Numbers, this is <span class="Parameter_20_Name">EndDate</span> – <span class="Parameter_20_Name">StartDate</span>. If they are both Text, this is DATEVALUE(<span class="Parameter_20_Name">StartDate</span>) – DATEVALUE(<span class="Parameter_20_Name">EndDate</span>).</p>
+<p class="Text_20_body"><span class="Label">Semantics:</span> Returns the number of days between two dates. If <span class="Parameter_20_Name">StartDate</span> and <span class="Parameter_20_Name">EndDate</span> are Numbers, this is <span class="Parameter_20_Name">EndDate</span> – <span class="Parameter_20_Name">StartDate</span>. If they are both Text, this is DATEVALUE(<span class="Parameter_20_Name"><span class="T105">End</span></span><span class="Parameter_20_Name">Date</span>) – DATEVALUE(<span class="Parameter_20_Name"><span class="T105">Start</span></span><span class="Parameter_20_Name">Date</span>).</p>
 
 <p class="Text_20_body"><span class="Label">See also</span> DATEDIF <a href="#DATEDIF">6.10.3</a>, DATEVALUE <a href="#DATEVALUE">6.10.4</a>, DAYS360 <a href="#DAYS360">6.10.7</a>, MONTH <a href="#MONTH">6.10.14</a>, YEAR <a href="#YEAR">6.10.24</a>, Infix Operator “-” <a href="#Infix_Operator_MINUS">6.4.3</a></p>
 <h3 class="Heading_20_3"><a id="a_6_10_7_DAYS360"><span>6.10.7 </span></a><a id="__RefHeading__1018184_715980110"/><a id="DAYS360"/>DAYS360</h3>
@@ -3972,7 +3973,7 @@
 <p class="P56">16</p>
 </td><td style="text-align:left;width:0.965cm; " class="Table5_K1">
 <p class="P56">17</p>
-</td></tr><tr class="TableLine1729492841936"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
+</td></tr><tr class="TableLine2943750285104"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
 <p class="P44">Sunday</p>
 </td><td style="text-align:left;width:0.974cm; " class="Table5_A2">
 <p class="P36">1</p>
@@ -3994,7 +3995,7 @@
 <p class="P36">2</p>
 </td><td style="text-align:left;width:0.965cm; " class="Table5_K2">
 <p class="P36">1</p>
-</td></tr><tr class="TableLine1729492855536"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
+</td></tr><tr class="TableLine2943750285376"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
 <p class="P44">Monday</p>
 </td><td style="text-align:left;width:0.974cm; " class="Table5_A2">
 <p class="P36">2</p>
@@ -4016,7 +4017,7 @@
 <p class="P36">3</p>
 </td><td style="text-align:left;width:0.965cm; " class="Table5_K2">
 <p class="P36">2</p>
-</td></tr><tr class="TableLine1729492845200"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
+</td></tr><tr class="TableLine2943750284560"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
 <p class="P44">Tuesday</p>
 </td><td style="text-align:left;width:0.974cm; " class="Table5_A2">
 <p class="P36">3</p>
@@ -4060,7 +4061,7 @@
 <p class="P36">5</p>
 </td><td style="text-align:left;width:0.965cm; " class="Table5_K2">
 <p class="P36">4</p>
-</td></tr><tr class="TableLine1729492853632"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
+</td></tr><tr class="TableLine2943750280208"><td style="text-align:left;width:2.612cm; " class="Table5_A2">
 <p class="P44">Thursday</p>
 </td><td style="text-align:left;width:0.974cm; " class="Table5_A2">
 <p class="P36">5</p>
@@ -4223,19 +4224,19 @@
 <p class="Table">Table <a id="refTable6"/>7 - DDE</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table440"><colgroup><col/><col/></colgroup><tr class="TableLine1729492850096"><td style="text-align:left;" class="Table440_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table440"><colgroup><col/><col/></colgroup><tr class="TableLine2943750294896"><td style="text-align:left;" class="Table440_A1">
 <p class="Table_20_Contents"><span class="Parameter_20_Name">Mode</span></p>
 </td><td style="text-align:left;" class="Table440_B1">
 <p class="Table_20_Contents">Effect</p>
-</td></tr><tr class="TableLine1729492846016"><td style="text-align:left;" class="Table440_A2">
+</td></tr><tr class="TableLine2943750288368"><td style="text-align:left;" class="Table440_A2">
 <p class="Table_20_Contents">0 or missing</p>
 </td><td style="text-align:left;" class="Table440_B2">
 <p class="Table_20_Contents">Data converted to number using VALUE in the number style's locale of the default table cell style</p>
-</td></tr><tr class="TableLine1729492856624"><td style="text-align:left;" class="Table440_A2">
+</td></tr><tr class="TableLine2943750290000"><td style="text-align:left;" class="Table440_A2">
 <p class="Table_20_Contents">1</p>
 </td><td style="text-align:left;" class="Table440_B2">
 <p class="Table_20_Contents">Data converted to number using VALUE in the English-US (en_US) locale</p>
-</td></tr><tr class="TableLine1729492845472"><td style="text-align:left;" class="Table440_A2">
+</td></tr><tr class="TableLine2943750283200"><td style="text-align:left;" class="Table440_A2">
 <p class="Table_20_Contents">2</p>
 </td><td style="text-align:left;" class="Table440_B2">
 <p class="Table_20_Contents">Data retrieved as text (not converted to number)</p>
@@ -4281,23 +4282,23 @@
 <p class="Table">Table <a id="refTable7"/>8 - ACCRINT</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table7"><colgroup><col width="110"/><col width="266"/></colgroup><tr class="TableLine1729492846832"><td style="text-align:left;width:2.506cm; " class="Table7_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table7"><colgroup><col width="110"/><col width="266"/></colgroup><tr class="TableLine2943750278576"><td style="text-align:left;width:2.506cm; " class="Table7_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:6.096cm; " class="Table7_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492856896"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
+</td></tr><tr class="TableLine2943750279120"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:6.096cm; " class="Table7_B5">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492851728"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
+</td></tr><tr class="TableLine2943750290544"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:6.096cm; " class="Table7_B5">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492847376"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
+</td></tr><tr class="TableLine2943750288640"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:6.096cm; " class="Table7_B5">
 <p class="Table_20_Contents">Quarterly</p>
-</td></tr><tr class="TableLine1729492849280"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
+</td></tr><tr class="TableLine2943750292992"><td style="text-align:right; width:2.506cm; " class="Table7_A2">
 <p class="P36">12</p>
 </td><td style="text-align:left;width:6.096cm; " class="Table7_B5">
 <p class="Table_20_Contents">Monthly</p>
@@ -4436,19 +4437,19 @@
 <p class="Table">Table <a id="refTable8"/>9 - COUPDAYBS</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table8"><colgroup><col width="114"/><col width="249"/></colgroup><tr class="TableLine1729492849824"><td style="text-align:left;width:2.6cm; " class="Table8_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table8"><colgroup><col width="114"/><col width="249"/></colgroup><tr class="TableLine2943750291632"><td style="text-align:left;width:2.6cm; " class="Table8_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.694cm; " class="Table8_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492853360"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
+</td></tr><tr class="TableLine2943750299520"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table8_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492864512"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
+</td></tr><tr class="TableLine2943750304416"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table8_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492866960"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
+</td></tr><tr class="TableLine2943750301696"><td style="text-align:right; width:2.6cm; " class="Table8_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table8_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4473,19 +4474,19 @@
 <p class="Table">Table <a id="refTable9"/>10 - COUPDAYS</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table9"><colgroup><col width="122"/><col width="254"/></colgroup><tr class="TableLine1729492852544"><td style="text-align:left;width:2.801cm; " class="Table9_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table9"><colgroup><col width="122"/><col width="254"/></colgroup><tr class="TableLine2943750293264"><td style="text-align:left;width:2.801cm; " class="Table9_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.801cm; " class="Table9_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492858256"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
+</td></tr><tr class="TableLine2943750298432"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.801cm; " class="Table9_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492871584"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
+</td></tr><tr class="TableLine2943750311488"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.801cm; " class="Table9_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492871856"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
+</td></tr><tr class="TableLine2943750306864"><td style="text-align:right; width:2.801cm; " class="Table9_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.801cm; " class="Table9_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4495,7 +4496,7 @@
 <p class="Text_20_body"><span class="T61"><br/></span><span class="Label">Semantics:</span> Calculates the number of days in the coupon period containing the settlement date.</p>
 <ul><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span><span class="Parameter_20_Name">Settlement</span>: The settlement date.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span><span class="Parameter_20_Name">Maturity</span>: The maturity date.<span class="odfLiEnd"/> </p></li><li><p class="Bullet_20_List" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span><span class="Parameter_20_Name">Frequency</span>: The number of coupon payments per year.<span class="odfLiEnd"/> </p></li><li><p class="P72" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span><span class="Parameter_20_Name">B</span>: Indicates the day-count convention to use in the calculation. <a href="#Basis">4.11.7</a><span class="odfLiEnd"/> </p></li></ul>
 <p class="P19"><span class="Label">See also </span>COUPDAYBS <a href="#COUPDAYBS">6.12.5</a> , COUPDAYSNC <a href="#COUPDAYSNC">6.12.7</a> , COUPNCD <a href="#COUPNCD">6.12.7</a> , <span class="T30">COUPNUM</span> <a href="#COUPNUM">6.12.9</a> , COUPPCD <a href="#COUPPCD">6.12.10</a></p>
-<h3 class="Heading_20_3"><a id="a_6_12_7_COUPDAYSNC"><span>6.12.7 </span></a><a id="__RefHeading__1018244_715980110"/><a id="COUPNCD"/><a id="COUPDAYSNC"/>COUPDAYSNC</h3>
+<h3 class="Heading_20_3"><a id="a_6_12_7_COUPDAYSNC"><span>6.12.7 </span></a><a id="__RefHeading__1018244_715980110"/><a id="COUPDAYSNC"/><a id="COUPNCD"/>COUPDAYSNC</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Calculates the number of days between a settlement date and the next coupon date.</p>
 
@@ -4510,19 +4511,19 @@
 <p class="Table">Table <a id="refTable10"/>11 - COUPDAYSNC</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table10"><colgroup><col width="135"/><col width="250"/></colgroup><tr class="TableLine1729492865056"><td style="text-align:left;width:3.094cm; " class="Table10_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table10"><colgroup><col width="135"/><col width="250"/></colgroup><tr class="TableLine2943750300064"><td style="text-align:left;width:3.094cm; " class="Table10_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.71cm; " class="Table10_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492865600"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
+</td></tr><tr class="TableLine2943750301968"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.71cm; " class="Table10_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492858528"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
+</td></tr><tr class="TableLine2943750295440"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.71cm; " class="Table10_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492875120"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
+</td></tr><tr class="TableLine2943750309040"><td style="text-align:right; width:3.094cm; " class="Table10_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.71cm; " class="Table10_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4547,19 +4548,19 @@
 <p class="Table">Table <a id="refTable11"/>12 - COUPNCD</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table11"><colgroup><col width="149"/><col width="245"/></colgroup><tr class="TableLine1729492872128"><td style="text-align:left;width:3.404cm; " class="Table11_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table11"><colgroup><col width="149"/><col width="245"/></colgroup><tr class="TableLine2943750300336"><td style="text-align:left;width:3.404cm; " class="Table11_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.6cm; " class="Table11_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492872672"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
+</td></tr><tr class="TableLine2943750297072"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table11_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492864240"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
+</td></tr><tr class="TableLine2943750305232"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table11_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492867232"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
+</td></tr><tr class="TableLine2943750310400"><td style="text-align:right; width:3.404cm; " class="Table11_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table11_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4584,19 +4585,19 @@
 <p class="Table">Table <a id="refTable12"/>13 - COUPNUM</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table12"><colgroup><col width="122"/><col width="245"/></colgroup><tr class="TableLine1729492870224"><td style="text-align:left;width:2.801cm; " class="Table12_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table12"><colgroup><col width="122"/><col width="245"/></colgroup><tr class="TableLine2943750302784"><td style="text-align:left;width:2.801cm; " class="Table12_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.6cm; " class="Table12_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492868048"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
+</td></tr><tr class="TableLine2943750304960"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table12_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492868320"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
+</td></tr><tr class="TableLine2943750298160"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table12_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492861792"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
+</td></tr><tr class="TableLine2943750306592"><td style="text-align:right; width:2.801cm; " class="Table12_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.6cm; " class="Table12_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4623,19 +4624,19 @@
 <p class="Table">Table <a id="refTable13"/>14 - COUPPCD</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table13"><colgroup><col width="118"/><col width="249"/></colgroup><tr class="TableLine1729492874032"><td style="text-align:left;width:2.708cm; " class="Table13_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table13"><colgroup><col width="118"/><col width="249"/></colgroup><tr class="TableLine2943750311216"><td style="text-align:left;width:2.708cm; " class="Table13_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Frequency</span></p>
 </td><td style="text-align:left;width:5.694cm; " class="Table13_B1">
 <p class="P53">Frequency of coupon payments</p>
-</td></tr><tr class="TableLine1729492873488"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
+</td></tr><tr class="TableLine2943750311760"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table13_B4">
 <p class="Table_20_Contents">Annual</p>
-</td></tr><tr class="TableLine1729492857984"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
+</td></tr><tr class="TableLine2943750312304"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
 <p class="P36">2</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table13_B4">
 <p class="Table_20_Contents">Semiannual</p>
-</td></tr><tr class="TableLine1729492862880"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
+</td></tr><tr class="TableLine2943750298704"><td style="text-align:right; width:2.708cm; " class="Table13_A2">
 <p class="P36">4</p>
 </td><td style="text-align:left;width:5.694cm; " class="Table13_B4">
 <p class="Table_20_Contents">Quarterly</p>
@@ -4662,15 +4663,15 @@
 <p class="Table">Table <a id="refTable14"/>15 - CUMIPMT</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table14"><colgroup><col width="87"/><col width="157"/></colgroup><tr class="TableLine1729492861520"><td style="text-align:left;width:1.997cm; " class="Table14_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table14"><colgroup><col width="87"/><col width="157"/></colgroup><tr class="TableLine2943750308224"><td style="text-align:left;width:1.997cm; " class="Table14_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Type</span></p>
 </td><td style="text-align:left;width:3.604cm; " class="Table14_B1">
 <p class="P53">Maturity date</p>
-</td></tr><tr class="TableLine1729492876752"><td style="text-align:left;width:1.997cm; " class="Table14_A2">
+</td></tr><tr class="TableLine2943750312848"><td style="text-align:left;width:1.997cm; " class="Table14_A2">
 <p class="P36">0</p>
 </td><td style="text-align:left;width:3.604cm; " class="Table14_B3">
 <p class="Table_20_Contents">due at the end</p>
-</td></tr><tr class="TableLine1729492880560"><td style="text-align:left;width:1.997cm; " class="Table14_A2">
+</td></tr><tr class="TableLine2943750314208"><td style="text-align:left;width:1.997cm; " class="Table14_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:3.604cm; " class="Table14_B3">
 <p class="Table_20_Contents">due at the beginning</p>
@@ -4735,15 +4736,15 @@
 <p class="Table">Table <a id="refTable15"/>16 - CUMPRINC</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table366"><colgroup><col width="94"/><col width="156"/></colgroup><tr class="TableLine1729492880288"><td style="text-align:left;width:2.148cm; " class="Table366_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table366"><colgroup><col width="94"/><col width="156"/></colgroup><tr class="TableLine2943750315568"><td style="text-align:left;width:2.148cm; " class="Table366_A1">
 <p class="P54"><span class="Parameter_20_Name">Type</span></p>
 </td><td style="text-align:left;width:3.561cm; " class="Table366_B1">
 <p class="P53">Maturity date</p>
-</td></tr><tr class="TableLine1729492882192"><td style="text-align:left;width:2.148cm; " class="Table366_A2">
+</td></tr><tr class="TableLine2943750320736"><td style="text-align:left;width:2.148cm; " class="Table366_A2">
 <p class="P36">0</p>
 </td><td style="text-align:left;width:3.561cm; " class="Table366_B3">
 <p class="P35">due at the end</p>
-</td></tr><tr class="TableLine1729492876480"><td style="text-align:left;width:2.148cm; " class="Table366_A2">
+</td></tr><tr class="TableLine2943750321280"><td style="text-align:left;width:2.148cm; " class="Table366_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:3.561cm; " class="Table366_B3">
 <p class="P35">due at the beginning</p>
@@ -4751,15 +4752,15 @@
 
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table15"><colgroup><col width="92"/><col width="157"/></colgroup><tr class="TableLine1729492875936"><td style="text-align:left;width:2.104cm; " class="Table15_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table15"><colgroup><col width="92"/><col width="157"/></colgroup><tr class="TableLine2943750315840"><td style="text-align:left;width:2.104cm; " class="Table15_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Type</span></p>
 </td><td style="text-align:left;width:3.59cm; " class="Table15_B1">
 <p class="P53">Maturity date</p>
-</td></tr><tr class="TableLine1729492883008"><td style="text-align:left;width:2.104cm; " class="Table15_A2">
+</td></tr><tr class="TableLine2943750313392"><td style="text-align:left;width:2.104cm; " class="Table15_A2">
 <p class="P36">0</p>
 </td><td style="text-align:left;width:3.59cm; " class="Table15_B3">
 <p class="Table_20_Contents">due at the end</p>
-</td></tr><tr class="TableLine1729492883280"><td style="text-align:left;width:2.104cm; " class="Table15_A2">
+</td></tr><tr class="TableLine2943750318832"><td style="text-align:left;width:2.104cm; " class="Table15_A2">
 <p class="P36">1</p>
 </td><td style="text-align:left;width:3.59cm; " class="Table15_B3">
 <p class="Table_20_Contents">due at the beginning</p>
@@ -7331,39 +7332,39 @@
 <p class="Table">Table <a id="refTable16"/>17 - CELL</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table16"><colgroup><col/><col/></colgroup><tr class="TableLine1729480672800"><td style="text-align:left;" class="Table16_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table16"><colgroup><col/><col/></colgroup><tr class="TableLine2943748107872"><td style="text-align:left;" class="Table16_A1">
 <p class="P55"><span class="Parameter_20_Name">Info_Type</span></p>
 </td><td style="text-align:left;" class="Table16_B1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729480671984"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943428100032"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">COL</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the column number of the cell.</p>
-</td></tr><tr class="TableLine1729490496416"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776651152"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">ROW</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the row number of the cell.</p>
-</td></tr><tr class="TableLine1729169848944"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776655776"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">SHEET</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the sheet number of the cell.</p>
-</td></tr><tr class="TableLine1729519368912"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776656320"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">ADDRESS</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the absolute address of the cell.  The sheet name is included if given in the reference and does not reference the same sheet as the sheet the expression is evaluated upon. For an external reference a <span class="SyntaxRule">Source</span> as specified in the syntax rules for <span class="SyntaxRule">References</span> <a href="#References">5.8</a> is included.</p>
-</td></tr><tr class="TableLine1729519374352"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776653056"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">FILENAME</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P28">Returns the file name of the file that contains the cell as an IRI. If the file is newly created and has not yet been saved, the file name is empty text “”.</p>
-</td></tr><tr class="TableLine1729519375440"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776646800"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">CONTENTS</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the contents of the cell, without formatting properties.</p>
-</td></tr><tr class="TableLine1729519365920"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776647616"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">COLOR</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns 1 if color formatting is set for negative value in this cell; otherwise returns 0</p>
-</td></tr><tr class="TableLine1729519366736"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776643536"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">FORMAT</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="Table_20_Contents">Returns a <span class="T53">text</span> string <span class="T53">which</span> <span class="T53">shows</span> the number format <span class="T53">of the cell</span>.</p>
@@ -7403,7 +7404,7 @@
 <p class="Table_20_Contents">- (Minus) at the end = negative numbers <span class="T53">in the cell have </span>color <span class="T53">setting</span></p>
 
 <p class="Table_20_Contents">() (brackets) at the end = <span class="T53">this cell has the format settings with parentheses for positive or all values</span></p>
-</td></tr><tr class="TableLine1729519363472"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776651696"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">TYPE</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the text value corresponding to the type of content in the cell:</p>
@@ -7413,13 +7414,13 @@
 <p class="P37">“l” : label or text cell content</p>
 
 <p class="P37">“v” : number value cell content</p>
-</td></tr><tr class="TableLine1729519378432"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776648432"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">WIDTH</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the column width of the cell.</p>
 
 <p class="P37">The unit is the width of one zero (0) character in default font size.</p>
-</td></tr><tr class="TableLine1729519368368"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776647888"><td style="text-align:left;" class="Table16_A2">
 <p class="P37">PROTECT</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns the protection status of the cell:</p>
@@ -7427,11 +7428,11 @@
 <p class="P37">1 = cell is protected</p>
 
 <p class="P37">0 = cell is unprotected</p>
-</td></tr><tr class="TableLine1729519363744"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776647344"><td style="text-align:left;" class="Table16_A2">
 <p class="Text_20_body">PARENTHESES</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="P37">Returns 1 if the cell has the format settings with parentheses for positive or all values, otherwise returns 0</p>
-</td></tr><tr class="TableLine1729519375712"><td style="text-align:left;" class="Table16_A2">
+</td></tr><tr class="TableLine2943776646256"><td style="text-align:left;" class="Table16_A2">
 <p class="Text_20_body">PREFIX</p>
 </td><td style="text-align:left;" class="Table16_B2">
 <p class="Table_20_Contents">Returns <span class="T53">single character text strings corresponding to </span>the alignment of the cell.</p>
@@ -7529,7 +7530,7 @@
 <p class="Text_20_body">The values returned may vary depending upon the HOST-USE-REGULAR-EXPRESSIONS or HOST-USE-WILDCARDS or HOST-SEARCH-CRITERIA-MUST-APPLY-TO-WHOLE-CELL properties. <a href="#HostDefinedBehaviors">3.4</a></p>
 
 <p class="Text_20_body"><span class="Label">See also</span> COUNT <a href="#COUNT">6.13.6</a>, COUNTA <a href="#COUNTA">6.13.7</a>, COUNTBLANK <a href="#COUNTBLANK">6.13.8</a>, COUNTIFS <a href="#COUNTIFS">6.13.10</a>, SUMIF <a href="#SUMIF">6.16.62</a>, Infix Operator "=" <a href="#Infix_Operator_EQ">6.4.7</a>, Infix Operator "&lt;&gt;" <a href="#Infix_Operator_NE">6.4.8</a>, Infix Operator Ordered Comparison ("&lt;", "&lt;=", "&gt;", "&gt;=") <a href="#Infix_Operator_Ordered_Comparison">6.4.9</a></p>
-<h3 class="Heading_20_3"><a id="a_6_13_10_COUNTIFS"><span>6.13.10 </span></a><a id="__RefHeading__1018362_715980110"/><a id="COUNTIF1"/><a id="COUNTIFS"/>COUNTIFS</h3>
+<h3 class="Heading_20_3"><a id="a_6_13_10_COUNTIFS"><span>6.13.10 </span></a><a id="__RefHeading__1018362_715980110"/><a id="COUNTIFS"/><a id="COUNTIF1"/>COUNTIFS</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Count the number of cells that meet multiple criteria in multiple ranges.</p>
 
@@ -7587,67 +7588,67 @@
 <p class="Table">Table <a id="refTable17"/>18 - INFO</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table452"><colgroup><col/><col/><col/></colgroup><tr class="TableLine1729519368640"><td style="text-align:left;" class="Table452_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table452"><colgroup><col/><col/><col/></colgroup><tr class="TableLine2943776653328"><td style="text-align:left;" class="Table452_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Category</span></p>
 </td><td style="text-align:left;" class="Table452_A1">
 <p class="Table_20_Heading">Meaning</p>
 </td><td style="text-align:left;" class="Table452_C1">
 <p class="Table_20_Heading">Type</p>
-</td></tr><tr class="TableLine1729519376256"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776654144"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"directory"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Current directory. This <span class="ISO_20_Keyword">shall</span> be formatted so file names can be appended to the result (e.g., on POSIX and Windows systems it <span class="ISO_20_Keyword">shall</span> end with the separator “/” or “\” respectively).</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519366192"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776649248"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"memavail"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Amount of memory “available”, in bytes. On many modern (virtual memory) systems this value is not really available, but a system should return 0 if it is known that there is no more memory available, and greater than 0 otherwise</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Number</p>
-</td></tr><tr class="TableLine1729519377344"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776652784"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"memused"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Amount of memory used, in bytes, by the data</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Number</p>
-</td></tr><tr class="TableLine1729519378704"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776650880"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"numfile"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Number of active worksheets in files</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Number</p>
-</td></tr><tr class="TableLine1729519363200"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776652512"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"osversion"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Operating system version</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519364832"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776652240"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"origin"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">The top leftmost visible cell's absolute reference prefixed with “$A:”. In locales where cells are ordered right-to-left, the top rightmost visible cell is used instead.</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519375984"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776650064"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"recalc"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Current recalculation mode. If the locale is English, this is either "Automatic" or "Manual" (the exact text depends on the locale)</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519375168"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776650608"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"release"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">The version of the implementation.</p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519366464"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776644624"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"system"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">The type of the operating system.<br/></p>
 </td><td style="text-align:left;" class="Table452_C2">
 <p class="Table_20_Contents">Text</p>
-</td></tr><tr class="TableLine1729519369456"><td style="text-align:left;" class="Table452_A2">
+</td></tr><tr class="TableLine2943776648160"><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">"totmem"</p>
 </td><td style="text-align:left;" class="Table452_A2">
 <p class="Table_20_Contents">Total memory available in bytes, including the memory already used.</p>
@@ -7836,7 +7837,7 @@
 <p class="Text_20_body"><span class="Label">Semantics:</span> If <span class="Parameter_20_Name">X</span> is a Reference, it is first dereferenced to a scalar. Then its type is examined. If it is of type Number, it is returned. If it is of type Logical, 1 is returned if TRUE else 0 is returned. It is implementation-defined what happens if it is provided a Text value.</p>
 
 <p class="Text_20_body"><span class="Label">See also</span> T <a href="#T">6.20.22</a>, VALUE <a href="#VALUE">6.13.34</a></p>
-<h3 class="Heading_20_3"><a id="a_6_13_27_NA"><span>6.13.27 </span></a><a id="__RefHeading__1018396_715980110"/><a id="NA"/><a id="NA1"/>NA</h3>
+<h3 class="Heading_20_3"><a id="a_6_13_27_NA"><span>6.13.27 </span></a><a id="__RefHeading__1018396_715980110"/><a id="NA1"/><a id="NA"/>NA</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Return the constant Error value #N/A.</p>
 
@@ -7894,7 +7895,7 @@
 <p class="Text_20_body"><span class="Label">Semantics:</span> The result is not dependent on the cell content in the range.</p>
 
 <p class="Text_20_body"><span class="Label">See also</span> COLUMNS <a href="#COLUMNS">6.13.5</a></p>
-<h3 class="Heading_20_3"><a id="a_6_13_31_SHEET"><span>6.13.31 </span></a><a id="__RefHeading__1018404_715980110"/><a id="SHEET"/><a id="Section10"/>SHEET</h3>
+<h3 class="Heading_20_3"><a id="a_6_13_31_SHEET"><span>6.13.31 </span></a><a id="__RefHeading__1018404_715980110"/><a id="Section10"/><a id="SHEET"/>SHEET</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Returns the sheet number of the reference or the string representing a sheet name.</p>
 
@@ -7951,27 +7952,27 @@
 <p class="Table">Table <a id="refTable18"/>19 - TYPE</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table364"><colgroup><col width="187"/><col width="337"/></colgroup><tr class="TableLine1729519367552"><td style="text-align:left;width:4.284cm; " class="Table364_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table364"><colgroup><col width="187"/><col width="337"/></colgroup><tr class="TableLine2943776644080"><td style="text-align:left;width:4.284cm; " class="Table364_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Value</span>'s Type</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B1">
 <p class="Table_20_Heading">TYPE Return</p>
-</td></tr><tr class="TableLine1729519377072"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
+</td></tr><tr class="TableLine2943776650336"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
 <p class="Table_20_Contents">Number</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B2">
 <p class="Table_20_Contents">1</p>
-</td></tr><tr class="TableLine1729519365104"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
+</td></tr><tr class="TableLine2943776658224"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
 <p class="Table_20_Contents">Text</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519368096"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
+</td></tr><tr class="TableLine2943776654960"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
 <p class="Table_20_Contents">Logical</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B2">
 <p class="Table_20_Contents">4</p>
-</td></tr><tr class="TableLine1729519370272"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
+</td></tr><tr class="TableLine2943776655232"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
 <p class="Table_20_Contents">Error</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B2">
 <p class="Table_20_Contents">16</p>
-</td></tr><tr class="TableLine1729519378976"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
+</td></tr><tr class="TableLine2943776655504"><td style="text-align:left;width:4.284cm; " class="Table364_A2">
 <p class="Table_20_Contents">Array</p>
 </td><td style="text-align:left;width:7.717cm; " class="Table364_B2">
 <p class="Table_20_Contents">64</p>
@@ -8020,31 +8021,31 @@
 <p class="Table">Table <a id="refTable19"/>20 - VALUE</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table83"><colgroup><col width="103"/><col width="96"/><col width="467"/></colgroup><tr class="TableLine1729519377616"><td style="text-align:left;width:2.36cm; " class="Table83_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table83"><colgroup><col width="103"/><col width="96"/><col width="467"/></colgroup><tr class="TableLine2943776641088"><td style="text-align:left;width:2.36cm; " class="Table83_A1">
 <p class="Table_20_Heading">Format</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A1">
 <p class="Table_20_Heading">Example</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729519370000"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776657136"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">MM/DD/YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">5/21/2006</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C2">
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Long year format with slashes.</p>
-</td></tr><tr class="TableLine1729519372176"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776642448"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">MM/DD/YY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">5/21/06</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C2">
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Short year format with slashes</p>
-</td></tr><tr class="TableLine1729519372448"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776642720"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">MM-DD-YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">5-21-2006</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C2">
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Long year format with dashes (short year <span class="ISO_20_Keyword"><span class="T38">may</span></span> be supported, but it may also be used for years less than 100 .</p>
-</td></tr><tr class="TableLine1729519372720"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776642992"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">mmm DD, YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">Oct 29, 2006</p>
@@ -8052,19 +8053,19 @@
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Short alphabetic month day, year.</p>
 
 <p class="Table_20_Contents"><span class="Note_20_Label">Note:</span> mmm depends on the locale's language.</p>
-</td></tr><tr class="TableLine1729519372992"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776643264"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">DD mmm YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">29 Oct 2006</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C2">
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Short alphabetic day month year</p>
-</td></tr><tr class="TableLine1729519373536"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776643808"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">mmmmm DD, YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">October 29, 2006</p>
 </td><td style="text-align:left;width:10.689cm; " class="Table83_C2">
 <p class="Table_20_Contents">LOCALE-DEPENDENT; Long alphabetic month day, year</p>
-</td></tr><tr class="TableLine1729519373808"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
+</td></tr><tr class="TableLine2943776644352"><td style="text-align:left;width:2.36cm; " class="Table83_A2">
 <p class="Table_20_Contents">DD mmmmm YYYY</p>
 </td><td style="text-align:left;width:2.194cm; " class="Table83_A2">
 <p class="Table_20_Contents">29 October 2006</p>
@@ -9837,67 +9838,67 @@
 <p class="Table">Table <a id="refTable24"/>25 - Decimal Prefixes for use in CONVERT</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table19"><colgroup><col width="149"/><col width="131"/><col width="122"/></colgroup><tr class="TableLine1729519436368"><td style="text-align:left;width:3.41cm; " class="Table19_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table19"><colgroup><col width="149"/><col width="131"/><col width="122"/></colgroup><tr class="TableLine2943776716432"><td style="text-align:left;width:3.41cm; " class="Table19_A1">
 <p class="Table_20_Heading">Unit Prefix</p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A1">
 <p class="Table_20_Heading">Description</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C1">
 <p class="Table_20_Heading">Prefix Value</p>
-</td></tr><tr class="TableLine1729519442896"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776713440"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"Y"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">yotta</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+24</p>
-</td></tr><tr class="TableLine1729519438000"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776724048"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"Z"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">zetta</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+21</p>
-</td></tr><tr class="TableLine1729519434192"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776712896"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"E"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">exa</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+18</p>
-</td></tr><tr class="TableLine1729519442352"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776714256"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"P"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">peta</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+15</p>
-</td></tr><tr class="TableLine1729519442624"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776714800"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"T"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">tera</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+12</p>
-</td></tr><tr class="TableLine1729519443984"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776726768"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"G"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">giga</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+09</p>
-</td></tr><tr class="TableLine1729519437184"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776716976"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"M"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">mega</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+06</p>
-</td></tr><tr class="TableLine1729519438816"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776715616"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"k"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">kilo</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+03</p>
-</td></tr><tr class="TableLine1729519441808"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776715888"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"h"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">hecto</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+02</p>
-</td></tr><tr class="TableLine1729519435280"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776716160"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"da"</span> or <span class="code">"e"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">deka (</p>
@@ -9905,25 +9906,25 @@
 <p class="Table_20_Contents"><span class="Note_20_Label">Note:</span> “e” is not a standard SI prefix</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E+01</p>
-</td></tr><tr class="TableLine1729519433104"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776712080"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"d"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">deci</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-01</p>
-</td></tr><tr class="TableLine1729519437728"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776723776"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"c"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">centi</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-02</p>
-</td></tr><tr class="TableLine1729519445344"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776716704"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"m"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">milli</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-03</p>
-</td></tr><tr class="TableLine1729519446976"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776715072"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"u"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">micro</p>
@@ -9931,37 +9932,37 @@
 <p class="Table_20_Contents">N<span class="Note_20_Label">ote:</span> this is “u”, not the standard SI <span class="T12">µ</span></p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-06</p>
-</td></tr><tr class="TableLine1729519448064"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776723504"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"n"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">nano</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-09</p>
-</td></tr><tr class="TableLine1729519435824"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776727040"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"p"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">pico</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-12</p>
-</td></tr><tr class="TableLine1729519434464"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776724864"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"f"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">femto</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-15</p>
-</td></tr><tr class="TableLine1729519445616"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776717248"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"a"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">atto</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-18</p>
-</td></tr><tr class="TableLine1729519434736"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776725408"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"z"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">zepto</p>
 </td><td style="text-align:left;width:2.782cm; " class="Table19_C2">
 <p class="P39">1E-21</p>
-</td></tr><tr class="TableLine1729519440176"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
+</td></tr><tr class="TableLine2943776725680"><td style="text-align:left;width:3.41cm; " class="Table19_A2">
 <p class="Table_20_Contents"><span class="code">"y"</span></p>
 </td><td style="text-align:left;width:2.988cm; " class="Table19_A2">
 <p class="Table_20_Contents">yocto</p>
@@ -9977,7 +9978,7 @@
 <p class="Table">Table <a id="refTable25"/>26 - Binary prefixes for use in CONVERT</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table454"><colgroup><col width="95"/><col width="106"/><col width="337"/><col width="112"/></colgroup><tr class="TableLine1729519447248"><td style="text-align:left;width:2.17cm; " class="Table454_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table454"><colgroup><col width="95"/><col width="106"/><col width="337"/><col width="112"/></colgroup><tr class="TableLine2943776718880"><td style="text-align:left;width:2.17cm; " class="Table454_A1">
 <p class="Table_20_Heading">Binary Unit Prefix</p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A1">
 <p class="Table_20_Heading">Description</p>
@@ -9985,7 +9986,7 @@
 <p class="Table_20_Heading">Prefix Value</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D1">
 <p class="Table_20_Heading">Derived from</p>
-</td></tr><tr class="TableLine1729519446160"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776727856"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Yi"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">yobi</p>
@@ -9993,7 +9994,7 @@
 <p class="Table_20_Contents">2^80 = 1 208 925 819 614 629 174 706 176</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">yotta</p>
-</td></tr><tr class="TableLine1729519443440"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776713168"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Zi"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">zebi</p>
@@ -10001,7 +10002,7 @@
 <p class="Table_20_Contents">2^70 = 1 180 591 620 717 411 303 424</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">zetta</p>
-</td></tr><tr class="TableLine1729519433376"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776710992"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Ei"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">exbi</p>
@@ -10009,7 +10010,7 @@
 <p class="Table_20_Contents">2^60 = 1 152 921 504 606 846 976</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">exa</p>
-</td></tr><tr class="TableLine1729519439632"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776718608"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Pi"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">pebi</p>
@@ -10017,7 +10018,7 @@
 <p class="Table_20_Contents">2^50 = 1 125 899 906 842 624</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">peta</p>
-</td></tr><tr class="TableLine1729519444256"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776720240"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Ti"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">tebi</p>
@@ -10025,7 +10026,7 @@
 <p class="Table_20_Contents">2^40 = 1 099 511 627 776</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">tera</p>
-</td></tr><tr class="TableLine1729519443712"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776719152"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Gi"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">gibi</p>
@@ -10033,7 +10034,7 @@
 <p class="Table_20_Contents">2^30 = 1 073 741 824</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">giga</p>
-</td></tr><tr class="TableLine1729519449152"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776719696"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Mi"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">mebi</p>
@@ -10041,7 +10042,7 @@
 <p class="Table_20_Contents">2^20 = 1 048 576</p>
 </td><td style="text-align:left;width:2.566cm; " class="Table454_D2">
 <p class="Table_20_Contents">mega</p>
-</td></tr><tr class="TableLine1729519441536"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
+</td></tr><tr class="TableLine2943776719968"><td style="text-align:left;width:2.17cm; " class="Table454_A2">
 <p class="Table_20_Contents"><span class="code">"Ki"</span></p>
 </td><td style="text-align:left;width:2.434cm; " class="Table454_A2">
 <p class="Table_20_Contents">kibi</p>
@@ -10288,7 +10289,7 @@
         </mrow>
       </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div>
 <p class="P46"><span class="Label">See also</span> ACOSH <a href="#ACOSH">6.16.4</a>, COSH <a href="#COSH">6.16.20</a>, SINH <a href="#SINH">6.16.56</a>, TANH <a href="#TANH">6.16.70</a></p>
-<h3 class="Heading_20_3"><a id="a_6_16_23_CSC"><span>6.16.23 </span></a><a id="__RefHeading__1018506_715980110"/><a id="CSC"/><a id="COS1"/>CSC</h3>
+<h3 class="Heading_20_3"><a id="a_6_16_23_CSC"><span>6.16.23 </span></a><a id="__RefHeading__1018506_715980110"/><a id="COS1"/><a id="CSC"/>CSC</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Return the cosecant of an angle specified in radians.</p>
 
@@ -10509,7 +10510,7 @@
 <p class="Table">Table <a id="refTable26"/>27 - EUROCONVERT</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table300"><colgroup><col width="66"/><col width="71"/><col width="104"/><col width="148"/><col width="85"/></colgroup><tr class="TableLine1729519463296"><td style="text-align:left;width:1.512cm; " class="Table300_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table300"><colgroup><col width="66"/><col width="71"/><col width="104"/><col width="148"/><col width="85"/></colgroup><tr class="TableLine2943776736832"><td style="text-align:left;width:1.512cm; " class="Table300_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">From</span></p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">To</span></p>
@@ -10519,7 +10520,7 @@
 <p class="Table_20_Heading">Currency</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E1">
 <p class="Table_20_Heading">Decimals</p>
-</td></tr><tr class="TableLine1729519464928"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776742000"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"ATS"</p>
@@ -10529,7 +10530,7 @@
 <p class="Table_20_Contents">Austrian Schilling</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519461392"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776728944"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"BEF"</p>
@@ -10539,7 +10540,7 @@
 <p class="Table_20_Contents">Belgian Franc</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">0</p>
-</td></tr><tr class="TableLine1729519455680"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776742544"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"DEM"</p>
@@ -10549,7 +10550,7 @@
 <p class="Table_20_Contents">German Mark</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519465200"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776733024"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"ESP"</p>
@@ -10559,7 +10560,7 @@
 <p class="Table_20_Contents">Spanish Peseta</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">0</p>
-</td></tr><tr class="TableLine1729519454864"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776734384"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"FIM"</p>
@@ -10569,7 +10570,7 @@
 <p class="Table_20_Contents">Finnish Markka</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519459760"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776743088"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"FRF"</p>
@@ -10579,7 +10580,7 @@
 <p class="Table_20_Contents">French Franc</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519465744"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776734656"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"IEP"</p>
@@ -10589,7 +10590,7 @@
 <p class="Table_20_Contents">Irish Pound</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519457856"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776730576"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"ITL"</p>
@@ -10599,7 +10600,7 @@
 <p class="Table_20_Contents">Italian Lira</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">0</p>
-</td></tr><tr class="TableLine1729519462752"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776742816"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"LUF"</p>
@@ -10609,7 +10610,7 @@
 <p class="Table_20_Contents">Luxembourg Franc</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">0</p>
-</td></tr><tr class="TableLine1729519452960"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776730032"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"NLG"</p>
@@ -10619,7 +10620,7 @@
 <p class="Table_20_Contents">Dutch Guilder</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519461936"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776738464"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"PTE"</p>
@@ -10629,7 +10630,7 @@
 <p class="Table_20_Contents">Portuguese Escudo</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519454592"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776732752"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"GRD"</p>
@@ -10639,7 +10640,7 @@
 <p class="Table_20_Contents">Greek Drachma</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519466016"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776733296"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"SIT"</p>
@@ -10649,7 +10650,7 @@
 <p class="Table_20_Contents">Slovenian Tolar</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519455952"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776732208"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">“EUR”</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">“MTL”</p>
@@ -10659,7 +10660,7 @@
 <p class="Table_20_Contents">Maltese Lira</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519457584"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776737648"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">“EUR”</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">“CYP”</p>
@@ -10669,7 +10670,7 @@
 <p class="Table_20_Contents">Cypriot Pound</p>
 </td><td style="text-align:left;width:1.954cm; " class="Table300_E2">
 <p class="Table_20_Contents">2</p>
-</td></tr><tr class="TableLine1729519467376"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
+</td></tr><tr class="TableLine2943776740912"><td style="text-align:left;width:1.512cm; " class="Table300_A2">
 <p class="Table_20_Contents">"EUR"</p>
 </td><td style="text-align:left;width:1.617cm; " class="Table300_A2">
 <p class="Table_20_Contents">"SKK"</p>
@@ -11517,7 +11518,7 @@
         </mrow>
       </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div>
 <p class="Text_20_body"><span class="Label">See also</span> ASINH <a href="#ASINH">6.16.8</a>, COSH <a href="#COSH">6.16.20</a>, TANH <a href="#TANH">6.16.70</a></p>
-<h3 class="Heading_20_3"><a id="a_6_16_57_SECH"><span>6.16.57 </span></a><a id="__RefHeading__1018574_715980110"/><a id="COSH11"/><a id="SECH"/>SECH</h3>
+<h3 class="Heading_20_3"><a id="a_6_16_57_SECH"><span>6.16.57 </span></a><a id="__RefHeading__1018574_715980110"/><a id="SECH"/><a id="COSH11"/>SECH</h3>
 
 <p class="Text_20_body"><span class="Label">Summary:</span> Return the hyperbolic secant of the given angle specified in radians.</p>
 
@@ -11575,73 +11576,73 @@
 <p class="Table">Table <a id="refTable27"/>28 - SUBTOTAL</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="SUBTOTAL"><colgroup><col/><col/><col/></colgroup><tr class="TableLine1729519451600"><td style="text-align:left;" class="SUBTOTAL_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="SUBTOTAL"><colgroup><col/><col/><col/></colgroup><tr class="TableLine2943776741728"><td style="text-align:left;" class="SUBTOTAL_A1">
 <p class="Table_20_Contents"><span class="Parameter_20_Name">Function</span></p>
 </td><td style="text-align:left;" class="SUBTOTAL_A1">
 <p class="Table_20_Contents">Exclude hidden by filter</p>
 </td><td style="text-align:left;" class="SUBTOTAL_C1">
 <p class="Table_20_Contents">Exclude hidden by filter or collapsed</p>
-</td></tr><tr class="TableLine1729519454048"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776744720"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">AVERAGE</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">1</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">101</p>
-</td></tr><tr class="TableLine1729519473904"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776746352"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">COUNT</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">2</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">102</p>
-</td></tr><tr class="TableLine1729519472000"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776759680"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">COUNTA</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">3</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">103</p>
-</td></tr><tr class="TableLine1729519469008"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776753424"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">MAX</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">4</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">104</p>
-</td></tr><tr class="TableLine1729519484784"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776752608"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">MIN</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">5</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">105</p>
-</td></tr><tr class="TableLine1729519480432"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776755328"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">PRODUCT</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">6</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">106</p>
-</td></tr><tr class="TableLine1729519483696"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776746624"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">STDEV</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">7</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">107</p>
-</td></tr><tr class="TableLine1729519475264"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776762400"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">STDEVP</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">8</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">108</p>
-</td></tr><tr class="TableLine1729519476624"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776756960"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">SUM</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">9</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">109</p>
-</td></tr><tr class="TableLine1729519480704"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776758592"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">VAR</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">10</p>
 </td><td style="text-align:right; " class="SUBTOTAL_C2">
 <p class="Table_20_Contents">110</p>
-</td></tr><tr class="TableLine1729519476352"><td style="text-align:left;" class="SUBTOTAL_A2">
+</td></tr><tr class="TableLine2943776758864"><td style="text-align:left;" class="SUBTOTAL_A2">
 <p class="Table_20_Contents">VARP</p>
 </td><td style="text-align:right; " class="SUBTOTAL_B2">
 <p class="Table_20_Contents">11</p>
@@ -15277,7 +15278,7 @@
 <p class="P57">Table <a id="refTable28"/>29 - LINEST</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table243"><colgroup><col width="61"/><col width="67"/><col width="38"/><col width="56"/><col width="52"/></colgroup><tr class="TableLine1729519508992"><td style="text-align:left;width:1.402cm; " class="Table243_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table243"><colgroup><col width="61"/><col width="67"/><col width="38"/><col width="56"/><col width="52"/></colgroup><tr class="TableLine2943776793136"><td style="text-align:left;width:1.402cm; " class="Table243_A1">
 <p class="P36"><span class="T61">b</span><span class="T82">n</span></p>
 </td><td style="text-align:left;width:1.535cm; " class="Table243_A1">
 <p class="P36"><span class="T61">b</span><span class="T82">n-1</span></p>
@@ -15287,7 +15288,7 @@
 <p class="P36"><span class="T61">b</span><span class="T80">1</span></p>
 </td><td style="text-align:left;width:1.191cm; " class="Table243_E1">
 <p class="P38">a</p>
-</td></tr><tr class="TableLine1729519513888"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
+</td></tr><tr class="TableLine2943776780624"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
 <div class="P36">
 <!--Next 'span' is a draw:frame. -->
 <span id="Object321"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
@@ -15338,7 +15339,7 @@
              <mi>a</mi>
             </msub>
           </math> </span><span class="T83"> </span></div>
-</td></tr><tr class="TableLine1729519514160"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
+</td></tr><tr class="TableLine2943776792592"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
 <!--Next 'div' was a 'text:p'.-->
 <div class="P43">
 <!--Next 'span' is a draw:frame. -->
@@ -15356,11 +15357,11 @@
             <mi>s</mi>
             <mi>e</mi>
            </msub>
-         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td><td style="text-align:left;width:0.873cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table243_E2"><p class="P36"> </p></td></tr><tr class="TableLine1729519519328"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
+         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td><td style="text-align:left;width:0.873cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table243_E2"><p class="P36"> </p></td></tr><tr class="TableLine2943776785520"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
 <p class="P38">F</p>
 </td><td style="text-align:left;width:1.535cm; " class="Table243_A2">
 <p class="P38">df</p>
-</td><td style="text-align:left;width:0.873cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table243_E2"><p class="P36"> </p></td></tr><tr class="TableLine1729519516336"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
+</td><td style="text-align:left;width:0.873cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table243_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table243_E2"><p class="P36"> </p></td></tr><tr class="TableLine2943776785792"><td style="text-align:left;width:1.402cm; " class="Table243_A2">
 <p class="P38">SS<span class="T80">reg </span></p>
 </td><td style="text-align:left;width:1.535cm; " class="Table243_A2">
 <p class="P38">SS<span class="T80">resid </span></p>
@@ -16768,7 +16769,7 @@
 <p class="P57">Table <a id="refTable29"/>30 - LOGEST</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table242"><colgroup><col width="61"/><col width="67"/><col width="38"/><col width="56"/><col width="52"/></colgroup><tr class="TableLine1729519552512"><td style="text-align:left;width:1.402cm; " class="Table242_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table242"><colgroup><col width="61"/><col width="67"/><col width="38"/><col width="56"/><col width="52"/></colgroup><tr class="TableLine2943776802656"><td style="text-align:left;width:1.402cm; " class="Table242_A1">
 <!--Next 'div' was a 'text:p'.-->
 <div class="P38">
 <!--Next 'span' is a draw:frame. -->
@@ -16819,7 +16820,7 @@
             <mi>e</mi>
             <mi>a</mi>
            </msup>
-         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td></tr><tr class="TableLine1729519548432"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
+         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td></tr><tr class="TableLine2943776829312"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
 <div class="P36">
 <!--Next 'span' is a draw:frame. -->
 <span id="Object261"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
@@ -16870,7 +16871,7 @@
              <mi>a</mi>
             </msub>
           </math> </span><span class="T83"> </span></div>
-</td></tr><tr class="TableLine1729519540544"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
+</td></tr><tr class="TableLine2943776824688"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
 <!--Next 'div' was a 'text:p'.-->
 <div class="P43">
 <!--Next 'span' is a draw:frame. -->
@@ -16888,11 +16889,11 @@
             <mi>s</mi>
             <mi>e</mi>
            </msub>
-         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td><td style="text-align:left;width:0.873cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table242_E2"><p class="P36"> </p></td></tr><tr class="TableLine1729519541632"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
+         </math> </span></div><div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;"> </div></td><td style="text-align:left;width:0.873cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table242_E2"><p class="P36"> </p></td></tr><tr class="TableLine2943776828496"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
 <p class="P38">F</p>
 </td><td style="text-align:left;width:1.535cm; " class="Table242_A2">
 <p class="P38">df</p>
-</td><td style="text-align:left;width:0.873cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table242_E2"><p class="P36"> </p></td></tr><tr class="TableLine1729519540000"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
+</td><td style="text-align:left;width:0.873cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.27cm; " class="Table242_A2"><p class="P36"> </p></td><td style="text-align:left;width:1.191cm; " class="Table242_E2"><p class="P36"> </p></td></tr><tr class="TableLine2943776831760"><td style="text-align:left;width:1.402cm; " class="Table242_A2">
 <p class="P38">SS<span class="T80">reg </span></p>
 </td><td style="text-align:left;width:1.535cm; " class="Table242_A2">
 <p class="P38">SS<span class="T80">resid </span></p>
@@ -23588,49 +23589,49 @@
 <p class="Table">Table <a id="refTable30"/>31 - ROMAN</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="RomanNumerals"><colgroup><col width="126"/><col width="108"/><col width="108"/></colgroup><tr class="TableLine1729519353408"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="RomanNumerals"><colgroup><col width="126"/><col width="108"/><col width="108"/></colgroup><tr class="TableLine2943776885888"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A1">
 <p class="Table_20_Heading">Roman Numeral</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A1">
 <p class="Table_20_Heading">Value</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C1">
 <p class="Table_20_Heading">Unicode Code Point</p>
-</td></tr><tr class="TableLine1729519349328"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776891056"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">I</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">1</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+0049</p>
-</td></tr><tr class="TableLine1729519353680"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776895680"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">V</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">5</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+0056</p>
-</td></tr><tr class="TableLine1729519346608"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776893232"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">X</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">10</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+0058</p>
-</td></tr><tr class="TableLine1729519348512"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776897584"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">L</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">50</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+004C</p>
-</td></tr><tr class="TableLine1729519350416"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776889152"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">C</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">100</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+0043</p>
-</td></tr><tr class="TableLine1729519356400"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776892688"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">D</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">500</p>
 </td><td style="text-align:left;width:2.468cm; " class="RomanNumerals_C2">
 <p class="Table_20_Contents">U+0044</p>
-</td></tr><tr class="TableLine1729519353952"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
+</td></tr><tr class="TableLine2943776888336"><td style="text-align:left;width:2.882cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">M</p>
 </td><td style="text-align:left;width:2.469cm; " class="RomanNumerals_A2">
 <p class="Table_20_Contents">1000</p>
@@ -23646,27 +23647,27 @@
 <p class="Table">Table <a id="refTable31"/>32 - ROMAN</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table469"><colgroup><col width="88"/><col width="410"/></colgroup><tr class="TableLine1729519354224"><td style="text-align:left;width:2.009cm; " class="Table469_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table469"><colgroup><col width="88"/><col width="410"/></colgroup><tr class="TableLine2943776895136"><td style="text-align:left;width:2.009cm; " class="Table469_A1">
 <p class="Table_20_Heading"><span class="Parameter_20_Name">Format</span></p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B1">
 <p class="Table_20_Heading">Meaning</p>
-</td></tr><tr class="TableLine1729519362112"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
+</td></tr><tr class="TableLine2943776891600"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
 <p class="Table_20_Contents">0<br/>or omitted<br/>(or TRUE)</p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B2">
 <p class="Text_20_body">Only subtract powers of 10, not L or V, and only if the next number is not more than 10 times greater. A number following the larger one <span class="ISO_20_Keyword">shall</span> be smaller than the subtracted number. Also known as <span class="T61">classic</span>.</p>
-</td></tr><tr class="TableLine1729519347968"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
+</td></tr><tr class="TableLine2943776896224"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
 <p class="Table_20_Contents">1</p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B2">
 <p class="Table_20_Contents">Powers of 10, and L and V may be subtracted, only if the next number is not more than 10 times greater. A number following the larger one <span class="T40">shall</span> be smaller than the subtracted number.</p>
-</td></tr><tr class="TableLine1729519356944"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
+</td></tr><tr class="TableLine2943776891872"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
 <p class="Table_20_Contents">2</p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B2">
 <p class="Table_20_Contents">Powers of 10 and L, but not V, may be subtracted, also if the next number is more than 10 times greater. A number following the larger one <span class="T40">shall</span> be smaller than the subtracted number.</p>
-</td></tr><tr class="TableLine1729519357216"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
+</td></tr><tr class="TableLine2943776896496"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
 <p class="Table_20_Contents">3</p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B2">
 <p class="Table_20_Contents">Powers of 10, and L and V may be subtracted, also if the next number is more than 10 times greater. A number following the larger one <span class="T40">shall</span> be smaller than the subtracted number.</p>
-</td></tr><tr class="TableLine1729519347152"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
+</td></tr><tr class="TableLine2943776894320"><td style="text-align:left;width:2.009cm; " class="Table469_A2">
 <p class="Table_20_Contents">4<br/>(or FALSE)</p>
 </td><td style="text-align:left;width:9.393cm; " class="Table469_B2">
 <p class="Text_20_body">Produce the fewest Roman digits possible. Also known as <span class="T61">simplified</span>.</p>
@@ -23693,205 +23694,205 @@
 <p class="Table">Table <a id="refTable32"/>33 - ASC</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table20"><colgroup><col/><col/><col/></colgroup><tr class="TableLine1729519350688"><td style="text-align:left;" class="Table20_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table20"><colgroup><col/><col/><col/></colgroup><tr class="TableLine2943776892144"><td style="text-align:left;" class="Table20_A1">
 <p class="P29">Fro<span class="T43">m </span>Unicode Character (c)</p>
 </td><td style="text-align:left;" class="Table20_A1">
 <p class="Table_20_Heading">To Unicode Character</p>
 </td><td style="text-align:left;" class="Table20_C1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729519358848"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776888608"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30a1 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30aa<br/>if c%2==0</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30a2) / 2 + 0xff71</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana a-o</p>
-</td></tr><tr class="TableLine1729519356672"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776898672"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30a1 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30aa<br/>if c%2==1</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30a1) / 2 + 0xff67</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana small a-o</p>
-</td></tr><tr class="TableLine1729519346064"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776898128"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30ab <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30c2<br/>if c%2==1</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30ab) / 2 + 0xff76</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ka-chi</p>
-</td></tr><tr class="TableLine1729519357488"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776900576"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30ab <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30c2<br/>if c%2==0</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30ac) / 2 + 0xff76<br/>followed by 0xff9e</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ga-dhi</p>
-</td></tr><tr class="TableLine1729519346880"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776898400"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30c3</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">0xff6f</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana small tsu</p>
-</td></tr><tr class="TableLine1729519358032"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776898944"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30c4 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30c9<br/>if c%2==0</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30c4) / 2 + 0xff82</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana tsu-to</p>
-</td></tr><tr class="TableLine1729519350960"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776901936"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30c4 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30c9<br/>if c%2==1</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30c5) / 2 + 0xff82<br/>followed by 0xff9e</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana du-do</p>
-</td></tr><tr class="TableLine1729519360480"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776884800"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30ca <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30ce</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">c - 0x30ca + 0xff85</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana na-no</p>
-</td></tr><tr class="TableLine1729519347424"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776885072"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30cf <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30dd<br/>if c%3==0</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30cf) / 3 + 0xff8a</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ha-ho</p>
-</td></tr><tr class="TableLine1729519351232"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776885344"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30cf <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30dd<br/>if c%3==1</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30d0) / 3 + 0xff8a<br/>followed by 0xff9e</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ba-bo</p>
-</td></tr><tr class="TableLine1729519362384"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776886160"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30cf <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30dd<br/>if c%3==2</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30d1) / 3 + 0xff8a<br/>followed by 0xff9f</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana pa-po</p>
-</td></tr><tr class="TableLine1729519351504"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776887248"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30de <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30e2</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">c - 0x30de + 0xff8f</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ma-mo</p>
-</td></tr><tr class="TableLine1729519347696"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776887520"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30e3 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30e8<br/>if c%2==0</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30e4) / 2 + 0xff94)</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ya-yo</p>
-</td></tr><tr class="TableLine1729519358304"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776902752"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30e3 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30e8<br/>if c%2==1</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">(c - 0x30e3) / 2 + 0xff6c</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana small ya-yo</p>
-</td></tr><tr class="TableLine1729519358576"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776902208"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30e9 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>30ed</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">c - 0x30e9 + 0xff97</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana ra-ro</p>
-</td></tr><tr class="TableLine1729519359120"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943776902480"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30ef</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9c</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana wa</p>
-</td></tr><tr class="TableLine1729519360752"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750194528"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30f2</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff66</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana wo</p>
-</td></tr><tr class="TableLine1729519362656"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750201328"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30f3</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9d</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">katakana nn</p>
-</td></tr><tr class="TableLine1729519362928"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750206224"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff01 &lt;= c &lt;= <span class="T40">U+</span>ff5e</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents">c - 0xff01 + 0x0021</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">ASCII characters</p>
-</td></tr><tr class="TableLine1729519349056"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750264976"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>2015</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff70</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">HORIZONTAL BAR =&gt; HALFWIDTH KATAKANA-HIRAGANA PROLONGED SOUND MARK</p>
-</td></tr><tr class="TableLine1729492855264"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750281296"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>2018</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0060</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">LEFT SINGLE QUOTATION MARK =&gt; GRAVE ACCENT</p>
-</td></tr><tr class="TableLine1729492867776"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750284016"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>2019</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0027</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">RIGHT SINGLE QUOTATION MARK =&gt; APOSTROPHE</p>
-</td></tr><tr class="TableLine1729492766592"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750284288"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>201d</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0022</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">RIGHT DOUBLE QUOTATION MARK =&gt; QUOTATION MARK</p>
-</td></tr><tr class="TableLine1729492767136"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750295168"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>3001</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff64</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">IDEOGRAPHIC COMMA</p>
-</td></tr><tr class="TableLine1729492837040"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943750286736"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>3002</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff61</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">IDEOGRAPHIC FULL STOP</p>
-</td></tr><tr class="TableLine1729492826976"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739116128"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>300c</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff62</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">LEFT CORNER BRACKET</p>
-</td></tr><tr class="TableLine1729490492336"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739109056"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>300d</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff63</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">RIGHT CORNER BRACKET</p>
-</td></tr><tr class="TableLine1729490493968"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739135440"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>309b</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">KATAKANA-HIRAGANA VOICED SOUND MARK</p>
-</td></tr><tr class="TableLine1729490494240"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739147136"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>309c</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9f</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK</p>
-</td></tr><tr class="TableLine1729490483904"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739135712"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30fb</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff65</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">KATAKANA MIDDLE DOT</p>
-</td></tr><tr class="TableLine1729490528512"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739143872"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30fc</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff70</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">KATAKANA-HIRAGANA PROLONGED SOUND MARK</p>
-</td></tr><tr class="TableLine1729480626560"><td style="text-align:left;" class="Table20_A2">
+</td></tr><tr class="TableLine2943739139792"><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ffe5</p>
 </td><td style="text-align:left;" class="Table20_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>005c</p>
 </td><td style="text-align:left;" class="Table20_C2">
 <p class="Table_20_Contents">FULLWIDTH YEN SIGN =&gt; REVERSE SOLIDUS "\"</p>
-</td></tr><tr class="TableLine1729480628464"><td colspan="3" style="text-align:left;" class="Table20_C2">
+</td></tr><tr class="TableLine2943748149216"><td colspan="3" style="text-align:left;" class="Table20_C2">
 <p class="Note"><span class="Note_20_Label">Note 1:</span> The "\" (REVERSE SOLIDUS, U+005C) is a specialty that gets displayed as a Yen sign with some Japanese fonts, which is a legacy of code-page 932.</p>
 </td></tr></table>
 
@@ -24034,193 +24035,193 @@
 <p class="Table">Table <a id="refTable33"/>34 - JIS</p>
 
 
-<table border="0" cellspacing="0" cellpadding="0" class="Table21"><colgroup><col/><col/><col/></colgroup><tr class="TableLine1729526326224"><td style="text-align:left;" class="Table21_A1">
+<table border="0" cellspacing="0" cellpadding="0" class="Table21"><colgroup><col/><col/><col/></colgroup><tr class="TableLine2943783737904"><td style="text-align:left;" class="Table21_A1">
 <p class="P29">From Unicod<span class="T43">e </span>Character (c)</p>
 </td><td style="text-align:left;" class="Table21_A1">
 <p class="Table_20_Heading">To Unicode Character</p>
 </td><td style="text-align:left;" class="Table21_C1">
 <p class="Table_20_Heading">Comment</p>
-</td></tr><tr class="TableLine1729526309632"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783732464"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0022</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0x201d</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">QUOTATION MARK =&gt; RIGHT DOUBLE QUOTATION MARK<br/>This is an exception to the ASCII range that follows below.</p>
-</td></tr><tr class="TableLine1729526313984"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783728112"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>005c</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0xffe5</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">REVERSE SOLIDUS "\" =&gt; FULLWIDTH YEN SIGN<br/>(code-page 932 legacy, for details see ASC function)<br/>This is an exception to the ASCII range that follows below.</p>
-</td></tr><tr class="TableLine1729526311264"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783739536"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0060</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0x2018</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">GRAVE ACCENT =&gt; LEFT SINGLE QUOTATION MARK<br/>This is an exception to the ASCII range that follows below.</p>
-</td></tr><tr class="TableLine1729526321872"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783740352"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0027</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0x2019</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">APOSTROPHE =&gt; RIGHT SINGLE QUOTATION MARK<br/>This is an exception to the ASCII range that follows below.</p>
-</td></tr><tr class="TableLine1729526317248"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783737632"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>0021 <span class="T40">≤</span> c <span class="T40">≤</span>= <span class="T40">U+</span>007e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">c - 0x0021 + 0xff01</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">ASCII characters</p>
-</td></tr><tr class="TableLine1729526311536"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783734368"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff66</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0x30f2</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana wo</p>
-</td></tr><tr class="TableLine1729526322144"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783737360"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff67 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff6b</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff67) * 2 + 0x30a1</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana small a-o</p>
-</td></tr><tr class="TableLine1729526315888"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783725664"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff6c <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff6e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff6c) * 2 + 0x30e3</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana small ya-yo</p>
-</td></tr><tr class="TableLine1729526325136"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783725936"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff6f</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">0x30c3</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana small tsu</p>
-</td></tr><tr class="TableLine1729526309904"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783738720"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff71 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff75</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff71) * 2 + 0x30a2</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana a-o</p>
-</td></tr><tr class="TableLine1729526313712"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783732736"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff76 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff81<br/>followed by <span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff76) * 2 + 0x30ac</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ga-dsu</p>
-</td></tr><tr class="TableLine1729526310992"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783734096"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff76 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff81<br/>not followed by <span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff76) * 2 + 0x30ab</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ka-chi</p>
-</td></tr><tr class="TableLine1729526325952"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783732192"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff82 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff84<br/>followed by <span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff82) * 2 + 0x30c5</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana du-do</p>
-</td></tr><tr class="TableLine1729526313440"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783727024"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff82 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff84<br/>not followed by <span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff82) * 2 + 0x30c4</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana tsu-to</p>
-</td></tr><tr class="TableLine1729526314528"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783736272"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff85 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff89</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">c - 0xff85 + 0x30ca</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana na-no</p>
-</td></tr><tr class="TableLine1729526316160"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783738176"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff8a <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff8e<br/>followed by <span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff8a) * 3 + 0x30d0</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ba-bo</p>
-</td></tr><tr class="TableLine1729526309088"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783729200"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff8a <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff8e<br/>followed by <span class="T40">U+</span>ff9f</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff8a) * 3 + 0x30d1</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana pa-po</p>
-</td></tr><tr class="TableLine1729526312080"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783740080"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff8a <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff8e<br/>neither followed by <span class="T40">U+</span>ff9e nor <span class="T40">U+</span>ff9f</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff8a) * 3 + 0x30cf</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ha-ho</p>
-</td></tr><tr class="TableLine1729526317792"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783731376"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff8f <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff93</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">c - 0xff8f + 0x30de</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ma-mo</p>
-</td></tr><tr class="TableLine1729526314800"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783723488"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff94 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff96</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">(c - 0xff94) * 2 + 0x30e4</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ya-yo</p>
-</td></tr><tr class="TableLine1729526316704"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783723760"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff97 <span class="T40">≤</span> c <span class="T40">≤</span> <span class="T40">U+</span>ff9b</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents">c - 0xff97 + 0x30e9</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana ra-ro</p>
-</td></tr><tr class="TableLine1729526311808"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783728384"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9c</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30ef</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana wa</p>
-</td></tr><tr class="TableLine1729526316976"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783731648"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9d</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30f3</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">katakana nn</p>
-</td></tr><tr class="TableLine1729526315072"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783724032"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9e</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>309b</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH KATAKANA VOICED SOUND MARK =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526312624"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783739808"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff9f</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>309c</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH KATAKANA SEMI-VOICED SOUND MARK =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526312896"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783735184"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff70</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30fc</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH KATAKANA-HIRAGANA PROLONGED SOUND MARK =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526324864"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783734640"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff61</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>3002</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH IDEOGRAPHIC FULL STOP =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526320784"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783727568"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff62</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>300c</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH LEFT CORNER BRACKET =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526310176"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783729744"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff63</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>300d</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH RIGHT CORNER BRACKET =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526314256"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783724304"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff64</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>3001</p>
 </td><td style="text-align:left;" class="Table21_C2">
 <p class="Table_20_Contents">HALFWIDTH IDEOGRAPHIC COMMA =&gt; FULLWIDTH</p>
-</td></tr><tr class="TableLine1729526310448"><td style="text-align:left;" class="Table21_A2">
+</td></tr><tr class="TableLine2943783736816"><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>ff65</p>
 </td><td style="text-align:left;" class="Table21_A2">
 <p class="Table_20_Contents"><span class="T40">U+</span>30fb</p>
@@ -24478,7 +24479,7 @@
 <p class="Text_20_body"><span class="T40">Evaluators</span> claiming to implement “Inline non-constant arrays” <span class="ISO_20_Keyword">shall</span><span class="T34"> support </span><span class="T57">the full Expression syntax in each component of an array (and not just constants).</span></p>
 <h2 class="Heading_20_2"><a id="a_7_4_Year_1583"><span>7.4 </span></a><a id="__RefHeading__1018898_715980110"/>Year 1583</h2>
 
-<p class="Text_20_body"><span class="T40">Evaluators</span> claiming to implement “Year 1583” can correctly calculate dates correctly starting from the January 1 of the (ISO) year 1583. This means that the <span class="T40">evaluator</span> correctly determines that 1900 was not a leap year, and can handle year values for dates back to <span class="T61">at least</span> 1583.</p>
+<p class="Text_20_body"><span class="T40">Evaluators</span> claiming to implement “Year 1583” can calculate dates correctly starting from the January 1 of the (ISO) year 1583. This means that the <span class="T40">evaluator</span> correctly determines that 1900 was not a leap year, and can handle year values for dates back to <span class="T61">at least</span> 1583.</p>
 
 <p class="Text_20_body">These calculations use the ISO (proleptic Gregorian) calendar, that is, the calculations use the usual rules for the ISO (Gregorian) calendar, regardless of locale. This calendar began official use in some locales in 1582, but other locales used other calendars (such as the Julian calendar) and switched to the Gregorian calendar at different times in history, if they switched at all. <span class="T40">Evaluators</span> <span class="ISO_20_Keyword">may</span> <span class="T34">choose to support years even earlier than this; such evaluators </span><span class="ISO_20_Keyword">should</span><span class="T34"> use a proleptic Gregorian system (continuing the years backwards as if the calendar existed in those years). </span>Note that not all people used, or currently use, the ISO (Gregorian) calendar.</p>
 
@@ -24497,7 +24498,7 @@
 
 <p class="Text_20_body">An evaluator that has a Logical type distinct from both Number and Text shall have the following properties:</p>
 <ul><li><p class="P103" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>ISNUMBER() applied to a Logical value (constant or calculated) will return FALSE, and ISLOGICAL() applied to a Number will be FALSE, either directly or via a reference.<span class="odfLiEnd"/> </p></li><li><p class="P103" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>TRUE will not be equal to 1, and FALSE will not be equal to 0, when they are compared using “=”,<span class="odfLiEnd"/> </p></li><li><p class="P103" style="margin-left:0cm;"><span class="Bullet_20_Symbols" style="display:block;float:left;min-width:0.64cm;">•</span>In a NumberSequence (such as when using SUM), Logical values are skipped when inside a range, but are included and automatically converted to a Number if provided as the NumberSequence itself.<span class="odfLiEnd"/> </p></li></ul><ol><li><p class="Appendix_20_Heading_20_1" style="margin-left:0cm;"><span class="Zeichenformat" style="display:block;float:left;min-width:0.762cm;padding-right:0.275cm;">Appendix A</span><a id="__RefHeading___Toc1134099_2705524876"/>Changes from “Open Document Format for Office Applications (OpenDocument) v1.3”<span class="odfLiEnd"/> </p></li></ol>
-<p class="Text_20_body">The OpenDocument specification has been divided into five parts and has been restructured.</p>
+<p class="Text_20_body">The OpenDocument specification has been divided into <span class="T8">four</span> parts and has been restructured.</p>
 
 <p class="Text_20_body">This appendix describes changes that are related to part 4 of this specification.</p>
 
