@@ -2865,12 +2865,15 @@
       <rng:attribute name="style:writing-mode">
         <rng:choice>
           <rng:value>lr-tb</rng:value>
-          <rng:value>rl-tb</rng:value>
-          <rng:value>tb-rl</rng:value>
-          <rng:value>tb-lr</rng:value>
           <rng:value>lr</rng:value>
+          <rng:value>rl-tb</rng:value>
           <rng:value>rl</rng:value>
+          <rng:value>tb-rl</rng:value>
           <rng:value>tb</rng:value>
+          <rng:value>tb-lr</rng:value>
+          <!-- https://issues.oasis-open.org/browse/OFFICE-4030 -->
+          <rng:value>sideways-rl</rng:value>
+          <rng:value>sideways-lr</rng:value>
           <rng:value>page</rng:value>
         </rng:choice>
       </rng:attribute>
