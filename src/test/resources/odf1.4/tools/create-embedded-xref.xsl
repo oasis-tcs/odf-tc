@@ -550,7 +550,7 @@
     <!-- ****************************************** -->
     <!-- ** Headings for elements and attributes ** -->
     <!-- ****************************************** -->
-    <xsl:template match="text:h[contains(.,':')]">
+    <xsl:template match="text:h[contains(.,':') and not(contains(.,'&lt;svg:title&gt; and &lt;svg:desc&gt;'))]">
         <!-- get element or attribute name -->
         <xsl:variable name="tag">
             <xsl:choose>
