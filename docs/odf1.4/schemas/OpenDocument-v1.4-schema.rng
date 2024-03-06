@@ -339,7 +339,7 @@
   </rng:define>
   <rng:define name="anyIRI">
     <rng:data type="anyURI"/>
-    <dc:description>An IRI-reference as defined in [RFC3987]. See ODF 1.3 Part 3 section 18.3.</dc:description>
+    <dc:description>An IRI-reference as defined in [RFC3987]. See ODF 1.4 Part 3 section 18.3.</dc:description>
   </rng:define>
   <rng:define name="anyURI">
     <rng:data type="anyURI"/>

@@ -199,7 +199,7 @@
   </rng:define>
   <rng:define name="manifest-attlist">
     <rng:attribute name="manifest:version">
-      <rng:value>1.3</rng:value>
+      <rng:value>1.4</rng:value>
     </rng:attribute>
   </rng:define>
   <rng:define name="namespacedToken">
