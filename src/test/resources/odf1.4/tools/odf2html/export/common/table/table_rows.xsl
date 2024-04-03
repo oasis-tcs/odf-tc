@@ -196,10 +196,7 @@
         <xsl:param name="node-position" />
 
         <xsl:attribute name="class">
-            <xsl:call-template name="create-unique-style-id">
-                <xsl:with-param name="styleName" select="@table:style-name"/>
-                <xsl:with-param name="styleFamily" select="'table-row'"/>
-            </xsl:call-template>
+            <xsl:value-of select="translate(@table:style-name, '. %()/\+', '')" />
         </xsl:attribute>
     </xsl:template>
 
