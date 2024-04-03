@@ -206,10 +206,8 @@
 
        <!-- cell style header -->
        <xsl:attribute name="class">
-            <xsl:call-template name="create-unique-style-id">
-                <xsl:with-param name="styleName" select="$styleName"/>
-                <xsl:with-param name="styleFamily" select="'table-cell'"/>
-            </xsl:call-template>
+           <xsl:value-of select="translate($styleName, '.,;: %()[]/\+', '_____________')"/>
        </xsl:attribute>
     </xsl:template>
 </xsl:stylesheet>
+
