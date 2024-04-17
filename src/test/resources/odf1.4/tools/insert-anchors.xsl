@@ -23,7 +23,7 @@ xmlns:rng="http://relaxng.org/ns/structure/1.0"
 	 datatype. 
 -->
 	
-<xsl:template match="//text:h|//text:list[@text:style-name='Appendix']">
+<xsl:template match="//text:h|//text:list[@text:style-name='Appendix' and not(preceding::text:list[@text:style-name='Appendix'])]">
       <xsl:variable name="name">
             <xsl:variable name="raw">
                   <xsl:value-of select="preceding-sibling::text:h[1]"/>
