@@ -589,7 +589,7 @@
                                  <xsl:with-param name="fp" select="$fp"/>
                             </xsl:call-template>
                         </xsl:when>
-                        <xsl:when test="preceding::text:h[@text:outline-level='3'][1]='manifest:version'">
+                        <xsl:when test="@text:outline-level and not(number(@text:outline-level) lt 4) and preceding::text:h[@text:outline-level='3'][1]='manifest:version'">
                             <xsl:variable name="attr-name" select="'manifest:version'"/>
                             <xsl:call-template name="create-element-ref-mark-start">
                                  <xsl:with-param name="tag" select="$tag"/>
