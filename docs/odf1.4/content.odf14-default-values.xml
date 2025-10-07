@@ -151,7 +151,7 @@
       <attribute name="presentation:start-with-navigator" defaultValue="false"/>
       <attribute name="presentation:stay-on-top" defaultValue="false"/>
       <attribute name="presentation:transition-on-click" defaultValue="enabled"/>
-      <attribute name="smil:accelerate" defaultValue=""/>
+      <attribute name="smil:accelerate" defaultValue="0"/>
       <attribute name="smil:autoReverse" defaultValue="false"/>
       <attribute name="smil:calcMode" defaultValue="discrete" element="anim:animate"/>
       <attribute name="smil:calcMode"
